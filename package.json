@@ -1,0 +1,25 @@
+{
+  "name": "portal-morro-vermelho",
+  "version": "3.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Portal cultural e museu digital de Morro Vermelho, Caeté — MG. React pré-renderizado para HTML estático autocontido.",
+  "scripts": {
+    "dev": "vite",
+    "gerar": "node ferramentas/gerar.mjs",
+    "build": "node ferramentas/gerar.mjs",
+    "gerar:comentado": "node ferramentas/gerar.mjs --comentado",
+    "ver": "node ferramentas/servir.mjs",
+    "fontes": "node ferramentas/baixar-fontes.mjs",
+    "icones": "node ferramentas/baixar-icones.mjs",
+    "word": "node ferramentas/ler-word.mjs"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.3.4",
+    "vite": "^5.4.11"
+  }
+}

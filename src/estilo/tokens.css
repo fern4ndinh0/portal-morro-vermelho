@@ -1,0 +1,196 @@
+/* ==========================================================================
+   TOKENS — a única fonte da verdade visual do portal.
+   Nada de valor mágico em outro arquivo. Muda aqui, muda em todo lugar.
+   ========================================================================== */
+
+:root {
+  /* --- Cor: escalas derivadas da paleta original do território --------------
+     terra  = a terra vermelha que dá nome ao lugar
+     serra  = a mata da Serra da Piedade
+     areia  = areia de rio, cal, ouro velho
+     papel  = papel de arquivo
+     grafite= tinta, pedra, sombra                                          */
+
+  --terra-50:  #fbf3f2;
+  --terra-100: #f6e3e1;
+  --terra-200: #edc5c1;
+  --terra-300: #df9c96;
+  --terra-400: #cc6d66;
+  --terra-500: #b44a42;
+  --terra-600: #9a3129;
+  --terra-700: #7a1e1e; /* base histórica do projeto */
+  --terra-800: #5e1717;
+  --terra-900: #451212;
+  --terra-950: #290a0a;
+
+  --serra-50:  #f2f6f2;
+  --serra-100: #e1ebe3;
+  --serra-200: #c3d7c7;
+  --serra-300: #9bbaa1;
+  --serra-400: #6e9576;
+  --serra-500: #4e7455;
+  --serra-600: #3e5b43; /* base */
+  --serra-700: #324937;
+  --serra-800: #28392c;
+  --serra-900: #1d2a21;
+  --serra-950: #101710;
+
+  --areia-50:  #fbf8f3;
+  --areia-100: #f6f0e4;
+  --areia-200: #ede0c7;
+  --areia-300: #e0cca6;
+  --areia-400: #d2b48c; /* base */
+  --areia-500: #c09b6a;
+  --areia-600: #a87f4f;
+  --areia-700: #8a6540;
+  --areia-800: #6b4e33;
+  --areia-900: #4c3724;
+
+  --papel-0:   #fffdf9;
+  --papel-50:  #faf7f0;
+  --papel-100: #f5f1e8; /* base */
+  --papel-200: #ebe5d6;
+  --papel-300: #ded6c1;
+  --papel-400: #c9bfa4;
+
+  --grafite-600:  #4a4a4a;
+  --grafite-700:  #3a3a3a;
+  --grafite-800:  #2c2c2c; /* base */
+  --grafite-900:  #1e1e1e;
+  --grafite-950:  #141414;
+  --grafite-1000: #0a0a0a;
+
+  /* --- Papéis semânticos (tema claro) ------------------------------------
+     Componentes NUNCA usam a escala crua. Usam estes papéis.
+     É isso que permite dark mode e atmosferas por página sem reescrever CSS. */
+
+  --bg:            var(--papel-100);
+  --bg-elevado:    var(--papel-0);
+  --bg-afundado:   var(--papel-200);
+  --bg-inverso:    var(--grafite-900);
+
+  --texto:         var(--grafite-900);
+  --texto-suave:   #55524c;   /* 7.0:1 sobre --papel-100 — passa AAA */
+  --texto-tenue:   #6b6862;   /* 5.1:1 sobre --papel-100 — passa AA  */
+  --texto-inverso: var(--papel-50);
+  --texto-inverso-suave: #cfc9bb; /* 9.4:1 sobre --grafite-900 */
+
+  --marca:         var(--terra-700);
+  --marca-hover:   var(--terra-800);
+  --marca-suave:   var(--terra-50);
+  --acento:        var(--serra-600);
+  --destaque:      var(--areia-600);  /* 4.6:1 sobre papel — nunca o areia-400 em texto pequeno */
+
+  --borda:         color-mix(in oklab, var(--grafite-800) 14%, transparent);
+  --borda-forte:   color-mix(in oklab, var(--grafite-800) 28%, transparent);
+  --borda-inversa: color-mix(in oklab, var(--papel-50) 18%, transparent);
+
+  --foco:          var(--terra-600);
+  --foco-inverso:  var(--areia-300);
+
+  /* --- Tipografia -------------------------------------------------------- */
+  --fonte-serif: "Cormorant Garamond", "Iowan Old Style", "Palatino Linotype",
+                 Palatino, Georgia, "Times New Roman", serif;
+  --fonte-sans:  "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI",
+                 Roboto, "Helvetica Neue", Arial, sans-serif;
+  /* reservado para receitas / depoimentos (ver docs de atmosferas) */
+  --fonte-mao:   "Caveat", "Segoe Script", "Bradley Hand", cursive;
+  --fonte-mono:  ui-monospace, "SF Mono", "Cascadia Mono", Menlo, monospace;
+
+  /* Escala fluida — clamp evita media queries de tipografia.
+     Base 16px → 17px em telas grandes (leitura longa de acervo). */
+  --t-xs:  0.75rem;                                   /* 12 */
+  --t-sm:  0.8125rem;                                 /* 13 */
+  --t-base: clamp(1rem, 0.97rem + 0.15vw, 1.0625rem); /* 16 → 17 */
+  --t-md:  clamp(1.0625rem, 1rem + 0.3vw, 1.1875rem); /* 17 → 19 */
+  --t-lg:  clamp(1.25rem, 1.15rem + 0.5vw, 1.5rem);
+  --t-xl:  clamp(1.5rem, 1.3rem + 1vw, 2rem);
+  --t-2xl: clamp(1.875rem, 1.5rem + 1.8vw, 2.75rem);
+  --t-3xl: clamp(2.25rem, 1.6rem + 3vw, 3.75rem);
+  --t-4xl: clamp(2.75rem, 1.6rem + 5.2vw, 5.5rem);
+  --t-display: clamp(3rem, 1rem + 11vw, 11rem);       /* só no hero */
+
+  --leading-apertado: 1.02;
+  --leading-titulo:   1.14;
+  --leading-corpo:    1.62;
+  --leading-solto:    1.75;
+
+  --tracking-display: -0.03em;
+  --tracking-titulo:  -0.015em;
+  --tracking-largo:   0.14em;
+  --tracking-xlargo:  0.28em;
+
+  --medida: 66ch;      /* medida de leitura confortável */
+  --medida-curta: 46ch;
+
+  /* --- Espaço: escala de 4px, nomeada por passo ------------------------- */
+  --e-1: 0.25rem;  --e-2: 0.5rem;   --e-3: 0.75rem;  --e-4: 1rem;
+  --e-5: 1.5rem;   --e-6: 2rem;     --e-7: 2.5rem;   --e-8: 3rem;
+  --e-9: 4rem;     --e-10: 5rem;    --e-11: 6rem;    --e-12: 8rem;
+
+  /* Respiro vertical de seção — fluido, para não sufocar no mobile */
+  --secao-y: clamp(2.5rem, 1.5rem + 5vw, 6rem);
+
+  --largura-max:  78rem;   /* 1248px — grade principal */
+  --largura-texto: 42rem;  /* coluna de artigo */
+  --gutter: clamp(1.25rem, 4vw, 3rem);
+
+  /* --- Forma ------------------------------------------------------------
+     Patrimônio setecentista não usa pílula. Raios contidos, quase impressos. */
+  --r-sm: 2px;
+  --r-md: 4px;
+  --r-lg: 8px;
+  --r-xl: 14px;
+  --r-redondo: 999px;   /* só para pontos e avatares */
+
+  /* --- Elevação: sombras de papel, não de app ---------------------------- */
+  --sombra-1: 0 1px 2px rgba(20, 16, 12, 0.06),
+              0 1px 1px rgba(20, 16, 12, 0.04);
+  --sombra-2: 0 2px 4px rgba(20, 16, 12, 0.06),
+              0 4px 12px rgba(20, 16, 12, 0.06);
+  --sombra-3: 0 4px 8px rgba(20, 16, 12, 0.07),
+              0 12px 28px rgba(20, 16, 12, 0.10);
+  --sombra-4: 0 8px 16px rgba(20, 16, 12, 0.08),
+              0 24px 56px rgba(20, 16, 12, 0.14);
+  /* peça de acervo suspensa: sombra deslocada, como objeto sobre mesa */
+  --sombra-peca: 0 18px 36px -12px rgba(41, 10, 10, 0.28),
+                 0 4px 8px rgba(20, 16, 12, 0.10);
+
+  /* --- Movimento: vocabulário fechado ------------------------------------ */
+  --dur-instant: 120ms;
+  --dur-rapido:  240ms;
+  --dur-normal:  420ms;
+  --dur-lento:   720ms;
+  --dur-cinema:  1400ms;
+
+  --ease-out:   cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-inout: cubic-bezier(0.65, 0, 0.35, 1);
+  --ease-arq:   cubic-bezier(0.33, 1, 0.68, 1);  /* peça pesada, com inércia */
+
+  --stagger: 70ms;
+
+  /* --- Camadas: numeradas em um só lugar, fim das guerras de z-index ----- */
+  --z-base: 0;
+  --z-eleva: 10;
+  --z-sticky: 100;
+  --z-navbar: 200;
+  --z-megamenu: 210;
+  --z-drawer: 300;
+  --z-modal: 400;
+  --z-toast: 500;
+  --z-loader: 600;
+  --z-skip: 700;
+
+  /* --- Texturas (SVG inline em data-uri: zero requisição, zero CDN) ------ */
+  --grao: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='140' height='140' filter='url(%23n)' opacity='0.4'/%3E%3C/svg%3E");
+}
+
+/* O portal tem um só tema, claro. Blocos individuais ainda podem ser escuros
+   (hero, rodapé) usando [data-superficie="escura"] — isso é composição de
+   página, não tema de sistema.
+
+   NOTA: o tema escuro foi removido a pedido, mas a arquitetura de papéis
+   semânticos acima continua igual. Se um dia voltar, basta reintroduzir um
+   bloco :root[data-tema="escuro"] redefinindo os mesmos papéis — nenhum
+   componente precisa ser tocado, porque nenhum deles usa a escala crua. */
+:root { color-scheme: light; }

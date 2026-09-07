@@ -1,0 +1,533 @@
+/* ==========================================================================
+   ARTIGO — a atmosfera das páginas de documento.
+   Carregado APENAS nas páginas de texto longo, depois de components.css.
+   Página de leitura tem exigências que a home não tem: medida controlada,
+   escala tipográfica maior, aparato de fontes, sumário e "como citar".
+   ========================================================================== */
+
+/* ==========================================================================
+   1. BARRA DE PROGRESSO DE LEITURA
+   Presa ao topo, logo abaixo da navbar. O valor vem do JS via --progresso.
+   ========================================================================== */
+
+.progresso {
+  position: fixed;
+  inset: 0 0 auto 0;
+  z-index: calc(var(--z-navbar) + 1);
+  height: 3px;
+  background: transparent;
+  pointer-events: none;
+}
+.progresso::after {
+  content: "";
+  display: block;
+  height: 100%;
+  width: var(--progresso, 0%);
+  background: linear-gradient(to right, var(--terra-700), var(--areia-500));
+  transition: width 90ms linear;
+}
+
+/* ==========================================================================
+   2. CABEÇALHO DO ARTIGO
+   Escuro, para o texto claro que vem depois entrar como um "acender de luz".
+   ========================================================================== */
+
+.artigo-capa {
+  position: relative;
+  isolation: isolate;
+  padding-block: clamp(8rem, 16vh, 12rem) clamp(3rem, 7vw, 5rem);
+  background: var(--grafite-1000);
+  color: var(--papel-50);
+  overflow: hidden;
+}
+.artigo-capa::before {
+  content: "";
+  position: absolute; inset: 0; z-index: -2;
+  background:
+    radial-gradient(85% 70% at 15% 0%, color-mix(in oklab, var(--tom, var(--terra-800)) 72%, transparent), transparent 68%),
+    radial-gradient(60% 60% at 100% 100%, color-mix(in oklab, var(--serra-900) 80%, transparent), transparent 70%),
+    var(--grafite-1000);
+}
+.artigo-capa::after {
+  content: "";
+  position: absolute; inset: 0; z-index: -1;
+  background-image: var(--grao);
+  opacity: 0.4;
+  mix-blend-mode: overlay;
+  pointer-events: none;
+}
+
+.artigo-capa__titulo {
+  font-size: var(--t-3xl);
+  font-weight: 300;
+  line-height: 1.06;
+  color: var(--papel-0);
+  max-width: 18ch;
+  margin-block: var(--e-4) var(--e-5);
+}
+.artigo-capa__resumo {
+  font-family: var(--fonte-serif);
+  font-size: var(--t-lg);
+  font-style: italic;
+  font-weight: 300;
+  line-height: 1.5;
+  color: color-mix(in oklab, var(--papel-50) 84%, transparent);
+  max-width: 44ch;
+}
+
+/* Ficha do artigo: tempo de leitura, estado editorial, atualização */
+.artigo-ficha {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--e-3) var(--e-6);
+  margin-top: var(--e-7);
+  padding-top: var(--e-5);
+  border-top: 1px solid var(--borda-inversa);
+  font-size: var(--t-xs);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: color-mix(in oklab, var(--papel-50) 62%, transparent);
+}
+.artigo-ficha__item { display: inline-flex; align-items: center; gap: 0.45rem; }
+.artigo-ficha .icone { width: 0.9rem; height: 0.9rem; color: var(--areia-400); }
+.artigo-ficha strong { color: var(--areia-200); font-weight: 600; }
+
+/* ==========================================================================
+   3. MIGALHAS
+   ========================================================================== */
+
+.migalhas { font-size: var(--t-xs); letter-spacing: 0.06em; }
+.migalhas ol { display: flex; flex-wrap: wrap; align-items: center; gap: 0.5rem; }
+.migalhas li { display: inline-flex; align-items: center; gap: 0.5rem; }
+.migalhas li:not(:last-child)::after {
+  content: "/";
+  opacity: 0.4;
+}
+.migalhas a {
+  color: color-mix(in oklab, var(--papel-50) 70%, transparent);
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.migalhas a:hover { color: var(--areia-300); text-decoration: underline; }
+.migalhas [aria-current] {
+  color: var(--areia-300);
+  text-transform: uppercase;
+}
+
+/* ==========================================================================
+   4. CORPO DO ARTIGO + SUMÁRIO LATERAL
+   ========================================================================== */
+
+.artigo-grade {
+  display: grid;
+  gap: var(--e-8);
+  padding-block: var(--secao-y);
+}
+@media (min-width: 64rem) {
+  .artigo-grade {
+    /* sumário à esquerda, texto na coluna de leitura, respiro à direita */
+    grid-template-columns: 15rem minmax(0, var(--largura-texto)) 1fr;
+    gap: var(--e-9);
+    align-items: start;
+  }
+}
+
+.sumario { display: none; }
+@media (min-width: 64rem) {
+  .sumario {
+    display: block;
+    position: sticky;
+    top: 7rem;
+    max-height: calc(100vh - 10rem);
+    overflow-y: auto;
+  }
+}
+.sumario__titulo {
+  font-family: var(--fonte-sans);
+  font-size: 0.625rem;
+  font-weight: 700;
+  letter-spacing: var(--tracking-largo);
+  text-transform: uppercase;
+  color: var(--destaque);
+  padding-bottom: var(--e-3);
+  margin-bottom: var(--e-3);
+  border-bottom: 1px solid var(--borda);
+}
+.sumario__lista { display: grid; gap: 0.1rem; counter-reset: sum; }
+.sumario__link {
+  display: block;
+  padding: 0.45rem 0 0.45rem var(--e-4);
+  font-size: var(--t-sm);
+  line-height: 1.35;
+  color: var(--texto-tenue);
+  text-decoration: none;
+  border-left: 2px solid var(--borda);
+  transition: color var(--dur-rapido) var(--ease-out),
+              border-color var(--dur-rapido) var(--ease-out);
+}
+.sumario__link:hover { color: var(--texto); border-left-color: var(--borda-forte); }
+.sumario__link[aria-current] {
+  color: var(--marca);
+  font-weight: 600;
+  border-left-color: var(--marca);
+}
+
+/* --- Prosa ---------------------------------------------------------------
+   Medida controlada e escala maior. Leitura longa não é a mesma coisa que
+   texto de interface. */
+
+.prosa { font-size: var(--t-md); line-height: var(--leading-solto); color: var(--texto-suave); }
+.prosa > * + * { margin-top: var(--e-5); }
+
+.prosa h2 {
+  font-size: var(--t-xl);
+  color: var(--marca);
+  margin-top: var(--e-9);
+  margin-bottom: var(--e-4);
+  padding-top: var(--e-5);
+  border-top: 1px solid var(--borda);
+  scroll-margin-top: 7rem;   /* âncora não fica embaixo da navbar */
+}
+.prosa h3 {
+  font-size: var(--t-lg);
+  color: var(--texto);
+  margin-top: var(--e-7);
+  margin-bottom: var(--e-3);
+  scroll-margin-top: 7rem;
+}
+.prosa p { max-width: none; }
+.prosa strong { color: var(--texto); font-weight: 600; }
+.prosa a { text-decoration: underline; text-decoration-color: var(--areia-500); }
+
+/* Capitular no primeiro parágrafo — gesto de livro antigo, uma vez só. */
+.prosa > .abertura::first-letter {
+  float: left;
+  font-family: var(--fonte-serif);
+  font-size: 3.9em;
+  line-height: 0.82;
+  font-weight: 600;
+  color: var(--marca);
+  padding-right: 0.09em;
+  margin-top: 0.06em;
+}
+
+.prosa ul, .prosa ol { display: grid; gap: var(--e-3); padding-left: var(--e-5); }
+.prosa ul li { list-style: none; position: relative; }
+.prosa ul li::before {
+  content: "";
+  position: absolute;
+  left: calc(var(--e-5) * -1);
+  top: 0.72em;
+  width: 0.4rem; height: 1px;
+  background: var(--areia-600);
+}
+.prosa ol { list-style: decimal; }
+.prosa ol li::marker { color: var(--destaque); font-weight: 600; }
+
+/* ==========================================================================
+   5. BLOCOS ESPECIAIS DENTRO DO TEXTO
+   ========================================================================== */
+
+/* Citação de fonte primária — papel envelhecido, não caixa de blog. */
+.citacao-fonte {
+  position: relative;
+  padding: var(--e-6);
+  background: var(--papel-50);
+  border-left: 3px solid var(--areia-500);
+  border-radius: 0 var(--r-md) var(--r-md) 0;
+  box-shadow: var(--sombra-1);
+}
+.citacao-fonte::before {
+  content: "";
+  position: absolute; inset: 0;
+  background-image: var(--grao);
+  opacity: 0.3;
+  mix-blend-mode: multiply;
+  pointer-events: none;
+  border-radius: inherit;
+}
+.citacao-fonte p {
+  font-family: var(--fonte-serif);
+  font-size: var(--t-lg);
+  font-style: italic;
+  line-height: 1.5;
+  color: var(--texto);
+}
+.citacao-fonte footer {
+  margin-top: var(--e-4);
+  font-family: var(--fonte-sans);
+  font-size: var(--t-xs);
+  font-style: normal;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--texto-tenue);
+}
+
+/* Caixa de destaque editorial (nota de método, aviso, contexto) */
+.nota {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: var(--e-4);
+  padding: var(--e-5);
+  font-size: var(--t-base);
+  border: 1px solid var(--borda);
+  border-radius: var(--r-md);
+  background: var(--bg-afundado);
+}
+.nota .icone { width: 1.2rem; height: 1.2rem; color: var(--destaque); margin-top: 0.2em; }
+.nota__titulo {
+  font-family: var(--fonte-sans);
+  font-size: var(--t-xs);
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--texto);
+  margin-bottom: 0.4rem;
+}
+.nota p { font-size: var(--t-base); }
+.nota--lacuna { border-style: dashed; border-color: var(--areia-600); background: var(--areia-50); }
+
+/* --------------------------------------------------------------------------
+   GALERIA — grade de fotografias
+
+   Sai da coluna de texto (a .prosa é estreita de propósito, para leitura) e
+   ocupa a largura do envelope. `margin-inline` negativo em vez de posição
+   absoluta: continua no fluxo, então não atropela o que vem depois.
+
+   auto-fill com minmax é o que dispensa media query: a grade decide sozinha
+   quantas colunas cabem, de uma no celular a três no desktop.
+   -------------------------------------------------------------------------- */
+.galeria {
+  margin-block: var(--e-8);
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 17rem), 1fr));
+  gap: var(--e-6) var(--e-5);
+}
+
+/* Alarga além da coluna de texto onde houver espaço para isso. */
+@media (min-width: 60rem) {
+  .galeria {
+    margin-inline: calc(-1 * var(--e-8));
+    grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr));
+  }
+}
+
+.galeria__peca { margin: 0; display: flex; flex-direction: column; }
+
+.galeria__peca img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-radius: var(--r-md);
+  background: var(--bg-afundado);
+  box-shadow: var(--sombra-2);
+}
+
+/* A peça mais alta que larga fica INTEIRA, sem corte: um retrato do século 19
+   e um recorte de jornal perdem o assunto se recortados no meio. Mas a caixa
+   continua 4/3, e a imagem se encaixa dentro dela — se a altura fosse livre,
+   uma peça vertical esticaria a linha inteira da grade e abriria um buraco ao
+   lado de cada vizinha baixa. Uniformidade da caixa vale mais que o pixel. */
+.galeria__peca img[src*="barao"],
+.galeria__peca img[src*="forro"],
+.galeria__peca img[src*="capela"],
+.galeria__peca img[src*="minas-geraes"] {
+  object-fit: contain;
+  padding: var(--e-2);
+}
+
+.galeria__peca figcaption {
+  margin-top: var(--e-3);
+  font-size: var(--t-sm);
+  line-height: 1.5;
+  color: var(--texto-tenue);
+}
+
+/* Figura com legenda e crédito — crédito é obrigatório em acervo. */
+.figura { margin-block: var(--e-7); }
+.figura img {
+  width: 100%;
+  border-radius: var(--r-md);
+  box-shadow: var(--sombra-2);
+}
+.figura__ausente {
+  display: grid;
+  place-content: center;
+  gap: var(--e-3);
+  aspect-ratio: 3 / 2;
+  padding: var(--e-6);
+  text-align: center;
+  border: 1px dashed var(--borda-forte);
+  border-radius: var(--r-md);
+  background: var(--bg-afundado);
+  color: var(--texto-tenue);
+  font-size: var(--t-sm);
+}
+.figura__ausente .icone { width: 1.8rem; height: 1.8rem; margin-inline: auto; opacity: 0.5; }
+.figura figcaption {
+  margin-top: var(--e-3);
+  font-size: var(--t-sm);
+  line-height: 1.5;
+  color: var(--texto-tenue);
+}
+.figura figcaption strong { color: var(--texto-suave); font-weight: 600; }
+.figura__credito {
+  display: block;
+  margin-top: 0.35rem;
+  font-size: var(--t-xs);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--texto-tenue);
+  opacity: 0.85;
+}
+
+/* ==========================================================================
+   6. APARATO — fontes, como citar, licença. O que faz do texto uma fonte
+   utilizável por pesquisador, professor e estudante.
+   ========================================================================== */
+
+.aparato {
+  margin-top: var(--e-10);
+  padding-top: var(--e-6);
+  border-top: 2px solid var(--borda-forte);
+  display: grid;
+  gap: var(--e-7);
+}
+.aparato__titulo {
+  font-family: var(--fonte-sans);
+  font-size: 0.625rem;
+  font-weight: 700;
+  letter-spacing: var(--tracking-largo);
+  text-transform: uppercase;
+  color: var(--destaque);
+  margin-bottom: var(--e-4);
+}
+.aparato ol { display: grid; gap: var(--e-3); padding-left: var(--e-5); list-style: decimal; }
+.aparato li { font-size: var(--t-sm); line-height: 1.55; color: var(--texto-suave); }
+.aparato li::marker { color: var(--destaque); }
+
+.como-citar {
+  padding: var(--e-5);
+  border: 1px solid var(--borda);
+  border-radius: var(--r-md);
+  background: var(--bg-afundado);
+}
+.como-citar__texto {
+  font-family: var(--fonte-mono);
+  font-size: var(--t-sm);
+  line-height: 1.6;
+  color: var(--texto-suave);
+  word-break: break-word;
+  margin-bottom: var(--e-4);
+}
+.como-citar__botao {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5em 1em;
+  font-size: var(--t-xs);
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--marca);
+  border: 1px solid var(--borda-forte);
+  border-radius: var(--r-sm);
+  transition: background-color var(--dur-rapido) var(--ease-out),
+              color var(--dur-rapido) var(--ease-out),
+              border-color var(--dur-rapido) var(--ease-out);
+}
+.como-citar__botao:hover { background: var(--marca); color: var(--papel-50); border-color: var(--marca); }
+.como-citar__botao[data-ok] { background: var(--serra-600); color: var(--papel-50); border-color: var(--serra-600); }
+
+/* ==========================================================================
+   7. PÁGINAS RELACIONADAS
+   Um artigo nunca termina em beco: sempre aponta para o próximo.
+   ========================================================================== */
+
+.relacionadas {
+  display: grid;
+  gap: var(--e-4);
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+}
+.relacionada {
+  display: grid;
+  gap: var(--e-2);
+  padding: var(--e-5);
+  border: 1px solid var(--borda);
+  border-radius: var(--r-md);
+  background: var(--bg-elevado);
+  text-decoration: none;
+  transition: border-color var(--dur-rapido) var(--ease-out),
+              transform var(--dur-rapido) var(--ease-out),
+              box-shadow var(--dur-rapido) var(--ease-out);
+}
+.relacionada:hover {
+  border-color: var(--marca);
+  transform: translateY(-3px);
+  box-shadow: var(--sombra-2);
+}
+.relacionada__olho {
+  font-size: 0.625rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--destaque);
+}
+.relacionada__titulo {
+  font-family: var(--fonte-serif);
+  font-size: var(--t-lg);
+  color: var(--texto);
+}
+.relacionada__txt { font-size: var(--t-sm); color: var(--texto-tenue); }
+.relacionada .icone { width: 1rem; height: 1rem; color: var(--marca); justify-self: start; margin-top: 0.2rem; }
+.relacionada:hover .icone { transform: translateX(4px); transition: transform var(--dur-rapido) var(--ease-out); }
+
+/* Navegação entre documentos irmãos (anterior / próximo) */
+.irmaos {
+  display: grid;
+  gap: var(--e-3);
+  margin-top: var(--e-7);
+  padding-top: var(--e-6);
+  border-top: 1px solid var(--borda);
+}
+@media (min-width: 46rem) { .irmaos { grid-template-columns: 1fr 1fr; } }
+.irmao {
+  display: grid;
+  gap: 0.35rem;
+  padding: var(--e-4) var(--e-5);
+  border: 1px solid var(--borda);
+  border-radius: var(--r-md);
+  text-decoration: none;
+  transition: border-color var(--dur-rapido) var(--ease-out),
+              background-color var(--dur-rapido) var(--ease-out);
+}
+.irmao:hover { border-color: var(--marca); background: var(--marca-suave); }
+.irmao--anterior { text-align: left; }
+.irmao--proximo { text-align: right; }
+/* Quando só existe o "próximo" (primeiro capítulo), ele vai para a direita
+   em vez de ficar solto na esquerda. */
+.irmaos > span:empty + .irmao--proximo { grid-column: 2; }
+.irmao__dir {
+  font-size: 0.625rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--texto-tenue);
+}
+.irmao__nome { font-family: var(--fonte-serif); font-size: var(--t-base); color: var(--marca); }
+
+/* ==========================================================================
+   8. IMPRESSÃO — o pesquisador imprime o documento
+   ========================================================================== */
+
+@media print {
+  .progresso, .sumario, .relacionadas, .irmaos, .artigo-capa::before,
+  .artigo-capa::after { display: none !important; }
+  .artigo-capa { background: none; color: #000; padding-block: 0 1rem; }
+  .artigo-capa__titulo, .artigo-capa__resumo { color: #000; max-width: none; }
+  .artigo-grade { display: block; padding-block: 0; }
+  .prosa { font-size: 11pt; }
+  .prosa > .abertura::first-letter { color: #000; }
+  .aparato { break-before: page; }
+  .como-citar__botao { display: none; }
+}

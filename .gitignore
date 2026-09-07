@@ -1,0 +1,13 @@
+# Gerado a cada `npm run gerar`. Nunca versionado: o GitHub Actions o refaz.
+publicar/
+construcao/
+node_modules/
+
+# Os .docx recebidos e o .md extraído de cada um são a MATÉRIA-PRIMA e devem
+# ser versionados — é de onde o conteúdo do site sai. As imagens extraídas,
+# não: são 111 MB de cópias recomprimidas, reproduzíveis a qualquer momento
+# com `npm run word -- --imagens`. As que vão ao ar estão em midia/.
+originais/word/imagens/
+
+# Arquivo de bloqueio que o Word cria enquanto o documento está aberto.
+~$*.docx

@@ -1,0 +1,719 @@
+/* ==========================================================================
+   CHASSI — o que existe em TODA página do portal.
+   Navbar, mega menu, drawer, rodapé, botões, etiquetas editoriais.
+   Carregado em index, 404 e em toda página de documento.
+   Nenhum componente usa a escala de cor crua: só papéis semânticos.
+   ========================================================================== */
+/* ==========================================================================
+   0. ÍCONES — Lucide, em sprite SVG inline.
+   Substitui a webfont Phosphor da v1 (~200 KB para usar 14 ícones).
+
+   ESTE É O LUGAR DE CUSTOMIZAR OS ÍCONES.
+   Os símbolos em fonte/modelos/icones.mjs guardam só a geometria: nenhum
+   deles carrega cor, espessura ou junção de traço. Tudo isso é decidido
+   abaixo, de uma vez, para o portal inteiro. Mudar a espessura de todos os
+   ícones é editar uma linha aqui — não 27 arquivos SVG.
+
+   O Lucide desenha para stroke-width 2. Usamos 1.6: é a espessura que o
+   portal já tinha, e ela combina com o peso da tipografia serifada.
+   ========================================================================== */
+
+.icone,
+.marca__selo {
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.6;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.icone {
+  width: 1.15rem;
+  height: 1.15rem;
+  flex: none;
+  vertical-align: middle;
+}
+
+/* ==========================================================================
+   0b. ESPAÇOS RESERVADOS DE MÍDIA
+   Toda <img>/<video> com data-midia aponta para um arquivo que pode ainda
+   não existir. Quando ele existe, o JS marca o pai com data-tem-midia="sim"
+   e o espaço reservado some. Quando não existe, o elemento é removido e o
+   espaço reservado permanece. Ver iniciarMidiaOpcional() em main.js.
+   ========================================================================== */
+
+[data-tem-midia="sim"] > .card__vazio,
+[data-tem-midia="sim"] > .peca__ausente,
+[data-tem-midia="sim"] > .comparador__ausente,
+[data-tem-midia="sim"] > .figura__ausente,
+[data-tem-midia="sim"] > .depoimento__retrato-vazio { display: none; }
+
+/* ==========================================================================
+   1. BOTÕES E LINKS DE AÇÃO
+   Geometria contida (--r-md), não pílula. Patrimônio não brilha.
+   ========================================================================== */
+
+.btn {
+  --btn-bg: transparent;
+  --btn-cor: var(--texto);
+  --btn-borda: var(--borda-forte);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--e-2);
+  padding: 0.8em 1.5em;
+  font-size: var(--t-sm);
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--btn-cor);
+  background: var(--btn-bg);
+  border: 1px solid var(--btn-borda);
+  border-radius: var(--r-md);
+  transition: background-color var(--dur-rapido) var(--ease-out),
+              color var(--dur-rapido) var(--ease-out),
+              border-color var(--dur-rapido) var(--ease-out),
+              transform var(--dur-rapido) var(--ease-out);
+}
+.btn:active { transform: translateY(1px); }
+.btn .icone { width: 1.1em; height: 1.1em; flex: none; }
+
+.btn--primario {
+  --btn-bg: var(--terra-700);
+  --btn-cor: var(--papel-50);
+  --btn-borda: var(--terra-700);
+}
+.btn--primario:hover {
+  --btn-bg: var(--terra-800);
+  --btn-borda: var(--terra-800);
+  color: var(--papel-0);
+}
+
+.btn--contorno:hover { --btn-bg: var(--texto); --btn-cor: var(--bg); --btn-borda: var(--texto); }
+
+/* Versão para usar sobre imagem/vídeo escuro */
+.btn--claro {
+  --btn-cor: var(--papel-50);
+  --btn-borda: color-mix(in oklab, var(--papel-50) 45%, transparent);
+  backdrop-filter: blur(6px);
+  background: color-mix(in oklab, var(--grafite-1000) 22%, transparent);
+}
+.btn--claro:hover {
+  --btn-bg: var(--papel-50);
+  --btn-cor: var(--grafite-900);
+  --btn-borda: var(--papel-50);
+  backdrop-filter: none;
+}
+
+/* ==========================================================================
+   2. ETIQUETA DE REVISÃO EDITORIAL
+   Núcleo do princípio "verdade antes de beleza": todo dado ainda não
+   conferido em fonte primária aparece marcado. Some sozinho quando
+   site.js define REVISAO = false.
+   ========================================================================== */
+
+.a-verificar {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35em;
+  padding: 0.15em 0.5em;
+  margin-left: 0.4em;
+  font-family: var(--fonte-sans);
+  font-size: 0.6875rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  white-space: nowrap;
+  color: var(--areia-900);
+  background: var(--areia-200);
+  border: 1px dashed var(--areia-600);
+  border-radius: var(--r-sm);
+  vertical-align: middle;
+  translate: 0 -0.15em;
+}
+html[data-revisao="off"] .a-verificar { display: none; }
+
+/* Variante compacta: em barras densas e legendas, a pílula inteira rouba a
+   leitura. Aqui vira um marcador de um caractere — o texto completo continua
+   no title, e some junto com as outras quando REVISAO = false. */
+.a-verificar--marca {
+  width: 1.05em;
+  padding: 0;
+  justify-content: center;
+  font-size: 0.625rem;
+  border-style: solid;
+  border-radius: var(--r-redondo);
+  overflow: hidden;
+  text-indent: -99em;
+}
+.a-verificar--marca::before {
+  content: "?";
+  text-indent: 0;
+  float: left;
+  width: 100%;
+  text-align: center;
+}
+
+/* ==========================================================================
+   3. NAVBAR
+   Estado por atributo data-* + CSS. Nunca por troca de classe utilitária
+   em JavaScript (foi o que criou a armadilha de purge na v1).
+   ========================================================================== */
+
+.navbar {
+  position: fixed;
+  inset: 0 0 auto 0;
+  z-index: var(--z-navbar);
+  color: var(--papel-50);
+  transition: background-color var(--dur-normal) var(--ease-out),
+              backdrop-filter var(--dur-normal) var(--ease-out),
+              box-shadow var(--dur-normal) var(--ease-out),
+              transform var(--dur-normal) var(--ease-out);
+}
+.navbar::after {
+  /* véu superior: garante contraste do menu sobre qualquer imagem de hero */
+  content: "";
+  position: absolute;
+  inset: 0 0 auto 0;
+  height: 200%;
+  background: linear-gradient(to bottom,
+              rgba(10, 10, 10, 0.55), rgba(10, 10, 10, 0));
+  z-index: -1;
+  opacity: 1;
+  transition: opacity var(--dur-normal) var(--ease-out);
+  pointer-events: none;
+}
+
+.navbar__grade {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--e-5);
+  padding-block: clamp(0.9rem, 2vw, 1.5rem);
+  transition: padding-block var(--dur-normal) var(--ease-out);
+}
+
+/* Rolou: a barra se compacta, ganha corpo e perde o véu. */
+.navbar[data-rolado="sim"] {
+  background: color-mix(in oklab, var(--grafite-950) 88%, transparent);
+  backdrop-filter: blur(14px) saturate(140%);
+  box-shadow: 0 1px 0 var(--borda-inversa), var(--sombra-3);
+}
+.navbar[data-rolado="sim"]::after { opacity: 0; }
+.navbar[data-rolado="sim"] .navbar__grade { padding-block: 0.6rem; }
+.navbar[data-rolado="sim"] .marca__texto { font-size: var(--t-lg); }
+
+/* Rolando para baixo: esconde. Para cima: volta. Devolve tela ao conteúdo
+   sem tirar o menu do alcance. Nunca se esconde com o drawer aberto. */
+.navbar[data-oculto="sim"] { transform: translateY(-100%); }
+.navbar[data-menu-aberto="sim"] { transform: none; }
+
+/* --- Marca ---------------------------------------------------------------- */
+.marca {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  text-decoration: none;
+  color: inherit;
+  flex: none;
+}
+.marca__selo { width: 2rem; height: 2rem; flex: none; color: var(--terra-400); }
+.marca__texto {
+  font-family: var(--fonte-serif);
+  font-size: var(--t-xl);
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  line-height: 1;
+  transition: font-size var(--dur-normal) var(--ease-out);
+}
+.marca__local {
+  display: block;
+  font-family: var(--fonte-sans);
+  font-size: 0.625rem;
+  font-weight: 500;
+  letter-spacing: var(--tracking-largo);
+  text-transform: uppercase;
+  opacity: 0.72;
+  margin-top: 0.15rem;
+}
+
+/* --- Navegação principal (desktop) --------------------------------------- */
+.nav-principal { display: none; }
+@media (min-width: 62rem) { .nav-principal { display: flex; align-items: center; gap: var(--e-1); } }
+
+.nav-principal__item { position: relative; }
+
+.nav-gatilho {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  padding: 0.6rem 0.85rem;
+  font-size: var(--t-sm);
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: inherit;
+  text-decoration: none;
+  border-radius: var(--r-md);
+  transition: color var(--dur-rapido) var(--ease-out),
+              background-color var(--dur-rapido) var(--ease-out);
+}
+.nav-gatilho__seta {
+  width: 0.7rem; height: 0.7rem;
+  transition: transform var(--dur-rapido) var(--ease-out);
+}
+.nav-gatilho:hover { color: var(--areia-300); background: rgba(255, 255, 255, 0.07); }
+.nav-gatilho[aria-expanded="true"] { color: var(--areia-300); background: rgba(255, 255, 255, 0.09); }
+.nav-gatilho[aria-expanded="true"] .nav-gatilho__seta { transform: rotate(180deg); }
+/* sublinhado que cresce do centro */
+.nav-gatilho::after {
+  content: "";
+  position: absolute;
+  left: 0.85rem; right: 0.85rem; bottom: 0.35rem;
+  height: 1px;
+  background: currentColor;
+  transform: scaleX(0);
+  transition: transform var(--dur-rapido) var(--ease-out);
+}
+.nav-gatilho[aria-current="page"]::after { transform: scaleX(1); }
+
+/* Item de menu cuja página ainda não existe: presente, visível, não clicável. */
+.nav-gatilho--breve { opacity: 0.5; cursor: default; }
+.nav-gatilho--breve:hover { background: none; color: inherit; }
+
+/* --- Mega menu ----------------------------------------------------------- */
+.mega {
+  position: absolute;
+  top: calc(100% + 0.5rem);
+  left: 50%;
+  translate: -50% 0;
+  z-index: var(--z-megamenu);
+  width: max-content;
+  max-width: min(58rem, calc(100vw - 3rem));
+  padding: var(--e-6);
+  background: var(--bg-elevado);
+  color: var(--texto);
+  border: 1px solid var(--borda);
+  border-radius: var(--r-xl);
+  box-shadow: var(--sombra-4);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-8px);
+  transition: opacity var(--dur-rapido) var(--ease-out),
+              transform var(--dur-rapido) var(--ease-out),
+              visibility var(--dur-rapido);
+}
+.nav-principal__item[data-aberto="sim"] .mega {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+.mega__grade {
+  display: grid;
+  /* --colunas vem do componente (ver Navbar.jsx). Um número DEFINIDO de
+     trilhas é o que faz a grade funcionar dentro de um painel de largura
+     `max-content`: com `repeat(auto-fit, …)` o navegador não tem largura
+     de referência para decidir quantas cabem e resolve tudo em uma coluna
+     só — era o que empilhava o menu e o fazia transbordar a tela. */
+  grid-template-columns: repeat(var(--colunas, 1), minmax(12rem, 15rem));
+  gap: var(--e-6) var(--e-7);
+}
+
+/* Em tela estreita o painel não cabe em quatro colunas. Duas, e depois uma. */
+@media (max-width: 78rem) {
+  .mega__grade { grid-template-columns: repeat(min(var(--colunas, 1), 2), minmax(12rem, 15rem)); }
+}
+@media (max-width: 46rem) {
+  .mega__grade { grid-template-columns: minmax(12rem, 1fr); }
+}
+
+/* O painel nunca passa da altura da janela: se passar, rola por dentro. É a
+   rede de segurança para o dia em que alguém acrescentar itens demais. */
+.mega {
+  max-height: calc(100vh - 6rem);
+  overflow-y: auto;
+  overscroll-behavior: contain;
+}
+.mega__coluna-titulo {
+  font-family: var(--fonte-sans);
+  font-size: 0.6875rem;
+  font-weight: 700;
+  letter-spacing: var(--tracking-largo);
+  text-transform: uppercase;
+  color: var(--destaque);
+  padding-bottom: var(--e-2);
+  margin-bottom: var(--e-3);
+  border-bottom: 1px solid var(--borda);
+}
+.mega__lista { display: grid; gap: 0.15rem; }
+
+.mega__link {
+  display: block;
+  padding: 0.45rem 0.6rem;
+  margin-inline: -0.6rem;
+  font-size: var(--t-sm);
+  color: var(--texto);
+  text-decoration: none;
+  border-radius: var(--r-md);
+  transition: background-color var(--dur-instant) var(--ease-out),
+              color var(--dur-instant) var(--ease-out);
+}
+.mega__link span { display: block; font-size: var(--t-xs); color: var(--texto-tenue); margin-top: 0.1rem; }
+.mega__link:hover { background: var(--marca-suave); color: var(--marca); }
+.mega__link:hover span { color: var(--texto-suave); }
+
+/* Página que ainda não existe: NÃO é link. Sem href, sem 404, sem beco.
+   Aplicado com <span class="mega__link mega__link--breve"> */
+.mega__link--breve, .rodape__lista .breve {
+  color: var(--texto-tenue);
+  cursor: default;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: var(--e-3);
+}
+.mega__link--breve::after, .rodape__lista .breve::after {
+  content: "em breve";
+  font-size: 0.625rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--areia-700);
+  border: 1px solid var(--borda);
+  border-radius: var(--r-sm);
+  padding: 0.05em 0.4em;
+  flex: none;
+}
+.mega__link--breve:hover { background: none; }
+
+/* --- Ações da direita ---------------------------------------------------- */
+.navbar__acoes { display: flex; align-items: center; gap: var(--e-2); flex: none; }
+
+.acao {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.45rem;
+  width: 2.5rem; height: 2.5rem;
+  color: inherit;
+  border: 1px solid transparent;
+  border-radius: var(--r-md);
+  transition: background-color var(--dur-rapido) var(--ease-out),
+              border-color var(--dur-rapido) var(--ease-out),
+              color var(--dur-rapido) var(--ease-out);
+}
+.acao .icone { width: 1.15rem; height: 1.15rem; }
+.acao:hover { background: rgba(255, 255, 255, 0.1); border-color: var(--borda-inversa); }
+
+/* Busca em desktop mostra o atalho de teclado, como ferramenta de verdade */
+.acao--busca { width: auto; padding-inline: 0.7rem; }
+.acao--busca kbd {
+  display: none;
+  font-family: var(--fonte-mono);
+  font-size: 0.625rem;
+  padding: 0.1rem 0.3rem;
+  border: 1px solid var(--borda-inversa);
+  border-radius: var(--r-sm);
+  opacity: 0.8;
+}
+@media (min-width: 62rem) { .acao--busca kbd { display: inline-block; } }
+
+.acao--menu { display: inline-flex; }
+@media (min-width: 62rem) { .acao--menu { display: none; } }
+
+/* Hamburguer que vira X — duas barras, transformadas */
+.hamburguer { width: 1.35rem; height: 0.75rem; position: relative; }
+.hamburguer span {
+  position: absolute;
+  left: 0; right: 0;
+  height: 1.5px;
+  background: currentColor;
+  border-radius: 2px;
+  transition: transform var(--dur-rapido) var(--ease-inout),
+              opacity var(--dur-instant) linear;
+}
+.hamburguer span:nth-child(1) { top: 0; }
+.hamburguer span:nth-child(2) { bottom: 0; }
+[aria-expanded="true"] .hamburguer span:nth-child(1) { transform: translateY(0.375rem) rotate(45deg); }
+[aria-expanded="true"] .hamburguer span:nth-child(2) { transform: translateY(-0.375rem) rotate(-45deg); }
+
+/* ==========================================================================
+   4. MENU MOBILE — tela cheia, tipografia grande, hierarquia clara.
+   Funciona: aria-expanded, Esc, foco preso, scroll travado, foco devolvido.
+   ========================================================================== */
+
+.drawer {
+  position: fixed;
+  inset: 0;
+  z-index: var(--z-drawer);
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  background: var(--grafite-950);
+  color: var(--papel-50);
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity var(--dur-normal) var(--ease-out), visibility var(--dur-normal);
+}
+.drawer[data-aberto="sim"] { opacity: 1; visibility: visible; }
+.drawer::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(90% 60% at 12% 0%, color-mix(in oklab, var(--terra-800) 55%, transparent), transparent 70%),
+    radial-gradient(70% 50% at 100% 100%, color-mix(in oklab, var(--serra-900) 70%, transparent), transparent 70%);
+  pointer-events: none;
+}
+
+.drawer__topo {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--e-4) var(--gutter);
+  border-bottom: 1px solid var(--borda-inversa);
+}
+.drawer__corpo { position: relative; padding: var(--e-6) var(--gutter) var(--e-8); }
+.drawer__pe {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--e-3);
+  padding: var(--e-4) var(--gutter) var(--e-6);
+  border-top: 1px solid var(--borda-inversa);
+}
+
+.drawer__grupo + .drawer__grupo { margin-top: var(--e-6); }
+.drawer__grupo-titulo {
+  font-family: var(--fonte-sans);
+  font-size: 0.625rem;
+  font-weight: 700;
+  letter-spacing: var(--tracking-xlargo);
+  text-transform: uppercase;
+  color: var(--areia-400);
+  margin-bottom: var(--e-3);
+}
+.drawer__link {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: var(--e-4);
+  padding: 0.55rem 0;
+  font-family: var(--fonte-serif);
+  font-size: var(--t-lg);
+  color: var(--papel-50);
+  text-decoration: none;
+  border-bottom: 1px solid color-mix(in oklab, var(--papel-50) 8%, transparent);
+  /* entrada em cascata quando o drawer abre */
+  opacity: 0;
+  transform: translateY(14px);
+  transition: opacity var(--dur-normal) var(--ease-out),
+              transform var(--dur-normal) var(--ease-out),
+              color var(--dur-rapido) var(--ease-out);
+}
+.drawer[data-aberto="sim"] .drawer__link { opacity: 1; transform: none; }
+.drawer__link:hover, .drawer__link:focus-visible { color: var(--areia-300); }
+.drawer__link[aria-current="page"] { color: var(--areia-300); }
+.drawer__link .icone { width: 0.85rem; height: 0.85rem; opacity: 0.5; flex: none; }
+.drawer__link.breve { color: color-mix(in oklab, var(--papel-50) 45%, transparent); pointer-events: none; }
+
+/* Sem JS o drawer não abre — então o <noscript> serve um menu simples. */
+.menu-noscript {
+  padding: var(--e-4) var(--gutter);
+  background: var(--grafite-900);
+  color: var(--papel-50);
+}
+.menu-noscript ul { display: flex; flex-wrap: wrap; gap: var(--e-2) var(--e-4); }
+.menu-noscript a { color: var(--areia-300); font-size: var(--t-sm); }
+
+
+/* ==========================================================================
+   ROTAS — lista de destinos. Nasceu na seção "Visite" da home, mas é usada
+   também pelo 404 para oferecer saídas reais. Por isso mora no chassi.
+   ========================================================================== */
+
+.rotas { display: grid; gap: var(--e-1); }
+.rota {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  gap: var(--e-4);
+  align-items: baseline;
+  padding: var(--e-4) 0;
+  border-bottom: 1px solid var(--borda);
+}
+.rota__de { font-weight: 600; font-size: var(--t-base); }
+.rota__como { font-size: var(--t-sm); color: var(--texto-suave); }
+.rota__quanto {
+  font-family: var(--fonte-mono);
+  font-size: var(--t-sm);
+  color: var(--marca);
+  white-space: nowrap;
+  font-variant-numeric: tabular-nums;
+}
+
+/* ==========================================================================
+   BOTÃO DE WHATSAPP — usado na home (Colabore) e em toda página de
+   documento (Contribuir com este verbete). Chassi, portanto.
+   ========================================================================== */
+
+/* Botão de WhatsApp: verde do próprio WhatsApp, porque reconhecimento
+   instantâneo vale mais que coerência de paleta neste botão específico. */
+.btn--zap {
+  --btn-bg: #25d366;
+  --btn-cor: #0a2e18;
+  --btn-borda: #25d366;
+  font-size: var(--t-base);
+  padding: 0.85em 1.6em;
+}
+.btn--zap:hover { --btn-bg: #1eb356; --btn-borda: #1eb356; color: #051c0e; }
+.btn--zap .icone { width: 1.3em; height: 1.3em; }
+
+/* Número ainda não configurado em main.js: o botão não pode fingir que
+   funciona. Fica visivelmente pendente, com aviso ao lado. */
+.btn--zap[data-pendente] { --btn-bg: #6b7a70; --btn-borda: #6b7a70; --btn-cor: var(--papel-50); }
+.btn--zap[data-pendente]::after {
+  content: "nº a configurar";
+  font-size: 0.625rem;
+  letter-spacing: 0.08em;
+  padding: 0.15em 0.45em;
+  border: 1px dashed currentColor;
+  border-radius: var(--r-sm);
+  opacity: 0.85;
+}
+/* ==========================================================================
+   15. RODAPÉ PREMIUM — mapa do site inteiro + prestação de contas editorial
+   ========================================================================== */
+
+.rodape {
+  background: var(--grafite-1000);
+  color: var(--papel-50);
+  padding-block: var(--e-10) var(--e-6);
+  position: relative;
+  isolation: isolate;
+}
+.rodape::before {
+  content: "";
+  position: absolute; inset: 0 0 auto 0; height: 1px;
+  background: linear-gradient(to right, transparent, var(--terra-600), var(--serra-600), transparent);
+}
+.rodape__topo { display: grid; gap: var(--e-8); }
+@media (min-width: 60rem) { .rodape__topo { grid-template-columns: 20rem 1fr; gap: var(--e-10); } }
+
+.rodape__sobre p {
+  font-size: var(--t-sm);
+  color: color-mix(in oklab, var(--papel-50) 68%, transparent);
+  margin-top: var(--e-4);
+  max-width: 34ch;
+}
+.rodape__mapa {
+  display: grid;
+  gap: var(--e-6) var(--e-5);
+  grid-template-columns: repeat(auto-fit, minmax(9.5rem, 1fr));
+}
+.rodape__coluna-titulo {
+  font-family: var(--fonte-sans);
+  font-size: 0.625rem;
+  font-weight: 700;
+  letter-spacing: var(--tracking-largo);
+  text-transform: uppercase;
+  color: var(--areia-400);
+  margin-bottom: var(--e-4);
+}
+.rodape__lista { display: grid; gap: 0.55rem; }
+.rodape__lista a {
+  font-size: var(--t-sm);
+  color: color-mix(in oklab, var(--papel-50) 74%, transparent);
+  text-decoration: none;
+}
+.rodape__lista a:hover { color: var(--papel-0); text-decoration: underline; }
+.rodape__lista .breve { font-size: var(--t-sm); }
+.rodape__lista .breve::after { color: var(--areia-700); border-color: var(--borda-inversa); }
+
+/* Faixa de transparência: quem faz, com que licença, como reclamar direitos.
+   É o que separa portal institucional de site bonito. */
+.rodape__prestacao {
+  margin-top: var(--e-9);
+  padding: var(--e-5);
+  border: 1px solid var(--borda-inversa);
+  border-radius: var(--r-lg);
+  background: color-mix(in oklab, var(--papel-50) 4%, transparent);
+  display: grid;
+  gap: var(--e-4);
+  font-size: var(--t-xs);
+  color: color-mix(in oklab, var(--papel-50) 72%, transparent);
+}
+@media (min-width: 52rem) { .rodape__prestacao { grid-template-columns: repeat(3, 1fr); gap: var(--e-6); } }
+.rodape__prestacao dt {
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--areia-400);
+  font-size: 0.625rem;
+  margin-bottom: 0.4rem;
+}
+.rodape__prestacao a { color: var(--areia-300); }
+
+.rodape__base {
+  margin-top: var(--e-7);
+  padding-top: var(--e-5);
+  border-top: 1px solid var(--borda-inversa);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--e-4);
+  /* 4.9:1 sobre grafite-1000 — corrige o 3.0:1 do rodapé da v1 */
+  font-size: var(--t-xs);
+  color: #9a948a;
+}
+.rodape__base nav { display: flex; flex-wrap: wrap; gap: var(--e-4); }
+.rodape__base a { color: inherit; text-decoration: none; }
+.rodape__base a:hover { color: var(--papel-0); text-decoration: underline; }
+
+.redes { display: flex; gap: var(--e-2); margin-top: var(--e-5); }
+.rede {
+  display: grid;
+  place-items: center;
+  width: 2.4rem; height: 2.4rem;
+  border: 1px solid var(--borda-inversa);
+  border-radius: var(--r-md);
+  color: color-mix(in oklab, var(--papel-50) 78%, transparent);
+  transition: background-color var(--dur-rapido) var(--ease-out),
+              color var(--dur-rapido) var(--ease-out),
+              border-color var(--dur-rapido) var(--ease-out);
+}
+.rede .icone { width: 1.05rem; height: 1.05rem; }
+.rede:hover { background: var(--areia-400); color: var(--grafite-950); border-color: var(--areia-400); }
+
+/* ==========================================================================
+   16. VOLTAR AO TOPO
+   ========================================================================== */
+
+.voltar-topo {
+  position: fixed;
+  right: var(--gutter);
+  bottom: var(--e-5);
+  z-index: var(--z-sticky);
+  display: grid;
+  place-items: center;
+  width: 2.9rem; height: 2.9rem;
+  border-radius: var(--r-redondo);
+  background: var(--bg-elevado);
+  color: var(--marca);
+  border: 1px solid var(--borda);
+  box-shadow: var(--sombra-3);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(12px);
+  transition: opacity var(--dur-rapido) var(--ease-out),
+              transform var(--dur-rapido) var(--ease-out),
+              visibility var(--dur-rapido);
+}
+.voltar-topo[data-visivel="sim"] { opacity: 1; visibility: visible; transform: none; }
+.voltar-topo .icone { width: 1.1rem; height: 1.1rem; }
+.voltar-topo:hover { background: var(--terra-700); color: var(--papel-50); border-color: var(--terra-700); }
+

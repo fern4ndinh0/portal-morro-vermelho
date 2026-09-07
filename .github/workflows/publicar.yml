@@ -1,0 +1,91 @@
+# =============================================================================
+# PUBLICAR NO GITHUB PAGES
+#
+# Gera o portal e serve publicar/ no GitHub Pages. Roda a cada push na branch
+# principal e também sob demanda, pelo botão "Run workflow".
+#
+# ESTE ARQUIVO PRESSUPÕE QUE portal-react/ É A RAIZ DO REPOSITÓRIO.
+# Ou seja: o repositório contém package.json, src/, ferramentas/ e este
+# .github/ no primeiro nível. Se você publicar a pasta de cima (com
+# portal-v2/ ao lado), mova este arquivo para a raiz de lá e troque os dois
+# caminhos marcados com "RAIZ DO PROJETO" abaixo por 'portal-react'.
+#
+# ANTES DO PRIMEIRO USO, no repositório:
+#   Settings > Pages > Build and deployment > Source: GitHub Actions
+#
+# E, para o domínio próprio, edite DOMINIO em src/dados/navegacao.js. O
+# gerador escreve o arquivo CNAME a partir dele — não crie o CNAME à mão,
+# porque a próxima geração o apagaria.
+#
+# POR QUE `--separado` E NÃO O PADRÃO
+# O modo autocontido embute o React e o chassi em cada .html: são 5,1 MB
+# comprimidos no total, contra 468 KB no modo separado, porque num servidor o
+# navegador baixa o portal.js uma vez e reusa em todas as páginas. O modo
+# autocontido continua certo para pendrive e anexo de e-mail — só não para a
+# web. Ver "Os dois modos de publicação" no README.
+# =============================================================================
+
+name: Publicar no GitHub Pages
+
+on:
+  push:
+    branches: [main, master]
+  workflow_dispatch:
+
+# Permissões mínimas para o deploy do Pages funcionar.
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Uma publicação por vez. `cancel-in-progress: false` de propósito: um deploy
+# interrompido no meio pode deixar o site num estado incompleto.
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  gerar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: package-lock.json   # RAIZ DO PROJETO
+
+      # `npm ci` e não `npm install`: instala exatamente o que está no
+      # package-lock.json, então o site publicado é o mesmo que se gera aqui.
+      - run: npm ci
+
+      - name: Gerar o portal
+        run: npm run gerar -- --separado
+
+      # Falha cedo e com mensagem clara se a geração não produziu a home.
+      - name: Conferir a saída
+        run: |
+          test -f publicar/index.html || { echo "publicar/index.html não existe"; exit 1; }
+          echo "$(ls publicar/*.html | wc -l) páginas geradas"
+          if [ -f publicar/CNAME ]; then
+            echo "CNAME: $(cat publicar/CNAME)"
+          else
+            echo "sem CNAME — DOMINIO em src/dados/navegacao.js ainda é o valor de exemplo"
+          fi
+
+      - uses: actions/configure-pages@v5
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: publicar                             # RAIZ DO PROJETO
+
+  publicar:
+    needs: gerar
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - id: deploy
+        uses: actions/deploy-pages@v4

@@ -1,0 +1,1153 @@
+/* ==========================================================================
+   HOME — componentes que só existem em index.html.
+   Hero, revelações, cards, cavalhadas, capítulos, linha do tempo, acervo,
+   comparador, depoimento, visite, colabore e a tela de abertura.
+   Separado do chassi para que as páginas de documento não carreguem
+   ~1.100 linhas de CSS que nunca usam.
+   ========================================================================== */
+/* Link de texto com seta que avança — sem virar botão */
+.link-avanca {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--e-2);
+  font-size: var(--t-sm);
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--marca);
+}
+.link-avanca .icone {
+  width: 1.05em; height: 1.05em;
+  transition: transform var(--dur-rapido) var(--ease-out);
+}
+.link-avanca:hover .icone { transform: translateX(5px); }
+/* Dentro de um card, o link estende o alvo de clique para o card inteiro. */
+.card .link-avanca::after { content: ""; position: absolute; inset: 0; }
+
+/* Botão redondo de controle (setas de carrossel, fechar, ícones) */
+.btn-icone {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.75rem;
+  height: 2.75rem;
+  border: 1px solid var(--borda-forte);
+  border-radius: var(--r-redondo);
+  color: var(--texto);
+  background: transparent;
+  transition: background-color var(--dur-rapido) var(--ease-out),
+              color var(--dur-rapido) var(--ease-out),
+              border-color var(--dur-rapido) var(--ease-out),
+              opacity var(--dur-rapido) var(--ease-out);
+}
+.btn-icone .icone { width: 1.15rem; height: 1.15rem; }
+.btn-icone:hover:not(:disabled) {
+  background: var(--terra-700);
+  border-color: var(--terra-700);
+  color: var(--papel-50);
+}
+.btn-icone:disabled { opacity: 0.3; cursor: not-allowed; }
+
+/* ==========================================================================
+   5. HERO CINEMATOGRÁFICO
+   Sem stock photo. Profundidade construída com camadas da própria serra.
+   O <video> real entra no slot documentado em index.html sem tocar no CSS.
+   ========================================================================== */
+
+.hero {
+  position: relative;
+  display: grid;
+  align-items: end;
+  min-height: 100svh;      /* svh: não pula quando a barra do navegador some */
+  /* padding-top reserva a faixa da navbar: sem ele, com o conteúdo alto, o
+     título sobe por baixo do menu. */
+  padding-top: clamp(6rem, 14vh, 9rem);
+  padding-bottom: clamp(4rem, 10vh, 8rem);
+  overflow: clip;
+  isolation: isolate;
+  background: var(--grafite-1000);
+  color: var(--papel-50);
+}
+
+/* Céu: crepúsculo sobre a serra. Terra em cima, noite embaixo. */
+.hero__ceu {
+  position: absolute;
+  inset: 0;
+  z-index: -5;
+  background:
+    radial-gradient(120% 80% at 50% 108%, color-mix(in oklab, var(--terra-800) 85%, transparent) 0%, transparent 62%),
+    linear-gradient(to bottom,
+      #0b0f14 0%, #16202a 26%, #3a3140 48%,
+      #6b3b34 68%, #96513a 82%, #b4633f 100%);
+}
+
+/* ==========================================================================
+   MÍDIA DO HERO — dois modos, um mesmo markup
+   --------------------------------------------------------------------------
+   MODO A (padrão): a mídia preenche o hero inteiro, por trás das serras.
+     Ideal para foto ou vídeo PANORÂMICO (16:9).
+     Com mídia vertical (9:16, formato Reels) este modo corta muito: em
+     desktop sobra só a faixa central, cerca de um quarto da altura original.
+
+   MODO B (.hero--retrato): a mídia vertical ganha uma moldura própria ao lado
+     do texto, em desktop, sem corte nenhum. No celular ela volta a preencher
+     a tela — onde 9:16 encaixa perfeitamente.
+   ========================================================================== */
+
+.hero__quadro {
+  position: absolute;
+  inset: 0;
+  z-index: -4;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+/* ==========================================================================
+   QUANDO EXISTE MÍDIA REAL, ELA É O HERO.
+   As serras em SVG foram feitas para sustentar o hero na ausência de imagem.
+   Ao lado de footage verdadeiro elas viram o que são: desenho. Saem de cena.
+   O céu em gradiente fica, bem apagado, só para colorir as bordas.
+   ========================================================================== */
+
+.hero:has(.hero__quadro[data-tem-midia="sim"]) .hero__serras { display: none; }
+.hero:has(.hero__quadro[data-tem-midia="sim"]) .hero__ceu { opacity: 0.45; }
+
+.hero__midia {
+  width: 100%; height: 100%;
+  object-fit: cover;
+  /* --foco escolhe QUAL faixa fica visível quando a mídia é cortada.
+     --zoom aproxima. Ajustáveis direto no HTML, sem tocar no CSS:
+        style="--foco:50% 30%; --zoom:1.15"
+     50% 30% puxa o enquadramento para cima (mostra mais céu/horizonte);
+     50% 70% puxa para baixo (mostra mais o casario e o chão). */
+  object-position: var(--foco, 50% 50%);
+  /* O desfoque não é enfeite: o vídeo do Reels tem 478px de largura e, esticado
+     para tela cheia, ficaria empastado. Desfocado de propósito, vira
+     profundidade de campo — parece decisão, não limitação. O --zoom compensa
+     as bordas que o blur esgarça. */
+  scale: var(--zoom, 1.08);
+  filter: saturate(0.95) contrast(1.06) blur(var(--desfoque, 3px));
+  opacity: 0;                             /* JS sobe a opacidade ao carregar */
+  transition: opacity var(--dur-cinema) var(--ease-out);
+}
+.hero__midia[data-pronto="sim"] { opacity: 0.92; }
+
+/* --- MODO B: vídeo vertical em moldura ---------------------------------- */
+
+@media (min-width: 64rem) {
+  .hero--retrato { align-items: center; }
+
+  .hero--retrato .hero__conteudo {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(15rem, 22rem);
+    gap: clamp(2rem, 5vw, 4.5rem);
+    align-items: center;
+  }
+
+  .hero--retrato .hero__quadro {
+    position: relative;
+    inset: auto;
+    z-index: 1;
+    aspect-ratio: 9 / 16;
+    max-height: 64svh;
+    width: 100%;
+    margin-inline: auto;
+    border-radius: var(--r-xl);
+    border: 1px solid color-mix(in oklab, var(--papel-50) 16%, transparent);
+    /* sombra funda: a moldura flutua sobre a serra, como um objeto de vitrine */
+    box-shadow: 0 48px 90px -28px rgba(0, 0, 0, 0.85),
+                0 8px 24px rgba(0, 0, 0, 0.4);
+    pointer-events: auto;
+  }
+  /* Emoldurado, o vídeo é o assunto — vai a opacidade cheia e sem
+     dessaturação, ao contrário do modo fundo. */
+  .hero--retrato .hero__midia { filter: saturate(0.98) contrast(1.02); }
+  .hero--retrato .hero__midia[data-pronto="sim"] { opacity: 1; }
+
+  /* Brilho sutil na borda superior, como reflexo de vidro. */
+  .hero--retrato .hero__quadro::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    pointer-events: none;
+    background: linear-gradient(160deg,
+      rgba(255, 255, 255, 0.14) 0%, rgba(255, 255, 255, 0) 32%);
+  }
+
+  /* Com a moldura ocupando a direita, o convite de rolar sairia por baixo
+     dela. Some — o hero já tem dois botões chamando ação. */
+  .hero--retrato .hero__rolar { display: none; }
+}
+
+/* Abaixo de 64rem o modo retrato não existe: a mídia vertical volta a
+   preencher o hero, que é onde ela funciona melhor sem corte algum. */
+
+/* Camadas de serra em SVG — três planos, parallax por transform (nunca
+   background-attachment: fixed, que quebra no iOS e mata o compositor). */
+.hero__serras { position: absolute; inset: 0; z-index: -3; pointer-events: none; }
+.hero__serra {
+  position: absolute;
+  left: -5%; right: -5%; bottom: 0;
+  width: 110%;
+  height: auto;
+  will-change: transform;
+  translate: 0 var(--parallax, 0px);
+}
+.hero__serra--3 { color: #2c2f3a; opacity: 0.95; bottom: 14%; }
+.hero__serra--2 { color: #1d2028; opacity: 0.97; bottom: 6%; }
+.hero__serra--1 { color: #0e1013; bottom: -1%; }
+
+/* Grão de filme por cima de tudo: unifica as camadas e mata o banding
+   dos gradientes em telas de 8 bits. */
+.hero__grao {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background-image: var(--grao);
+  opacity: 0.5;
+  mix-blend-mode: overlay;
+  pointer-events: none;
+}
+/* Véu de legibilidade + costura com a próxima seção.
+   Duas camadas: uma da esquerda, que garante contraste do texto sobre
+   QUALQUER quadro do vídeo; outra de baixo, que entrega o hero na cor da
+   seção seguinte sem emenda visível.
+   Isto é o que substitui o antigo "escurecer o vídeo inteiro": o footage
+   continua vivo à direita, e o texto fica legível à esquerda. */
+.hero__base {
+  position: absolute;
+  inset: 0;
+  z-index: -2;
+  background:
+    /* costura com a próxima seção */
+    linear-gradient(to top,
+      var(--grafite-1000) 0%,
+      rgba(10, 10, 10, 0.72) 22%,
+      rgba(10, 10, 10, 0) 56%),
+    /* véu da esquerda: é ele que garante o contraste do texto sobre QUALQUER
+       quadro do vídeo, inclusive os mais claros (telhado laranja, capim ao
+       sol). Precisa ser forte — 4,5:1 é requisito, não gosto. */
+    linear-gradient(to right,
+      rgba(8, 8, 10, 0.93) 0%,
+      rgba(8, 8, 10, 0.86) 26%,
+      rgba(8, 8, 10, 0.52) 48%,
+      rgba(8, 8, 10, 0.12) 72%,
+      rgba(8, 8, 10, 0) 88%),
+    /* leve rebaixamento geral: assenta o footage e evita que o lado direito
+       fique estourado ao lado do texto escuro */
+    linear-gradient(rgba(10, 10, 12, 0.22), rgba(10, 10, 12, 0.22));
+  pointer-events: none;
+}
+/* No celular não existe "lado esquerdo": o texto ocupa a largura toda, então
+   o véu passa a vir de baixo, cobrindo o bloco inteiro de conteúdo. */
+@media (max-width: 48rem) {
+  .hero__base {
+    background:
+      linear-gradient(to top,
+        var(--grafite-1000) 0%,
+        rgba(8, 8, 10, 0.92) 32%,
+        rgba(8, 8, 10, 0.62) 58%,
+        rgba(8, 8, 10, 0.25) 82%,
+        rgba(8, 8, 10, 0.1) 100%);
+  }
+}
+
+/* Sem position/z-index de propósito: todas as camadas decorativas do hero têm
+   z-index negativo, então o conteúdo já pinta por cima delas naturalmente.
+   Isso é o que permite ao .hero__quadro, aninhado aqui dentro, se posicionar
+   contra o .hero inteiro no modo A (fundo) e virar item de grade no modo B. */
+.hero__conteudo { z-index: 1; }
+
+/* Agrupa o texto do hero para que, no modo retrato, ele seja UM item de grade
+   ao lado da moldura — e não cinco itens se espalhando pelas colunas. */
+/* Em tela cheia o texto não pode atravessar o monitor inteiro: a coluna de
+   leitura fica à esquerda e o footage respira à direita. */
+.hero__texto { min-width: 0; max-width: min(46rem, 66vw); }
+
+.hero__olho {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  font-size: var(--t-xs);
+  font-weight: 600;
+  letter-spacing: var(--tracking-largo);
+  text-transform: uppercase;
+  color: var(--areia-300);
+  margin-bottom: var(--e-4);
+}
+.hero__olho::before {
+  content: "";
+  width: clamp(1.5rem, 6vw, 3.5rem);
+  height: 1px;
+  background: currentColor;
+  flex: none;
+}
+
+/* Título: revelação por máscara, linha por linha. Cada linha tem overflow
+   escondido e o texto sobe de baixo — o gesto de abertura de documentário. */
+.hero__titulo {
+  /* Escala amarrada à largura da coluna de texto, não à da tela: "Vermelho"
+     tem que caber em UMA linha. Quebrar em "Vermel / ho" é o pior defeito
+     tipográfico possível num nome próprio. */
+  font-size: clamp(2.75rem, 7.6vw, 8.5rem);
+  font-weight: 300;
+  line-height: var(--leading-apertado);
+  letter-spacing: var(--tracking-display);
+  margin-bottom: var(--e-5);
+  /* trava de segurança: nome próprio nunca é hifenizado nem quebrado */
+  hyphens: none;
+  overflow-wrap: normal;
+}
+.hero__linha { display: block; overflow: hidden; }
+.hero__linha > span {
+  display: block;
+  transform: translateY(102%);
+  transition: transform var(--dur-cinema) var(--ease-out);
+  transition-delay: var(--atraso, 0ms);
+}
+.hero[data-entrou="sim"] .hero__linha > span { transform: translateY(0); }
+/* sem JS o título está simplesmente no lugar */
+html:not([data-revelar-ativo]) .hero__linha > span { transform: none; }
+.hero__titulo em {
+  font-style: normal;
+  font-weight: 600;
+  color: var(--areia-200);
+}
+
+/* Lema do distrito — em serifa itálica, escala menor que o título e maior
+   que o corpo. Fica entre o nome e a explicação, como uma assinatura. */
+.hero__lema {
+  font-family: var(--fonte-serif);
+  font-size: var(--t-xl);
+  font-style: italic;
+  font-weight: 300;
+  letter-spacing: 0.02em;
+  color: var(--areia-300);
+  margin-top: calc(var(--e-4) * -1);
+  margin-bottom: var(--e-5);
+  padding-left: 0.12em;
+}
+
+.hero__frase {
+  font-size: var(--t-md);
+  line-height: var(--leading-solto);
+  color: color-mix(in oklab, var(--papel-50) 82%, transparent);
+  max-width: 34ch;
+  margin-bottom: var(--e-6);
+}
+.hero__acoes { display: flex; flex-wrap: wrap; gap: var(--e-3); }
+
+/* Rodapé do hero: dado útil, não enfeite. Próxima festa + coordenadas. */
+.hero__barra {
+  position: absolute;
+  inset: auto 0 0 0;
+  z-index: 2;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--e-3) var(--e-5);
+  padding: var(--e-3) var(--gutter);
+  font-size: var(--t-xs);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: color-mix(in oklab, var(--papel-50) 70%, transparent);
+  border-top: 1px solid color-mix(in oklab, var(--papel-50) 14%, transparent);
+  background: color-mix(in oklab, var(--grafite-1000) 40%, transparent);
+  backdrop-filter: blur(8px);
+}
+.hero__barra strong { color: var(--areia-300); font-weight: 600; }
+.hero__barra-item { display: inline-flex; align-items: center; gap: 0.45rem; }
+.hero__barra .icone { width: 0.9rem; height: 0.9rem; }
+
+/* Convite para rolar: uma linha que desce devagar. Sem animate-bounce. */
+.hero__rolar {
+  position: absolute;
+  right: var(--gutter);
+  bottom: 5.5rem;
+  z-index: 2;
+  display: none;
+  writing-mode: vertical-rl;
+  align-items: center;
+  gap: var(--e-3);
+  font-size: 0.625rem;
+  letter-spacing: var(--tracking-xlargo);
+  text-transform: uppercase;
+  color: color-mix(in oklab, var(--papel-50) 60%, transparent);
+  text-decoration: none;
+}
+@media (min-width: 62rem) { .hero__rolar { display: flex; } }
+.hero__rolar-trilho {
+  width: 1px;
+  height: 4.5rem;
+  background: color-mix(in oklab, var(--papel-50) 22%, transparent);
+  position: relative;
+  overflow: hidden;
+}
+.hero__rolar-trilho::after {
+  content: "";
+  position: absolute;
+  inset: 0 0 auto 0;
+  height: 40%;
+  background: var(--areia-300);
+  animation: desce 2.6s var(--ease-inout) infinite;
+}
+@keyframes desce {
+  0%   { transform: translateY(-100%); }
+  55%  { transform: translateY(250%); }
+  100% { transform: translateY(250%); }
+}
+.hero__rolar:hover { color: var(--papel-50); }
+
+/* ==========================================================================
+   6. REVELAÇÕES — substitui a faixa de estatísticas inventadas.
+   Três fatos específicos. Fato, não adjetivo.
+   ========================================================================== */
+
+.revelacoes { display: grid; gap: var(--e-6); }
+@media (min-width: 52rem) {
+  .revelacoes { grid-template-columns: repeat(3, 1fr); gap: var(--e-7); }
+}
+
+.revelacao { position: relative; padding-top: var(--e-5); border-top: 2px solid var(--borda-forte); }
+.revelacao__num {
+  font-family: var(--fonte-serif);
+  font-size: var(--t-xl);
+  font-weight: 600;
+  color: var(--destaque);
+  line-height: 1;
+  display: block;
+  margin-bottom: var(--e-3);
+}
+.revelacao__titulo { font-size: var(--t-lg); margin-bottom: var(--e-3); color: var(--marca); }
+.revelacao__texto { color: var(--texto-suave); font-size: var(--t-base); }
+.revelacao__fonte {
+  display: block;
+  margin-top: var(--e-3);
+  font-size: var(--t-xs);
+  color: var(--texto-tenue);
+  font-style: italic;
+}
+[data-superficie="escura"] .revelacao { border-top-color: var(--borda-inversa); }
+[data-superficie="escura"] .revelacao__titulo { color: var(--areia-200); }
+[data-superficie="escura"] .revelacao__texto { color: var(--texto-inverso-suave); }
+
+/* ==========================================================================
+   7. CARDS DE DESCOBERTA — grade editorial assimétrica.
+   O gesto P&B → cor da v1 virou princípio: o passado ganha cor ao ser tocado.
+   ========================================================================== */
+
+.descobrir { display: grid; gap: var(--e-4); }
+@media (min-width: 46rem) {
+  .descobrir { grid-template-columns: repeat(2, 1fr); }
+}
+@media (min-width: 68rem) {
+  .descobrir {
+    grid-template-columns: repeat(6, 1fr);
+    grid-auto-rows: 15rem;
+  }
+  /* ritmo assimétrico: nada de quatro retângulos iguais */
+  .descobrir > :nth-child(1) { grid-column: span 4; grid-row: span 2; }
+  .descobrir > :nth-child(2) { grid-column: span 2; }
+  .descobrir > :nth-child(3) { grid-column: span 2; }
+  .descobrir > :nth-child(4) { grid-column: span 3; }
+  .descobrir > :nth-child(5) { grid-column: span 3; }
+}
+
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  min-height: 15rem;
+  padding: var(--e-5);
+  overflow: hidden;
+  isolation: isolate;
+  border-radius: var(--r-lg);
+  background: var(--grafite-900);
+  color: var(--papel-50);
+  text-decoration: none;
+  transition: transform var(--dur-normal) var(--ease-out),
+              box-shadow var(--dur-normal) var(--ease-out);
+}
+.card:hover, .card:focus-visible { transform: translateY(-4px); box-shadow: var(--sombra-4); }
+
+.card__img {
+  position: absolute;
+  inset: 0;
+  z-index: -2;
+  width: 100%; height: 100%;
+  object-fit: cover;
+  filter: grayscale(1) contrast(1.05);
+  transform: scale(1.02);
+  transition: filter var(--dur-lento) var(--ease-out),
+              transform var(--dur-lento) var(--ease-arq);
+}
+.card:hover .card__img, .card:focus-visible .card__img {
+  filter: grayscale(0) contrast(1);
+  transform: scale(1.07);
+}
+/* Fundo quando ainda não há fotografia real: gradiente do território.
+   Deliberado — nunca stock photo. */
+.card__vazio {
+  position: absolute;
+  inset: 0;
+  z-index: -2;
+  background:
+    radial-gradient(80% 70% at 20% 10%, color-mix(in oklab, var(--tom, var(--terra-700)) 80%, transparent), transparent 70%),
+    linear-gradient(150deg, var(--grafite-900), var(--grafite-1000));
+}
+.card__vazio::after {
+  content: "";
+  position: absolute; inset: 0;
+  background-image: var(--grao);
+  opacity: 0.45;
+  mix-blend-mode: overlay;
+}
+.card__veu {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: linear-gradient(to top,
+    rgba(10, 10, 10, 0.88) 0%, rgba(10, 10, 10, 0.45) 40%, rgba(10, 10, 10, 0.05) 100%);
+  transition: opacity var(--dur-normal) var(--ease-out);
+}
+
+.card__indice {
+  position: absolute;
+  top: var(--e-5); left: var(--e-5);
+  font-family: var(--fonte-mono);
+  font-size: var(--t-xs);
+  letter-spacing: 0.1em;
+  color: color-mix(in oklab, var(--papel-50) 55%, transparent);
+}
+.card__titulo {
+  font-size: var(--t-lg);
+  color: var(--papel-50);
+  margin-bottom: 0.35rem;
+}
+.card--grande .card__titulo { font-size: var(--t-xl); }
+.card__desc {
+  font-size: var(--t-sm);
+  color: color-mix(in oklab, var(--papel-50) 78%, transparent);
+  max-width: 34ch;
+  /* No mobile aparece sempre (não existe hover). No desktop, revela. */
+}
+@media (min-width: 68rem) and (hover: hover) {
+  .card__desc {
+    opacity: 0;
+    transform: translateY(6px);
+    transition: opacity var(--dur-rapido) var(--ease-out) 60ms,
+                transform var(--dur-rapido) var(--ease-out) 60ms;
+  }
+  .card:hover .card__desc, .card:focus-visible .card__desc { opacity: 1; transform: none; }
+}
+.card__meta {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  margin-top: var(--e-3);
+  font-size: 0.6875rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--areia-300);
+}
+.card__meta .icone { width: 0.9rem; height: 0.9rem; transition: transform var(--dur-rapido) var(--ease-out); }
+.card:hover .card__meta .icone { transform: translateX(4px); }
+
+/* ==========================================================================
+   8. BLOCO CAVALHADAS — a página-âncora anunciada na home
+   ========================================================================== */
+
+.cavalhadas {
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+  background: var(--grafite-1000);
+  color: var(--papel-50);
+}
+.cavalhadas::before {
+  content: "";
+  position: absolute; inset: 0; z-index: -1;
+  background:
+    radial-gradient(70% 90% at 82% 20%, color-mix(in oklab, var(--terra-700) 62%, transparent), transparent 65%),
+    radial-gradient(60% 80% at 8% 90%, color-mix(in oklab, #16325c 70%, transparent), transparent 65%),
+    var(--grafite-1000);
+}
+.cavalhadas::after {
+  content: "";
+  position: absolute; inset: 0; z-index: -1;
+  background-image: var(--grao);
+  opacity: 0.35;
+  mix-blend-mode: overlay;
+}
+.cavalhadas__grade { display: grid; gap: var(--e-7); align-items: center; }
+@media (min-width: 60rem) {
+  .cavalhadas__grade { grid-template-columns: 1.05fr 0.95fr; gap: var(--e-9); }
+}
+.cavalhadas__titulo { font-size: var(--t-3xl); color: var(--papel-0); margin-block: var(--e-3) var(--e-5); }
+
+/* Contagem regressiva — a data mora em data-quando no HTML, o JS só formata */
+.contagem {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: var(--e-2);
+  padding: var(--e-5);
+  border: 1px solid var(--borda-inversa);
+  border-radius: var(--r-lg);
+  background: color-mix(in oklab, var(--grafite-1000) 55%, transparent);
+  backdrop-filter: blur(10px);
+  text-align: center;
+}
+.contagem__valor {
+  display: block;
+  font-family: var(--fonte-serif);
+  font-size: var(--t-2xl);
+  font-weight: 600;
+  line-height: 1;
+  color: var(--areia-200);
+  font-variant-numeric: tabular-nums;
+}
+.contagem__rotulo {
+  display: block;
+  margin-top: 0.4rem;
+  font-size: 0.625rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: color-mix(in oklab, var(--papel-50) 62%, transparent);
+}
+.contagem__aviso {
+  grid-column: 1 / -1;
+  font-size: var(--t-xs);
+  color: color-mix(in oklab, var(--papel-50) 65%, transparent);
+}
+
+/* Faixa de partidos: mouros e cristãos, azul e vermelho */
+.partidos { display: flex; gap: var(--e-4); flex-wrap: wrap; margin-top: var(--e-5); }
+.partido {
+  flex: 1 1 12rem;
+  padding: var(--e-4);
+  border-left: 3px solid var(--cor, var(--terra-500));
+  background: color-mix(in oklab, var(--papel-50) 5%, transparent);
+  border-radius: 0 var(--r-md) var(--r-md) 0;
+}
+.partido__nome {
+  font-family: var(--fonte-serif);
+  font-size: var(--t-lg);
+  color: var(--papel-0);
+  margin-bottom: 0.25rem;
+}
+.partido__txt { font-size: var(--t-sm); color: color-mix(in oklab, var(--papel-50) 72%, transparent); }
+
+/* ==========================================================================
+   9. LINHA DO TEMPO — trilho horizontal, navegável por teclado e por scroll
+   ========================================================================== */
+
+.trilho-envelope { position: relative; }
+.trilho {
+  display: flex;
+  gap: var(--e-5);
+  overflow-x: auto;
+  scroll-snap-type: x proximity;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+  padding-block: var(--e-6) var(--e-8);
+  /* A primeira peça alinha com a grade da página, mas as últimas podem sangrar
+     para fora da tela — é o que dá a sensação de que o acervo continua. */
+  padding-inline: max(var(--gutter), (100vw - var(--largura-max)) / 2 + var(--gutter));
+}
+.trilho::-webkit-scrollbar { display: none; }
+.trilho::before {
+  /* a linha do tempo propriamente dita */
+  content: "";
+  position: absolute;
+  left: 0; right: 0;
+  top: calc(var(--e-6) + 1.9rem);
+  height: 1px;
+  background: linear-gradient(to right, transparent, var(--borda-forte) 4%, var(--borda-forte) 96%, transparent);
+  pointer-events: none;
+}
+
+.marco {
+  position: relative;
+  flex: 0 0 min(19rem, 78vw);
+  scroll-snap-align: center;
+  padding-top: 3.5rem;
+}
+.marco::before {
+  content: "";
+  position: absolute;
+  top: 1.55rem; left: 0;
+  width: 0.7rem; height: 0.7rem;
+  border-radius: var(--r-redondo);
+  background: var(--bg);
+  border: 2px solid var(--marca);
+  transition: transform var(--dur-rapido) var(--ease-out),
+              background-color var(--dur-rapido) var(--ease-out);
+}
+.marco:hover::before { transform: scale(1.5); background: var(--marca); }
+.marco--estimado::before { border-style: dashed; border-color: var(--destaque); }
+
+.marco__ano {
+  font-family: var(--fonte-serif);
+  font-size: var(--t-xl);
+  font-weight: 600;
+  color: var(--marca);
+  line-height: 1;
+  margin-bottom: var(--e-3);
+  font-variant-numeric: tabular-nums;
+}
+.marco__titulo { font-size: var(--t-base); font-family: var(--fonte-sans); font-weight: 600; margin-bottom: 0.35rem; }
+.marco__txt { font-size: var(--t-sm); color: var(--texto-suave); }
+
+.trilho-controles { display: flex; gap: var(--e-2); }
+
+/* ==========================================================================
+   10. ACERVO — peças de arquivo. A boa ideia da v1, levada a sério.
+   ========================================================================== */
+
+.pecas { display: flex; gap: clamp(1.5rem, 4vw, 3rem); }
+
+.peca {
+  flex: 0 0 min(17rem, 72vw);
+  scroll-snap-align: center;
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+.peca__moldura {
+  position: relative;
+  aspect-ratio: 3 / 4;
+  padding: 0.7rem;
+  background: var(--papel-0);
+  box-shadow: var(--sombra-peca);
+  /* rotação de repouso: cada peça está torta de um jeito diferente.
+     O ângulo vem de --giro no HTML, gerado por item — não escolhido à mão. */
+  rotate: var(--giro, 0deg);
+  transition: transform var(--dur-lento) var(--ease-arq),
+              rotate var(--dur-lento) var(--ease-arq),
+              box-shadow var(--dur-lento) var(--ease-out);
+}
+.peca:hover .peca__moldura, .peca:focus-visible .peca__moldura {
+  transform: translateY(-14px);
+  rotate: 0deg;
+  box-shadow: 0 34px 60px -18px rgba(41, 10, 10, 0.45), 0 6px 14px rgba(20, 16, 12, 0.16);
+}
+/* fita adesiva — o melhor detalhe da v1, agora com textura e brilho */
+.peca__fita {
+  position: absolute;
+  top: -0.6rem; left: 50%;
+  width: 3.6rem; height: 1.15rem;
+  translate: -50% 0;
+  rotate: var(--giro-fita, -2deg);
+  background: linear-gradient(160deg,
+    rgba(220, 200, 150, 0.55), rgba(198, 172, 118, 0.42));
+  border-left: 1px solid rgba(255, 255, 255, 0.28);
+  border-right: 1px solid rgba(120, 100, 60, 0.18);
+  backdrop-filter: blur(1px);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.14);
+}
+.peca__img {
+  width: 100%; height: 100%;
+  object-fit: cover;
+  filter: sepia(var(--sepia, 0.3)) contrast(1.06) brightness(0.98);
+  transition: filter var(--dur-lento) var(--ease-out);
+}
+.peca:hover .peca__img { filter: sepia(calc(var(--sepia, 0.3) * 0.45)) contrast(1.02); }
+
+/* Peça sem digitalização ainda: fundo de papel + o texto do documento.
+   Honesto e, num arquivo, até bonito. */
+.peca__ausente {
+  display: grid;
+  place-content: center;
+  gap: var(--e-3);
+  width: 100%; height: 100%;
+  padding: var(--e-4);
+  text-align: center;
+  background:
+    repeating-linear-gradient(to bottom, transparent, transparent 1.45rem,
+      color-mix(in oklab, var(--areia-600) 22%, transparent) 1.45rem,
+      color-mix(in oklab, var(--areia-600) 22%, transparent) calc(1.45rem + 1px)),
+    var(--papel-100);
+  color: var(--texto-tenue);
+  font-size: var(--t-xs);
+}
+.peca__ausente .icone { width: 1.6rem; height: 1.6rem; margin-inline: auto; opacity: 0.5; }
+
+.peca__legenda { margin-top: var(--e-4); }
+.peca__tipo {
+  font-size: 0.625rem;
+  font-weight: 700;
+  letter-spacing: var(--tracking-largo);
+  text-transform: uppercase;
+  color: var(--destaque);
+}
+.peca__titulo {
+  font-family: var(--fonte-serif);
+  font-size: var(--t-lg);
+  margin-block: 0.3rem;
+  transition: color var(--dur-rapido) var(--ease-out);
+}
+.peca:hover .peca__titulo { color: var(--marca); }
+.peca__meta {
+  font-size: var(--t-xs);
+  color: var(--texto-tenue);
+  font-variant-numeric: tabular-nums;
+}
+
+/* Cartão final do trilho: entrada para o acervo completo */
+.peca--porta { display: grid; place-items: center; }
+.peca--porta .peca__moldura {
+  display: grid;
+  place-content: center;
+  gap: var(--e-4);
+  text-align: center;
+  background: transparent;
+  border: 1px dashed var(--borda-forte);
+  box-shadow: none;
+  rotate: 0deg;
+}
+.peca--porta:hover .peca__moldura { transform: none; border-color: var(--marca); }
+
+/* Números do acervo — contados do próprio DOM pelo JS. Nunca inventados. */
+.numeros {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(8rem, 1fr));
+  gap: var(--e-5);
+  padding-top: var(--e-6);
+  border-top: 1px solid var(--borda);
+}
+.numero__valor {
+  font-family: var(--fonte-serif);
+  font-size: var(--t-2xl);
+  font-weight: 600;
+  line-height: 1;
+  color: var(--marca);
+  font-variant-numeric: tabular-nums;
+  display: block;
+}
+.numero__rotulo {
+  display: block;
+  margin-top: 0.5rem;
+  font-size: var(--t-xs);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--texto-tenue);
+}
+
+/* ==========================================================================
+   11. ANTES E DEPOIS — o recurso mais emocional do portal
+   ========================================================================== */
+
+.comparador {
+  position: relative;
+  aspect-ratio: 16 / 10;
+  overflow: hidden;
+  border-radius: var(--r-lg);
+  background: var(--grafite-900);
+  box-shadow: var(--sombra-3);
+  touch-action: pan-y;   /* deixa a página rolar mesmo arrastando no eixo Y */
+  user-select: none;
+}
+.comparador__face { position: absolute; inset: 0; }
+.comparador__face img,
+.comparador__face .comparador__ausente { width: 100%; height: 100%; object-fit: cover; }
+/* A face "depois" é o fundo: ocupa tudo e nunca é recortada. */
+.comparador__face--depois { z-index: 0; }
+/* A face "antes" fica por cima e é revelada pela posição da alça (--pos). */
+.comparador__face--antes {
+  z-index: 1;
+  clip-path: inset(0 calc(100% - var(--pos, 50%)) 0 0);
+}
+.comparador__face--antes img { filter: sepia(0.42) contrast(1.08) brightness(0.94); }
+
+.comparador__ausente {
+  display: grid;
+  place-content: center;
+  gap: var(--e-2);
+  text-align: center;
+  padding: var(--e-5);
+  font-size: var(--t-sm);
+  color: color-mix(in oklab, var(--papel-50) 62%, transparent);
+  background: linear-gradient(150deg, var(--grafite-800), var(--grafite-1000));
+}
+.comparador__face--antes .comparador__ausente {
+  background: linear-gradient(150deg, var(--areia-800), var(--grafite-900));
+}
+
+.comparador__alca {
+  position: absolute;
+  top: 0; bottom: 0;
+  left: var(--pos, 50%);
+  width: 2px;
+  translate: -1px 0;
+  background: var(--papel-0);
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.45);
+  /* A alça é puramente visual: quem recebe toque, arraste e teclado é o
+     <input type="range"> que fica por cima dela no DOM. */
+  pointer-events: none;
+}
+.comparador__alca::after {
+  content: "";
+  position: absolute;
+  top: 50%; left: 50%;
+  translate: -50% -50%;
+  width: 2.6rem; height: 2.6rem;
+  border-radius: var(--r-redondo);
+  background: var(--papel-0);
+  box-shadow: var(--sombra-3);
+}
+.comparador__alca .icone {
+  position: absolute;
+  top: 50%; left: 50%;
+  translate: -50% -50%;
+  z-index: 1;
+  width: 1.2rem; height: 1.2rem;
+  color: var(--grafite-900);
+}
+/* O input range é o controle real: teclado, toque e leitor de tela de graça.
+   Fica por último no DOM, portanto por cima de tudo, invisível e clicável.
+   Clique no track de um range nativo já salta o valor para a posição — que é
+   exatamente o comportamento desejado aqui. */
+.comparador__range {
+  position: absolute;
+  inset: 0;
+  width: 100%; height: 100%;
+  margin: 0;
+  padding: 0;
+  opacity: 0;
+  cursor: ew-resize;
+  -webkit-appearance: none;
+  appearance: none;
+  background: transparent;
+}
+/* Foco de teclado precisa aparecer na alça visível, não no input invisível. */
+.comparador:has(.comparador__range:focus-visible) .comparador__alca::after {
+  outline: 2px solid var(--foco-inverso);
+  outline-offset: 3px;
+}
+.comparador__rotulo {
+  position: absolute;
+  bottom: var(--e-3);
+  padding: 0.3rem 0.7rem;
+  font-size: 0.625rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--papel-50);
+  background: color-mix(in oklab, var(--grafite-1000) 62%, transparent);
+  backdrop-filter: blur(6px);
+  border-radius: var(--r-sm);
+  pointer-events: none;
+}
+.comparador__rotulo--esq { left: var(--e-3); }
+.comparador__rotulo--dir { right: var(--e-3); }
+
+/* ==========================================================================
+   13. VISITE — informação prática. É o que converte interesse em visita.
+   ========================================================================== */
+
+.visite { display: grid; gap: var(--e-7); }
+@media (min-width: 60rem) { .visite { grid-template-columns: 1fr 1fr; gap: var(--e-9); } }
+
+
+/* Mapa embutido do Google — moldura que o faz parecer parte do portal,
+   e não um retângulo colado. O iframe herda a borda e o raio. */
+.mapa-embed {
+  position: relative;
+  aspect-ratio: 4 / 3;
+  border-radius: var(--r-lg);
+  overflow: hidden;
+  border: 1px solid var(--borda);
+  box-shadow: var(--sombra-2);
+  background: var(--bg-afundado);
+}
+.mapa-embed iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  /* Dessatura levemente o mapa para ele conversar com a paleta de terra
+     do portal, sem deixar de ser legível. */
+  filter: saturate(0.82) contrast(1.03);
+}
+
+/* Mapa: moldura vazia, mantida para mapa.html (Leaflet) mais adiante. */
+.mapa-slot {
+  position: relative;
+  aspect-ratio: 4 / 3;
+  border-radius: var(--r-lg);
+  overflow: hidden;
+  border: 1px solid var(--borda);
+  background:
+    repeating-linear-gradient(0deg, transparent, transparent 2.5rem,
+      color-mix(in oklab, var(--serra-600) 12%, transparent) 2.5rem, color-mix(in oklab, var(--serra-600) 12%, transparent) calc(2.5rem + 1px)),
+    repeating-linear-gradient(90deg, transparent, transparent 2.5rem,
+      color-mix(in oklab, var(--serra-600) 12%, transparent) 2.5rem, color-mix(in oklab, var(--serra-600) 12%, transparent) calc(2.5rem + 1px)),
+    var(--papel-50);
+  display: grid;
+  place-content: center;
+  gap: var(--e-3);
+  text-align: center;
+  padding: var(--e-6);
+  color: var(--texto-tenue);
+  font-size: var(--t-sm);
+}
+.mapa-slot .icone { width: 2rem; height: 2rem; margin-inline: auto; opacity: 0.45; }
+
+/* ==========================================================================
+   14. COLABORE
+   ========================================================================== */
+
+.colabore {
+  position: relative;
+  overflow: hidden;
+  border-radius: var(--r-xl);
+  padding: clamp(2rem, 5vw, 4.5rem);
+  background: var(--serra-900);
+  color: var(--papel-50);
+  isolation: isolate;
+}
+.colabore::before {
+  content: "";
+  position: absolute; inset: 0; z-index: -1;
+  background: radial-gradient(80% 100% at 100% 0%, color-mix(in oklab, var(--serra-600) 70%, transparent), transparent 70%);
+}
+.colabore::after {
+  content: "";
+  position: absolute; inset: 0; z-index: -1;
+  background-image: var(--grao); opacity: 0.3; mix-blend-mode: overlay;
+}
+.colabore__titulo { font-size: var(--t-2xl); color: var(--papel-0); margin-block: var(--e-3) var(--e-4); }
+.colabore__lista {
+  display: grid;
+  gap: var(--e-3);
+  margin-block: var(--e-5);
+  font-size: var(--t-sm);
+  color: color-mix(in oklab, var(--papel-50) 82%, transparent);
+}
+.colabore__lista li { display: grid; grid-template-columns: auto 1fr; gap: var(--e-3); align-items: start; }
+.colabore__lista .icone { width: 1.1rem; height: 1.1rem; color: var(--areia-300); margin-top: 0.28em; }
+
+.colabore__acoes {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--e-4) var(--e-5);
+  margin-top: var(--e-6);
+}
+.colabore__zap-nota {
+  flex: 1 1 20rem;
+  font-size: var(--t-sm);
+  line-height: 1.55;
+  color: color-mix(in oklab, var(--papel-50) 70%, transparent);
+}
+
+/* ==========================================================================
+   15. IDEALIZADORES — as duas pessoas por trás de quarenta anos de pesquisa
+
+   Duas linhas em Z, não duas colunas simétricas: a de Geraldo tem a foto à
+   esquerda e o texto à direita; a de Viviane inverte. Quem decide a ordem
+   visual é o DOM (ver Idealizadores.jsx) — aqui é só grid de 2 colunas,
+   sem `order`. Fotos em cor natural, sem filtro.
+   ========================================================================== */
+
+.idealizadores__linhas { display: grid; gap: var(--e-10); margin-top: var(--e-8); }
+
+.idealizadores__linha { display: grid; gap: var(--e-6); }
+@media (min-width: 54rem) {
+  .idealizadores__linha { grid-template-columns: minmax(14rem, 34%) 1fr; align-items: center; gap: var(--e-9); }
+  /* A ordem no DOM já inverte foto/texto (ver Idealizadores.jsx) — mas sem
+     inverter também as LARGURAS da coluna, o texto da Viviane caía na
+     coluna estreita (feita para foto) e a foto dela na larga (feita para
+     texto): exatamente o oposto do efeito pretendido. */
+  .idealizadores__linha--inverso { grid-template-columns: 1fr minmax(14rem, 34%); }
+}
+
+.idealizadores__moldura {
+  aspect-ratio: 3 / 4;
+  max-width: 22rem;
+  margin-inline: auto;
+  border-radius: var(--r-lg);
+  overflow: hidden;
+  background: linear-gradient(150deg, var(--areia-800), var(--grafite-900));
+  display: grid;
+  place-items: center;
+  box-shadow: var(--sombra-2);
+}
+@media (min-width: 54rem) { .idealizadores__moldura { margin-inline: 0; } }
+.idealizadores__moldura .icone { width: 2.5rem; height: 2.5rem; opacity: 0.4; color: var(--papel-50); }
+.idealizadores__img { width: 100%; height: 100%; object-fit: cover; }
+
+.idealizadores__nome {
+  font-size: var(--t-xl);
+  color: var(--marca);
+  margin-bottom: var(--e-4);
+}
+.idealizadores__apelido { font-size: var(--t-sm); font-weight: 400; color: var(--texto-tenue); }
+.idealizadores__apelido::before { content: " · "; }
+
+.idealizadores__texto p {
+  max-width: var(--largura-texto);
+  color: var(--texto-suave);
+  font-size: 0.9375rem;
+  line-height: var(--leading-solto);
+}
+.idealizadores__texto p + p { margin-top: var(--e-5); }
+
+.idealizadores__mais {
+  margin-top: var(--e-8);
+  font-size: var(--t-sm);
+  color: var(--texto-tenue);
+  border-left: 2px solid var(--borda-forte);
+  padding-left: var(--e-4);
+  max-width: var(--largura-texto);
+}
+
+/* ==========================================================================
+   17. TELA DE ABERTURA
+   Uma vez por sessão, curta, e nunca capaz de esconder o conteúdo:
+   só existe se o JS a criar (ver main.js).
+   ========================================================================== */
+
+.loader {
+  position: fixed;
+  inset: 0;
+  z-index: var(--z-loader);
+  display: grid;
+  place-content: center;
+  gap: var(--e-5);
+  background: var(--grafite-1000);
+  color: var(--papel-50);
+  text-align: center;
+  transition: opacity var(--dur-lento) var(--ease-out), visibility var(--dur-lento);
+}
+.loader[data-saindo="sim"] { opacity: 0; visibility: hidden; }
+.loader__selo { width: 3.2rem; height: 3.2rem; margin-inline: auto; color: var(--terra-400); }
+.loader__nome {
+  font-family: var(--fonte-serif);
+  font-size: var(--t-lg);
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--areia-200);
+}
+.loader__trilho {
+  width: min(14rem, 60vw);
+  height: 1px;
+  margin-inline: auto;
+  background: var(--borda-inversa);
+  overflow: hidden;
+}
+.loader__trilho::after {
+  content: "";
+  display: block;
+  height: 100%;
+  width: 100%;
+  background: var(--areia-300);
+  transform-origin: left;
+  animation: carrega 900ms var(--ease-inout) forwards;
+}
+@keyframes carrega { from { transform: scaleX(0); } to { transform: scaleX(1); } }

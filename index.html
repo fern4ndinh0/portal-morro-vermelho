@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<!--
+  ============================================================================
+  MOLDE DE DESENVOLVIMENTO — este arquivo NÃO vai para o ar.
+
+  O site publicado é escrito por ferramentas/gerar.mjs, que monta o cabeçalho
+  do documento a partir dos metadados de cada página (título, descrição,
+  canonical, Open Graph, JSON-LD) e embute o CSS que aquela página usa.
+
+  Aqui, ao contrário, o CSS entra por link e vem inteiro — as seis folhas de
+  uma vez — porque em desenvolvimento vale mais recarregar rápido e ver
+  qualquer página do que reproduzir o corte por receita.
+
+  Qualquer .html pedido ao servidor cai neste arquivo (ver o plugin
+  rotasDeDisco em vite.config.js); quem decide o que renderizar é o
+  slugDoCaminho() em src/paginas/index.jsx.
+
+  CUIDADO AO EDITAR ESTE COMENTÁRIO: não escreva aqui, por extenso, a tag de
+  abertura do cabeçalho do documento. O @vitejs/plugin-react injeta o
+  preâmbulo do React Refresh logo após a PRIMEIRA ocorrência dela no arquivo.
+  Se essa ocorrência estiver dentro deste comentário, o preâmbulo nasce
+  comentado, nada monta em desenvolvimento, e o erro que aparece no console é
+  o enigmático "can't detect preamble".
+  ============================================================================
+-->
+<html lang="pt-BR" data-revisao="on">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Portal Morro Vermelho — desenvolvimento</title>
+<meta name="robots" content="noindex, nofollow">
+
+<link rel="stylesheet" href="/src/estilo/fontes.css">
+<link rel="stylesheet" href="/src/estilo/tokens.css">
+<link rel="stylesheet" href="/src/estilo/base.css">
+<link rel="stylesheet" href="/src/estilo/chassi.css">
+<link rel="stylesheet" href="/src/estilo/home.css">
+<link rel="stylesheet" href="/src/estilo/artigo.css">
+
+<!-- Único script que precisa rodar ANTES do primeiro paint: quem reduziu
+     animações não pode ver nada se mexer no caminho. É o mesmo trecho que o
+     gerador escreve nas páginas publicadas. -->
+<script>
+(function () {
+  try {
+    if (localStorage.getItem("mv-movimento") === "reduzido") {
+      document.documentElement.setAttribute("data-movimento", "reduzido");
+    }
+  } catch (e) {}
+})();
+</script>
+</head>
+
+<body id="topo">
+<div id="raiz"></div>
+<script type="module" src="/src/entrada-cliente.jsx"></script>
+</body>
+</html>

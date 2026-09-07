@@ -21,15 +21,15 @@ export default {
     {
       id: 'o-que-e', titulo: 'Patrimônio que se pratica',
       blocos: [
-        { abertura: 'Uma igreja sobrevive por inércia: ninguém precisa fazer nada para que ela continue de pé no ano que vem. Uma festa é o contrário — <strong>ela só existe se alguém a fizer de novo</strong>, do zero, todo ano.' },
+        { abertura: 'Uma igreja sobrevive por inércia: ninguém precisa fazer nada para que ela continue de pé no ano que vem. Uma festa é o contrário: <strong>ela só existe se alguém a fizer de novo</strong>, do zero, todo ano.' },
         'Essa diferença define tudo o que este portal pode e deve fazer aqui. Registrar a festa não é descrevê-la de fora: é registrar quem a faz, como se aprende a fazê-la e o que ela custa a quem assume.',
         { lista: [
-          '<strong>Quem detém</strong> — irmandade, comissão, família, grupo. O patrimônio imaterial pertence a eles, não ao portal e nem ao município.',
-          '<strong>Como se transmite</strong> — quem ensina, a quem, em que idade, com que material. É a pergunta que diz se a tradição está viva ou em risco.',
-          '<strong>O que custa</strong> — roupa, alimentação, animal, instrumento, tempo de trabalho. Festa tradicional costuma ser sustentada por famílias, e isso raramente aparece escrito.',
-          '<strong>O que mudou</strong> — nenhuma tradição centenária chegou intacta, e as mudanças são parte da história, não desvio dela.',
+          '<strong>Quem detém:</strong> irmandade, comissão, família, grupo. O patrimônio imaterial pertence a eles, não ao portal e nem ao município.',
+          '<strong>Como se transmite:</strong> quem ensina, a quem, em que idade, com que material. É a pergunta que diz se a tradição está viva ou em risco.',
+          '<strong>O que custa:</strong> roupa, alimentação, animal, instrumento, tempo de trabalho. Festa tradicional costuma ser sustentada por famílias, e isso raramente aparece escrito.',
+          '<strong>O que mudou:</strong> nenhuma tradição centenária chegou intacta, e as mudanças são parte da história, não desvio dela.',
         ] },
-        { nota: 'Antes de publicar qualquer descrição de festa, este portal a submete a quem a realiza. Não por formalidade: quem faz é a fonte, e é quem pode dizer o que está errado — e o que não deve ser publicado.', titulo: 'A regra de consentimento' },
+        { nota: 'Antes de publicar qualquer descrição de festa, este portal a submete a quem a realiza. Não por formalidade: quem faz é a fonte, e é quem pode dizer o que está errado, e o que não deve ser publicado.', titulo: 'A regra de consentimento' },
       ],
     },
     {
@@ -41,7 +41,7 @@ export default {
         { lista: [
           '<strong><a href="cavalhada-de-nazareth.html">A Cavalhada de Nossa Senhora de Nazareth</a></strong> é a manifestação mais conhecida do distrito, e tem página própria neste portal.',
           '<strong>A festa da padroeira</strong>, à qual a cavalhada está associada, com sua programação religiosa própria.',
-          '<strong>A <a href="sociedade-musical-santa-cecilia.html">Sociedade Musical Santa Cecília</a></strong> — a banda, que participa de boa parte do calendário e é ela própria uma tradição.',
+          '<strong>A <a href="sociedade-musical-santa-cecilia.html">Sociedade Musical Santa Cecília</a>:</strong> a banda, que participa de boa parte do calendário e é ela própria uma tradição.',
           'As demais celebrações do ano litúrgico e as festas de comunidades rurais do distrito, <span>ainda a levantar</span>.',
         ] },
       ],
@@ -49,26 +49,26 @@ export default {
     {
       id: 'registro', titulo: 'Como registrar sem atrapalhar',
       blocos: [
-        'Festa registrada com desatenção vira festa alterada. Câmera no lugar errado, público além do que a estrutura suporta, horário divulgado que não é o real — são efeitos comuns e evitáveis de um portal bem-intencionado.',
+        'Festa registrada com desatenção vira festa alterada. Câmera no lugar errado, público além do que a estrutura suporta, horário divulgado que não é o real: são efeitos comuns e evitáveis de um portal bem-intencionado.',
         { lista: [
           'Combinar antes com a comissão o que pode ser fotografado, filmado e publicado, e o que não pode.',
           'Gravar depoimentos fora do dia da festa. No dia, quem faz está trabalhando.',
           'Registrar a preparação, e não só o espetáculo: é onde está quase toda a informação que se perde.',
-          'Publicar horário só depois de confirmado com quem organiza, e datado — "programação de 2026", não "programação".',
+          'Publicar horário só depois de confirmado com quem organiza, e datado: "programação de 2026", não "programação".',
           'Devolver o material registrado a quem participou, antes de publicá-lo.',
         ] },
-        { citacao: 'Espaço reservado para a primeira fala gravada sobre as festas do distrito — de quem as organiza, com nome, idade e data de entrevista.', autoria: 'Depoimento a coletar · Memória oral do distrito' },
+        { citacao: 'Espaço reservado para a primeira fala gravada sobre as festas do distrito, de quem as organiza, com nome, idade e data de entrevista.', autoria: 'Depoimento a coletar · Memória oral do distrito' },
       ],
     },
   ],
   fontes: [
-    'Comissões organizadoras, irmandades e famílias detentoras — a fonte principal e as detentoras do patrimônio.',
-    'Arquivo da Paróquia de Morro Vermelho — livro de tombo e registros das festas religiosas ao longo dos anos.',
-    'IEPHA-MG — inventário de patrimônio imaterial e orientação sobre registro de bens culturais de natureza imaterial.',
-    'IPHAN — Inventário Nacional de Referências Culturais (INRC), metodologia aplicável.',
-    'Prefeitura de Caeté — calendário oficial de eventos e apoios concedidos.',
-    'Imprensa local e regional — coberturas antigas ajudam a datar mudanças na festa.',
-    'Acervos fotográficos de família — a memória visual das festas está em álbum, não em arquivo público.',
+    'Comissões organizadoras, irmandades e famílias detentoras: a fonte principal e as detentoras do patrimônio.',
+    'Arquivo da Paróquia de Morro Vermelho: livro de tombo e registros das festas religiosas ao longo dos anos.',
+    'IEPHA-MG: inventário de patrimônio imaterial e orientação sobre registro de bens culturais de natureza imaterial.',
+    'IPHAN: Inventário Nacional de Referências Culturais (INRC), metodologia aplicável.',
+    'Prefeitura de Caeté: calendário oficial de eventos e apoios concedidos.',
+    'Imprensa local e regional: coberturas antigas ajudam a datar mudanças na festa.',
+    'Acervos fotográficos de família: a memória visual das festas está em álbum, não em arquivo público.',
   ],
   relacionadas: [
     { nome: 'Cavalhada de Nossa Senhora de Nazareth', href: 'cavalhada-de-nazareth.html', txt: 'A festa mais conhecida do distrito.', olho: '18' },

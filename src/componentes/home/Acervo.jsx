@@ -123,7 +123,7 @@ export function Acervo() {
           className="trilho pecas"
           tabIndex={0}
           onKeyDown={trilho.aoTeclado}
-          aria-label="Peças do acervo — use as setas do teclado para navegar"
+          aria-label="Peças do acervo, use as setas do teclado para navegar"
         >
           {ACERVO.map((p) => <Peca key={p.titulo} peca={p} />)}
 
@@ -159,7 +159,7 @@ export function Acervo() {
           color: 'var(--texto-tenue)', maxWidth: 'var(--medida)',
         }}>
           Os números acima são contados automaticamente das peças desta página.
-          São pequenos porque o acervo está começando — e preferimos um número
+          São pequenos porque o acervo está começando, e preferimos um número
           pequeno verdadeiro a um número grande inventado.
         </p>
       </div>

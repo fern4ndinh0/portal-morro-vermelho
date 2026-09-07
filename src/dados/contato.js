@@ -13,7 +13,7 @@
    linha, e não caçar o número em 15 arquivos.
    Formato: código do país + DDD + número, só dígitos. Brasil = 55.        */
 
-export const WHATSAPP = '5531900000000';   /* TODO substituir pelo número real */
+export const WHATSAPP = '5531993775288';
 
 /* Mensagem que já vem digitada quando a pessoa abre a conversa. */
 export const WHATSAPP_MSG = 'Olá! Encontrei o portal de Morro Vermelho e gostaria de '
@@ -41,3 +41,12 @@ export function zapVisivel() {
    as etiquetas somem de uma vez.                                          */
 
 export const REVISAO = true;
+
+/* ---- LACUNAS DOCUMENTAIS --------------------------------------------------
+   As caixas "Lacuna documental" (bloco { lacuna } em Blocos.jsx) ficam
+   desligadas a pedido: o texto de cada verbete é o que Viviane e Geraldo
+   enviaram, e cabe a eles decidir se e quando marcar o que falta. O dado
+   continua em cada arquivo de src/dados/documentos/ — só a exibição foi
+   desligada, no mesmo padrão de MOSTRAR_CAVALHADAS em src/dados/home.js. */
+
+export const MOSTRAR_LACUNAS = false;

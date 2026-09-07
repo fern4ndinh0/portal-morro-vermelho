@@ -25,7 +25,7 @@ export function Revelacoes() {
             Três coisas que você provavelmente não sabe sobre este distrito
           </h2>
           <p className="linha-fina">
-            Nenhuma delas cabe num folheto de turismo. Todas são checáveis — e é por
+            Nenhuma delas cabe num folheto de turismo. Todas são checáveis, e é por
             isso que aparecem com a fonte ao lado.
           </p>
         </Revelar>

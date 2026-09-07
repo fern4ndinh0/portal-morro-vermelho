@@ -22,9 +22,9 @@ import { Revelar } from '../../ganchos/Revelar.jsx';
 const DESTINO = 'Morro+Vermelho%2C+Ca%C3%A9t%C3%A9+-+MG';
 
 const PRATICO = [
-  { icone: 'pin',    titulo: 'Onde fica:', txt: 'distrito de Caeté — MG, região metropolitana de Belo Horizonte.' },
+  { icone: 'pin',    titulo: 'Onde fica:', txt: 'distrito de Caeté, MG, região metropolitana de Belo Horizonte.' },
   { icone: 'igreja', titulo: 'Horário da igreja:', txt: 'a confirmar com a paróquia.' },
-  { icone: 'garfo',  titulo: 'Onde comer:', txt: 'levantar estabelecimentos locais — e listá-los de graça, para apoiar a economia do distrito.' },
+  { icone: 'garfo',  titulo: 'Onde comer:', txt: 'levantar estabelecimentos locais e listá-los de graça, para apoiar a economia do distrito.' },
 ];
 
 export function Visite() {
@@ -81,7 +81,7 @@ export function Visite() {
           <Revelar modo="escala">
             <div className="mapa-embed">
               <iframe
-                title="Mapa de Morro Vermelho, distrito de Caeté — Minas Gerais"
+                title="Mapa de Morro Vermelho, distrito de Caeté, Minas Gerais"
                 src="https://www.google.com/maps?q=Morro%20Vermelho%2C%20Ca%C3%A9t%C3%A9%20-%20MG&output=embed"
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"

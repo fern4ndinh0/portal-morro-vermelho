@@ -24,6 +24,7 @@
    ========================================================================== */
 
 import { Icone } from '../../dados/icones.jsx';
+import { MOSTRAR_LACUNAS } from '../../dados/contato.js';
 import { CaixaDeMidia } from '../CaixaDeMidia.jsx';
 import { Html } from '../Texto.jsx';
 
@@ -58,7 +59,7 @@ function Figura({ b }) {
       </div>
       <figcaption>
         {podeMostrar ? null : <><strong>Imagem a incorporar.</strong>{' '}</>}
-        {b.legenda || ''}
+        {b.legenda && <Html as="span" texto={b.legenda} />}
         {/* Enquanto não houver crédito declarado, o texto continua sendo a
             cobrança. Uma foto publicada sem crédito é uma foto que o portal
             não deveria estar exibindo, e a legenda diz isso em voz alta. */}
@@ -133,6 +134,7 @@ export function Bloco({ b }) {
   }
 
   if (b.lacuna) {
+    if (!MOSTRAR_LACUNAS) return null;
     return (
       <div className="nota nota--lacuna">
         <Icone nome="alerta" />

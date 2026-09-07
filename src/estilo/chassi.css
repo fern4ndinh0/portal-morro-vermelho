@@ -218,6 +218,11 @@ html[data-revisao="off"] .a-verificar { display: none; }
   color: inherit;
   flex: none;
 }
+/* Só a navbar usa <Marca> como link de verdade (drawer e rodapé passam
+   comoLink=false). Sem esta regra, o hover cai no `a:hover` global
+   (--marca-hover, um terracota) — pouco legível sobre o fundo escuro da
+   navbar. As mesmas âmbar (--areia-300) dos outros controles da navbar. */
+.marca:hover, .marca:focus-visible { color: var(--areia-300); }
 .marca__selo { width: 2rem; height: 2rem; flex: none; color: var(--terra-400); }
 .marca__texto {
   font-family: var(--fonte-serif);
@@ -365,7 +370,7 @@ html[data-revisao="off"] .a-verificar { display: none; }
 
 /* Página que ainda não existe: NÃO é link. Sem href, sem 404, sem beco.
    Aplicado com <span class="mega__link mega__link--breve"> */
-.mega__link--breve, .rodape__lista .breve {
+.mega__link--breve {
   color: var(--texto-tenue);
   cursor: default;
   display: flex;
@@ -373,7 +378,7 @@ html[data-revisao="off"] .a-verificar { display: none; }
   justify-content: space-between;
   gap: var(--e-3);
 }
-.mega__link--breve::after, .rodape__lista .breve::after {
+.mega__link--breve::after {
   content: "em breve";
   font-size: 0.625rem;
   font-weight: 700;
@@ -600,62 +605,14 @@ html[data-revisao="off"] .a-verificar { display: none; }
   position: absolute; inset: 0 0 auto 0; height: 1px;
   background: linear-gradient(to right, transparent, var(--terra-600), var(--serra-600), transparent);
 }
-.rodape__topo { display: grid; gap: var(--e-8); }
-@media (min-width: 60rem) { .rodape__topo { grid-template-columns: 20rem 1fr; gap: var(--e-10); } }
+.rodape__topo { display: grid; }
 
 .rodape__sobre p {
   font-size: var(--t-sm);
   color: color-mix(in oklab, var(--papel-50) 68%, transparent);
   margin-top: var(--e-4);
-  max-width: 34ch;
+  max-width: 46ch;
 }
-.rodape__mapa {
-  display: grid;
-  gap: var(--e-6) var(--e-5);
-  grid-template-columns: repeat(auto-fit, minmax(9.5rem, 1fr));
-}
-.rodape__coluna-titulo {
-  font-family: var(--fonte-sans);
-  font-size: 0.625rem;
-  font-weight: 700;
-  letter-spacing: var(--tracking-largo);
-  text-transform: uppercase;
-  color: var(--areia-400);
-  margin-bottom: var(--e-4);
-}
-.rodape__lista { display: grid; gap: 0.55rem; }
-.rodape__lista a {
-  font-size: var(--t-sm);
-  color: color-mix(in oklab, var(--papel-50) 74%, transparent);
-  text-decoration: none;
-}
-.rodape__lista a:hover { color: var(--papel-0); text-decoration: underline; }
-.rodape__lista .breve { font-size: var(--t-sm); }
-.rodape__lista .breve::after { color: var(--areia-700); border-color: var(--borda-inversa); }
-
-/* Faixa de transparência: quem faz, com que licença, como reclamar direitos.
-   É o que separa portal institucional de site bonito. */
-.rodape__prestacao {
-  margin-top: var(--e-9);
-  padding: var(--e-5);
-  border: 1px solid var(--borda-inversa);
-  border-radius: var(--r-lg);
-  background: color-mix(in oklab, var(--papel-50) 4%, transparent);
-  display: grid;
-  gap: var(--e-4);
-  font-size: var(--t-xs);
-  color: color-mix(in oklab, var(--papel-50) 72%, transparent);
-}
-@media (min-width: 52rem) { .rodape__prestacao { grid-template-columns: repeat(3, 1fr); gap: var(--e-6); } }
-.rodape__prestacao dt {
-  font-weight: 700;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: var(--areia-400);
-  font-size: 0.625rem;
-  margin-bottom: 0.4rem;
-}
-.rodape__prestacao a { color: var(--areia-300); }
 
 .rodape__base {
   margin-top: var(--e-7);

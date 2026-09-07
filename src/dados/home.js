@@ -72,13 +72,13 @@ export const REVELACOES = [
     texto: 'Um povoado nascido da mineração poderia se vender pelo ciclo do ouro, '
          + 'como faz a maior parte das cidades históricas de Minas. Morro Vermelho '
          + 'adotou <strong>“Amor à Liberdade”</strong> como lema. Essa escolha '
-         + 'desloca o centro da história das pedras para as pessoas — e organiza '
+         + 'desloca o centro da história das pedras para as pessoas, e organiza '
          + 'todo este portal.',
     fonte: 'Lema em uso pelo próprio distrito. Origem e data de adoção a documentar.',
   },
   {
     num: '02',
-    titulo: 'O nome não é poesia — é a cor do chão',
+    titulo: 'O nome não é poesia: é a cor do chão',
     texto: 'Na cidade há um cume, com uma parte sem vegetação que exibe uma terra bem '
          + 'avermelhada, que é bem comum nas redondezas. A partir daí veio o nome que '
          + 'foi adotado para o local, Morro Vermelho.',
@@ -89,7 +89,7 @@ export const REVELACOES = [
     titulo: 'Metade da memória daqui está dentro de casas, não de arquivos',
     texto: 'Cartas, retratos de casamento, cadernos de receita e principalmente os mais '
          + 'antigos moradores. Este portal existe para digitalizar isso antes que o '
-         + 'tempo resolva por nós — e devolver o original a quem o guardou.',
+         + 'tempo resolva por nós, e devolver o original a quem o guardou.',
     fonte: 'Este é o compromisso editorial do projeto, não um dado histórico.',
   },
 ];
@@ -139,7 +139,7 @@ export const CAMINHOS = [
    a preencher com invenção, e é por isso que o trilho tem mais tracejado do
    que gostaríamos.
 
-   As datas de 1700, 1704, 1707 e 1984 são as que o próprio distrito guarda,
+   As datas de 1700, 1704, 1707, 1713 e 1983 são as que o próprio distrito guarda,
    e cada uma tem um verbete que explica o que já se sabe e o que falta
    provar. O campo 'href' leva até ele: um marco que declara ser estimado
    deve dizer onde a discussão está.
@@ -168,9 +168,9 @@ export const LINHA_DO_TEMPO = [
     href: 'guerra-dos-emboabas.html',
   },
   {
-    ano: '?', estimado: true,
+    ano: '1713',
     titulo: 'Construção da Igreja Matriz',
-    txt: 'Marco a documentar em livro de tombo paroquial ou registro do IPHAN.',
+    txt: 'Erguida pelo capitão-mor Paulo Rodrigues Durão, pai do poeta Frei Santa Rita Durão. Tombada pelo IPHAN em 1950.',
     href: 'atracoes.html',
   },
   {
@@ -179,10 +179,9 @@ export const LINHA_DO_TEMPO = [
     txt: 'Verificar em legislação municipal/estadual e no acervo do IBGE.',
   },
   {
-    ano: '1984', estimado: true,
+    ano: '1983',
     titulo: 'Mobilização pelas Diretas-Já',
-    txt: 'O ato que o distrito registra como seu primeiro grito contra a ditadura militar.',
-    verificar: 'data exata a documentar',
+    txt: 'Em 7 de setembro, o povo do distrito foi à Praça da Matriz pedir eleição direta para presidente: o ato foi noticiado no dia seguinte em editorial da Folha de S.Paulo.',
     href: 'diretas-ja.html',
   },
   {
@@ -284,7 +283,7 @@ export const COMPARADOR = {
 export const O_QUE_ACEITAMOS = [
   'Fotografias de família, festa, trabalho, obra, procissão, escola.',
   'Documentos: escrituras, cartas, cadernos, recortes de jornal.',
-  'Receitas manuscritas — inclusive as com mancha de gordura.',
+  'Receitas manuscritas, inclusive as com mancha de gordura.',
   'Histórias que só você sabe contar. Levamos o gravador.',
 ];
 
@@ -338,7 +337,7 @@ export const CAVALHADAS = {
 export const IDEALIZADORES_ABERTURA =
     'Nenhum verbete deste acervo foi escrito para caber num site. Vem de duas '
   + 'pessoas que carregam a história de Morro Vermelho há mais de quarenta '
-  + 'anos — e que agora a devolvem ao próprio distrito, em código em vez de '
+  + 'anos, e que agora a devolvem ao próprio distrito, em código em vez de '
   + 'papel.';
 
 export const IDEALIZADORES = [

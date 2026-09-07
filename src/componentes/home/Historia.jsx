@@ -81,7 +81,7 @@ export function Historia() {
               <strong>Nota de método:</strong> o texto acima é como o distrito se
               apresenta, e as seis afirmações que ele faz estão sendo documentadas uma
               a uma. Cada verbete separa o que é contexto regional comprovado do que
-              ainda precisa de fonte primária — inclusive quando a conclusão é
+              ainda precisa de fonte primária, inclusive quando a conclusão é
               incômoda. Acompanhe a pesquisa em{' '}
               {MANIFESTO.ondeSeExamina
                 .filter((x, i, lista) => lista.findIndex((y) => y.slug === x.slug) === i)
@@ -122,7 +122,7 @@ export function Historia() {
           className="trilho"
           tabIndex={0}
           onKeyDown={trilho.aoTeclado}
-          aria-label="Linha do tempo de Morro Vermelho — use as setas do teclado para navegar"
+          aria-label="Linha do tempo de Morro Vermelho, use as setas do teclado para navegar"
         >
           {LINHA_DO_TEMPO.map((m) => <Marco m={m} key={m.titulo} />)}
         </ol>

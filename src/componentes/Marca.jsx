@@ -27,7 +27,7 @@ export function Marca({ slug, comoLink = true, local = MARCA.local, style, estil
       className="marca"
       style={style}
       href={alvo('index.html', slug)}
-      aria-label={`Portal ${MARCA.nome} — página inicial`}
+      aria-label={`Portal ${MARCA.nome}, página inicial`}
     >
       {miolo}
     </a>

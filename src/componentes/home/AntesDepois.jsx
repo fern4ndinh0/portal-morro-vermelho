@@ -110,7 +110,7 @@ export function AntesDepois() {
         </Revelar>
 
         <p style={{ marginTop: 'var(--e-4)', fontSize: 'var(--t-xs)', color: 'var(--texto-tenue)' }}>
-          O comparador já funciona — arraste ou use as setas do teclado. Falta só o
+          O comparador já funciona: arraste ou use as setas do teclado. Falta só o
           par de fotografias. Se você tem uma foto antiga de qualquer ponto do
           distrito, <a href="#colabore">é isto que precisamos</a>.
         </p>

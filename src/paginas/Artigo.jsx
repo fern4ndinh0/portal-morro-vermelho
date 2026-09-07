@@ -22,14 +22,12 @@ import { tempoDeLeitura } from '../dados/documentos/index.js';
 import { useProgressoDeLeitura, useSecaoAtiva } from '../ganchos/rolagem.js';
 import { Chassi } from '../componentes/Chassi.jsx';
 import { Bloco } from '../componentes/artigo/Blocos.jsx';
-import { ComoCitar } from '../componentes/artigo/ComoCitar.jsx';
-import { Html } from '../componentes/Texto.jsx';
 
 export function metaArtigo(doc) {
   return {
     slug: doc.slug,
-    titulo: `${doc.titulo} | ${MARCA.nome} — Caeté, MG`,
-    tituloOg: `${doc.titulo} — ${MARCA.nome}`,
+    titulo: `${doc.titulo} | ${MARCA.nome}, Caeté, MG`,
+    tituloOg: `${doc.titulo} | ${MARCA.nome}`,
     descricao: doc.resumoSeo,
     ogTipo: 'article',
     jsonLd: {
@@ -140,7 +138,6 @@ export function Artigo({ doc, anterior, proximo }) {
   const artigo = useRef(null);
   const progresso = useProgressoDeLeitura(artigo);
   const minutos = tempoDeLeitura(doc);
-  const url = `${SITE}/${doc.slug}.html`;
 
   return (
     <Chassi slug={doc.slug}>
@@ -174,10 +171,6 @@ export function Artigo({ doc, anterior, proximo }) {
               <span className="artigo-ficha__item">
                 <Icone nome="doc" />Estado: <strong>{doc.estado}</strong>
               </span>
-              <span className="artigo-ficha__item">
-                <Icone nome="alerta" />
-                <strong>{doc.fontes.length}</strong> fontes a consultar
-              </span>
             </div>
           </div>
         </header>
@@ -200,23 +193,6 @@ export function Artigo({ doc, anterior, proximo }) {
               ))}
 
               <div className="aparato">
-                <div>
-                  <p className="aparato__titulo">Fontes a consultar</p>
-                  <p style={{
-                    fontSize: 'var(--t-sm)', color: 'var(--texto-tenue)',
-                    marginBottom: 'var(--e-4)',
-                  }}>
-                    Esta página ainda não cita fonte primária. A lista abaixo é a
-                    agenda de pesquisa deste verbete — o que precisa ser consultado
-                    para que ele deixe de ser rascunho.
-                  </p>
-                  <ol>
-                    {doc.fontes.map((f, i) => <Html as="li" key={i} texto={f} />)}
-                  </ol>
-                </div>
-
-                <ComoCitar titulo={doc.titulo} url={url} />
-
                 <div>
                   <p className="aparato__titulo">Contribua com este verbete</p>
                   <p style={{

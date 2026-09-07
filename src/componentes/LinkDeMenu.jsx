@@ -50,7 +50,7 @@ export function LinkDeMenu({ item, classe, classeBreve, children, depois = null,
         rel="noopener"
         data-pendente={ZAP_CONFIGURADO ? undefined : 'sim'}
         title={ZAP_CONFIGURADO ? undefined
-          : 'Número de WhatsApp ainda não configurado — ver WHATSAPP em src/dados/contato.js'}
+          : 'Número de WhatsApp ainda não configurado. Ver WHATSAPP em src/dados/contato.js'}
         {...resto}
       >
         {miolo} <Icone nome="whatsapp" />

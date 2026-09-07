@@ -42,7 +42,7 @@ export default {
     {
       id: 'o-nome', titulo: 'O que um nome antigo carrega',
       blocos: [
-        { abertura: 'Topônimos são documentos. Quando um lugar troca de nome, alguma coisa foi decidida — e quase sempre alguém decidiu. Recuperar o nome antigo é recuperar uma camada da história que o nome atual cobriu.' },
+        { abertura: 'Topônimos são documentos. Quando um lugar troca de nome, alguma coisa foi decidida, e quase sempre alguém decidiu. Recuperar o nome antigo é recuperar uma camada da história que o nome atual cobriu.' },
         '“Arraial” designava, nas Minas coloniais, o povoado ainda sem estatuto formal de vila: aglomerado nascido em torno de lavra ou capela, sem câmara municipal e sem pelourinho. Era o estágio anterior à existência oficial.',
         { lacuna: 'A designação "Arraial de Viracopos" aparece no site do próprio distrito, e é por isso que este capítulo existe. Falta confirmá-la em documentação: em que registro ela aparece, de que período, e por que e quando o nome mudou para Morro Vermelho.' },
       ],
@@ -50,11 +50,11 @@ export default {
     {
       id: 'hipoteses', titulo: 'Hipóteses sobre a origem do nome',
       blocos: [
-        'Nomes como este costumam ter uma de três origens. Registrar as hipóteses — sem escolher nenhuma — é mais honesto do que afirmar a mais pitoresca:',
+        'Nomes como este costumam ter uma de três origens. Registrar as hipóteses, sem escolher nenhuma, é mais honesto do que afirmar a mais pitoresca:',
         { lista: [
           '<strong>Origem descritiva:</strong> alguma característica física do lugar, do terreno ou do curso d’água.',
           '<strong>Origem anedótica:</strong> um episódio ocorrido ali, transmitido oralmente até virar nome. É a explicação mais contada e a mais difícil de comprovar.',
-          '<strong>Origem transferida:</strong> nome trazido por quem chegou, replicando um lugar de onde a pessoa veio — padrão comum na ocupação das Minas.',
+          '<strong>Origem transferida:</strong> nome trazido por quem chegou, replicando um lugar de onde a pessoa veio, padrão comum na ocupação das Minas.',
         ] },
         { nota: 'Quando não se sabe, escreve-se que não se sabe. A versão mais divertida da origem de um nome quase nunca é a documentada, e um portal de memória que publica a versão divertida como fato perde a autoridade para publicar o resto.', titulo: 'Por que não escolhemos uma hipótese' },
       ],
@@ -62,23 +62,23 @@ export default {
     {
       id: 'a-troca', titulo: 'A troca de nome',
       blocos: [
-        'A mudança de nome de um povoado costuma acompanhar uma mudança de estatuto: elevação a freguesia, a distrito, ou reorganização administrativa municipal. Essas mudanças deixam rastro em lei — estadual ou municipal — e em recenseamento.',
+        'A mudança de nome de um povoado costuma acompanhar uma mudança de estatuto: elevação a freguesia, a distrito, ou reorganização administrativa municipal. Essas mudanças deixam rastro em lei (estadual ou municipal) e em recenseamento.',
         'É um rastro rastreável. A legislação de criação e alteração de distritos em Minas Gerais está preservada, e o IBGE mantém histórico de nomes de localidades. Este é um dos poucos pontos desta página que pode ser resolvido em arquivo, sem depender de memória oral.',
         { figura: 'Reprodução de mapa, documento ou publicação em que o nome antigo apareça.', arquivo: 'figura-nome-antigo.jpg', legenda: '<strong>Muro de pedra seca nas ruínas de Viracopos.</strong> A fotografia registra o sítio; a grafia do nome antigo, que é a lacuna deste verbete, continua dependendo de documento escrito.', alt: 'Muro baixo de pedra seca em meio a capim alto, remanescente de construção antiga.', credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro · autoria a confirmar' },
       ],
     },
   ],
   fontes: [
-    'IBGE — Enciclopédia dos Municípios Brasileiros e histórico de nomes de localidades.',
+    'IBGE: Enciclopédia dos Municípios Brasileiros e histórico de nomes de localidades.',
     'Legislação mineira de criação e alteração de distritos (Assembleia Legislativa de MG).',
-    'Arquivo Público Mineiro — mapas e relações de arraiais e freguesias do termo de Caeté.',
-    'Arquivo da Câmara Municipal de Caeté — atas e leis municipais.',
+    'Arquivo Público Mineiro: mapas e relações de arraiais e freguesias do termo de Caeté.',
+    'Arquivo da Câmara Municipal de Caeté: atas e leis municipais.',
     'Bibliografia de toponímia mineira.',
-    'Memória oral — se alguém mais velho ainda usa ou lembra o nome antigo, isso é fonte.',
+    'Memória oral: se alguém mais velho ainda usa ou lembra o nome antigo, isso é fonte.',
   ],
   relacionadas: [
     { nome: 'A Busca do Ouro', href: 'a-busca-do-ouro.html', txt: 'Por que um arraial nasceu exatamente aqui.', olho: '03' },
     { nome: 'Estrada Real', href: 'estrada-real.html', txt: 'A rede de caminhos que ligava os arraiais.', olho: '08' },
-    { nome: 'Estórias, Casos e Lendas', txt: 'As versões que a comunidade conta — registradas como o que são.' },
+    { nome: 'Estórias, Casos e Lendas', href: 'estorias-casos-e-lendas.html', txt: 'As versões que a comunidade conta, registradas como o que são.', olho: '25' },
   ],
 };

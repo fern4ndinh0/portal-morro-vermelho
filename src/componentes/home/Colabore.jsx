@@ -32,7 +32,7 @@ export function Colabore() {
             style={{ color: 'color-mix(in oklab, var(--papel-50) 84%, transparent)', maxWidth: '44ch' }}
           >
             É disso que este acervo é feito. Digitalizamos, catalogamos, creditamos
-            quem guardou — e devolvemos o original na sua mão.
+            quem guardou, e devolvemos o original na sua mão.
           </p>
 
           <ul className="colabore__lista">
@@ -58,14 +58,14 @@ export function Colabore() {
               rel="noopener"
               data-pendente={ZAP_CONFIGURADO ? undefined : 'sim'}
               title={ZAP_CONFIGURADO ? undefined
-                : 'Número de WhatsApp ainda não configurado — ver WHATSAPP em src/dados/contato.js'}
+                : 'Número de WhatsApp ainda não configurado. Ver WHATSAPP em src/dados/contato.js'}
             >
               <Icone nome="whatsapp" />
               Enviar pelo WhatsApp
             </a>
             <p className="colabore__zap-nota">
               Mande a foto direto pela conversa. Se souber, conte quem aparece, onde
-              foi e mais ou menos quando — é essa informação que transforma uma
+              foi e mais ou menos quando. É essa informação que transforma uma
               imagem solta em peça de acervo.
             </p>
           </div>

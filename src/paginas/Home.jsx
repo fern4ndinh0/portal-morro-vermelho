@@ -25,8 +25,8 @@ import { Loader } from '../componentes/home/Loader.jsx';
 
 export const META_HOME = {
   slug: 'index',
-  titulo: `${MARCA.nome} | Portal Cultural e Museu Digital — Distrito de Caeté, Minas Gerais`,
-  tituloOg: `${MARCA.nome} — Portal Cultural e Museu Digital`,
+  titulo: `${MARCA.nome} | Portal Cultural e Museu Digital, Distrito de Caeté, Minas Gerais`,
+  tituloOg: `${MARCA.nome} | Portal Cultural e Museu Digital`,
   descricao: 'Portal cultural e museu digital de Morro Vermelho, distrito de Caeté, '
            + 'Minas Gerais. Acervo histórico, memória oral, patrimônio, Cavalhadas, '
            + 'gastronomia e informações para visitar o distrito.',

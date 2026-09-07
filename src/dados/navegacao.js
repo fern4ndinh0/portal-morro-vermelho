@@ -100,7 +100,7 @@ export const MENU = [
           { nome: 'Mídia e Redes', href: 'midia-e-redes.html', desc: 'Onde acompanhar o distrito' },
           { nome: 'Notícias da Terra', href: 'noticias-da-terra.html', desc: 'O que ameaça o patrimônio hoje' },
           { nome: 'Cultura Popular', href: 'cultura-popular.html', desc: 'Vinte e cinco estudos acadêmicos sobre o distrito' },
-          { nome: 'Bens Históricos', href: 'bens-historicos.html', desc: 'Tombados desde 1950 — e sem verba desde então' },
+          { nome: 'Bens Históricos', href: 'bens-historicos.html', desc: 'Tombados desde 1950, e sem verba desde então' },
           { nome: 'Como este portal foi feito', href: 'sobre-o-portal.html', desc: 'A procedência do acervo' },
         ],
       },
@@ -236,7 +236,7 @@ export const MARCA = {
   nome: 'Morro Vermelho',
   local: 'Amor à Liberdade · Caeté, MG',
   sobre: 'Arquivo aberto e colaborativo da memória do distrito. Projeto sem '
-       + 'fins comerciais, construído com moradores, pesquisadores e escolas.',
+       + 'fins comerciais, para manter viva a memória da cidade em uma era digital.',
 };
 
 /* --- Domínio -------------------------------------------------------------

@@ -107,7 +107,6 @@ export default {
           '<strong>Autorização de uso</strong> assinada por quem conta, sempre, e antes de publicar.',
           '<strong>Coordenada de GPS</strong> dos lugares citados: os currais do Maquiné, o alto do Cutão onde a luz aparecia, o desfiladeiro do posto fiscal, as encruzilhadas do percurso da encomendação.',
         ] },
-        { citacao: 'Espaço reservado para o primeiro causo gravado em áudio, com nome, idade e data da entrevista de quem o contou.', autoria: 'Depoimento a coletar · Literatura oral do distrito' },
         { nota: 'Um dos estudos listados em Cultura Popular chega a esta conclusão sobre o acervo oral do povoado: acumulado em trezentos anos, ele é constantemente reelaborado pelos moradores, permitindo a cada um construir a própria história, que é também coletiva. Ou seja: gravar não congela a tradição. A tradição segue se refazendo, e o que se grava é o estado dela numa data.', titulo: 'Gravar não é embalsamar' },
       ],
     },

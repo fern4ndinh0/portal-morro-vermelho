@@ -72,7 +72,6 @@ export default {
           '<strong>Gravações</strong>, de qualquer época e qualquer qualidade, incluindo fita cassete e vídeo de celular.',
         ] },
         { nota: 'Uma partitura manuscrita da qual não existe outra cópia é, em termos de acervo, exatamente tão insubstituível quanto um documento setecentista. A diferença é que ninguém a trata assim.', titulo: 'Escala de prioridade' },
-        { citacao: 'Espaço reservado para a fala de um músico da corporação sobre como aprendeu a tocar e com quem.', autoria: 'Depoimento a coletar · Memória oral do distrito' },
       ],
     },
   ],

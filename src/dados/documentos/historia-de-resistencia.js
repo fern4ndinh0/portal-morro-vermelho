@@ -71,7 +71,6 @@ export default {
           'Como as famílias negras do distrito contam a própria origem? Que sobrenomes, que terras, que ofícios se repetem?',
           'O lema tem origem documental ou é uma síntese recente da autoimagem da comunidade? As duas hipóteses são igualmente interessantes.',
         ] },
-        { citacao: 'Espaço reservado para a primeira fala gravada sobre este assunto, de um morador, com nome, idade e data de entrevista.', autoria: 'Depoimento a coletar · Memória oral do distrito' },
       ],
     },
     {

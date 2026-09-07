@@ -235,12 +235,6 @@ export const ACERVO = [
     },
   },
   {
-    tipo: 'depoimento', rotulo: 'Memória oral', giro: '-0.7deg', giroFita: '1.5deg', sepia: 0.22,
-    titulo: 'Como se aprendia música na banda',
-    meta: 'Entrevista prevista', metaFim: 'transcrição integral',
-    ausente: 'Depoimento a gravar.\nRoteiro de entrevista em preparação.',
-  },
-  {
     tipo: 'documento', rotulo: 'Documento', giro: '0.9deg', giroFita: '-2deg', sepia: 0.4,
     titulo: 'Escritura de imóvel no centro',
     meta: 'Data a estabelecer', metaFim: 'acervo particular',

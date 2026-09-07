@@ -57,7 +57,6 @@ export default {
           'Publicar horário só depois de confirmado com quem organiza, e datado: "programação de 2026", não "programação".',
           'Devolver o material registrado a quem participou, antes de publicá-lo.',
         ] },
-        { citacao: 'Espaço reservado para a primeira fala gravada sobre as festas do distrito, de quem as organiza, com nome, idade e data de entrevista.', autoria: 'Depoimento a coletar · Memória oral do distrito' },
       ],
     },
   ],

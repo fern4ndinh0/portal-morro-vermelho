@@ -46,7 +46,6 @@ export default {
       blocos: [
         'Casa de padre guarda papel. Correspondência, livros anotados, fotografias de ordenação e de visitas pastorais, cadernos de sermão, registros de obras na igreja, é um tipo de acervo que sobrevive melhor que a média, porque quem o herda sabe que ele tem valor.',
         'Localizar os descendentes e herdeiros dessa família é, provavelmente, o caminho mais curto para uma das maiores contribuições possíveis ao acervo deste portal.',
-        { citacao: 'Espaço reservado para a primeira fala gravada sobre a família, de um descendente ou morador, com nome, idade e data de entrevista.', autoria: 'Depoimento a coletar · Memória oral do distrito' },
         { figura: 'Retrato de ordenação, documento de concessão da comenda, ou fotografia da família reunida.', arquivo: 'figura-familia-de-padres.jpg', legenda: '<strong>Um dos seis irmãos sacerdotes da família Marques Guimarães.</strong> Falta identificar qual deles, e há fonte para isso: as datas de nascimento dos seis estão registradas, de 1887 a 1903. A fotografia da família inteira está na <a href="galeria-de-fotos.html">galeria</a>.', alt: 'Retrato antigo de sacerdote idoso de batina e óculos, em preto e branco.', credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro · autoria a confirmar' },
       ],
     },

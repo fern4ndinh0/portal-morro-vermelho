@@ -59,7 +59,6 @@ export default {
       blocos: [
         'Epidemia é o tipo de acontecimento que sobrevive na fala por gerações, sob a forma de histórias de família: o parente que morreu, a casa que ficou vazia, o lugar onde ninguém construía. Essas histórias são fonte legítima, desde que registradas como o que são, com nome de quem contou e data da entrevista.',
         'Vale perguntar também pelo lado que costuma sumir: quem cuidou, quem enterrou, quem voltou depois. Uma epidemia contada só pelos mortos conta metade.',
-        { citacao: 'Espaço reservado para a primeira fala gravada sobre a epidemia: de um morador, com nome, idade e data de entrevista.', autoria: 'Depoimento a coletar · Memória oral do distrito' },
         { figura: 'Registro do cemitério antigo, de sepultamento afastado ou de construção associada à epidemia.', arquivo: 'figura-epidemia-da-bexiga.jpg', legenda: '<strong>Cruzeiro e muro de pedra de cemitério no distrito.</strong> Falta confirmar se este é o cemitério novo ou o velho “cemitério dos bexiguentos”, de 1895, que hoje está sem cerca e sem registro, e a coordenada de GPS de cada um.', alt: 'Cruz de madeira alta e desgastada fincada em base de pedra, diante do muro de pedra e do portão de ferro de um cemitério antigo.', credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro · autoria a confirmar' },
       ],
     },

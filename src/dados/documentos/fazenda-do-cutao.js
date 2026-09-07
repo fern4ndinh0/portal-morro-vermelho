@@ -52,7 +52,6 @@ export default {
       blocos: [
         'Um engenho de apuração não funcionava sozinho, e a pergunta sobre quem o operava é a mais importante desta página, e a mais fácil de deixar de fora, porque é a que menos aparece em documento de propriedade.',
         'Inventários e testamentos são a fonte mais direta: eles listam, lado a lado, as estruturas da fazenda e as pessoas escravizadas que nela trabalhavam, com nome, idade, procedência declarada e ofício. É um documento difícil de ler pelo que é, e é exatamente por isso que ele importa.',
-        { citacao: 'Espaço reservado para a primeira fala gravada sobre a Fazenda do Cutão, de um morador, com nome, idade e data de entrevista.', autoria: 'Depoimento a coletar · Memória oral do distrito' },
         { figura: 'Vestígio de engenho, levada, tanque ou base de pilão no terreno da fazenda.', arquivo: 'figura-fazenda-do-cutao.jpg', legenda: '<strong>Água descendo sobre lajes de pedra na região do Cutão.</strong> O acervo documenta ali um paredão de pedra que represava água conduzida por túnel até um grande engenho de apuração do ouro.', alt: 'Queda de água em degraus sobre lajes de pedra, cercada de mata fechada.', credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro · autoria a confirmar' },
       ],
     },

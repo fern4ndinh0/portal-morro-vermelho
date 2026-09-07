@@ -64,7 +64,6 @@ export default {
           '<strong>A preparação:</strong> roupa, arreio, treino do cavalo, ensaios, e quem custeia o quê.',
           '<strong>A comissão:</strong> quem organiza hoje, como se organiza, e há quanto tempo.',
         ] },
-        { citacao: 'Espaço reservado para a primeira fala gravada sobre a cavalhada, de um cavaleiro, de quem costura a roupa ou de quem organiza, com nome, idade e data de entrevista.', autoria: 'Depoimento a coletar · Memória oral do distrito' },
         { figura: 'A cavalhada: cavaleiros, partidos, embaixada, preparação ou os bastidores.', arquivo: 'figura-cavalhada.jpg', legenda: '<strong>Cavaleiro cristão em cavalo empinado, na noite de 7 de setembro.</strong> São vinte e quatro cavaleiros: doze cristãos de azul, doze mouros de vermelho.', alt: 'Cavalo branco empinado à noite, montado por cavaleiro de capa azul-clara com o braço erguido.', credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro · autoria a confirmar' },
       ],
     },

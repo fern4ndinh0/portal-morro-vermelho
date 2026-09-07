@@ -90,7 +90,6 @@ export function Acervo() {
     { valor: ACERVO.length,           rotulo: 'peças catalogadas' },
     { valor: contar('documento'),     rotulo: 'documentos' },
     { valor: contar('fotografia'),    rotulo: 'fotografias' },
-    { valor: contar('depoimento'),    rotulo: 'depoimentos' },
   ];
 
   return (

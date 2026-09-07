@@ -53,7 +53,6 @@ export default {
           'O nome no cadastro rural, em escritura antiga ou em mapa do IBGE: topônimos sobrevivem em papel de cartório muito depois de sumirem da fala.',
           'Menções em livros de registro do termo de Caeté, no Arquivo Público Mineiro.',
         ] },
-        { citacao: 'Espaço reservado para a primeira fala gravada sobre o Retiro dos Capetas, de um morador, com nome, idade e data de entrevista.', autoria: 'Depoimento a coletar · Memória oral do distrito' },
       ],
     },
   ],

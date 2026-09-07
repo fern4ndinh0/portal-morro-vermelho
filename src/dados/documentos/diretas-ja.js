@@ -60,7 +60,6 @@ export default {
           '<strong>Pedir as fotos.</strong> Ato político dos anos 80 foi fotografado, e as fotos estão em álbum de família, não em arquivo público.',
           '<strong>Cruzar com a imprensa.</strong> Jornais de Belo Horizonte e de Caeté da época dão data, número estimado de público e, às vezes, nomes.',
         ] },
-        { citacao: 'Espaço reservado para a primeira fala gravada sobre o ato, de quem estava lá, com nome, idade e data de entrevista.', autoria: 'Depoimento a coletar · Memória oral do distrito' },
         { figura: 'Fotografia do ato: faixa, carro de som, concentração, ou o local como está hoje.', arquivo: 'figura-diretas-ja.jpg', legenda: 'Fotografia de acervo particular exige autorização escrita de quem a guarda e crédito nominal. Identificar, quando possível, as pessoas retratadas, com o consentimento delas.' },
       ],
     },

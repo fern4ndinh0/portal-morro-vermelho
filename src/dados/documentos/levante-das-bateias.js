@@ -50,7 +50,6 @@ export default {
       blocos: [
         'Vale registrar por que o nome pegou. A bateia é um prato de madeira ou metal, girado na água com as mãos, com que se separa o ouro do cascalho. É o instrumento do trabalhador individual, não do dono de lavra, não do contratador, não da Coroa.',
         'Uma revolta que leva o nome do instrumento de trabalho está dizendo de quem ela foi. É a mesma lógica que faz este distrito escolher "Amor à Liberdade" em vez do ciclo do ouro: o centro da história são as pessoas, não o metal.',
-        { citacao: 'Espaço reservado para a primeira fala gravada sobre o Levante das Bateias, de um morador, com nome, idade e data de entrevista.', autoria: 'Depoimento a coletar · Memória oral do distrito' },
       ],
     },
   ],

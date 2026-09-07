@@ -56,7 +56,6 @@ export default {
           '<strong>Só então publicar:</strong> com tudo isso junto, e com a autorização declarada na própria página.',
         ] },
         { lacuna: 'O que falta, em uma frase: <strong>a lista.</strong> Quantas quedas há no território do distrito, como se chamam, de quem é a terra e quais delas podem receber visitante com segurança e com autorização. Nada nesta página avança antes disso.' },
-        { citacao: 'Espaço reservado para a primeira fala gravada sobre as cachoeiras do distrito, de um morador, com nome, idade e data de entrevista.', autoria: 'Depoimento a coletar · Memória oral do distrito' },
         { figura: 'Queda d’água do distrito, com autorização do proprietário do acesso.', arquivo: 'figura-cachoeiras.jpg', legenda: '<strong>Cachoeira em degraus no distrito.</strong> A identificação exata da queda, a época do ano e a autorização do proprietário do acesso continuam pendentes, e este verbete não publica localização sem as três.', alt: 'Cachoeira larga descendo em vários degraus de rocha, emoldurada por vegetação.', credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro · autoria a confirmar' },
       ],
     },

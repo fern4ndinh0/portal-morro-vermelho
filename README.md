@@ -272,16 +272,14 @@ vai. As peças ficam em seis faixas, cada uma com o intervalo que cobre
 
 **Nada nele é digitado**: as peças saem de `DOCUMENTOS`; o agrupamento é
 derivado do número de cada verbete — não de uma segunda lista de categorias
-que teria de ser mantida em sincronia com a primeira; os intervalos e as
-contagens ("7 páginas") saem das pontas de cada faixa; e o placar do alto
-("5 documentado · 13 em rascunho · 12 a pesquisar") é contado na hora, a
-partir do campo `estado` de cada arquivo. Criar um verbete o faz aparecer lá
-sozinho, com a cor e o estado que ele declarar.
+que teria de ser mantida em sincronia com a primeira; e os intervalos e as
+contagens ("7 páginas") saem das pontas de cada faixa. Criar um verbete o faz
+aparecer lá sozinho, com a cor que ele declarar.
 
-As três marcas de estado saem da **primeira palavra** do campo `estado`, que
-é uma frase escrita à mão em cada verbete ("Documentado · registros paroquiais
-e censos"). A frase inteira continua no HTML, em `.sr`, para leitor de tela:
-a marca resume, não substitui.
+> **Desatualizado.** O campo `estado` e o placar editorial que ele alimentava
+> ("5 documentado · 13 em rascunho · 12 a pesquisar") foram removidos junto
+> com o resto do aparato editorial. `Indice.jsx` também não está montado na
+> home atual — ver "Sobre o conteúdo das páginas de documento", no fim.
 
 **Item sem `href` não vira link.** Vira um `<span>` com a etiqueta "em breve",
 visível e não clicável. Zero link morto, zero `href="#"`, zero 404 acidental.
@@ -307,10 +305,9 @@ Blocos disponíveis dentro de cada seção:
 | `{ abertura }` | parágrafo com capitular |
 | `{ sub }` | subtítulo `<h3>` |
 | `{ lista: [] }` | lista com marcador de filete |
-| `{ citacao, autoria }` | citação em papel envelhecido |
-| `{ lacuna }` | caixa tracejada "Lacuna documental" |
-| `{ nota, titulo }` | caixa de nota editorial |
-| `{ figura, arquivo, legenda, alt }` | figura com crédito |
+| `{ citacao, autoria }` | citação em papel envelhecido (`citacao` aceita array: um `<p>` por item, para as transcrições longas) |
+| `{ figura, arquivo, legenda, alt, credito }` | figura |
+| `{ galeria: [...] }` | grade de fotografias |
 
 Sumário, tempo de leitura, barra de progresso, "como citar" e navegação entre
 capítulos são **derivados do conteúdo** — nada disso se digita.
@@ -337,10 +334,10 @@ O `.md` **não é publicado**. `originais/` inteiro fica fora de `publicar/`.
 Ele é o passo intermediário: o texto do autor, legível e conferível lado a
 lado com o original, antes de virar verbete.
 
-O passo seguinte — recortar o `.md` em `secoes`/`blocos`, decidir o que é
-`{ lacuna }` e o que é fato com fonte, escrever `resumoSeo` e montar a lista
-de `fontes` — é editorial, e continua sendo feito à mão em
-`src/dados/documentos/<slug>.js`. Ver "Criar um verbete novo", acima.
+O passo seguinte — recortar o `.md` em `secoes`/`blocos` — é feito à mão em
+`src/dados/documentos/<slug>.js`, e é **recorte, não redação**: os títulos de
+seção são os subtítulos do próprio documento, as citações são as transcrições
+que ele faz, e o texto entra como está. Ver "Criar um verbete novo", acima.
 
 Só `.docx`. Um `.doc` do Word 97 é outro formato, binário; abra no Word e
 salve como `.docx`. Arquivos `~$algo.docx` são ignorados — são o bloqueio que
@@ -459,19 +456,36 @@ Todas as etiquetas somem de uma vez (é o CSS que as esconde, por
 
 ## Sobre o conteúdo das páginas de documento
 
-As 30 páginas de documento seguem uma regra editorial explícita, e ela é o
-ponto mais
-importante deste projeto: **nenhum fato sobre Morro Vermelho foi inventado.**
+As 30 páginas de documento seguem uma regra editorial única, e ela é o ponto
+mais importante deste projeto: **o texto publicado é o texto dos arquivos do
+Word, e nada além dele.**
 
-Cada verbete separa duas coisas que costumam ser misturadas:
+Cada verbete declara no alto do arquivo de qual `.docx` saiu. Não há neste
+portal frase sobre Morro Vermelho que não esteja no documento do autor
+("Pesquisa, texto e fotos: Geraldo Lopes"). O que o recorte faz é só isto:
 
-- **Contexto regional documentado** — o que é verdade sobre Minas Gerais e
-  serve de pano de fundo. Verdadeiro, porém genérico.
-- **O que falta saber** — as perguntas específicas sobre Morro Vermelho,
-  dentro de caixas "Lacuna documental", e uma lista de **fontes a consultar**.
+- os **títulos de seção** são os subtítulos do próprio documento;
+- as **citações** são as transcrições que o documento faz, com a autoria que
+  ele declara;
+- a **abertura sem título** de cada capítulo é o texto que, no documento, vem
+  antes do primeiro subtítulo — como num livro.
 
-Cada página nasce com dupla utilidade: introdução para o leitor comum e
-roteiro de pesquisa para quem for escrever a versão definitiva.
+O que **não** existe: caixas de "Lacuna documental", seções de contexto
+regional, notas de método, listas de "fontes a consultar", selos de estado
+editorial e etiquetas "a verificar" dentro dos verbetes. Tudo isso foi
+retirado em setembro de 2026, a pedido dos autores: o portal é o livro, e o
+livro não comenta a si mesmo.
+
+> **Onde um verbete for curto, é porque o material é curto.** A página da
+> Sociedade Musical Santa Cecília, por exemplo, não tem `.docx` próprio: ela
+> reúne o que os documentos 13, 14, 22 e 27 dizem da banda. Se ela merecer
+> capítulo, o capítulo precisa nascer de um texto novo do autor.
+
+> **Correções de digitação** do original são feitas (e declaradas no
+> cabeçalho do arquivo, como em `cachoeiras-e-cascatas.js`). Frases
+> incompletas no original **não** são completadas: em `nossa-gente.js`, a
+> lista de músicas de José Pinheiro ficou de fora porque o documento a
+> anuncia e não a traz.
 
 ---
 

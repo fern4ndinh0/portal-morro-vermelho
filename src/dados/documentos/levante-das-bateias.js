@@ -1,69 +1,108 @@
 /* ==========================================================================
-   LEVANTE DAS BATEIAS
-   Nossa História · 10
-   --------------------------------------------------------------------------
-   REGRA EDITORIAL: nenhum fato sobre Morro Vermelho foi inventado.
+   10 · LEVANTE DAS BATEIAS
 
-   Atenção especial nesta página: "Levante das Bateias" é o nome pelo qual o
-   episódio é conhecido no distrito. Não foi possível, até aqui, vinculá-lo
-   com segurança a um evento já nomeado assim na historiografia das Minas —
-   o que NÃO significa que não tenha ocorrido, e sim que a documentação
-   local ainda não foi levantada. É exatamente o tipo de episódio que só
-   existe em arquivo de cartório e em memória oral até alguém ir buscar.
+   FONTE: originais/word/10MV.docx — "Pesquisa, texto e fotos: Geraldo Lopes".
+   Texto do documento original, sem acréscimo.
    ========================================================================== */
 
 export default {
   slug: 'levante-das-bateias',
-  numero: '10',
   titulo: 'Levante das Bateias',
+  numero: '10',
   olho: 'Nossa História · 10',
   tom: 'var(--terra-600)',
-  estado: 'A pesquisar · episódio a documentar',
-  resumo: 'A dura luta contra os impostos exorbitantes. A bateia era o instrumento de quem apurava ouro com as próprias mãos, e virou o nome de uma revolta.',
-  resumoSeo: 'O Levante das Bateias em Morro Vermelho, distrito de Caeté (MG): a revolta contra a carga fiscal colonial e o que falta documentar sobre ela.',
+  resumo: 'A luta contra os impostos exorbitantes',
+  resumoSeo: 'O Levante das Bateias de 1715: a insurreição que rebentou em Morro Vermelho contra '
+           + 'a cobrança do quinto do ouro por bateia e obrigou o governador dom Brás Baltasar da '
+           + 'Silveira a recuar.',
   secoes: [
     {
-      id: 'a-carga', titulo: 'A carga que se cobrava',
+      id: 'abertura', titulo: null,
       blocos: [
-        { abertura: 'Nas Minas do século XVIII, o imposto não era um percentual discreto no fim do ano. Era uma <strong>presença física</strong>: postos no caminho, tropa na porta, e uma engenharia de cobrança que mudou de forma tantas vezes que cada mudança virou motivo de revolta.' },
-        'A Coroa tentou de tudo para arrecadar o quinto: cobrar por bateia, por escravo, por cabeça de minerador, nas casas de fundição, por quota fixa da capitania. Nenhum método funcionou por muito tempo, e cada um deles gerou atrito específico com um grupo específico.',
-        { lista: [
-          '<strong>Cobrança por bateia:</strong> taxava-se o instrumento de trabalho, não o resultado. Quem tirava pouco pagava o mesmo que quem tirava muito: o método que mais pesava sobre o minerador pequeno.',
-          '<strong>Capitação:</strong> imposto por pessoa escravizada empregada na lavra, independentemente do que ela produzisse.',
-          '<strong>Casas de fundição:</strong> obrigavam a levar todo o ouro para ser fundido e quintado num ponto oficial. A imposição delas está na origem de mais de um motim.',
-          '<strong>Derrama:</strong> a cobrança forçada da diferença quando a capitania não atingia a quota anual. É ela que assombra o fim do século e chega até a Inconfidência.',
-        ] },
-        { nota: 'Tudo acima é documentado para as Minas coloniais como região, e a revolta fiscal é um traço estrutural da capitania, não um acidente. Nada disso, por si só, é ainda uma afirmação sobre o levante ocorrido aqui.', titulo: 'O que é contexto e o que é fato local' },
+        { citacao: '... Logo chegou o povo armado e em altas vozes, disendo – viva o povo –; logo '
+                 + 'sahio á rua a fallar-lhe, e perguntando-lhe o que queria, me responderão, que '
+                 + 'não querião pagar por batêas por conhecerem a sua ruína.',
+          autoria: 'Carta do governador dom Baltasar Silveira ao rei Dom João V, em que relata o '
+                 + 'Levante das Bateias' },
+        { abertura: 'Em março de 1715, por ordem de Sua Majestade o Rei de Portugal, o governador '
+                  + 'dom Brás Baltasar da Silveira, mestre-campo general dos exércitos, sucessor '
+                  + 'de Antônio de Albuquerque no governo de São Paulo e Minas Gerais, acabou '
+                  + 'convencendo as comarcas mineiras a aceitaram a cobrança do quinto do ouro '
+                  + 'também pelo número de bateias empregadas no lavradio. Cada bateia pagaria dez '
+                  + 'oitavas de ouro por ano. A cobrança foi aceita pelas comarcas do Carmo, Vila '
+                  + 'Rica e Rio das Mortes. Mas outros povos não aceitaram.' },
       ],
     },
     {
-      id: 'o-levante', titulo: 'O levante daqui',
+      id: 'a-insurreicao', titulo: 'A insurreição',
       blocos: [
-        'A memória do distrito guarda um episódio de resistência à cobrança sob o nome de <strong>Levante das Bateias</strong>. O nome é preciso demais para ser genérico: quem o cunhou sabia que o alvo da revolta era um método de cobrança específico, aquele que taxava o instrumento na mão do trabalhador.',
-        { lacuna: 'As perguntas que esta página precisa responder: <strong>quando ocorreu o levante, contra qual cobrança exatamente, quem o liderou, quantos participaram e como terminou?</strong> Houve repressão? Houve processo? Existem nomes, dos revoltosos e de quem os julgou?' },
-        'Um episódio assim raramente desaparece sem deixar papel. Motins na região das minas geravam devassa, e devassa gera lista de nomes, depoimentos e sentenças. Se o levante existiu na escala que a memória local sugere, há documento em algum arquivo.',
-        { nota: 'Vale conferir, logo no início da pesquisa, se o "Levante das Bateias" é um episódio próprio do distrito ou o nome local de um movimento maior da capitania. As duas respostas são boas: a primeira dá a Morro Vermelho um episódio inédito; a segunda mostra o distrito participando de um movimento regional, e mostra como a memória local batiza os fatos com as próprias palavras, o que é um dado sobre este lugar.', titulo: 'Uma hipótese a testar cedo' },
+        'A comarca do Rio das Velhas pôs-se em movimento e a insurreição rebentou furiosa em Morro '
+      + 'Vermelho, no Caeté. Com este exemplo a resistência se generalizou por todas as outras '
+      + 'comarcas. O procurador da Câmara de Vila Real (Sabará) já tinha impugnado na Junta a nova '
+      + 'forma de cobrança de impostos por bateias. Receando que ele insuflasse o povo a aderir à '
+      + 'insurreição de Morro Vermelho, Dom Brás mandou, por conselho do ouvidor Luís Botelho, que '
+      + 'ele se retirasse da vila. O povo, porém, reclamou se pôs em armas.',
+        'Com a notícia deste levantamento, partiu Dom Brás para a Vila Real, onde por muito que '
+      + 'discursou nada conseguiu e fiel ao governo apenas lá encontrou o capitão-mor Clemente '
+      + 'Pereira de Azeredo. Todos os demais, mesmo os poucos que na Junta votaram com o '
+      + 'governador, saíram da vila e o deixaram só falando às moscas.',
+        'Em vista disto, tomou Dom Brás a resolução de voltar para as Gerais, mas decidiu pernoitar '
+      + 'em Raposos. Já era tarde da noite quando surgiram à sua frente dois procuradores do povo '
+      + 'da Vila da Rainha (Caeté) e lhe disseram que queriam uma acomodação para o problema. Eles '
+      + 'lhe pediram para não sair dali antes de encontrar uma solução.',
+        'Propuseram eles que se criasse uma Junta em Vila Real, para consultar dois procuradores '
+      + 'de cada povo. Diante da insistência, o governador concordou com a proposta e já ia dar as '
+      + 'ordens para cumpri-la quando, às duas horas da madrugada, recebeu do ouvidor Luís Botelho '
+      + 'aviso de que o povo da Vila Real vinha sequestrá-lo. Pouco depois chegou o mesmo ouvidor '
+      + 'e logo em seguida chegou o povo armado e gritando vivas sediciosos.',
+        'Sobressaltado, Dom Brás saiu à porta da casa para falar com os revoltosos e perguntou o '
+      + 'que queriam. Responderam que não iam pagar os quintos por bateias. Neste interim, '
+      + 'chegaram representantes da Câmara de Vila Real e propuseram ao governador que enviasse a '
+      + 'Sabará um procurador para tratar o que deveria fazer.',
+        'Vendo a obstinação oposta aos seus argumentos, Dom Brás cedeu enfim e mandou que se '
+      + 'observasse na cobrança o ajuste do mês anterior, obrigando-se a Câmara de Vila Real a '
+      + 'entrar com as suas três arrobas.',
+        'Conseguida esta vitória, os revoltosos de Morro Vermelho exigiram ainda que Dom Brás '
+      + 'declarasse todas as minas isentas para todo o sempre da forma de pagamento por bateias, '
+      + 'fixando-se definitivamente o ajuste das 30 arrobas. O governador não concordou e voltou a '
+      + 'defender os impostos sobre as bateias, demonstrando as vantagens da cobrança recomendada '
+      + 'por El-Rei, cuja intenção bem formada, dizia, era livrar o povo de um tributo geral. A '
+      + 'isto todos responderam que ao governador ficaria a responsabilidade dos danos e prejuízos '
+      + 'que sobreviessem à Fazenda Real, pois, a não ser como propunham, nada pagariam.',
+        'Avisado pelo ouvidor de que, se não deferisse o que propunham, maior desacato o povo lhe '
+      + 'faria ali mesmo, Dom Brás não hesitou por mais tempo e em tudo se conformou. Em carta ao '
+      + 'El-Rei disse que não teve outro remédio senão ceder.',
+        'Chegando às Gerais, Dom Brás encontrou animados do mesmo espírito os povos de Vila Rica e '
+      + 'do Carmo e se convenceu de que daria corpo à uma insurreição geral se não removesse logo '
+      + 'a ordem de cobrança por bateias. Logo depois, ele informou ao Rei que se insistisse '
+      + 'provocaria uma guerra civil.',
+        'Mais que depressa, em vista dos fatos, o Rei ordenou que se cobrassem os quintos segundo o '
+      + 'ajuste de 1714. Reuniu então Dom Brás uma junta, com o pessoal de costume, na Vila do '
+      + 'Carmo, a 22 de junho de 1716, e por termo assinado ficou assentado que as câmaras '
+      + 'pusessem registros onde bem lhe conviessem para cobrarem as seguintes taxas: de fazendas '
+      + 'secas, molhados e gado, como acima se disse, e mais quatro oitavas de cada escravo que '
+      + 'pela primeira vez entrasse para as Minas. Além disso, as Câmaras cobrariam de cada loja '
+      + 'ou venda no município dez arrobas e de cada escravo duas e meia a cada ano. '
+      + '(<em>História Antiga das Minas Gerais</em>, Diogo de Vasconcelos)',
       ],
     },
     {
-      id: 'o-instrumento', titulo: 'A bateia como símbolo',
+      id: 'viva-o-povo', titulo: 'Viva o povo',
       blocos: [
-        'Vale registrar por que o nome pegou. A bateia é um prato de madeira ou metal, girado na água com as mãos, com que se separa o ouro do cascalho. É o instrumento do trabalhador individual, não do dono de lavra, não do contratador, não da Coroa.',
-        'Uma revolta que leva o nome do instrumento de trabalho está dizendo de quem ela foi. É a mesma lógica que faz este distrito escolher "Amor à Liberdade" em vez do ciclo do ouro: o centro da história são as pessoas, não o metal.',
+        { citacao: 'Em 1715, Morro Vermelho armou-se e juntou-se, em revolta aberta, à Vila Nova '
+                 + 'da Rainha (Caeté) e à Vila Real (Sabará). Os amotinados negaram-se a pagar o '
+                 + 'quinto do ouro exigido de cada bateia e pediram remissão do tributo anual, que '
+                 + 'era apenas de 480 quilos do precioso metal. Tiveram, realmente, a insolência '
+                 + 'de comparecer diante do Governador, o Ilustríssimo e Excelentíssimo Dom Brás '
+                 + 'Baltasar da Silveira, e, com abundante “barbaridade” – para usar sua própria '
+                 + 'expressão – gritaram, em seus nobres ouvidos: “Viva o povo!”',
+          autoria: 'Richard Burton, 1867' },
       ],
     },
-  ],
-  fontes: [
-    'Arquivo Público Mineiro: devassas, autos de querela e processos criminais do termo de Caeté; documentação fiscal da capitania.',
-    'Arquivo Histórico Ultramarino / Projeto Resgate: correspondência dos governadores relatando motins e resistência à cobrança.',
-    'Cartório de Caeté: livros de notas e registros que citem os envolvidos.',
-    'Revista do Arquivo Público Mineiro: transcrições de documentação fiscal e judicial setecentista.',
-    'Bibliografia sobre revoltas fiscais nas Minas: para verificar se o episódio já foi estudado sob outro nome.',
-    'Memória oral, prioridade máxima: é a única fonte que hoje guarda o nome do episódio.',
   ],
   relacionadas: [
-    { nome: 'Retiro dos Capetas', href: 'retiro-dos-capetas.html', txt: 'O posto onde a cobrança acontecia.', olho: '06' },
-    { nome: 'Os Dragões Reais', href: 'os-dragoes-reais.html', txt: 'A tropa encarregada de conter revoltas como esta.', olho: '07' },
-    { nome: 'Fazenda do Cutão', href: 'fazenda-do-cutao.html', txt: 'Onde a bateia era usada de verdade.', olho: '05' },
+    { nome: 'Guerra dos Emboabas', href: 'guerra-dos-emboabas.html', txt: 'A primeira eleição direta das Américas', olho: '09' },
+    { nome: 'Os Dragões Reais', href: 'os-dragoes-reais.html', txt: 'Força militar para arrecadar e conter rebeliões', olho: '07' },
+    { nome: 'História de Resistência', href: 'historia-de-resistencia.html', txt: 'Um povo unido constrói o seu próprio destino', olho: '02' },
   ],
 };

@@ -1,76 +1,145 @@
 /* ==========================================================================
-   CACHOEIRAS E CASCATAS
-   Atrações · 16
-   --------------------------------------------------------------------------
-   ATENÇÃO — ESTA É A PÁGINA DE MAIOR RISCO DE TODO O PORTAL.
+   16 · CACHOEIRAS E CASCATAS
 
-   As outras arriscam publicar um erro histórico. Esta arrisca mandar alguém
-   para um lugar perigoso, ou para dentro da propriedade de um terceiro.
-
-   Por isso ela tem uma regra própria, mais dura que a do resto do projeto:
-   nenhuma cachoeira é publicada com localização sem que (1) o acesso esteja
-   verificado em campo, (2) a autorização do proprietário esteja registrada e
-   (3) as condições de segurança estejam descritas. Enquanto os três não
-   existirem, a página fala do conjunto e não indica ponto.
+   FONTE: originais/word/16MV.docx — "Pesquisa, texto e fotos: Geraldo Lopes".
+   Texto do documento original, sem acréscimo. Foram corrigidos apenas erros
+   evidentes de digitação do arquivo original (Esxtrada, Corroa, importos,
+   destruidos, Juca Veira).
    ========================================================================== */
 
 export default {
   slug: 'cachoeiras-e-cascatas',
-  numero: '16',
   titulo: 'Cachoeiras e Cascatas',
-  olho: 'Atrações · 16',
+  numero: '16',
+  olho: 'Atrações e natureza · 16',
   tom: 'var(--serra-600)',
-  estado: 'A levantar · publicação condicionada a acesso e segurança',
-  resumo: 'Lazer e belezas naturais. A serra que guarda água em rocha devolve essa água em queda, e o que a comunidade sabe sobre esses lugares ainda não está escrito em lugar nenhum.',
-  resumoSeo: 'Cachoeiras e cascatas de Morro Vermelho, distrito de Caeté (MG): o levantamento em curso e as regras de publicação responsável.',
+  resumo: 'Lazer e belezas naturais',
+  resumoSeo: 'As cachoeiras, cascatas e lagoas de Morro Vermelho, Caeté (MG): Santo Antônio, '
+           + 'Estrelas, Geriza, Maquiné, a Lagoa do Cutão, o Ribeirão Comprido e o Balneário do '
+           + 'Taquaril.',
   secoes: [
     {
-      id: 'por-que-existem', titulo: 'Por que há tantas',
+      id: 'santo-antonio', titulo: 'Cachoeira de Santo Antônio',
       blocos: [
-        { abertura: 'A abundância de queda d’água na região não é acaso geográfico: é <strong>consequência direta da geologia</strong>. As formações ferruginosas do Quadrilátero armazenam água e a liberam devagar, alimentando nascentes que correm o ano inteiro.' },
-        'É a mesma característica que faz da Serra do Gandarela um caso de conservação nacional. Vista do distrito, ela se traduz em algo bem mais concreto: córregos perenes, poços e quedas que os moradores conhecem pelo nome, e que quase nunca aparecem em mapa.',
-        { nota: 'Esse conhecimento (quais são, como se chamam, por onde se chega, em que época encher, onde é fundo) existe hoje inteiro na memória dos moradores e em nenhum documento. É exatamente o tipo de acervo que este portal existe para registrar.', titulo: 'O que se sabe e não está escrito' },
+        { abertura: 'A 50 quilômetros de Belo Horizonte, a Cachoeira de Santo Antônio é uma das '
+                  + 'atrações da Grande BH. Encravada numa rocha, jorra água fria e cristalina, '
+                  + 'formando um lago de rara beleza, com uma queda de cerca de 35 metros.' },
+        'Está próxima a uma área de plantação eucaliptos, em meio a vegetação fechada. Rodeadas '
+      + 'por imenso paredão rochoso e mata de galeria, suas águas apresentam temperatura baixa e '
+      + 'um tom suavemente esverdeado, deixando-as irresistíveis nos dias mais quentes. De Belo '
+      + 'Horizonte, a estrada principal de acesso se dá por Raposos em trecho de 20 quilômetros de '
+      + 'terra.',
+        'O local não possui qualquer infraestrutura turística e os veículos ficam a 300 metros da '
+      + 'cachoeira. Em seis dos 35 metros de altura os praticantes rapel usam o apoio dos pés e em '
+      + '29 metros só com suspensão total sem apoio dos pés. A cachoeira tem cerca 12 metros de '
+      + 'profundidade e 20 metros de comprimento. Mesmo sem qualquer infraestrutura turística e '
+      + 'abandonada pelo poder público, o local é um dos destinos preferidos da região por '
+      + 'jipeiros, motoqueiros, aventureiros e por famílias nos fins de semana e feriados. Está a '
+      + 'cinco quilômetros de Morro Vermelho, com três quilômetros por estrada em boas condições e '
+      + 'dois por estrada ruim, além de 300 metros de caminhada.',
+        { figura: 'Cachoeira em Morro Vermelho.',
+          arquivo: 'figura-cachoeiras.jpg',
+          alt: 'Queda d’água alta despencando de um paredão rochoso sobre um poço, cercada por '
+             + 'mata fechada.' },
       ],
     },
     {
-      id: 'a-regra', titulo: 'A regra desta página',
+      id: 'cachoeira-das-estrelas', titulo: 'Cachoeira das Estrelas',
       blocos: [
-        'Publicar a localização de uma cachoeira é um ato com consequência física. Portal de turismo que lista queda d’água sem verificar acesso e segurança produz três problemas previsíveis, e todos já aconteceram em outros lugares:',
-        { lista: [
-          '<strong>Invasão de propriedade:</strong> o visitante segue a indicação e atravessa a terra de alguém que nunca foi consultado. O primeiro prejudicado é o morador; o segundo é o próximo visitante, que encontra a porteira fechada.',
-          '<strong>Acidente:</strong> poço mais fundo do que parece, laje escorregadia, cabeça d’água em dia de chuva na cabeceira. Quem indicou o lugar sem descrever o risco tem responsabilidade nisso.',
-          '<strong>Degradação:</strong> lixo, trilha alargada, fogueira, margem pisoteada. Volume de visita sem estrutura destrói em dois anos o que levou séculos para se formar.',
-        ] },
-        { nota: 'Nenhuma cachoeira será publicada com localização neste portal enquanto não houver: acesso verificado em campo, autorização registrada do proprietário quando o acesso for particular, e descrição honesta das condições de segurança e da época adequada. Onde faltar um dos três, o portal cita o conjunto e não indica o ponto.', titulo: 'A regra, por extenso' },
+        'Na época do ouro de aluvião, esta cachoeira tinha tanto ouro brilhando em suas águas '
+      + 'escuras com o reflexo do sol, até mesmo à noite com a luz da lua, que pareciam estrelas. '
+      + 'E os desbravadores emboabas batizaram-na com o nome de Cachoeira das Estrelas. Segundo '
+      + 'registros antigos datados no decorrer do século 18, essa é uma das várias histórias '
+      + 'encontradas em um registro em Portugal por um pesquisador, que a lançou no livro '
+      + '<em>Diário de um Novo Mundo</em>. Muitas histórias, no entanto, se perderam no tempo. '
+      + 'Hoje a queda d’água também é conhecida como Cachoeira Escura. Está situada abaixo do '
+      + 'paredão de pedras do Córrego da Cachoeira e tem cerca de 25 metros de altura, jorrando '
+      + 'água cristalina sobre um poço, cercada por densa mata. Conhecida apenas por alguns '
+      + 'nativos, esta cachoeira em mata fechada ainda é inexplorada aos olhos dos turistas.',
       ],
     },
     {
-      id: 'o-levantamento', titulo: 'O levantamento',
+      id: 'cascatas-do-geriza', titulo: 'Cascatas do Geriza',
       blocos: [
-        'O trabalho tem uma ordem que economiza esforço e evita constrangimento: perguntar antes de ir, e ir antes de publicar.',
-        { lista: [
-          '<strong>Listar com moradores:</strong> nomes populares, localização aproximada, quem é o dono da terra por onde se passa.',
-          '<strong>Falar com os proprietários:</strong> antes de qualquer visita. É a etapa que costuma ser pulada, e é a que determina se o resto acontece.',
-          '<strong>Ir em campo:</strong> coordenada GPS, fotografia datada, tempo real de caminhada, grau de dificuldade, e o que há de perigoso.',
-          '<strong>Registrar a época:</strong> cheia e seca mudam completamente o que a pessoa vai encontrar, e a época errada é motivo de frustração e de risco.',
-          '<strong>Só então publicar:</strong> com tudo isso junto, e com a autorização declarada na própria página.',
-        ] },
-        { lacuna: 'O que falta, em uma frase: <strong>a lista.</strong> Quantas quedas há no território do distrito, como se chamam, de quem é a terra e quais delas podem receber visitante com segurança e com autorização. Nada nesta página avança antes disso.' },
-        { figura: 'Queda d’água do distrito, com autorização do proprietário do acesso.', arquivo: 'figura-cachoeiras.jpg', legenda: '<strong>Cachoeira em degraus no distrito.</strong> A identificação exata da queda, a época do ano e a autorização do proprietário do acesso continuam pendentes, e este verbete não publica localização sem as três.', alt: 'Cachoeira larga descendo em vários degraus de rocha, emoldurada por vegetação.', credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro · autoria a confirmar' },
+        'Mesmo com a exploração de pecuária e eucaliptos para carvão e celulose, a Fazenda do '
+      + 'Geriza, a três quilômetros da sede de Morro Vermelho, ainda mantém preservadas áreas '
+      + 'significantes de mata e grande mananciais de água. As nascentes abastecem vários trechos '
+      + 'encachoeirados até o Ribeirão Juca Vieira. Por serem propriedade particular, as '
+      + 'corredeiras são mantidas ainda quase inexploradas.',
       ],
     },
-  ],
-  fontes: [
-    'Moradores e proprietários rurais: a fonte principal, e a única que hoje sabe os nomes e os caminhos.',
-    'ICMBio: para quedas situadas dentro do Parque Nacional da Serra do Gandarela ou na zona de amortecimento, onde valem regras próprias.',
-    'IGAM e Agência Nacional de Águas: cursos d’água, bacias e qualidade da água.',
-    'Prefeitura de Caeté, Secretaria de Turismo e de Meio Ambiente: cadastro de atrativos e eventuais estudos já feitos.',
-    'Corpo de Bombeiros: histórico de ocorrências, que informa a descrição de risco de cada ponto.',
-    'Levantamento de campo com GPS: coordenada, tempo de acesso e condições reais.',
+    {
+      id: 'lagoa-do-cutao', titulo: 'Lagoa do Cutão',
+      blocos: [
+        'A Lagoa do Cutão é uma represa construída pelo Barão da Estrela ou seus antecessores para '
+      + 'captar as águas do Córrego da Cachoeira até uma casa de apuração do ouro. A lagoa tem '
+      + 'cerca de 60 metros de largura na parte maior e 200 metros de comprimento, tendo hoje '
+      + 'partes cobertas por vegetação. Ainda é utilizada para pesca e lazer.',
+      ],
+    },
+    {
+      id: 'lagoas-do-geriza', titulo: 'Lagoas do Geriza',
+      blocos: [
+        'A necessidade de manter várias fontes para abastecer a produção animal levou a Fazenda do '
+      + 'Geriza a criar pelo menos cinco represas nos ribeirões que cortam a propriedade. '
+      + 'Abastecidas por várias nascentes, protegidas por densas matas, as lagoas também são '
+      + 'utilizadas para criatório de peixes e lazer de proprietários e de suas famílias. As '
+      + 'lagoas estão localizadas a três quilômetros do povoado, logo atrás do Morro da Santa '
+      + 'Cruz.',
+      ],
+    },
+    {
+      id: 'ribeirao-comprido', titulo: 'Ribeirão Comprido',
+      blocos: [
+        'Formado pelos córregos Santo Antônio, Correia e Pernambuco, que banham a sede urbana de '
+      + 'Morro Vermelho, o Ribeirão Comprido tem uma marcante presença na história do ciclo do '
+      + 'ouro em Minas Gerais.',
+        'Há notícia de que o curso d’água já era explorado em 1650, com o surgimento do arraial de '
+      + 'Viracopos, a 500 metros de suas margens. Foi nestas águas que bandeirantes e forasteiros '
+      + 'usaram milhares de bateias para coletar ouro, a ponto de se rebelarem contra a Coroa '
+      + 'Portuguesa, em 1715, por taxarem as bateias de impostos. Esgotadas as pepitas em suas '
+      + 'águas, a exploração passou pelos barrancos e posteriormente para dezenas de minas de ouro '
+      + 'às suas margens, que abriga inclusive ruínas de uma casa de apuração de ouro.',
+      ],
+    },
+    {
+      id: 'cachoeiras-do-maquine', titulo: 'Cachoeiras do Maquiné',
+      blocos: [
+        'A antiga Fazenda do Gandarela, na região do Maquiné, em Morro Vermelho, hoje sede de uma '
+      + 'mineradora, que adquiriu todas as terras da redondezas, deu nome à região e ao Parque '
+      + 'Nacional da Serra do Gandarela. Fica na divisa do distrito com o município de Rio Acima. '
+      + 'A fazenda foi privilegiada com recursos naturais abundantes, desde florestas da Mata '
+      + 'Atlântica, áreas de cerro e de campos rupestres, além de montanhas encantadoras, como os '
+      + 'morros Três Irmãos.',
+        'Pela Fazenda do Gandarela passava a Estrada Real, com tropeiros, bandeirantes e fiscais '
+      + 'vindo do Rio de Janeiro em direção às grandes mineras de ouro de Morro Vermelho, '
+      + 'Viracopos, Caeté e Serra da Piedade. Num desfiladeiro da fazenda, a Coroa Portuguesa '
+      + 'decidiu instalar, no chamado Retiro dos Capetas, um posto de fiscalização para cobrar '
+      + 'impostos sobre o ouro que descia para o porto de Parati e mercadorias e animais que subia '
+      + 'rumo às minas.',
+        'A Fazenda do Gandarela, que será um dos primeiros locais a serem destruídos pela '
+      + 'exploração de minério de ferro, fica em mananciais de água e de fauna e flora. Ali há '
+      + 'dezenas de nascentes, cachoeiras, lagoas e cascatas, muitas desconhecidas dos turistas. '
+      + 'Ali estão a Cachoeira do Maquiné ou Cachoeira Grande, de 50 metros de altura, a Cachoeira '
+      + 'do Trovão, a Cachoeira do Mergulho e a Cachoeira do córrego da Cachoeira.',
+        { figura: 'Poço de cachoeira no distrito.',
+          arquivo: 'galeria-cachoeira-poco.jpg',
+          alt: 'Poço de águas claras ao pé de uma cachoeira, cercado por rochas e vegetação.' },
+      ],
+    },
+    {
+      id: 'balneario-do-taquaril', titulo: 'Balneário do Taquaril',
+      blocos: [
+        'Do Córrego do Taquaril, afluente do Ribeirão Comprido, desce água cristalina e gelada, '
+      + 'vinda de nascentes de montanha. Abaixo da Capela do Rosário, no início da estrada para '
+      + 'Raposos, ele forma pequenas queda d’água e poços, boas para banho. A área é conhecida '
+      + 'apenas dos nativos, que pouco desfrutam de suas belezas e lazer.',
+      ],
+    },
   ],
   relacionadas: [
-    { nome: 'Parque do Gandarela', href: 'parque-do-gandarela.html', txt: 'A serra que guarda a água que cai aqui.', olho: '15' },
-    { nome: 'Trilhas Ecológicas', href: 'trilhas-ecologicas.html', txt: 'Os caminhos que levam até elas.', olho: '20' },
-    { nome: 'Como chegar', href: 'index.html#visite', txt: 'Rota e informação prática.', olho: 'Visitar' },
+    { nome: 'Parque do Gandarela', href: 'parque-do-gandarela.html', txt: 'Matas e mananciais ainda preservados', olho: '15' },
+    { nome: 'Trilhas Ecológicas', href: 'trilhas-ecologicas.html', txt: 'Caminhos de esportes e lazer', olho: '20' },
+    { nome: 'Serviços', href: 'servicos.html', txt: 'Onde fica, como chegar, o que ver, comer, comprar', olho: '26' },
   ],
 };

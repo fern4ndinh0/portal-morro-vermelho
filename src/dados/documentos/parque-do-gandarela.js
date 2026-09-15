@@ -1,78 +1,159 @@
 /* ==========================================================================
-   PARQUE DO GANDARELA
-   Atrações · 15
-   --------------------------------------------------------------------------
-   Página incomum neste portal: aqui a documentação EXISTE e é pública. O
-   Parque Nacional da Serra do Gandarela foi criado por decreto federal e é
-   administrado pelo ICMBio, com plano de manejo, limites publicados e
-   processo de criação documentado.
+   15 · PARQUE DO GANDARELA
 
-   Isso muda a regra de trabalho. Nas outras páginas o risco é afirmar o que
-   não se sabe; aqui o risco é o oposto — copiar número de fonte secundária.
-   Área, data e limites devem sair do decreto e do ICMBio, não de resumo de
-   terceiro. As etiquetas "a verificar" abaixo marcam exatamente os pontos em
-   que isso ainda não foi conferido na fonte oficial.
+   FONTE: originais/word/15MV.docx — "Pesquisa, texto e fotos: Geraldo Lopes".
+   Texto do documento original, sem acréscimo.
    ========================================================================== */
 
 export default {
   slug: 'parque-do-gandarela',
-  numero: '15',
   titulo: 'Parque do Gandarela',
-  olho: 'Atrações · 15',
+  numero: '15',
+  olho: 'Atrações e natureza · 15',
   tom: 'var(--serra-700)',
-  estado: 'Rascunho estruturado · dados oficiais a conferir na fonte',
-  resumo: 'Matas e mananciais ainda preservados. A serra que abastece de água a região metropolitana de Belo Horizonte virou parque nacional depois de uma disputa longa, e o distrito está na sua borda.',
-  resumoSeo: 'O Parque Nacional da Serra do Gandarela e Morro Vermelho, distrito de Caeté (MG): o que o parque protege, como visitar e o que falta confirmar.',
+  resumo: 'Matas e mananciais ainda preservados',
+  resumoSeo: 'O Parque Nacional da Serra do Gandarela, criado em 2014: o que ele protege, o que '
+           + 'ficou de fora dos seus limites em Morro Vermelho e o patrimônio histórico e '
+           + 'ambiental ameaçado pela mineração.',
   secoes: [
     {
-      id: 'o-que-e', titulo: 'O que o parque protege',
+      id: 'abertura', titulo: null,
       blocos: [
-        { abertura: 'A Serra do Gandarela guarda uma combinação rara no Quadrilátero Ferrífero: <strong>a mesma formação de rocha que contém o minério de ferro funciona como esponja</strong>, armazenando e liberando água ao longo do ano.' },
-        'É por isso que a disputa sobre o que fazer com aquela serra foi tão longa e tão dura. Mineração e abastecimento de água disputavam literalmente o mesmo corpo rochoso: não terrenos vizinhos, o mesmo corpo.',
-        { lista: [
-          '<strong>Aquíferos em formação ferruginosa:</strong> as cangas e itabiritos que recarregam nascentes que abastecem parte da região metropolitana de Belo Horizonte.',
-          '<strong>Campos rupestres ferruginosos:</strong> vegetação de canga, com espécies que ocorrem ali e em quase nenhum outro lugar do mundo.',
-          '<strong>Remanescentes de Mata Atlântica</strong> em bom estado de conservação, em transição com cerrado.',
-          '<strong>Cavidades naturais</strong> em formação ferrífera, protegidas por legislação específica.',
-        ] },
-        { nota: 'O Parque Nacional da Serra do Gandarela foi criado por decreto federal em outubro de 2014 e é administrado pelo ICMBio. A área declarada é de cerca de 31 mil hectares, abrangendo vários municípios do Quadrilátero Ferrífero.', titulo: 'A criação' },
-        'Os números e a lista de municípios acima precisam ser conferidos no texto do decreto e no sítio do ICMBio antes da publicação, inclusive porque limites de unidade de conservação podem ser alterados por atos posteriores.',
+        { abertura: 'O Parque Nacional da Serra do Gandarela foi criado pelo governo federal em '
+                  + 'outubro de 2014 a pedido de várias organizações civis de todo o país, depois '
+                  + 'de o Instituto Chico Mendes de Conservação da Biodiversidade (ICMBio) '
+                  + 'consultar a comunidade de todos os povoados vizinhos. O objetivo é garantir a '
+                  + 'preservação do patrimônio biológico, geológico, espeleológico e hidrológico, '
+                  + 'incluindo os campos rupestres e os remanescentes de floresta atlântica, as '
+                  + 'áreas de recarga de aquíferos e o conjunto cênico constituído por serras, '
+                  + 'platôs, vegetação natural, rios e cachoeiras.' },
+        'No entanto, as alterações nos seus limites em relação ao projeto inicial foram profundas '
+      + 'sem atender os objetivos de conservação e as demandas de comunidades locais, servindo '
+      + 'apenas para permitir o desenvolvimento de um grande projeto de mineração. A área é '
+      + 'considerada a última cadeia de montanhas intocada pela mineração no quadrilátero '
+      + 'ferrífero, integrando o conjunto da Reserva da Biosfera do Espinhaço. A área também '
+      + 'abriga vestígios de animais pré-históricos.',
+        'O ICMBio preparou a proposta de criação do parque, visando a proteção dos mananciais para '
+      + 'abastecer a Região Metropolitana de Belo Horizonte, ameaçados pela mineração do minério '
+      + 'de ferro. A proposta original de 2010 previa uma área de 38.220 hectares, mas foi '
+      + 'reduzida para apenas 31.270 hectares, deixando de fora muitas riquezas históricas de '
+      + 'Morro Vermelho.',
+        'O decreto não garante a preservação das últimas grandes áreas remanescentes do '
+      + 'geossistema de cangas ferruginosas, que protegem e alimentam os aquíferos mais '
+      + 'importantes para o abastecimento dos municípios do entorno da Serra do Gandarela, de Belo '
+      + 'Horizonte e de sua região metropolitana. Também não abrangeram completamente a bacia do '
+      + 'Ribeirão da Prata, afluente do Rio das Velhas, deixando de fora algumas de suas mais '
+      + 'importantes nascentes, o que compromete o principal curso de água da região da Serra do '
+      + 'Gandarela, porque vai permitir que o mesmo seja impactado pela atividade mineradora. O '
+      + 'parque inclui partes dos municípios de Caeté, Raposos, Rio Acima, Barão de Cocais, '
+      + 'Itabirito, Nova Lima, Ouro Preto e Santa Bárbara.',
+        'Além dos recursos naturais de águas, flora e fauna, o local tem grande beleza e grande '
+      + 'quantidade de atrativos para o turismo, como cachoeiras, mirantes e trilhas para '
+      + 'caminhadas e outras atividades em contato com a natureza. Na região estão as últimas '
+      + 'áreas bem conservadas de cangas, muito importantes para alimentar as nascentes de água, '
+      + 'porque a água da chuva que cai nelas escoa bem devagar para dentro das rochas, formando '
+      + 'os aquíferos que mantêm os rios mesmo na estação seca. Também contém alta diversidade de '
+      + 'espécies raras ameaçadas de extinção. O parque não foi implantado e até hoje praticamente '
+      + 'toda área é controlada por uma grande mineradora, que vigia a entrada de turistas.',
+        'Apesar das limitações, o Parque Nacional Serra do Gandarela tem imenso potencial '
+      + 'turístico, reforçado pela facilidade de acesso a partir de Belo Horizonte. Contribuem '
+      + 'para este potencial as várias possibilidades de práticas de ecoturismo, turismo de '
+      + 'aventura, turismo pedagógico, observação da vida selvagem, visitação científica, de '
+      + 'realização de caminhadas curtas e longas, ciclismo, escalada, visitação a cavernas e '
+      + 'sítios históricos. E há ainda as dezenas de cachoeiras, de águas límpidas em meio a '
+      + 'remanescentes bem preservados de Mata Atlântica, vegetação campestre e cerrado.',
+        'Com 311 espécies de aves registradas na área do parque, ele se configura como importante '
+      + 'área para observação da avifauna. Dentre as espécies, 10 delas se encontram ameaçadas de '
+      + 'extinção.',
+        'Região de transição entre os biomas da Mata Atlântica e do Cerrado, o Parque do Gandarela '
+      + 'oferece uma fauna diversificada, de grande importância para a preservação, sobretudo as '
+      + 'espécies da águia-cinzenta, do capacetinho-do-oco-do-pau, da onça parda, do cateto e da '
+      + 'onça pintada. Na flora, a vegetação compreende formas de campos rupestres, campos '
+      + 'graminosos, cerrados e florestas, todos em bom estado de preservação.',
+        { figura: 'Serra do Gandarela.',
+          arquivo: 'figura-parque-do-gandarela.jpg',
+          alt: 'Vista da Serra do Gandarela, com campos rupestres no primeiro plano e serras '
+             + 'cobertas de mata ao fundo.' },
       ],
     },
     {
-      id: 'e-o-distrito', titulo: 'E Morro Vermelho',
+      id: 'belezas-ameacadas', titulo: 'Belezas e riquezas históricas ameaçadas',
       blocos: [
-        'Caeté está entre os municípios alcançados pelo parque, e é dessa relação que trata esta página. Mas a pergunta que o portal precisa responder é mais fina que "o município está dentro".',
-        { lacuna: 'As perguntas: <strong>o território de Morro Vermelho está dentro do parque, na zona de amortecimento, ou fora dos dois?</strong> Qual é o ponto de acesso mais próximo do distrito? Existe trilha, portaria ou base do ICMBio de uso a partir daqui? E há restrição de uso que afete propriedades e moradores do distrito?' },
-        'A resposta é obtida com um mapa e um telefonema: os limites do parque são públicos e georreferenciados, e o ICMBio atende pedidos de informação. É pesquisa de um dia, não de um ano, e ela decide se esta página fala de um vizinho ilustre ou de algo que está literalmente no quintal.',
-        { nota: 'Distinguir "dentro do parque" de "perto do parque" não é preciosismo. Um afeta regras de uso do solo, licenciamento e turismo; o outro é referência geográfica. Publicar um pelo outro cria expectativa errada nos dois sentidos.', titulo: 'Por que a distinção importa' },
+        'O distrito de Morro Vermelho abriga apenas cerca de 8,5% do parque, já que a maior parte '
+      + 'da reserva (43%) está no município de Santa Bárbara. Ficou de fora do parque a maior '
+      + 'parte do território de Morro Vermelho, com rico acervo histórico e ambiental, que está '
+      + 'sujeito à devastação da atividade mineradora.',
+        'Mesmo assim, nas divisas de Morro Vermelho com os municípios de Caeté, Barão de Cocais, '
+      + 'Santa Bárbara, Rio Acima e Raposos, o Parque do Gandarela oferece paisagens com vistas '
+      + 'deslumbrantes que se perdem no horizonte.',
+        'Também podem ser vistas muitas nascentes, cursos d’água e cachoeiras. No Setor Morro '
+      + 'Vermelho do parque podem ser observados alguns trechos de caminhos da estrada real, que '
+      + 'seguiam de Rio Acima em direção ao arraial de Viracopos. São picadas em matas e montanhas '
+      + 'que serviam para o transporte de mercadorias e do ouro apurado nas grandes minas de Morro '
+      + 'Vermelho.',
+        'Também neste trecho, na antiga Fazenda Maquiné, estão as ruínas do Retiro dos Capetas e '
+      + 'da Casa Forte, onde funcionava um posto de fiscalização da Coroa Portuguesa e uma pousada '
+      + 'de tropeiros do século 18. Ainda dentro do parque, a antiga Fazenda do Cutão guarda '
+      + 'riquezas históricas, como dezenas de minas de ouro abandonadas, uma casa de apuração do '
+      + 'ouro e as ruínas da casa do Barão da Estrela.',
+        'Em Morro Vermelho, entre as atrações do parque, está a Cachoeira de Santo Antônio, na '
+      + 'divisa com o município de Raposos. Essa cachoeira possui tons azulados contrastantes com '
+      + 'os paredões rochosos avermelhados.',
       ],
     },
     {
-      id: 'visitar', titulo: 'Visitar com responsabilidade',
+      id: 'passado-ameacado', titulo: 'Passado ameaçado pela mineração',
       blocos: [
-        'Parque nacional tem regras de visitação, e elas não são detalhe burocrático: em campo rupestre ferruginoso, uma trilha aberta fora do traçado leva décadas para cicatrizar.',
+        'Bens culturais, históricos e ambientais em terrenos de mineradora em Morro Vermelho e '
+      + 'fora da área do Parque Nacional Serra do Gandarela.',
+        { sub: 'Fazenda Maquiné' },
         { lista: [
-          'Confirmar no ICMBio quais áreas estão abertas à visitação e sob que condições. Parques recém-criados costumam ter abertura gradual.',
-          'Verificar a existência e a situação do plano de manejo, que é o documento que define zonas de uso.',
-          'Registrar o que é acesso por propriedade particular: boa parte dos caminhos da região atravessa terra de alguém.',
-          'Publicar, ao lado de qualquer trilha indicada, o grau de dificuldade, a duração real e o que fazer com o lixo.',
+          'Retiro dos Capetas: ruínas de um posto fiscal da Coroa Portuguesa na Estrada Real, com '
+        + 'paredões de argolas, ruínas de moradias de fiscais e dragões reais, datadas do início '
+        + 'do século 18.',
+          'Trechos da estrada real, seguindo do Retiro dos Capetas para o Morro da Santa Cruz e '
+        + 'Viracopos.',
+          'Cachoeira do Maquiné ou Cachoeira Grande, queda d’água de mais de 50 metros de altura.',
+          'Cachoeira do Mergulho.',
+          'Cachoeira do Trovão.',
+          'Grandes minas de ouro do século 18 abandonadas, algumas exploradas por escravos: minas '
+        + 'dos Crioulos, do Guilherme, da Cândida e da Boa Esperança, entre outras.',
+          'Córregos e nascentes.',
+          'Florestas da Mata Atlântica.',
         ] },
-        { figura: 'Vista da serra a partir do distrito, ou de ponto de acesso ao parque.', arquivo: 'figura-parque-do-gandarela.jpg', legenda: '<strong>A serra na região do Gandarela.</strong> Falta indicar se o ponto fotografado está dentro dos limites do Parque Nacional ou fora deles: distinção que, aqui, decide o que pode ser minerado.', alt: 'Vista aberta de serra com vegetação rasteira e afloramentos de rocha, montanhas ao fundo.', credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro · autoria a confirmar' },
+        { sub: 'Fazenda do Cutão ou Furnas de Caeté' },
+        { lista: [
+          'Ruínas do Palácio do Barão, pousada de fiscais e autoridades no século 18.',
+          'Ruínas de um engenho de apuração do ouro.',
+          'Lagoa do Cutão.',
+          'Paredão de pedra e túnel em canal de barragem.',
+          'Dezenas de minas de ouro do século 18.',
+          'Cachoeira das Estrelas.',
+          'Córregos e nascentes.',
+          'Florestas da Mata Atlântica.',
+        ] },
       ],
     },
-  ],
-  fontes: [
-    'ICMBio: página oficial do Parque Nacional da Serra do Gandarela: limites, plano de manejo, regras e situação da visitação.',
-    'Decreto federal de criação do parque: texto integral, para conferir data, área e municípios abrangidos.',
-    'Diário Oficial da União: atos posteriores que tenham alterado limites ou regras.',
-    'IBAMA e Agência Nacional de Águas: estudos sobre os aquíferos em formação ferruginosa da região.',
-    'Prefeitura de Caeté: informação sobre a porção municipal do parque e sobre a zona de amortecimento.',
-    'Movimentos e associações que participaram do processo de criação: memória da disputa, que é parte da história.',
+    {
+      id: 'paleotoca', titulo: 'Paleotoca',
+      blocos: [
+        'Uma paleotoca, buraco onde tatus e preguiças gigantes se abrigavam há mais de 10 mil '
+      + 'anos, foi encontrada na Serra do Gandarela, na divisa entre Rio Acima e Morro Vermelho, '
+      + 'pelo pesquisador paulista Francisco Buchmann, da Unesp/São Vicente. Os animais gigantes '
+      + 'viveram na América do Sul por milhões de anos e fazem parte da Megafauna Pleistocênica '
+      + 'Sul-Americana. Eles chegavam a pesar 250 quilos, com vários gêneros e muitas espécies. O '
+      + 'abrigo dos mamíferos, que tem 340 metros de comprimento, sendo a maior paleotoca '
+      + 'identificada no Brasil até hoje, fica na área a ser destruída pelo Projeto Apolo. O '
+      + 'patrimônio paleontológico tem grande valor histórico para todo o mundo.',
+        { figura: 'Paleotoca da Serra do Gandarela.',
+          arquivo: 'galeria-paleotoca.jpg',
+          alt: 'Entrada da paleotoca escavada na encosta, galeria larga e baixa aberta na terra.' },
+      ],
+    },
   ],
   relacionadas: [
-    { nome: 'Cachoeiras e Cascatas', href: 'cachoeiras-e-cascatas.html', txt: 'A água que a serra guarda, onde ela aparece.', olho: '16' },
-    { nome: 'Trilhas Ecológicas', href: 'trilhas-ecologicas.html', txt: 'Os caminhos, e como percorrê-los sem estragá-los.', olho: '20' },
-    { nome: 'Atrações', href: 'atracoes.html', txt: 'O patrimônio construído do distrito.', olho: '14' },
+    { nome: 'Cachoeiras e Cascatas', href: 'cachoeiras-e-cascatas.html', txt: 'Lazer e belezas naturais', olho: '16' },
+    { nome: 'Trilhas Ecológicas', href: 'trilhas-ecologicas.html', txt: 'Caminhos de esportes e lazer', olho: '20' },
+    { nome: 'Fazenda do Cutão', href: 'fazenda-do-cutao.html', txt: 'Engenhos de apuração do ouro', olho: '05' },
   ],
 };

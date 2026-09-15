@@ -1,137 +1,425 @@
 /* ==========================================================================
-   NOSSA GENTE, NOSSA HISTÓRIA
-   Nossa História · 27
-   --------------------------------------------------------------------------
-   Um dicionário biográfico do povoado, com dados de arquivo: data de
-   batismo, nome dos padrinhos, nome do padre que batizou, lista de filhos.
-   Isso não se inventa e não se lembra — se copia de livro de registro. O
-   acervo de pesquisa fez esse trabalho, e ele é a parte mais verificável de
-   todo o portal.
+   27 · NOSSA GENTE, NOSSA HISTÓRIA
 
-   DUAS REGRAS QUE ESTA PÁGINA IMPÕE E AS OUTRAS NÃO
+   FONTE: originais/word/27MV.docx — "Pesquisa, texto e fotos: Geraldo Lopes".
+   Texto do documento original, sem acréscimo.
 
-   1. PESSOA VIVA NÃO É VERBETE. O acervo original foi escrito quando
-      Geraldo Baixinho tinha 100 anos, e fala dele no presente. Reproduzir
-      esse presente hoje seria afirmar, sem saber, que uma pessoa está viva.
-      A data do relato vai declarada, e o presente do original vira passado
-      datado. Vale para toda biografia daqui em diante.
-
-   2. GENEALOGIA NÃO É LISTA DE NOMES. As listas de treze e quinze irmãos do
-      original ficam fora do corpo — elas são dado de pesquisa, não leitura.
-      O que entra é o que a pessoa fez. A lista completa continua no acervo
-      e deve ir para um banco genealógico próprio, não para uma página web.
-
-   ERROS DE DIGITAÇÃO EVIDENTES no original (um irmão nascido em "1984" numa
-   família do século 19, uma irmã em "1972") NÃO foram corrigidos por
-   dedução: foram omitidos, porque a correção precisa vir do livro de
-   registro e não do bom senso de quem transcreve.
+   O documento termina o verbete de José Rodrigues Pinheiro com a frase
+   "Entre as músicas compostas por José Pinheiro estão" e não a completa. A
+   frase incompleta NÃO foi publicada aqui, e nada foi inventado no lugar
+   dela: quando a lista existir, é ela que entra.
    ========================================================================== */
 
 export default {
   slug: 'nossa-gente',
-  numero: '27',
   titulo: 'Nossa Gente, Nossa História',
-  olho: 'Nossa História · 27',
-  tom: 'var(--terra-700)',
-  estado: 'Documentado · registros paroquiais e censos',
-  resumo: 'Um padre que fundou a cidade de Guimarães Rosa, um professor que em trinta anos nunca tirou licença, um comendador da Santa Sé com seis filhos padres, uma bordadeira que espalhou a bainha aberta por Minas. As pessoas que fizeram o povoado, com data de batismo e nome dos padrinhos.',
-  resumoSeo: 'Biografias de Morro Vermelho, Caeté (MG): Padre João de Santo Antônio, a família Marques Guimarães, o Barão da Estrella, Dona Lica e a bainha aberta.',
+  numero: '27',
+  olho: 'O distrito hoje · 27',
+  tom: 'var(--terra-800)',
+  resumo: 'Eles prestaram relevantes serviços à comunidade',
+  resumoSeo: 'Gente de Morro Vermelho, Caeté (MG): o padre João de Santo Antônio, fundador de '
+           + 'Cordisburgo, os professores Marques Guimarães, o Barão da Estrella, o alferes '
+           + 'Matheus Lopes de Magalhães, Dona Lica e outros.',
   secoes: [
     {
-      id: 'padre-joao', titulo: 'Padre João de Santo Antônio, fundador de Cordisburgo',
+      id: 'padre-joao-de-santo-antonio',
+      titulo: 'Padre João de Santo Antônio, defensor de pobres e escravos',
       blocos: [
-        { abertura: 'O morador de Morro Vermelho mais citado na literatura brasileira não escreveu um livro: <strong>fundou a cidade onde nasceu quem escreveu</strong>. O Padre João de Santo Antônio, vigário do povoado, é a figura evocada por João Guimarães Rosa no discurso de posse na Academia Brasileira de Letras, em 1967.' },
-        'Designado missionário por Dom Viçoso, percorreu quase toda Minas Gerais entre 1860 e 1880, levando assistência às populações isoladas. Em meados de 1883 chegou à região da Sesmaria Empoeiras, achou a paisagem exuberante e o clima agradável, batizou o lugar de <em>Vista Alegre</em> e decidiu se estabelecer ali.',
-        'Para fundar o povoado precisava de terra em litígio. Conseguiu-a pela influência de Dona Policena Mascarenhas, que ao ver a Sesmaria Empoeiras ir a praça pública mandou o filho Bernardo Mascarenhas arrematá-la em nome do “Irmão João”, cedendo quarenta alqueires como patrimônio da igreja. O arraial que nasceu ali é <strong>Cordisburgo</strong>.',
-        { citacao: 'Santo, um Padre Mestre, o Padre João de Santo Antônio, que recorria atarefado a região como missionário voluntário, além de trazer ao raro povo das grotas toda sorte de assistência e ajuda, esbarrou ali, para realumbrar-se e conceber o que tenha talvez sido seu único gesto desengajado, gratuito. Tomando da inspiração da paisagem a loci opportunitas, declarou-se a erguer ao Sagrado Coração de Jesus um templo naquele mistério geográfico. Fê-lo e fez-se o arraial, a que o fundador chamou O Burgo do Coração.', autoria: 'João Guimarães Rosa · discurso de posse na Academia Brasileira de Letras, 1967' },
-        'Em 1867, o censo da Câmara Municipal de Caeté registra o Padre João como morador de Morro Vermelho, então com 43 anos. No mesmo ano, em <strong>10 de julho de 1867</strong>, o escritor e antropólogo inglês <strong>Richard Burton</strong> passou pelo povoado e o anotou no livro <em>Viagem do Rio de Janeiro a Morro Velho</em>:',
-        { citacao: 'Mal tivemos tempo de passar por uma casa baixa, junto da igreja, onde mora o vigário, Padre João de Santo Antônio, sacerdote que goza de excelente reputação, que não deixa sua cidade e seu rebanho se esquecendo do que vem depois da devoção...', autoria: 'Richard Burton · Viagem do Rio de Janeiro a Morro Velho, 1868' },
-        { nota: 'Duas fontes independentes e datadas situam a mesma pessoa no mesmo lugar em 1867: um censo municipal e o diário de viagem de um inglês. É o padrão de comprovação a que as outras biografias desta página deveriam chegar, e é por isso que esta abre a lista.', titulo: 'Por que esta biografia é a mais sólida' },
+        { abertura: 'Padre João de Santo Antônio nasceu em 23 de janeiro de 1824 em Morro Vermelho '
+                  + 'e morreu no Convento de Macaúbas (Santa Luzia) em 1913. Filho de João Dias '
+                  + 'Tavares e Francisneire Sutéria, estudou e ordenou-se padre no Seminário de '
+                  + 'Mariana, onde exerceu o magistério. Mais tarde, tornou-se missionário '
+                  + 'apostólico, tendo fixado base no colégio de Macaúbas, em Santa Luzia, onde '
+                  + 'também era professor.' },
+        'Como missionário viajou por muitas cidades e povoados de Minas Gerais e numa viagem '
+      + 'pastoral foi para o Sertão, onde fundou a cidade de Cordisburgo. Em 1867, censo da Câmara '
+      + 'Municipal de Caeté mostra o Padre João como morador de Morro Vermelho, então com 43 anos. '
+      + 'No livro <em>Viagem do Rio de Janeiro a Morro Velho</em>, o antropólogo e escritor '
+      + 'Richard Burton na sua passagem por Morro Vermelho em 10 de julho de 1867 registrou: '
+      + '“...Mal tivemos tempo de passar por uma casa baixa, junto da igreja, onde mora o vigário, '
+      + 'Padre João de Santo Antônio, sacerdote que goza de excelente reputação, que não deixa sua '
+      + 'cidade e seu rebanho se esquecendo do que vem depois da devoção...”',
+        'Em 1869, por ocasião das missões do padre João de Santo Antônio durante 15 dias, ele '
+      + 'ajudou a comunidade de Jaboticatubas a levantar o cruzeiro denominado “Do Alto” na Capela '
+      + 'de Nossa Senhora da Soledade, às margens da rodovia MG-020. Em 1900, o Padre João fundou '
+      + 'a Capela de Nossa Senhora do Rosário no distrito quilombola de Pinhões, em Santa Luzia, '
+      + 'onde ele hoje dá nome à Escola Estadual com cerca de 300 alunos.',
+        'Padre João também foi tutor do estadista João Pinheiro da Silva. O jornal <em>O '
+      + 'Pharol</em>, de Juiz de Fora, registra em 6 de dezembro de 1905 a relação do padre João '
+      + 'de Santo Antônio com o jovem João Pinheiro da Silva, nascido em 1860 na cidade do Serro. '
+      + 'Ainda adolescente foi levado pelos pais para estudar em Ouro Preto e depois concluiu os '
+      + 'estudos em Caeté:',
+        { citacao: 'Mostrando sempre segura inteligência e grande vocação para estudos sérios, '
+                 + 'chamou o fato a atenção esclarecida de um sacerdote ilustrado, o padre João de '
+                 + 'Santo Antônio, homem erudito e cheio de virtudes, então vigário de Morro '
+                 + 'Vermelho, distrito de Caeté, e agora residente em Cordisburgo da Vista Alegre. '
+                 + 'Levando-o para sua companhia, começou a ensinar-lhe as primeiras noções de '
+                 + 'português e latim, fazendo o mesmo com o irmão mais velho, José Pinheiro da '
+                 + 'Silva Júnior. O estudante José Pinheiro conseguiu, com o auxílio do padre João '
+                 + 'de Santo Antônio, matricular-se, tempos depois, no famoso Seminário de '
+                 + 'Mariana, no que também foi grandemente auxiliado pelo padre João Batista '
+                 + 'Cornegliolo, sábio professor do seminário que o educou até se ordenar. '
+                 + 'Sacerdote inteligente e aplicado, obteve o padre José Pinheiro uma cadeira no '
+                 + 'seminário, entrando logo para ensinar o latim, de que deixou uma excelente '
+                 + 'gramática, muito apreciada pela clareza e método de exposição didática. Do '
+                 + 'pouco que recebia como lente, pois minguado era o ordenado do corpo docente do '
+                 + 'seminário, pensou o exímio latinista em tirar uma pequena parte para auxiliar '
+                 + 'a educação do irmão João Pinheiro a quem levou de Caeté e o fez matricular-se '
+                 + 'no colégio para o fim de seguir também a carreira sacerdotal, mas João '
+                 + 'recusou-se a seguir a carreira monástica.',
+          autoria: 'Jornal <em>O Pharol</em>, Juiz de Fora, 6 de dezembro de 1905' },
+        'João Pinheiro depois estudou engenharia em Ouro Preto e formou-se em direito em São '
+      + 'Paulo.',
+        'O padre João de Santo Antônio também ganhou em toda Minas Gerais a fama de protetor de '
+      + 'escravos e dos mais pobres, tendo conseguido de fazendeiros e empresários carta de '
+      + 'alforria para muitas famílias negras. Desde o seminário, tornou-se um grande devoto do '
+      + 'Sagrado Coração de Jesus, devoção difundida em Minas Gerais pelo primeiro bispo da '
+      + 'Capitania das Minas, Dom Frei Manuel da Cruz.',
+        { sub: 'Cordisburgo' },
+        'Designado missionário por Dom Viçoso, Padre João de Santo Antônio percorreu quase toda '
+      + 'Minas Gerais de 1860 a 1880. Em meados de 1883, o padre João de Santo Antônio chegou à '
+      + 'região conhecida como Sesmaria Empoeiras e, por se tratar de um lugar com paisagens '
+      + 'exuberantes e clima agradável, o padre logo o denominou de “Vista Alegre”, decidindo se '
+      + 'estabelecer no local. Para fundar o povoado, necessitava obter a posse de uma área que se '
+      + 'encontrava em litígio. Para tanto, contou com a influência de Dona Policena Mascarenhas, '
+      + 'uma senhora de posses, que, vendo a Sesmaria Empoeiras ir à praça pública, mandou seu '
+      + 'filho Bernardo Mascarenhas arrematá-la em nome do “Irmão João”, cedendo 40 alqueires como '
+      + 'patrimônio da igreja.',
+        'Assim o padre João deu início à fundação do povoado de Vista Alegre em 21 de agosto de '
+      + '1883, edificando a capela ao patriarca São José. Ao seu redor, o padre foi distribuindo '
+      + 'os lotes. Na mesma época, o padre João mandou vir da França uma imagem do Sagrado Coração '
+      + 'de Jesus e assim nasceu a ideia de se construir um templo para acolhê-la. Em 1885 era a '
+      + 'vez de dar início à construção da Matriz, que foi inaugurada em 1894 pelo primeiro '
+      + 'arcebispo de Mariana, Dom Silvério Gomes Pimenta. Foi concluída em maio de 1894.',
+        'Em junho de 1890, decreto do então governador de Minas, João Pinheiro da Silva, amigo '
+      + 'pessoal e protegido do Padre João, elevou o povoado de Coração de Jesus da Vista Alegre a '
+      + 'distrito de Cordisburgo da Vista Alegre, município de Sete Lagoas. O padre João registrou '
+      + 'o nome Cordisburgo em homenagem ao Sagrado Coração de Jesus. Anos mais tarde, o padre '
+      + 'João doou o que tinha à Matriz do Sagrado Coração de Jesus.',
+        'Depois, padre João de Santo Antônio voltou ao convento de Macaúbas, onde faleceu em 15 de '
+      + 'setembro de 1913, aos 89 anos.',
+        { sub: 'Guimarães Rosa' },
+        'Trecho do discurso de posse do escritor João Guimarães Rosa, natural de Cordisburgo, na '
+      + 'Academia Brasileira de Letras, em 1967:',
+        { citacao: 'Santo, um Padre Mestre, o Padre João de Santo Antônio, que recorria atarefado '
+                 + 'a região como missionário voluntário, além de trazer ao raro povo das grotas '
+                 + 'toda sorte de assistência e ajuda, esbarrou ali, para realumbrar-se e conceber '
+                 + 'o que tenha talvez sido seu único gesto desengajado, gratuito. Tomando da '
+                 + 'inspiração da paisagem a <em>loci opportunitas</em>, declarou-se a erguer ao '
+                 + 'Sagrado Coração de Jesus um templo naquele mistério geográfico. Fê-lo e fez-se '
+                 + 'o arraial, a que o fundador chamou O Burgo do Coração.',
+          autoria: 'João Guimarães Rosa, discurso de posse na Academia Brasileira de Letras, 1967' },
       ],
     },
     {
-      id: 'os-professores', titulo: 'Os professores Marques Guimarães',
+      id: 'professor-joao-evangelista', titulo: 'Professor João Evangelista Marques Guimarães',
       blocos: [
-        { sub: 'Professor João Evangelista Marques Guimarães (†1893)' },
-        'Professor por quase trinta anos em Morro Vermelho. Casou-se em <strong>30 de janeiro de 1849</strong>, na Matriz de Nossa Senhora do Bom Sucesso, em Caeté, com <strong>Maria Rodrigues de Oliveira Lima</strong>; tiveram treze filhos. Em 1857 foi designado professor do primeiro grau de instrução primária do povoado. Em 1869 assumiu como substituto a escola de Santana do Alfié, em São Domingos do Prata, e no mesmo ano voltou para Morro Vermelho.',
-        'Pediu aposentadoria em 1883, por trinta anos de magistério. Faleceu em <strong>19 de junho de 1893</strong>. A nota sobre a morte, publicada no <em>Diário Oficial</em> de 26 de junho de 1893, registra o que qualquer professor reconheceria como um elogio duro:',
-        { citacao: 'Em quase 30 anos em que exerceu o magistério primário jamais solicitou ao governo licença nenhuma e nem vantagens a que tinha direito por lei.', autoria: 'Diário Oficial, 26 de junho de 1893' },
-        { sub: 'Professor Antônio Evangelista Marques Guimarães, o Mestre Totó (1852–?)' },
-        'Filho do anterior. Nasceu em Caeté em <strong>15 de dezembro de 1852</strong> e foi batizado em 10 de janeiro de 1853 pelo padre Jacinto José de Almeida, na Matriz de Nossa Senhora do Bom Sucesso, tendo por padrinhos Antônio José de Oliveira e Constância Maria de Oliveira. Como o pai, foi professor em Morro Vermelho desde a juventude. Casou-se com <strong>Elisa Carolina de Jesus Guimarães</strong>; tiveram nove filhos.',
-        'Em 1892 foi nomeado presidente da Junta Militar de Morro Vermelho, com Christiano Lopes de Magalhães e João Batista Leal Júnior. Aposentou-se do magistério em 1912.',
-        'Em <strong>14 de novembro de 1932</strong> recebeu do Papa Pio XI a insígnia de <strong>Comendador da Santa Sé</strong>, por ter encaminhado ao seminário os seis filhos homens, que se tornaram padres. É o fato que dá origem à página <a href="familia-de-padres.html">Família de Padres</a>.',
-        { sub: 'Padre José Evangelista Marques Guimarães, o Padre Nico (1887–1961)' },
-        'Neto do primeiro, filho do segundo. Nasceu em Morro Vermelho em 1887, estudou no Seminário Arquidiocesano de Mariana, foi vigário em Pompeu e <strong>assumiu a Paróquia de Nossa Senhora de Nazareth em 1911</strong>, onde ficou até morrer, em 1961 (cinquenta anos na mesma paróquia). Hoje dá nome à Rua de Baixo do povoado.',
-        'É também o protagonista de um dos causos mais contados do distrito: as sucessivas bênçãos nos currais do <a href="estorias-casos-e-lendas.html">Retiro dos Capetas</a>, que ele repetiu por décadas a pedido do fazendeiro do Maquiné.',
-        { sub: 'Professora Jovelina Evangelista Marques Guimarães, Dona Jove (1899–?)' },
-        'Neta do professor João. Nasceu em Morro Vermelho em 1899, batizada em 11 de novembro na Matriz de Nossa Senhora de Nazareth pelo padre João de Oliveira Lima, padrinhos Pedro da Circuncisão Pinheiro e Clara Rodrigues Guimarães.',
-        'Por várias décadas foi professora no Grupo Escolar de Morro Vermelho e <strong>ensinou as primeiras letras a centenas de moradores</strong>. Foi também auxiliar do Padre Nico na administração da Matriz. Solteira, criou dois sobrinhos.',
-        { nota: 'Três gerações da mesma família alfabetizando o mesmo povoado, do fim do Império aos anos 1950. Isso explica um dado do <a href="cultura-popular.html">levantamento acadêmico</a> que de outro modo pareceria acidente: a escola aparece, em quatro estudos diferentes, como a instituição que transmite a tradição local. Ela é isso ali há muito mais tempo do que qualquer política pública.', titulo: 'Uma família e a alfabetização do distrito' },
+        'Professor por quase 30 anos em Morro Vermelho. Casou-se em 30 de janeiro de 1849, na '
+      + 'Matriz de Nossa Senhora do Bom Sucesso, em Caeté, com <strong>Maria Rodrigues de Oliveira '
+      + 'Lima</strong>, com quem teve 13 filhos. Em 1857 foi designado professor do primeiro grau '
+      + 'de instrução primária de Morro Vermelho. Em 1869, foi designado professor substituto da '
+      + 'escola de Santana do Alfié (São Domingos do Prata). No mesmo ano, retornou à escola '
+      + 'primária de Morro Vermelho.',
+        'Em 1867, junto com autoridades e dezenas de cidadãos de Caeté, assinou manifesto de apoio '
+      + 'ao vice-presidente do Estado Elias Pinto de Carvalho, ex-juiz de direito de Caeté. Também '
+      + 'assinaram o documento João Evangelista Pinheiro, juiz de Paz de Conceição do Rio Acima; '
+      + 'Manoel Lopes de Magalhães, juiz de Paz de Morro Vermelho; Jacinto Evangelista Pinheiro, '
+      + 'Domingos Evangelista Pinheiro, Cândido Evangelista Pinheiro, Matheus Lopes de Magalhães e '
+      + 'dezenas de outros cidadãos de Morro Vermelho, Caeté e Rio Acima.',
+        'Em 1883, o professor João Guimarães solicitou aposentadoria por ter trabalhado 30 anos '
+      + 'como professor. Em 1890, junto com o filho Firmino e dezenas de cidadãos de Santo Antônio '
+      + 'do Rio Acima, assinou documento de protesto contra a nova lei do casamento civil no '
+      + 'Brasil. Faleceu em 19 de junho de 1893 em Morro Vermelho. Nota sobre o seu falecimento no '
+      + 'Diário Oficial de 26 de junho de 1893 explica: “Em quase 30 anos em que exerceu o '
+      + 'magistério primário jamais solicitou ao governo licença nenhuma e nem vantagens a que '
+      + 'tinha direito por lei”.',
+        { sub: 'Os 13 filhos' },
+        'João Evangelista Marques Guimarães Júnior (1850); Firmino Evangelista Marques Guimarães '
+      + '(1851); Antônio Evangelista Marques Guimarães (1852); Cândido Evangelista Marques '
+      + 'Guimarães (1855); Lina Maria de Jesus (1857); João Batista Evangelista Marques Guimarães '
+      + '(1857); Porfírio Evangelista Marques Guimarães (1860); Damaso Evangelista Marques '
+      + 'Guimarães (1863); Maria Rodrigues de Oliveira Sobrinho (1866); Henrique Evangelista '
+      + 'Marques Guimarães (1868); Mariana Evangelista Marques Guimarães (1870); Clara Evangelista '
+      + 'Marques Guimarães (1872); Pedro Evangelista Marques Guimarães (1874).',
       ],
     },
     {
-      id: 'fazendeiros-e-autoridades', titulo: 'Fazendeiros, alferes e juízes de paz',
+      id: 'barao-da-estrella', titulo: 'Barão da Estrella',
       blocos: [
-        { sub: 'Alferes Matheus Lopes de Magalhães (1784–?)' },
-        'Português, de São Gens, antiga vila de Monte Longo, na região de Braga. Nasceu em <strong>15 de dezembro de 1784</strong> e foi batizado no mesmo dia na igreja de São Bartolomeu de São Gens, pelo padre Bernardo José de Almeida, padrinhos Matheus Gonçalves e Ana de Oliveira. Filho de Domingos Lopes e Rosa Maria de Magalhães.',
-        'Estabeleceu moradia em Caeté e em Morro Vermelho, comprou fazendas e minas de ouro em Morro Vermelho e Viracopos, depois administradas pelos filhos Antônio (1808), Manoel (1809) e Prudenciana (1818), que também mantiveram uma fábrica de ferro no povoado. <strong>Em 1832, segundo censo do governo da província, contava 22 escravizados.</strong>',
-        { sub: 'José de Mello de Souza Almeida Brandão' },
-        'Lavrador, criador, minerador e juiz de paz de Morro Vermelho. <strong>Em 1832 tinha 78 escravizados</strong>, segundo censo feito por ele próprio a pedido de Manoel Ignácio de Mello e Souza, presidente da província.',
-        { sub: 'Tenente João Gonçalves de Carvalho (1804–?)' },
-        'Nasceu em Morro Vermelho em 1804, filho de Pedro Gonçalves de Carvalho e Maria Gonçalves de Carvalho. Casou-se em <strong>19 de janeiro de 1830</strong> com Anna Maria Joaquina de Gouvea. Fazendeiro e juiz de paz no povoado, era membro da <strong>Guarda Nacional de Caeté</strong>.',
-        { sub: 'Barão da Estrella (1846–1910)' },
-        'José Joaquim de Maia Monteiro, primeiro e único Barão da Estrella, nasceu no Rio de Janeiro em 1846 e <strong>morreu em Morro Vermelho em 25 de outubro de 1910</strong>, de mielite crônica. Filho do banqueiro português Joaquim Manuel Monteiro, Conde da Estrella, e de Luísa Amália da Silva Maia. Casado com Teresa Cristina de Vasconcelos Menezes de Drummond, a Baronesa da Estrella, com quem teve duas filhas, Thereza Christina e Isabelle, ambas falecidas menores. O título faz referência à Serra da Estrela, em Portugal.',
-        'Do antigo Palácio do Barão, de dois andares, que ficou de pé até a década de 1960, restam ruínas na antiga sede da <a href="fazenda-do-cutao.html">Fazenda do Cutão</a>. O casarão teria servido, antes dele, de pousada para fiscais e autoridades da Coroa no século 18. A área hoje é reserva de mata atlântica e eucalipto pertencente à mineradora Vale. Em homenagem a ele, o povoado deu o nome de <strong>Beco do Barão</strong> à via que liga a Rua de Baixo ao cemitério, hoje Rua José Cirilo Grillo.',
-        { nota: 'Os dois censos de 1832 são a informação mais difícil desta página e a mais importante para não se perder: cem pessoas escravizadas em duas propriedades de um único distrito, com o número registrado por quem as possuía. A história do ouro, das fazendas e das fábricas de ferro daqui é indissociável disso. Um portal de memória que lista os proprietários e omite o número de escravizados não está preservando memória. Está editando.', titulo: 'O dado que não pode sair da página' },
+        'José Joaquim de Maia Monteiro, primeiro e único Barão da Estrella, nasceu no Rio de '
+      + 'Janeiro em 1846 e morreu em Morro Vermelho em 25 de outubro de 1910, de mielite crônica '
+      + '(inflamação da medula). Era filho do empresário e banqueiro português Joaquim Manuel '
+      + 'Monteiro, Conde da Estrella, e de sua segunda mulher, Luísa Amália da Silva Maia, filha '
+      + 'de José Antônio da Silva Maia. O Barão era irmão de Antônio Joaquim Maia Monteiro, Barão '
+      + 'de Maia Monteiro, e meio-irmão de Joaquim Manuel Monteiro, segundo Conde da Estrella. O '
+      + 'Barão da Estrella era casado com Teresa Cristina de Vasconcelos Menezes de Drummond '
+      + '(Baronesa da Estrella), com quem teve duas filhas, Thereza Christina e Isabelle, ambas '
+      + 'falecidas menores. O título do barão faz referência à Serra da Estrella, de Portugal.',
+        'O Barão da Estrella era formado em Direito pela Universidade de Paris. Fidalgo Cavaleiro '
+      + 'da Casa Imperial e da Casa Real de Portugal, era amigo pessoal do imperador Dom Pedro II. '
+      + 'Foi o responsável pela organização dos funerais do imperador em 1891, em Paris. Recebeu o '
+      + 'baronato por decreto de 13 de outubro de 1876.',
+        'Advogado e empresário, ainda jovem adquiriu a Fazenda Furnas de Caeté, no Cutão, em Morro '
+      + 'Vermelho, com uma área de 580 alqueires, para criação de gado e lavoura, mas decidiu '
+      + 'também explorar dezenas de minas abandonadas em suas terras, implantando um sistema '
+      + 'moderno e avançado de apuração do ouro.',
+        'Do antigo Palácio do Barão, que ficou de pé até a década de 1960, hoje só restam ruínas '
+      + 'na antiga sede na Fazenda do Cutão. O casarão de dois andares teria servido, antes do '
+      + 'Barão da Estrella, de pousada para fiscais e autoridades da Coroa Portuguesa e do império '
+      + 'no século 18. A área hoje é uma reserva natural de vegetação da mata atlântica e de '
+      + 'eucaliptos, pertencente à mineradora Vale. Em sua homenagem, a população de Morro '
+      + 'Vermelho deu nome de Beco do Barão à via que leva a Rua de Baixo até o Cemitério, hoje '
+      + 'Rua José Cirilo Grillo.',
       ],
     },
     {
-      id: 'musica-e-oficio', titulo: 'Música, bordado e ofício',
+      id: 'professor-antonio-evangelista', titulo: 'Professor Antônio Evangelista Marques Guimarães',
       blocos: [
-        { sub: 'José Rodrigues Pinheiro, Zé Pinheiro' },
-        'Filho de João Evangelista Pinheiro e Jovita Gonçalves Rodrigues, nascido em Morro Vermelho, casado com Nicolina de Moraes, com quem teve catorze filhos. Trabalhador rural e pequeno proprietário, <strong>comandou a Corporação Musical Santa Cecília por muitos anos</strong> e deixou um legado de composições, algumas incorporadas à Cavalhada de Nossa Senhora de Nazareth. Foi também organizador e maestro do Coral Nossa Senhora de Nazareth.',
-        { lacuna: 'O acervo original registra o ano de nascimento com uma interrogação, <em>1912 (?)</em>, e a frase “entre as músicas compostas por José Pinheiro estão” termina sem a lista. <strong>Faltam a data de nascimento confirmada e o repertório.</strong> As duas coisas estão ao alcance: a primeira no livro de batismos da Matriz, a segunda na memória dos músicos da Santa Cecília e nas partituras que a corporação guarda.' },
-        { sub: 'Maria Rodrigues Pinheiro Xavier, Dona Lica (1907–2006)' },
-        'Nasceu em Morro Vermelho em <strong>15 de maio de 1907</strong>, batizada no dia 26 do mesmo mês na Matriz pelo padre Carlos Ferreira Marques, padrinhos Pedro Gonçalves Rodrigues e Maria Rodrigues Guimarães. Filha de João Evangelista Pinheiro e Jovita Gonçalves Rodrigues Pinheiro. Casada com José Xavier de Gouvea, nove filhos. <strong>Faleceu em 2006, aos 99 anos.</strong>',
-        'Quitandeira, costureira e bordadeira, deixou o patrimônio que hoje é reconhecido em todo o país: o bordado <strong>bainha aberta</strong>. A técnica chegou a Minas com os colonizadores portugueses no início do século 18, durante o ciclo do ouro, e sobreviveu nos moldes originais pelo trabalho silencioso das bordadeiras, passado de geração a geração pela oralidade.',
-        'Dona Lica ensinou o ofício, aprendido da mãe e das avós, às filhas e às vizinhas por toda a vida. O saber foi multiplicado pela filha <strong>Maria Xavier Pinheiro Guimarães, Nhanhá</strong>, que criou uma oficina no Museu Regional de Caeté e espalhou a tradição por centenas de bordadeiras, inclusive de cidades vizinhas.',
-        'As artesãs descrevem a bainha aberta como um trabalho bonito e difícil, que exige atenção e paciência: a renda é tecida em pano desfiado de algodão ou linho, e serve de adorno de roupa de cama, toalha e caminho de mesa, além de peças de igreja, como os sanguíneos, que forram altares.',
-        { sub: 'Maria Augusta Guimarães, Dona Mica (1892–?)' },
-        'Filha de Cândido Evangelista Marques Guimarães (Pai Candu) e Belarmina Lopes Magalhães (Mãe Bela), neta do professor João. Nasceu em Morro Vermelho em 1892. Foi <strong>uma das benzedeiras mais procuradas do povoado</strong> e, por muitos anos, a responsável pela ornamentação da bandeira da Cavalhada no dia 7 de setembro. Casada com Francisco Emílio Lopes, seis filhos.',
-        { sub: 'Clarinda da Conceição Pinheiro (1929–2020)' },
-        'Filha de Francisco de Assis Morais e Maria Magalhães, nascida em Morro Vermelho em 1929, casada com Estêvam Evangelista Pinheiro, nove filhos. <strong>Morreu em 10 de agosto de 2020, aos 91 anos.</strong>',
-        'Seguiu desde pequena o costume da família Morais de integrar os corais da Matriz, aprendeu a ler partitura e passou a <strong>comandar o coral que cantava em latim a missa a quatro vozes</strong> na Festa da Padroeira e os motetos da Semana Santa. Conduzia também o coral das missas dominicais, cargo que deixou para a filha Maria.',
-        'Foi titular do cartório de notas de Morro Vermelho (recebido de Dona Aurora Guimarães), cuidando de certidões de nascimento, casamento e óbito. Foi igualmente trabalhadora rural, administrando com o marido e depois sozinha, com os nove filhos, uma chácara nas proximidades do povoado.',
-        { sub: 'Geraldo Emílio Lopes, Geraldo Baixinho (nascido em 1920)' },
-        'Nasceu em Morro Vermelho em <strong>3 de abril de 1920</strong>, um dos seis filhos de Francisco Emílio Lopes e Dona Mica. Casou-se com Maria de Gouvea Lopes, a Salia; oito filhos. Trabalhador rural, mineiro e metalúrgico.',
-        'Músico, compositor, cantor e seresteiro, integrou a Corporação Musical Santa Cecília e foi mordomo assíduo de Nossa Senhora de Nazareth. Lateral esquerdo temido do time do Natal. Da mãe, a benzedeira, aprendeu o ofício de aliviar dores.',
-        { nota: 'O texto original desta biografia foi escrito por volta de 2020, quando ele completou cem anos, e fala dele no presente, inclusive da festa de aniversário adiada pela pandemia. Este portal não reproduz esse presente: afirmaria, sem saber, que uma pessoa está viva. O relato fica registrado com a data em que foi feito, e a atualização depende de uma pergunta à família. É a regra desta página para qualquer biografia de pessoa nascida no século 20.', titulo: 'Por que esta biografia está no passado' },
+        'O professor Antônio Evangelista Marques Guimarães era filho de João Evangelista Marques '
+      + 'Guimarães e Maria Rodrigues de Oliveira Lima. Nasceu em Caeté em 15 de dezembro de 1852 e '
+      + 'foi batizado em 10 de janeiro de 1853 pelo padre Jacinto José de Almeida na Matriz de '
+      + 'Nossa Senhora do Bom Sucesso, sendo padrinhos Antônio José de Oliveira e Constância Maria '
+      + 'de Oliveira. Como o pai, foi professor em Morro Vermelho desde a juventude e era '
+      + 'conhecido também como Mestre Totó. Casou-se com <strong>Elisa Carolina de Jesus '
+      + 'Guimarães</strong>, com quem teve nove filhos.',
+        'Ainda jovem, em 1883 foi designado professor para o distrito de Mocambeiro de Santa '
+      + 'Luzia, mas no mesmo ano retornou à escola de Morro Vermelho. Em 1892 foi nomeado '
+      + 'presidente da Junta Militar de Morro Vermelho, que tinha como membros Christiano Lopes de '
+      + 'Magalhães e João Batista Leal Júnior. Aposentou-se como professor em 1912. Em 14 de '
+      + 'novembro de 1932, recebeu do Papa Pio XI a insígnia Comendador da Santa Sé por ter '
+      + 'encaminhado ao seminário os seus seis filhos homens, que se tornaram padres.',
+        { sub: 'Os nove filhos' },
+        'Padre José Evangelista Marques Guimarães, Padre Nico (1887); Padre João Evangelista '
+      + 'Marques Guimarães (1889); Padre Pedro Evangelista Marques Guimarães (1891); Maria '
+      + 'Evangelista Marques Guimarães, Nhá (1893); Padre Benjamim Evangelista Marques Guimarães '
+      + '(1898); Padre Alberto Evangelista Marques Guimarães (1901); Padre Ephraim Evangelista '
+      + 'Marques Guimarães (1903); Cecília Carolina Guimarães (1905); Aurora Maria Guimarães '
+      + '(1909).',
       ],
     },
     {
-      id: 'metodo', titulo: 'Nota de método',
+      id: 'padre-nico', titulo: 'Padre José Evangelista Marques Guimarães (Padre Nico)',
       blocos: [
-        'O acervo original traz, para cada pessoa, a lista completa de irmãos e filhos com ano de nascimento, em alguns casos quinze nomes. Essas listas <strong>não foram trazidas para esta página</strong>, e não por descuido: uma lista de quinze nomes com data não é texto de leitura, é registro genealógico, e o lugar dela é um banco de dados consultável, não uma página web.',
-        'A informação continua no acervo e deve ser publicada: em formato de tabela pesquisável, cruzada com os livros de batismo, casamento e óbito da Matriz. É um projeto próprio, e provavelmente o mais útil que este portal pode gerar para as famílias do distrito.',
-        { lacuna: 'Duas datas do acervo original estão evidentemente trocadas: um irmão nascido em <em>1984</em> numa família do século 19 e uma irmã em <em>1972</em> na mesma lista. <strong>Não foram corrigidas por dedução</strong>: a correção tem de vir do livro de registro, e não do bom senso de quem transcreve. Foram omitidas até a conferência.' },
-        'Cinco pessoas do acervo original ainda não têm verbete aqui, por falta de dados mínimos: o professor Antônio (parcialmente coberto acima), e outros moradores citados de passagem em outras páginas. A lista de quem falta é tão importante quanto a de quem está.',
+        'Padre José Evangelista Marques Guimarães (Padre Nico) era filho do professor Antônio '
+      + 'Evangelista Marques Guimarães e Elisa Carolina de Jesus Guimarães e neto do professor '
+      + 'João Evangelista Marques Guimarães e Maria Rodrigues de Oliveira Lima. Nasceu em Morro '
+      + 'Vermelho em 1887. Estudou no Seminário Arquidiocesano de Mariana. Foi vigário da paróquia '
+      + 'de Pompeu, Minas Gerais, e assumiu em 1911 a Paróquia de Nossa Senhora de Nazareth de '
+      + 'Morro Vermelho, onde ficou até falecer, em 1961. Hoje dá nome à Rua de Baixo de Morro '
+      + 'Vermelho.',
       ],
     },
-  ],
-  fontes: [
-    'Livros de batismo, casamento e óbito da Matriz de Nossa Senhora de Nazareth e da Matriz de Nossa Senhora do Bom Sucesso, em Caeté: a fonte de quase todas as datas desta página, e a única que resolve as que faltam.',
-    'Arquivo Público Mineiro: censos provinciais de 1832 e 1867, listas nominativas de habitantes e os processos de nomeação de professores públicos.',
-    'Diário Oficial de Minas Gerais, edição de 26 de junho de 1893: nota sobre o falecimento do professor João Evangelista Marques Guimarães.',
-    'BURTON, Richard. Viagem do Rio de Janeiro a Morro Velho (1868): a passagem pelo povoado em 10 de julho de 1867.',
-    'ROSA, João Guimarães. Discurso de posse na Academia Brasileira de Letras, 1967: texto integral disponível no site da ABL.',
-    'Arquivo da Arquidiocese de Belo Horizonte e Seminário Arquidiocesano de Mariana: registros de ordenação e de nomeação paroquial dos padres da família.',
-    'Cartório de Morro Vermelho e Museu Regional de Caeté: registros civis e a oficina de bainha aberta criada por Nhanhá.',
-    'Famílias do distrito: as datas de falecimento posteriores a 2020 e a confirmação das biografias de pessoas nascidas no século 20 só podem vir delas.',
+    {
+      id: 'matheus-lopes-de-magalhaes', titulo: 'Alferes Matheus Lopes de Magalhães',
+      blocos: [
+        'Matheus Lopes de Magalhães era filho de Domingos Lopes e Rosa Maria de Magalhães, do '
+      + 'povoado de São Gens, antiga vila de Monte Longo, na região de Braga, no norte de '
+      + 'Portugal. Era neto de João Lopes e Maria de Andrade (paterno), da freguesia de São Miguel '
+      + 'de Refojos de Basto, cidade conhecida por um antigo e famoso convento, também na região '
+      + 'de Braga, e de Antônio de Magalhães e Joana Lopes Ferreira (materno), da localidade de '
+      + 'Lugar de Pica, em São Gens, onde também moravam seus pais. Matheus nasceu em 15 de '
+      + 'dezembro de 1784 e no mesmo dia foi batizado na igreja de São Bartolomeu de São Gens pelo '
+      + 'padre Bernardo José de Almeida, sendo padrinhos Matheus Gonçalves e Ana de Oliveira, '
+      + 'filha maior de Antônio de Barros, todos do Lugar de Pica.',
+        'Ainda jovem entrou para uma companhia militar e no início do século 19 veio para o '
+      + 'Brasil, chegando a Caeté para reforçar o policiamento. Seguiu a carreira militar até se '
+      + 'tornar alferes. Aos 20 anos, em 3 de setembro de 1804, casou-se na Matriz de Nossa '
+      + 'Senhora do Bom Sucesso, em Caeté, com <strong>Joaquina do Couto Barbosa</strong>, nascida '
+      + 'em Caeté em 1785, filha de Manoel do Couto Barbosa e Tereza de Souza Leal. A celebração '
+      + 'foi feita pelo vigário, padre Joselino Anastácio Macedo, sendo testemunhas o capitão e '
+      + 'juiz ordinário Domingos Rodrigues Guerra e o capitão Antônio de Novais Campos.',
+        'Matheus estabeleceu moradia em Caeté e em Morro Vermelho, comprou fazendas e minas de '
+      + 'ouro em Morro Vermelho e Viracopos, que mais tarde foram administradas pelos filhos '
+      + 'Antônio Lopes de Magalhães (1808), Manoel Lopes de Magalhães (1809) e Prudenciana Lopes '
+      + 'de Magalhães (1818), que também se estabeleceram em Morro Vermelho, onde administravam '
+      + 'uma fábrica de ferro. Em 1832, segundo censo do Governo da Província, Matheus Lopes de '
+      + 'Magalhães contava com 22 escravos.',
+        { sub: 'Os quatro filhos' },
+        'Antônio Lopes de Magalhães (1808); Manoel Lopes de Magalhães (1809); Tereza Lopes de '
+      + 'Magalhães (1811); Prudenciana Lopes de Magalhães (1818).',
+      ],
+    },
+    {
+      id: 'jose-de-mello', titulo: 'José de Mello de Souza Almeida Brandão',
+      blocos: [
+        'José de Mello de Souza Almeida Brandão nasceu em 1882 e era casado com Maria Bárbara '
+      + '(1892). Filhos: José de Mello (1813), Luiz de Mello (1829), Felippa Antônia (1820), '
+      + 'Flávia (1825). Foi lavrador, criador, mineiro e juiz de Paz de Morro Vermelho. Em 1932 '
+      + 'tinha 78 escravos, segundo censo feito por ele a pedido de Manoel Ignácio de Mello e '
+      + 'Souza, presidente da Província de Minas.',
+        'Em 27 de abril de 1833, então juiz de Paz de Morro Vermelho, José de Mello de Souza '
+      + 'Almeida Brandão publicou no jornal O Vigilante manifesto concitando os cidadãos da região '
+      + 'a partirem armados para Ouro Preto e defenderem o então Presidente de Minas, Manoel '
+      + 'Ignácio de Mello e Souza. Na chamada Sedição Militar ou Revolta do Ano da Fumaça, um '
+      + 'grupo político alcunhado de Caramuru, na ausência do Presidente, marchou para Ouro Preto '
+      + 'e tomou o governo de Minas em 22 de março de 1833. Os revoltosos defendiam uma série de '
+      + 'medidas e até a volta ao Brasil do Imperador Dom Pedro I. O movimento soltou presos '
+      + 'militares e deportou o conselheiro Bernardo Pereira de Vasconcelos. Durante dois meses a '
+      + 'província foi governada pelo líder Soares do Couto. O conselheiro deportado reuniu um '
+      + 'grupo de seis mil homens, inclusive gente do Morro Vermelho, sob o comando do Marechal '
+      + 'Pinto Peixoto e, depois de confrontos, o presidente da Província retornou ao poder em 26 '
+      + 'de maio.',
+      ],
+    },
+    {
+      id: 'joao-goncalves-de-carvalho', titulo: 'Tenente João Gonçalves de Carvalho',
+      blocos: [
+        'O Tenente João Gonçalves de Carvalho era filho de Pedro Gonçalves de Carvalho e Maria '
+      + 'Gonçalves de Carvalho e nasceu em 1804 em Morro Vermelho. Em 19 de janeiro de 1830 '
+      + 'casou-se com Anna Maria Joaquina de Gouvea, sendo padrinhos Lucas José de Gouvêa, irmão '
+      + 'da noiva, e João da Silva de Oliveira. João Gonçalves de Carvalho era também membro da '
+      + 'Guarda Nacional de Caeté, a guarda de elite do imperador. Era fazendeiro em Morro '
+      + 'Vermelho, onde também foi Juiz de Paz.',
+        { sub: 'Os filhos' },
+        'João Gonçalves de Carvalho Júnior, José Gonçalves de Carvalho, Emílio Gonçalves de '
+      + 'Carvalho (1839), Cândido Gonçalves de Carvalho (1840), Luiz Gonçalves de Carvalho (1842), '
+      + 'Mariano Gonçalves de Carvalho (1844).',
+      ],
+    },
+    {
+      id: 'dona-jove', titulo: 'Professora Jovelina Evangelista Marques Guimarães (Dona Jove)',
+      blocos: [
+        'A professora Jovelina Evangelista Marques Guimarães (Dona Jove) era filha de Cândido '
+      + 'Evangelista Marques Guimarães (Pai Candu) e Belarmina Lopes Magalhães (Mãe Bela) e neta '
+      + 'de João Evangelista Marques Guimarães e Maria Rodrigues de Oliveira Lima. Nasceu em Morro '
+      + 'Vermelho em 1899 e foi batizada em 11 de novembro na Matriz de Nossa Senhora de Nazareth '
+      + 'pelo padre João de Oliveira Lima, sendo padrinhos Pedro da Circuncisão Pinheiro e Clara '
+      + 'Rodrigues Guimarães.',
+        'Durante várias décadas, Dona Jove foi professora no Grupo Escolar de Morro Vermelho e '
+      + 'ensinou as primeiras letras a centenas de moradores. Foi também auxiliar do Padre José '
+      + 'Evangelista Marques Guimarães (Padre Nico), cuidando da administração da Matriz de Nossa '
+      + 'Senhora de Nazareth. Era solteira e criou dois sobrinhos.',
+        'Tinha 15 irmãos: Clara Evangelista Marques (1880), Maria Evangelista Marques (1881), João '
+      + 'Evangelista Marques (1884), Albertina Evangelista Marques (1885), José Evangelista '
+      + 'Marques (1889), Fleuripes Evangelista Marques (1891), Maria Augusta Guimarães (Mica) '
+      + '(1892), Pedro Evangelista Marques (1894), Clodomiro Evangelista Marques Rodrigues (1895), '
+      + 'Alice Evangelista Marques (1897), Carlindo Evangelista Marques (1898), Agenor Evangelista '
+      + 'Marques (1902), Ivone Evangelista Marques (1904), Olinto Evangelista Marques (1906), '
+      + 'Adelina Rodrigues Guimarães (1907).',
+      ],
+    },
+    {
+      id: 'jose-rodrigues-pinheiro', titulo: 'José Rodrigues Pinheiro',
+      blocos: [
+        'José Rodrigues Pinheiro, ou Zé Pinheiro como era mais conhecido, era filho de João '
+      + 'Evangelista Pinheiro e Jovita Gonçalves Rodrigues. Nasceu em Morro Vermelho em 1912 e '
+      + 'casou-se com Nicolina de Moraes, com quem teve 14 filhos. Trabalhador rural e pequeno '
+      + 'proprietário, comandou a Corporação Musical Santa Cecília por muitos anos, deixando um '
+      + 'legado de composições musicais, algumas incluídas na Cavalhada Nossa Senhora de Nazareth, '
+      + 'repetida anualmente no povoado desde 1704. Também foi organizador e maestro da Coral '
+      + 'Nossa Senhora de Nazareth, com presença marcante em todas as festas do lugarejo.',
+      ],
+    },
+    {
+      id: 'dona-mica', titulo: 'Maria Augusta Guimarães, dona Mica',
+      blocos: [
+        'Maria Augusta Guimarães, dona Mica, era filha de Cândido Evangelista Marques Guimarães '
+      + '(Pai Candu) e Belarmina Lopes Magalhães (Mãe Bela) e neta de João Evangelista Marques '
+      + 'Guimarães e Maria Rodrigues de Oliveira Lima. Nasceu em Morro Vermelho em 1892. Era uma '
+      + 'das benzedeiras mais famosas e procuradas de Morro Vermelho e durante muitos anos foi '
+      + 'responsável pela ornamentação da bandeira da Cavalhada Nossa Senhora de Nazareth em 7 de '
+      + 'setembro.',
+        'Casou-se com <strong>Francisco Emílio Lopes</strong>, com quem teve seis filhos: Geraldo '
+      + 'Emílio Lopes (Geraldo Baixinho), Emílio, Lilinha, José, Pedro e Otília.',
+        'Tinha 15 irmãos: Clara Evangelista Marques (1880), Maria Evangelista Marques (1881), João '
+      + 'Evangelista Marques (1884), Albertina Evangelista Marques (1885), José Evangelista '
+      + 'Marques (1889), Fleuripes Evangelista Marques (1891), Pedro Evangelista Marques (1894), '
+      + 'Clodomiro Evangelista Marques (1895), Alice Evangelista Marques (1897), Carlindo '
+      + 'Evangelista Marques (1898), Jovelina Evangelista Marques (Dona Jove) (1899), Agenor '
+      + 'Evangelista Marques (1902), Ivone Evangelista Marques (1904), Olinto Evangelista Marques '
+      + '(1906) e Adelina Rodrigues Guimarães (1907).',
+      ],
+    },
+    {
+      id: 'dona-lica', titulo: 'Maria Rodrigues Pinheiro Xavier (Dona Lica)',
+      blocos: [
+        'Maria Pinheiro Xavier (Dona Lica) nasceu em Morro Vermelho em 15 de maio de 1907. Foi '
+      + 'batizada no dia 26 do mesmo mês na Matriz de Nossa Senhora de Nazareth pelo padre Carlos '
+      + 'Ferreira Marques, sendo padrinhos Pedro Gonçalves Rodrigues e sua mulher Maria Rodrigues '
+      + 'Guimarães. Era filha de João Evangelista Pinheiro e de Jovita Gonçalves Rodrigues '
+      + 'Pinheiro e tinha os irmãos Raimunda Pinheiro do Espírito Santo (Mundinha), Paulo '
+      + 'Rodrigues Pinheiro e José Rodrigues Pinheiro.',
+        'Era casada com José Xavier de Gouvea, com quem teve nove filhos: Maria, José, Antônio, '
+      + 'Alcina, Orlando, Vanilda, Elizabete, Francisco e Beatriz. Dona Lica faleceu em 2006, aos '
+      + '99 anos.',
+        'Exímia quitandeira, costureira e bordadeira, deixou para as gerações futuras um rico '
+      + 'patrimônio de arte e cultura, que se espalhou por toda a região: o bordado Bainha Aberta, '
+      + 'já reconhecido em todo o país. As bainhas abertas chegaram a Minas Gerais com '
+      + 'colonizadores portugueses no início do século 18, durante o ciclo do ouro, e sobreviveram '
+      + 'nos moldes originais graças ao trabalho silencioso das bordadeiras, que passaram a '
+      + 'tradição de geração a geração. Durante toda a vida, Dona Lica ensinou o ofício aprendido '
+      + 'da mãe e de avós para as filhas e vizinhas. O saber, mantido pela oralidade, foi '
+      + 'multiplicado por sua filha Maria Xavier Pinheiro Guimarães (Nhanhá), que decidiu criar '
+      + 'uma oficina no Museu Regional de Caeté, espalhando a tradição por centenas de bordadeiras, '
+      + 'inclusive de cidades vizinhas.',
+        'Segundo as próprias artistas, a bainha aberta é um trabalho muito bonito, mas difícil, '
+      + 'pois requer atenção e paciência. Diante de um mostruário, com vários tipos, as bordadeiras '
+      + 'tecem a renda em pano desfiado de algodão ou linho, que serve de adorno requintado de '
+      + 'roupas de cama, toalhas e caminhos-de-mesa, além de peças para igrejas, como os '
+      + 'sanguíneos, que forram altares.',
+      ],
+    },
+    {
+      id: 'clarinda', titulo: 'Clarinda da Conceição Pinheiro',
+      blocos: [
+        'Filha de Francisco de Assis Morais e Maria Magalhães (Maria de Cândida), Clarinda da '
+      + 'Conceição Pinheiro nasceu em Morro Vermelho em 1929 e era casada com Estêvam Evangelista '
+      + 'Pinheiro. Desde pequena seguiu o costume da família Morais de integrar os corais da '
+      + 'Matriz de Nossa Senhora de Nazareth e logo aprendeu a ler partituras musicais, passando a '
+      + 'comandar o coral que cantava em latim a missa a quatro vozes na Festa da Padroeira e os '
+      + 'motetos da Semana Santa. Conduzia também o coral que entoava os cânticos das missas '
+      + 'dominicais no povoado, cargo que deixou para a filha Maria, de voz tão semelhante e '
+      + 'afinada como a dela.',
+        'Foi titular do cartório de notas de Morro Vermelho. Também foi trabalhadora rural, '
+      + 'enfrentando com o marido e os filhos a administração de uma chácara nas proximidades de '
+      + 'Morro Vermelho. Teve nove filhos: Maria, José, Agda, Paulo, Beatriz, Tereza, Perpétua, '
+      + 'Estêvam e Marcelo. Morreu em 10 de agosto de 2020, aos 91 anos. Mulher aguerrida, das '
+      + 'mais velhas do povoado. Nasceu forte e foi ajudando pai, mãe e irmãos, eram dez, na '
+      + 'labuta diária. Uma vez casada, foi administrar as terras do marido e, morto este, passou '
+      + 'a cuidar da lavoura e do gado junto com os nove filhos. Recebeu o cartório da dona Aurora '
+      + 'Guimarães e cuidava de certidões de nascimento, casamento e óbito.',
+        'Na vida religiosa era a cantora mais famosa e desfiou sua voz afinada cantando missa em '
+      + 'latim e motetos pelas ruas durante os passos da Semana Santa. Nesta arte, vai ser '
+      + 'insubstituível no povoado. Ensinou filhas e conterrâneas o segredo da cantoria religiosa, '
+      + 'mas nenhuma delas será como a dona Clarinda da Conceição Pinheiro. Mas Clarinda '
+      + 'certamente deixou um rastro de esperança nesta terra de tão poucos talentos.',
+      ],
+    },
+    {
+      id: 'geraldo-baixinho', titulo: 'Geraldo Emílio Lopes (Geraldo Baixinho)',
+      blocos: [
+        'Geraldo Emílio Lopes (Geraldo Baixinho) nasceu em Morro Vermelho em 3 de abril de 1920. '
+      + 'Era um dos seis filhos de Francisco Emílio Lopes e Maria Augusta Guimarães (Dona Mica). '
+      + 'Casou-se com Maria de Gouvea Lopes (Salia), já falecida, com quem teve oito filhos, cinco '
+      + 'dos quais ainda vivos. Trabalhador rural, mineiro, metalúrgico, criou família com '
+      + 'exemplos de dignidade e cidadania.',
+        'Músico, compositor, cantor e seresteiro, ele até hoje tira belos acordes em seu velho '
+      + 'amigo cavaquinho e se recorda de antigas canções que embalaram serenatas madrugada afora, '
+      + 'alimentando sonhos de lindas mocinhas pelas ladeiras de Morro Vermelho. Exímio bailarino, '
+      + 'era o preferido das meninas nos bailes e arrasta-pés do lugarejo. Esportista, temido '
+      + 'lateral esquerdo do time do Natal, ele granjeou amizades e admiração por toda a região.',
+        'Hoje, sua história se mistura com a própria história do último século de Morro Vermelho. '
+      + 'Como os pais e avós, ele ajudou o povoado a crescer, tomar corpo e se agigantar na defesa '
+      + 'de seus direitos e do espaço que lhe cabe na cidade. Desde a adolescência, teve presença '
+      + 'marcante em todas as festas, promoções e eventos da comunidade. Integrou a Corporação '
+      + 'Musical Santa Cecília, era mordomo assíduo de Nossa Senhora de Nazareth e com a mãe, '
+      + 'famosa benzedeira de Morro Vermelho, aprendeu o dom de aliviar dores que Deus só concede '
+      + 'aos puros de coração. Ouviu muito, aconselhou a muitos, buscou o bom senso.',
+        'Ele completou 100 anos em 2020. Um século de vida não é para qualquer um. É uma conquista '
+      + 'exclusiva de pessoas pacientes, fortes, perseverantes e com amor ao próximo. Infelizmente, '
+      + 'por causa do novo coronavírus, a festança teve de ser adiada. Mas ele está pronto para '
+      + 'esperar por muito tempo. Lúcido, de memória invejável capaz de lembrar acontecimentos '
+      + 'importantes no povoado desde a década de 1920, ele acaba de receber o diagnóstico médico '
+      + 'de que não precisa tomar remédio algum, basta seguir a vida, cercado do carinho dos '
+      + 'parentes e amigos.',
+        'Todo o povo de Morro Vermelho se sente orgulhoso de ter ao seu lado um vizinho que deixou '
+      + 'por toda parte um rastro de luz e esperança.',
+      ],
+    },
   ],
   relacionadas: [
-    { nome: 'Família de Padres', href: 'familia-de-padres.html', txt: 'Os seis filhos padres e o Comendador da Santa Sé.', olho: '12' },
-    { nome: 'Fazenda do Cutão', href: 'fazenda-do-cutao.html', txt: 'Onde estão as ruínas do Palácio do Barão.', olho: '05' },
-    { nome: 'Artesanato e Gastronomia', href: 'artesanato-gastronomia-musica.html', txt: 'A bainha aberta hoje, e quem a borda.', olho: '19' },
-    { nome: 'Estórias, Casos e Lendas', href: 'estorias-casos-e-lendas.html', txt: 'O Padre Nico e os capetas do Maquiné.', olho: '25' },
+    { nome: 'Família de Padres', href: 'familia-de-padres.html', txt: 'Povoado tem um comendador da Santa Sé', olho: '12' },
+    { nome: 'Fazenda do Cutão', href: 'fazenda-do-cutao.html', txt: 'Engenhos de apuração do ouro', olho: '05' },
+    { nome: 'Artesanato e Gastronomia', href: 'artesanato-gastronomia-musica.html', txt: 'Tradições de pai para filho', olho: '19' },
   ],
 };

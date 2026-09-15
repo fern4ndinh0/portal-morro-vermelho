@@ -134,7 +134,7 @@ function textoDoBloco(b) {
   if (b.abertura) return b.abertura;
   if (b.sub) return b.sub;
   if (b.lista) return b.lista.join(' ');
-  if (b.citacao) return b.citacao + ' ' + (b.autoria || '');
+  if (b.citacao) return (Array.isArray(b.citacao) ? b.citacao.join(' ') : b.citacao) + ' ' + (b.autoria || '');
   if (b.lacuna) return b.lacuna;
   if (b.nota) return (b.titulo || '') + ' ' + b.nota;
   if (b.figura) return (b.figura || '') + ' ' + (b.legenda || '');

@@ -13,8 +13,6 @@
    | { sub }                                     | subtítulo <h3>              |
    | { lista: [] }                               | lista com marcador de filete|
    | { citacao, autoria }                        | citação em papel envelhecido|
-   | { lacuna }                                  | caixa "Lacuna documental"   |
-   | { nota, titulo }                            | caixa de nota editorial     |
    | { figura, arquivo, legenda, alt, credito }  | figura com crédito          |
    | { galeria: [{arquivo, alt, legenda, credito}] } | grade de fotografias    |
 
@@ -24,7 +22,6 @@
    ========================================================================== */
 
 import { Icone } from '../../dados/icones.jsx';
-import { MOSTRAR_LACUNAS } from '../../dados/contato.js';
 import { CaixaDeMidia } from '../CaixaDeMidia.jsx';
 import { Html } from '../Texto.jsx';
 
@@ -58,14 +55,8 @@ function Figura({ b }) {
         <p>{b.figura}</p>
       </div>
       <figcaption>
-        {podeMostrar ? null : <><strong>Imagem a incorporar.</strong>{' '}</>}
         {b.legenda && <Html as="span" texto={b.legenda} />}
-        {/* Enquanto não houver crédito declarado, o texto continua sendo a
-            cobrança. Uma foto publicada sem crédito é uma foto que o portal
-            não deveria estar exibindo, e a legenda diz isso em voz alta. */}
-        <span className="figura__credito">
-          {b.credito || 'Crédito e licença obrigatórios na publicação.'}
-        </span>
+        {b.credito && <span className="figura__credito">{b.credito}</span>}
       </figcaption>
     </CaixaDeMidia>
   );
@@ -98,10 +89,8 @@ function Galeria({ b }) {
             decoding="async"
           />
           <figcaption>
-            <Html as="span" texto={p.legenda} />
-            <span className="figura__credito">
-              {p.credito || 'Crédito e licença obrigatórios na publicação.'}
-            </span>
+            {p.legenda && <Html as="span" texto={p.legenda} />}
+            {p.credito && <span className="figura__credito">{p.credito}</span>}
           </figcaption>
         </figure>
       ))}
@@ -125,36 +114,15 @@ export function Bloco({ b }) {
   }
 
   if (b.citacao) {
+    /* As transcricoes dos documentos originais costumam ter varios paragrafos.
+       Um array vira varios <p> dentro da mesma citacao — e nao uma pilha de
+       blockquotes separados, que leria como varias citacoes diferentes. */
+    const paragrafos = Array.isArray(b.citacao) ? b.citacao : [b.citacao];
     return (
       <blockquote className="citacao-fonte">
-        <Html texto={b.citacao} />
-        <footer>{b.autoria}</footer>
+        {paragrafos.map((t, i) => <Html texto={t} key={i} />)}
+        {b.autoria && <footer>{b.autoria}</footer>}
       </blockquote>
-    );
-  }
-
-  if (b.lacuna) {
-    if (!MOSTRAR_LACUNAS) return null;
-    return (
-      <div className="nota nota--lacuna">
-        <Icone nome="alerta" />
-        <div>
-          <p className="nota__titulo">Lacuna documental</p>
-          <Html texto={b.lacuna} />
-        </div>
-      </div>
-    );
-  }
-
-  if (b.nota) {
-    return (
-      <div className="nota">
-        <Icone nome="doc" />
-        <div>
-          <p className="nota__titulo">{b.titulo || 'Nota'}</p>
-          <Html texto={b.nota} />
-        </div>
-      </div>
     );
   }
 

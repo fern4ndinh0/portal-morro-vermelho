@@ -1,93 +1,306 @@
 /* ==========================================================================
-   CAVALHADA DE NOSSA SENHORA DE NAZARETH
-   Festas e Tradições · 18
-   --------------------------------------------------------------------------
-   REGRA EDITORIAL: nenhum fato sobre Morro Vermelho foi inventado, e aqui a
-   regra vem dobrada com a regra do patrimônio imaterial — quem faz a festa é
-   a fonte E é o detentor. Nada nesta página se publica sem passar pela
-   comissão organizadora.
+   18 · CAVALHADA NOSSA SENHORA DE NAZARETH
 
-   A afirmação "preservada desde 1704" é o coração do verbete e está tratada
-   como o que é: a data que a tradição do distrito guarda, e que a pesquisa
-   documental precisa confirmar. Ver a seção "A data".
-
-   NOTA TÉCNICA: existe neste portal um componente completo de seção de
-   Cavalhadas para a home — src/componentes/home/Cavalhadas.jsx, com contagem
-   regressiva e os dois partidos —, desligado pela constante
-   MOSTRAR_CAVALHADAS em src/dados/home.js. Ele foi desativado a pedido e
-   continua desativado; ligá-lo é mudar uma linha, e preencher
-   CAVALHADAS.quando com a data real da próxima edição.
+   FONTE: originais/word/18MV.docx — "Pesquisa, texto e fotos: Geraldo Lopes".
+   Texto do documento original, sem acréscimo. As quatro embaixadas do fim são
+   transcrição literal do que se declama na praça.
    ========================================================================== */
 
 export default {
   slug: 'cavalhada-de-nazareth',
-  numero: '18',
   titulo: 'Cavalhada de Nossa Senhora de Nazareth',
-  olho: 'Festas e Tradições · 18',
+  numero: '18',
+  olho: 'Festas, tradições e saberes · 18',
   tom: 'var(--terra-800)',
-  estado: 'Rascunho estruturado · data de origem a documentar',
-  resumo: 'Festa preservada desde 1704. Durante dias, o distrito se divide em dois partidos e reencena a cavalo a batalha entre mouros e cristãos, com papéis herdados de pai para filho.',
-  resumoSeo: 'A Cavalhada de Nossa Senhora de Nazareth em Morro Vermelho, distrito de Caeté (MG): a festa, os partidos, a data de origem e o que falta documentar.',
+  resumo: 'Festa é preservada sem interrupção desde 1704',
+  resumoSeo: 'A Cavalhada de Nossa Senhora de Nazareth, em Morro Vermelho, Caeté (MG): repetida '
+           + 'anualmente desde 1704 na noite de 7 de setembro, com 24 cavaleiros, o mastro, os '
+           + 'fogos e as embaixadas de mouros e cristãos.',
   secoes: [
     {
-      id: 'o-que-e', titulo: 'O que é uma cavalhada',
+      id: 'abertura', titulo: null,
       blocos: [
-        { abertura: 'Cavalhada é a reencenação, a cavalo, da <strong>batalha entre mouros e cristãos</strong>, um enredo trazido da península ibérica que atravessou o Atlântico e se enraizou no interior do Brasil, onde sobreviveu melhor do que na origem.' },
-        'A estrutura é reconhecível em toda parte onde a festa existe: dois partidos, embaixadas trocadas, torneios de destreza a cavalo, combate encenado e desfecho. O que muda de um lugar para outro (e é onde mora tudo o que interessa) são as cores, os personagens, as regras e o modo como os papéis passam de uma geração à seguinte.',
+        { abertura: 'Pelo que se tem notícia, desde 1704 a Cavalhada Nossa Senhora de Nazareth, '
+                  + 'festa folclórica e religiosa das mais tradicionais de Minas Gerais, vem sendo '
+                  + 'repetida anualmente em Morro Vermelho na noite de 7 de setembro, em suas '
+                  + 'características originais. Por mais de três séculos, jamais foi interrompida, '
+                  + 'nem durante a epidemia de varíola de 1895, que dizimou quase um terço de sua '
+                  + 'população, e a pandemia do Covid-19 em 2020.' },
+        'A cavalhada representa o fim da guerra entre mouros e cristãos, culminando com a vitória '
+      + 'cristã, a conversão dos mouros e o pacto de aliança. É o final da luta contra os '
+      + 'muçulmanos, que aceitam a fé cristã. Trazida por portugueses emboabas, procedentes do '
+      + 'Nordeste do Brasil, a cavalhada de Morro Vermelho se diferencia de outras do país, '
+      + 'marcadas por guerras ou disputas.',
+        'No dia 7 de setembro, após a novena, às 21 horas, na praça toda enfeitada e cercada de '
+      + 'cordas e bandeirolas, o público aguarda ansioso o início da cavalhada. Os fogueteiros '
+      + 'iniciam os diálogos da cavalhada, através de salvas de fogos de artifício, aguardando-se '
+      + 'uma resposta dos cavaleiros, de outro local. Tão logo se acomodam nas selas, os '
+      + 'cavaleiros – 12 cristãos e 12 mouros – respondem com outra salva de fogos, iniciando o '
+      + 'desfile até a praça, sob intensa queima de fogos dos dois lados. Esta conversa singular '
+      + 'de comunicação direta entre fogueteiros ajuda a marcar as evoluções do evento e assume '
+      + 'valores carregados de simbolismo.',
+        'À frente vêm os dois embaixadores, com bengalas iluminadas, seguido por dois cavaleiros '
+      + 'com a Bandeira de Nossa Senhora de Nazareth, e os demais pares. Ao chegar à praça, os 24 '
+      + 'cavaleiros são recebidos por apoteose de fogos e aplausos da multidão. Logo depois, os '
+      + 'dois embaixadores, cercados pelos demais cavaleiros, iniciam a movimentação diante da '
+      + 'bandeira.',
+        'A cavalhada começa com o embaixador mouro, de capa branca, símbolo da conversão e do '
+      + 'batismo, saudando com embaixadas a bandeira, recebida do imperador cristão, de azul, que '
+      + 'também a venera. Logo depois, os mouros hasteiam a Bandeira de Nazareth em mastro no seu '
+      + 'reino, simbolizando a adoção da fé cristã.',
+        'A comunidade inicia, então, o levantamento do mastro, com o auxílio de tesouras de '
+      + 'madeira, outra tradição centenária. Os embaixadores mouro e cristão voltam à praça para '
+      + 'novas embaixadas. O líder mouro declara aceitar o estandarte de Nazareth. Seguem-se as '
+      + 'embaixadas do cristão, que pede ao mouro para erguer a bandeira, como prova de adoção da '
+      + 'nova fé. Logo após, mouros e cristãos entrelaçam fitas em redor do mastro, simbolizando a '
+      + 'união de dois povos. Os 12 pares voltam à praça para fazer diversas evoluções, '
+      + 'simbolizando um oito (união entre dois povos), uma meia lua (início de uma amizade '
+      + 'crescente) e outros movimentos.',
+        'Finalmente, eles fazem a despedida, agitando lenços brancos para a multidão, ao som da '
+      + 'música “Adeus, Senhora de Nazareth, até para o ano que vem se Deus quiser”. Todas as '
+      + 'evoluções são acompanhadas por músicas típicas executadas pela Corporação Musical Santa '
+      + 'Cecília, outra tradição centenária do lugar.',
+        'Entre os romeiros, a cavalhada atrai a Morro Vermelho centenas de emigrados, descendentes '
+      + 'de famílias locais que moram em vários cantos do país e até do exterior. Eles voltam à '
+      + 'terra natal para agradecer a proteção da Virgem durante o ano. Com os visitantes, '
+      + 'estima-se, no dia da festa, um público cinco vezes maior que a população local.',
+        { figura: 'A Cavalhada na praça da Matriz.',
+          arquivo: 'figura-cavalhada.jpg',
+          alt: 'Cavaleiros da Cavalhada em formação na praça, diante da Matriz iluminada, à '
+             + 'noite.' },
+      ],
+    },
+    {
+      id: 'tradicao-brasileira', titulo: 'Tradição brasileira',
+      blocos: [
+        'No Brasil as cavalhadas aparecem desde o século 17 com as características portuguesas. '
+      + 'Com o nome de Cavalhada, o desfile converge para a luta de cristãos e mouros, auto de '
+      + 'cavaleiros, sempre em número par, vestidos metade de azul e a outra de vermelho. Trata-se '
+      + 'da representação simbólica da histórica luta entre os cristãos liderados pelo imperador '
+      + 'Carlos Magno, contra os mouros que invadiram a Península Ibérica.',
+        'Em Portugal foi apresentada pela primeira vez em 1451, nas festas de despedida da '
+      + 'princesa Leonor, ao se casar com o rei dos romanos, Frederico III. O acontecimento '
+      + 'histórico, adornado por diversas lendas, foi bastante divulgado pelos confins '
+      + 'brasileiros, durante o período colonial.',
+        'A Cavalhada geralmente acontece sob a forma de cortejo, desfiles, evoluções nas lutas '
+      + 'entre os participantes, jogos e disputas de prêmios. Este auto pode ser encontrado '
+      + 'durante as festividades das festas do Divino Espírito Santo, em alguns estados.',
+        'Em Pirinópolis, Goiás, há a presença de mascarados montados a cavalo, que saem às ruas '
+      + 'fazendo algazarras, tentando de qualquer jeito não serem reconhecidos. Logo após há o '
+      + 'desfile dos cavaleiros trajados ricamente com capas bordadas de azul (cristãos) e de '
+      + 'vermelho (mouros). Na sequência, ocorrem as embaixadas, trocas de insultos e acusações, '
+      + 'desafio dos mouros aos cristãos; as batalhas, e por fim o pedido de trégua pelos mouros, '
+      + 'finalizando com o batismo e a conversão destes últimos ao cristianismo.',
+        'Em outras regiões durante a festa da Cavalhada ocorre o levantamento do mastro, que é '
+      + 'trançado com fitas, entrelaçadas pelos movimentos executados de forma bastante '
+      + 'sincronizada pelos cavaleiros.',
+      ],
+    },
+    {
+      id: 'lutas-e-conversao', titulo: 'Lutas e conversão',
+      blocos: [
+        'Desde o século 17, a cavalhada é praticada em várias regiões do Brasil. Em geral, a '
+      + 'tradição concentra numa praça de batalha 12 cavaleiros cristãos no lado poente e 12 '
+      + 'mouros no lado do sol nascente. Em Pernambuco, de onde veio uma legião de emboabas para '
+      + 'Morro Vermelho no início do século 18, há registros de várias cavalhadas desde 1641, '
+      + 'promovidas como parte dos festejos oficiais da corte portuguesa, tendo a sua difusão se '
+      + 'espalhado do Nordeste para todo o Brasil. Uma delas remonta às festas públicas promovidas '
+      + 'pelo Conde João Maurício de Nassau, no Recife, em janeiro de 1641, quando da comemoração '
+      + 'pela proclamação da restauração de Portugal do jugo espanhol e pela aclamação de Dom João '
+      + 'IV.',
+        'Outra modalidade da cavalhada, registrada no Brasil já no início do século 17, '
+      + 'estrutura-se apenas em uma série de jogos: argolinhas, lanças e ausências (bolas de '
+      + 'barro, cheia de flores). Esta tradição é mantida em Guararema, Franca, São Luiz de '
+      + 'Piratininga, Igaratá e Santa Isabel (São Paulo).',
+        'Em Goiás, a tradição teria chegado em 1756, para comemorar a festa do Divino Espírito '
+      + 'Santo, sendo a mais famosa a de Pirenópolis. Em Atibaia (SP), a cavalhada remonta do ano '
+      + 'de 1747. No Amapá, a festa de mouros e cristãos é uma tradição iniciada em 1777, quando '
+      + 'os colonos portugueses chegaram à cidade de Mazagão.',
+        'Em Santo Antônio da Patrulha (RS), a tradição foi trazida por açorianos e é festejada '
+      + 'desde o início do século 18, no Dia de Pentecostes. É a festa mais completa do Brasil, '
+      + 'indo das lutas até a conversão e o batismo dos mouros.',
+        'Hoje, a luta de mouros e cristãos é mantida, entre outras cidades, em Mateus Leme, '
+      + 'Amarantina (Ouro Preto), Januária, Passos, Rio Espera, Mutum, Campos Gerais e Passos '
+      + '(MG); Delmiro Gouveia (Alagoas), Santa Cruz, Pilar e Pirenópolis (Goiás), e Monte Alegre '
+      + '(Rio Grande do Norte). A cavalhada também é encenada em São Luís do Pirapetinga, Atibaia, '
+      + 'Igaratá, Santa Isabel, Guararema, Bom Jesus dos Perdões e Salesópolis (São Paulo), Santo '
+      + 'Antônio da Patrulha (Rio Grande do Sul), Belo Jardim, Pedra, Cabo de Santo Agostinho e '
+      + 'Rio Formoso (Pernambuco), Mazagão (Amapá), Cáceres (Mato Grosso do Sul), Poconé (Mato '
+      + 'Grosso), Campos dos Goytacazes (Rio de Janeiro) e Poço Redondo (Sergipe).',
+      ],
+    },
+    {
+      id: 'a-preparacao', titulo: 'A preparação',
+      blocos: [
+        'Em Morro Vermelho, os preparativos para Festa de Nossa Senhora de Nazareth começam um ano '
+      + 'antes com a escolha dos festeiros. Além da organização geral da cavalhada, eles são '
+      + 'encarregados de trabalhos diversos. A comissão de festeiros reúne-se várias vezes ao ano, '
+      + 'traçando metas, planejando ações e buscando recursos. Nos dias da festa contam com o '
+      + 'auxílio dos mordomos, centenas de voluntários que contribuem para a festa e ajudam na '
+      + 'execução de várias tarefas.',
+      ],
+    },
+    {
+      id: 'os-mascarados', titulo: 'Os mascarados',
+      blocos: [
+        'Em algumas cavalhadas pelo Brasil, os mascarados também são atração. São pessoas que se '
+      + 'vestem com máscaras, roupas coloridas, luvas e botas e mudam de voz para ninguém os '
+      + 'reconheça. Não se sabe a origem dos personagens e muita gente acredita que eles '
+      + 'representam o papel do povo e dos que não têm acesso à pompa dos cavaleiros, que '
+      + 'representavam a elite e o poder.',
+        'Na cavalhada de Morro Vermelho, os mascarados desfilam pelas ruas aos domingos antes da '
+      + 'festa. Com varas, eles espantam crianças e adultos nas casas e nos quintais. Pela '
+      + 'tradição, a função dos mascarados seria espantar demônios e todos os males das casas, das '
+      + 'pessoas e das ruas para a chegada de Nossa Senhora.',
+      ],
+    },
+    {
+      id: 'a-matina', titulo: 'A matina',
+      blocos: [
+        'A matina ou alvorada ocorre na Festa de Nossa Senhora de Nazareth às 4h do dia 7 de '
+      + 'setembro. Tradicionalmente é aberta com repiques de sinos e fogos de artifício. A banda '
+      + 'musical se concentra na praça para tocar dobrados e marchas, com intuito de acordar os '
+      + 'moradores e visitantes para a grande festa que se aproxima. Por tradição, muita gente, '
+      + 'sobretudo os jovens, atravessam a noite nas ruas à espera da alvorada, quando iniciam os '
+      + 'preparativos para ornamentação da praça e da igreja.',
+      ],
+    },
+    {
+      id: 'os-simbolos', titulo: 'Os símbolos',
+      blocos: [
         { lista: [
-          '<strong>Os dois partidos:</strong> mouros e cristãos, cada um com sua cor, seu rei e seus cavaleiros.',
-          '<strong>As embaixadas:</strong> os textos declamados que estruturam a narrativa e que, em muitos lugares, são transmitidos oralmente.',
-          '<strong>Os torneios:</strong> provas de destreza a cavalo, como a argolinha, disputadas antes ou entre os combates.',
-          '<strong>A obrigação:</strong> em festas assim, participar não costuma ser convite: é papel herdado, assumido com o cavalo, a roupa e os meses de preparação que ele exige.',
+          '<strong>Azul dos cristãos</strong> – É a cor do cristianismo, do manto de Maria e '
+        + 'significa a conquista do céu, da eternidade.',
+          '<strong>Branco dos mouros</strong> – Significa a purificação pelo batismo.',
+          '<strong>Bandeira</strong> – Significa a fé cristã, a veneração a Nossa Senhora.',
+          '<strong>Mastro</strong> – O ponto mais alto de uma nação. A expansão das fronteiras do '
+        + 'cristianismo e da devoção à Virgem Maria.',
+          '<strong>Fitas coloridas</strong> – São os compromissos da fé aos pés da Virgem: de paz '
+        + '(brancas), de felicidade eterna (azuis), do fim de guerras (vermelhas) e de esperança '
+        + '(verdes).',
+          '<strong>Queima de fogos</strong> – Significa a renegação pelos mouros de todos os '
+        + 'deuses pagãos.',
+          '<strong>Corrida em 8</strong> – Significa a união entre dois reinos, entre dois amigos.',
+          '<strong>Corrida em meia lua</strong> – É o início de uma amizade crescente.',
+          '<strong>Lenços brancos</strong> – Desejo de paz e de um bom ano para todos os moradores '
+        + 'e visitantes.',
         ] },
-        { nota: 'Tudo acima é documentado sobre cavalhadas como manifestação cultural brasileira. Como cada um desses elementos se apresenta em Morro Vermelho é o que esta página precisa registrar, e só a comissão organizadora e os cavaleiros podem dizer.', titulo: 'O que é contexto e o que é fato local' },
       ],
     },
     {
-      id: 'a-data', titulo: 'A data',
+      id: 'a-bandeira', titulo: 'A bandeira',
       blocos: [
-        'O distrito guarda <strong>1704</strong> como o ano em que a cavalhada começou aqui. É uma data de peso: colocaria a festa entre as manifestações continuadas mais antigas do país, e a poria em pé antes mesmo da Guerra dos Emboabas.',
-        { lacuna: 'A pergunta central: <strong>de onde vem a data de 1704?</strong> Existe documento de época (livro de tombo paroquial, registro de irmandade, ata, provisão episcopal) que a sustente? Ou é tradição oral transmitida na própria comunidade? E a festa foi de fato ininterrupta desde então, ou houve períodos de interrupção e retomada, como é comum e não diminui nada?' },
-        { nota: 'Nenhuma das respostas possíveis é ruim. Documento de 1704 é um achado de importância nacional. Tradição oral de trezentos anos é, ela própria, patrimônio imaterial de primeira ordem, e é registrável como tal, com a metodologia do IPHAN, sem depender de papel setecentista. Interrupções e retomadas são a história normal de qualquer festa centenária e contam como ela sobreviveu.', titulo: 'Por que perguntar não enfraquece a festa' },
-        'O que este portal não faz é afirmar a data como documentada antes de sabê-la documentada. É a mesma regra que vale para a <a href="guerra-dos-emboabas.html">Guerra dos Emboabas</a>, e pelo mesmo motivo.',
+        'A Bandeira de Nazareth percorre, em novena, de 30 de agosto a 6 de setembro, residências '
+      + 'de fiéis de Raposos e, durante a novena, em Caeté. No fim da tarde de 6 de setembro, é '
+      + 'conduzida por mais de 200 cavaleiros até Morro Vermelho (10 quilômetros), onde é recebida '
+      + 'por uma multidão. Após a novena, é levada em procissão à casa de um morador, onde é '
+      + 'ornamentada para a cavalhada do dia seguinte.',
       ],
     },
     {
-      id: 'a-festa-daqui', titulo: 'A festa daqui',
+      id: 'o-mastro', titulo: 'O mastro',
       blocos: [
-        'O registro da cavalhada de Morro Vermelho ainda precisa ser feito, e ele tem uma lista de perguntas razoavelmente padronizada, o que é uma boa notícia, porque significa que existe método pronto.',
-        { lista: [
-          '<strong>Quando:</strong> a data e sua regra, associada à festa da padroeira. Data móvel exige publicar a regra, não o dia.',
-          '<strong>Os partidos:</strong> cores, nomes, número de cavaleiros, personagens, quem são os reis e como são escolhidos.',
-          '<strong>Os papéis:</strong> como se herda, com que idade se começa, o que acontece quando uma família não tem quem assuma.',
-          '<strong>As embaixadas:</strong> os textos. Se são transmitidos oralmente, gravá-los é urgente; se há caderno manuscrito, digitalizá-lo é urgente.',
-          '<strong>A preparação:</strong> roupa, arreio, treino do cavalo, ensaios, e quem custeia o quê.',
-          '<strong>A comissão:</strong> quem organiza hoje, como se organiza, e há quanto tempo.',
-        ] },
-        { figura: 'A cavalhada: cavaleiros, partidos, embaixada, preparação ou os bastidores.', arquivo: 'figura-cavalhada.jpg', legenda: '<strong>Cavaleiro cristão em cavalo empinado, na noite de 7 de setembro.</strong> São vinte e quatro cavaleiros: doze cristãos de azul, doze mouros de vermelho.', alt: 'Cavalo branco empinado à noite, montado por cavaleiro de capa azul-clara com o braço erguido.', credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro · autoria a confirmar' },
+        'O mastro de madeira, com cerca de 20 metros, pintado de branco e com fitas entrelaçadas e '
+      + 'a Bandeira de Nazareth em seu cume, fica erguido por cerca de duas semanas. Os moradores '
+      + 'acreditam que este período é um tempo de graça para o povoado.',
       ],
     },
     {
-      id: 'registro', titulo: 'Registro e proteção',
+      id: 'os-enfeites', titulo: 'Os enfeites',
       blocos: [
-        'Uma cavalhada com esta idade declarada é candidata natural a registro formal como patrimônio imaterial, no âmbito municipal, estadual e, eventualmente, federal. O registro não muda a festa: ele reconhece quem a detém e pode destravar apoio para a parte cara, que é sempre a que ameaça a continuidade.',
-        'O caminho passa pelo Inventário Nacional de Referências Culturais e pela orientação do IEPHA-MG, e ele começa exatamente com o levantamento descrito na seção anterior. O trabalho que este portal propõe é, na prática, a primeira etapa do processo.',
-        { nota: 'A decisão de buscar registro é da comunidade detentora, e não do portal. O que este projeto pode fazer é reunir o material que essa decisão exige, e entregá-lo pronto a quem for decidir.', titulo: 'De quem é a decisão' },
+        'Nos enfeites ao redor da praça e na igreja, moradores procuram manter tradições dos '
+      + 'antepassados. O círculo por onde passam os cavaleiros é cercado por mourões espaçados, '
+      + 'ligados por três fileiras de cordas com bandeirolas coloridas. Pelo alto, os mourões se '
+      + 'ligam por arcos enfeitados em forma de balões. Para as evoluções dos cavaleiros, há '
+      + 'quatro grandes arcos na entrada da praça e à porta da matriz.',
+        'De 15 de agosto a 8 de setembro, todo o interior da igreja é ornamentado com flores '
+      + 'naturais. Por tradição, moradores e visitantes doam todos os anos vários vestidos para o '
+      + 'Menino Jesus e fazem questão de que eles sejam usados durante a festa, mesmo que por '
+      + 'pouco tempo. As vestes são devolvidas aos fiéis e guardadas como proteção para muitos '
+      + 'males do corpo e da alma.',
       ],
     },
-  ],
-  fontes: [
-    'Comissão organizadora da cavalhada, cavaleiros e famílias participantes: a fonte principal e as detentoras do patrimônio.',
-    'Arquivo da Paróquia de Morro Vermelho: livro de tombo, registros de irmandade e da festa da padroeira; a via mais direta para a data de 1704.',
-    'Arquivo Público Mineiro e Arquivo Histórico Ultramarino: documentação setecentista que mencione a festa ou a devoção.',
-    'IPHAN: Inventário Nacional de Referências Culturais (INRC) e processos de registro de cavalhadas em outros estados, como referência de método.',
-    'IEPHA-MG: orientação para registro estadual de bem imaterial.',
-    'Imprensa histórica mineira: coberturas antigas ajudam a datar mudanças e a comprovar continuidade.',
-    'Acervos fotográficos de família: a memória visual da festa está em álbum, e é a fonte mais frágil de todas.',
+    {
+      id: 'os-trajes', titulo: 'Os trajes',
+      blocos: [
+        'A cavalhada é composta por 24 cavaleiros, incluindo os dois embaixadores. Os mouros '
+      + 'vestem camisa branca de manga longa, calça azul com listas laterais brancas, capacete '
+      + 'branco com cauda da mesma cor, gravata preta e botas pretas. Os cristãos usam camisa azul '
+      + 'de manga longa, calça branca com listas laterais azuis, capacete azul com cauda comprida '
+      + 'da mesma cor, gravata e botas pretas.',
+        'O embaixador mouro usa também capa branca e coroa brilhante da mesma cor. O cristão veste '
+      + 'capa azul e coroa azul. Os cavalos levam cela, tendo no peito guizos e fitas coloridas. '
+      + 'Trazem ainda rosas coloridas, adornando os freios.',
+      ],
+    },
+    {
+      id: 'os-fogos', titulo: 'Os fogos de artifício',
+      blocos: [
+        'Desde o século 18, os moradores acendiam grandes fogueiras para iluminar a praça e a '
+      + 'cavalhada. Mesmo com a chegada da energia elétrica, as fogueiras foram mantidas, mas para '
+      + 'proteger moradores e visitantes foram abolidas.',
+        'Os fogos de artifício são atração especial em Morro Vermelho, pelo seu significado na '
+      + 'cavalhada, que é a queima dos deuses pagãos. É singular também em outro aspecto, pois '
+      + 'conserva uma tradição ímpar, a do “linguajar dos fogos de artifício”. Durante o evento, '
+      + 'os fogueteiros conversam entre si por meio dos fogos, tradição de comunicação direta, '
+      + 'ajudam a marcar as evoluções do evento.',
+        { figura: 'Fogos na noite da Cavalhada.',
+          arquivo: 'galeria-cavalhada-fogos.jpg',
+          alt: 'Fogos de artifício explodindo no céu sobre a praça durante a Cavalhada.' },
+      ],
+    },
+    {
+      id: 'as-embaixadas', titulo: 'As embaixadas',
+      blocos: [
+        { sub: 'Do embaixador mouro ao receber a Bandeira' },
+        { citacao: 'Neste momento, quando no entusiasmo desta solenidade deparo com a imagem da '
+                 + 'Santíssima Virgem de Nazareth, fico extasiado de prazer. Não posso e nem devo '
+                 + 'cumprir minha missão sem que antes adore e venere esta sublime imagem. '
+                 + 'Apressai-vos, muito nobre imperador augusto, vindo também render as vossas '
+                 + 'homenagens à Santíssima Virgem, rainha do céu e da terra. Imploremos a ela o '
+                 + 'seu auxílio.' },
+        { sub: 'Do imperador cristão, ao venerar a Bandeira' },
+        { citacao: 'Ilustre e nobre embaixador, aqui estou, que eu pressuroso venho ao apelo de '
+                 + 'vossas palavras. Ilustre e nobre embaixador, chegarei aqui, ao trono de '
+                 + 'clareza, tendo pela real sorte a majestade à frente, cingida de riquíssimo '
+                 + 'diadema, rodeada de enorme riqueza que faz o império conquistando o nome da '
+                 + 'adoradora, que é respeitado até a geração futura. Ouvi-me, embaixador, que sou '
+                 + 'a parte mais débil de toda a geração e nação do mundo, devendo pois à '
+                 + 'verdadeira intenção e civilidade das leis, ditadas por um sensível '
+                 + 'conquistanismo, o espantoso progresso das indústrias do ilustre embaixador, '
+                 + 'cavaleiro e amigo meu. Aqui, o sol, a lua e as estrelas que o dom te deu. '
+                 + 'Aceitai, pois, as referências do meu peito eternamente. Ide, ide, com alegria, '
+                 + 'conduzir este estandarte que se faz respeitar por toda a parte. Depõe em '
+                 + 'Nazareth os louvores, que sejam de alegria, e republica o retrato da Santa '
+                 + 'Virgem Maria.' },
+        { sub: 'Do embaixador mouro, ao venerar a Bandeira no alto do mastro' },
+        { citacao: 'Oh, invicto imperador augusto, que sou de régia sorte, piso o plano do mais '
+                 + 'alto venturoso nome. Desde aqui vedes a nobreza que rodeia esta praça, eu e '
+                 + 'vossa imperial grandeza majestade. Brilhantismo é o vosso nome, augusto César. '
+                 + 'Os vossos invictos, heroicos. A vossa inexcedível bondade para com os vossos '
+                 + 'súditos são os vossos títulos de nobreza. Não conheço a miséria e vários '
+                 + 'animais quadrúpedes, a prata e o ouro e o claro diamante e brilhantíssimas '
+                 + 'pedras preciosas que ornam a fronte, por interesse de meus filhos que gozam '
+                 + 'com prazer dos campos de flores e frutos abundantes. Eu sou, enfim, da '
+                 + 'gloriosa Europa perante à vossa imperial grandeza. Oh, imperador augusto, '
+                 + 'notícias tive de que levava aos pares o sacrossanto estandarte de Nossa '
+                 + 'Senhora de Nazareth. Eu louvo e venero este ato. De vossa gloriosa boca espero '
+                 + 'uma boa resposta.' },
+        { sub: 'Do imperador cristão, renovando sua leal amizade' },
+        { citacao: 'Muito alto e poderoso, nobre embaixador, que representa a mais abençoada parte '
+                 + 'do universo. Que o destino há de te levar à mais alta e nobre posição, de onde '
+                 + 'com dignidade serve à tua pátria. Oh, pátria querida, teu responsável nome se '
+                 + 'acha inscrito na mais abençoada parte do universo. Eu te consagro na mais '
+                 + 'firme e leal amizade e te saúdo. Eu sou monarca justiceiro. Concordo, '
+                 + 'portanto, e determino que eleves aos ares o sacrossanto estandarte da imagem '
+                 + 'de Nossa Senhora de Nazareth. Que seja este pavilhão erguido e que se encontre '
+                 + 'no centro deste vasta e brilhante praça.' },
+      ],
+    },
   ],
   relacionadas: [
-    { nome: 'Festas e Tradições', href: 'festas-e-tradicoes.html', txt: 'O calendário completo do distrito.', olho: '17' },
-    { nome: 'Artesanato, Gastronomia e Música', href: 'artesanato-gastronomia-musica.html', txt: 'A roupa, a comida e o som que a festa exige.', olho: '19' },
-    { nome: 'Guerra dos Emboabas', href: 'guerra-dos-emboabas.html', txt: 'O que acontecia por aqui na mesma década.', olho: '09' },
+    { nome: 'Festas e Tradições', href: 'festas-e-tradicoes.html', txt: 'Patrimônio imaterial conservado', olho: '17' },
+    { nome: 'Sociedade Musical Santa Cecília', href: 'sociedade-musical-santa-cecilia.html', txt: 'A banda do distrito' },
+    { nome: 'Atrações', href: 'atracoes.html', txt: 'Monumentos culturais protegidos', olho: '14' },
   ],
 };

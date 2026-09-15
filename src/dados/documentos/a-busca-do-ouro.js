@@ -1,32 +1,9 @@
 /* ==========================================================================
-   A BUSCA DO OURO
-   Nossa História · Capítulo II
-   --------------------------------------------------------------------------
-   REGRA EDITORIAL QUE GOVERNA ESTE ARQUIVO — e ela é o ponto mais importante
-   do projeto: NENHUM fato sobre Morro Vermelho foi inventado.
+   03 · A BUSCA DO OURO
 
-   Cada verbete separa explicitamente duas coisas:
-     (a) CONTEXTO REGIONAL — o que é documentado sobre Minas Gerais e vale
-         como pano de fundo. Verdadeiro, porém genérico.
-     (b) O QUE FALTA SABER — as perguntas específicas sobre Morro Vermelho,
-         dentro de caixas "Lacuna documental", mais a lista de fontes a
-         consultar ao final.
-
-   Assim a página já nasce com dupla utilidade: introdução para o leitor
-   comum e roteiro de pesquisa para quem for escrever a versão definitiva.
-
-   BLOCOS DISPONÍVEIS dentro de cada seção (ver fonte/modelos/artigo.mjs):
-     'texto'                        parágrafo
-     { abertura: '…' }              parágrafo com capitular
-     { sub: '…' }                   subtítulo <h3>
-     { lista: ['…', '…'] }          lista com marcador de filete
-     { citacao: '…', autoria: '…' } citação em papel envelhecido
-     { lacuna: '…' }                caixa tracejada "Lacuna documental"
-     { nota: '…', titulo: '…' }     caixa de nota editorial
-     { figura: '…', arquivo: '…', legenda: '…' }   espaço de imagem
-
-   Sumário, tempo de leitura, barra de progresso, "como citar" e navegação
-   entre capítulos são derivados do conteúdo — nada disso se digita.
+   FONTE: originais/word/03MV.docx — "Pesquisa, texto e fotos: Geraldo Lopes".
+   Texto do documento original, sem acréscimo. Os títulos de seção são os
+   subtítulos do próprio documento.
    ========================================================================== */
 
 export default {
@@ -35,49 +12,405 @@ export default {
   numero: '03',
   olho: 'Nossa História · 03',
   tom: 'var(--areia-800)',
-  estado: 'Rascunho estruturado',
-  resumo: 'O ouro explica por que existe um povoado nestas montanhas. Não explica por que ele continuou existindo depois que o ouro acabou.',
-  resumoSeo: 'A mineração de ouro e a formação do povoado de Morro Vermelho, distrito de Caeté, Minas Gerais: contexto documentado e lacunas de pesquisa.',
+  resumo: 'Bandeirantes e portugueses levam riqueza e deixam miséria',
+  resumoSeo: 'A exploração do ouro em Morro Vermelho, Caeté (MG): do ouro de aluvião dos '
+           + 'córregos às centenas de minas e galerias do Carrancas, do Cutão, do Maquiné e do '
+           + 'Geriza, levantadas por Pandiá Calógeras.',
   secoes: [
     {
-      id: 'porque-aqui', titulo: 'Por que aqui',
+      id: 'abertura', titulo: null,
       blocos: [
-        { abertura: 'Povoados não aparecem em qualquer lugar. Aparecem onde há motivo, e nas Minas do século XVIII o motivo era quase sempre o mesmo: alguém achou ouro no leito de um córrego.' },
-        'O padrão de ocupação da região foi consistente. Descoberta em aluvião, chegada rápida e desordenada de gente, formação de arraial improvisado e, se o ouro durasse, construção de capela, chegada de autoridade eclesiástica e civil, e consolidação do povoado.',
-        'O próprio nome do lugar pertence a essa geografia: solo ferruginoso, terra vermelha, morro. É um nome descritivo, do tipo que quem chega dá antes de haver mapa.',
-        { lacuna: 'Falta o essencial: em que córrego ou lavra se minerava aqui, quem foram os primeiros a chegar, e em que ano. Sem isso, este capítulo é contexto regional, não história local.' },
+        { citacao: 'A sede do ouro estimulou tantos a deixarem suas terras e a meterem-se por '
+                 + 'caminhos tão ásperos como são os das minas, que dificultosamente se poderá '
+                 + 'dar conta do número de pessoas que atualmente lá estão...',
+          autoria: 'Padre André João Antonil, 1710' },
       ],
     },
     {
-      id: 'como-era', titulo: 'Como se minerava',
+      id: 'entre-caete-e-sabara', titulo: 'Entre Caeté e Sabará',
       blocos: [
-        'A extração em Minas foi majoritariamente de <strong>ouro de aluvião</strong>: o metal já solto no cascalho dos rios, arrancado da rocha pela erosão ao longo de milênios. Não exigia engenharia complexa. Exigia água, bateia, e uma quantidade brutal de trabalho humano.',
-        { sub: 'O trabalho' },
-        'Esse trabalho foi feito, em sua esmagadora maioria, por pessoas escravizadas. Homens e mulheres africanos e afrodescendentes passavam o dia dentro d’água, revolvendo cascalho. As consequências (doenças respiratórias, articulares e de pele, expectativa de vida curta) estão documentadas em registros de óbito de toda a região mineradora.',
-        { nota: 'Não é possível escrever sobre o ouro de Minas honestamente sem escrever sobre quem o extraiu. É por isso que este capítulo vem depois de "História de Resistência", e não antes: a ordem é uma escolha editorial.', titulo: 'Por que este capítulo é o segundo' },
-        { sub: 'O esgotamento' },
-        'O ouro de aluvião acaba. Ele é um estoque finito e superficial, e na maior parte das Minas ele se exauriu ao longo do século XVIII. O que acontece com um povoado depois disso (se ele murcha, se some, ou se encontra outra razão para existir) é a pergunta mais interessante que a história de um lugar como este pode responder.',
+        { citacao: [
+          'A história do Brasil-Colônia é dividida em ciclos econômicos. É importante ressaltar '
+        + 'que o Ciclo do Ouro foi muito rápido, tendo sua ascensão e queda entre 1700 e 1750. '
+        + 'Não que tenha sido um ciclo irrelevante, pois conforme comentário de Roberto Simonsen, '
+        + 'descobrira-se nas Gerais a maior massa aurífera já revelada ao homem desde a queda de '
+        + 'Roma até o século XVIII. A brevidade foi devida à facilidade da extração. A maior parte '
+        + 'do ouro encontrava-se em aluviões dos rios, com fácil acesso. Mesmo assim, não devemos '
+        + 'deixar de lado alguns fatos que precedem este período, pois legitimam nosso roteiro.',
+          'É difícil determinar quando foi a primeira descoberta do vil metal. Teria sido em 1693? '
+        + 'Ou 1694? Ou ainda 1695? Tampouco podemos determinar quem foi o descobridor. Seria o '
+        + 'Mulato citado por Antonil? Seria Borba Gato? Ou talvez Garcia Rodrigues? As versões se '
+        + 'contradizem. Os historiadores se divergem. Mas o que sabemos é que foram os paulistas '
+        + 'os responsáveis por isto. Por trás do desbravamento da terra virgem e da demarcação do '
+        + 'território português, a mola mestra das expedições, que lhe dava subsídio econômico, '
+        + 'estava no apresamento de índio para venda como escravo. Grandes expedições com milhares '
+        + 'de homens saíam pelo Sertão gerando a riqueza dos paulistas.',
+          'No final do século XVII, começou a decadência das lavouras de açúcar nordestinas. '
+        + 'Diminuindo a necessidade de mão de obra, o bandeirismo apresador perdeu sua função, '
+        + 'voltando os paulistas ao velho e esquecido sonho de encontrar metais preciosos com a '
+        + 'mesma abundância das colônias portuguesas.',
+          'Sendo assim, no segundo quartel do século XVII intensificaram-se as expedições em busca '
+        + 'de metais e pedras preciosas. Desta vez, os grupos eram bem reduzidos com no máximo '
+        + 'algumas centenas de homens. Caminhando pelo imenso Sertão Brasileiro, as expedições '
+        + 'tomavam direções difusas em busca de metais e pedras preciosas. Alguma riqueza foi '
+        + 'encontrada aqui e ali, mas logo descobriu-se uma área onde havia realmente abundância '
+        + 'de ouro, esta região estava no País dos Cataguás, mais precisamente nas proximidades do '
+        + 'Rio das Velhas. Uma vez encontrado ouro, houve um verdadeiro enxame humano rumando para '
+        + 'a região. A princípio, a Coroa até que incentivava os aventureiros, pois não sabia '
+        + 'exatamente o tamanho das minas e era uma forma econômica de fazer a exploração, já que '
+        + 'o quinto real estava garantido...',
+        ], autoria: 'Antônio Olinto, escritor, historiador e pesquisador' },
+        'País do Cataguás não era uma referência a indígenas de Minas Gerais, mas a uma extensa '
+      + 'região explorada por bandeirantes. Segundo Antonil, “em 1702 José Vaz Pinto foi nomeado '
+      + 'superintendente das Minas dos Cataguás, de Caeté e do Rio das Velhas”. Segundo a '
+      + 'historiadora Carla Maria Junho Anastasia (<em>A geografia do crime, violência das minas '
+      + 'setecentistas</em>, editora UFMG, 2005), é de 1640 o primeiro documento oficial que faz '
+      + 'referência explícita ao descobrimento das minas dos Cataguás e sertões de Caeté.',
       ],
     },
     {
-      id: 'depois', titulo: 'Depois do ouro',
+      id: 'enxame-humano', titulo: 'Enxame humano',
       blocos: [
-        'Quando a mineração deixou de sustentar a região, os povoados que sobreviveram o fizeram por outras vias: agricultura de subsistência, pecuária, pequenos ofícios e, decisivamente, pelos laços comunitários já formados. Igreja, banda, festa e parentesco seguraram gente onde a economia já não segurava.',
-        'Essa é provavelmente a chave para entender Morro Vermelho. Um distrito que hoje se define por liberdade e resistência, e não por riqueza mineral, é um lugar cuja identidade foi construída no <em>depois</em>.',
-        { figura: 'Fotografia de lavra, córrego ou vestígio de mineração no distrito.', arquivo: 'figura-lavra-ouro.jpg', legenda: '<strong>Interior de uma galeria de mina abandonada</strong> no distrito. O acervo registra quase 800 minas de ouro na região no auge do ciclo, e dezenas foram reidentificadas em campo no Carrancas, no Cutão e no Geriza.', alt: 'Interior de galeria de mina escavada na rocha, estreita e escura, com o túnel se afunilando ao fundo.', credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro · autoria a confirmar' },
+        { citacao: 'No início do século 18, chegou às minas gerais uma torrente humana tão grande '
+                 + 'que ninguém estava mais em condições de impedir a avalanche contínua. A sede '
+                 + 'do ouro estimulou tantos a deixarem suas terras e a meterem-se por caminhos '
+                 + 'tão ásperos como são os das minas, que dificultosamente se poderá dar conta do '
+                 + 'número de pessoas que atualmente lá estão... A cada ano, vem nas frotas '
+                 + 'quantidade de portugueses e de estrangeiros para passar às minas. Das cidades, '
+                 + 'vilas, recôncavos e sertões do Brasil, vão brancos, pardos e pretos, muitos '
+                 + 'índios de que os paulistas se servem. A mistura é de toda condição de pessoas, '
+                 + 'homens, moços e velhos, pobres e ricos, nobres e plebeus, seculares, clérigos '
+                 + 'e religiosos de diversos institutos, muitos dos quais não têm no Brasil '
+                 + 'convento nem casa.',
+          autoria: 'Padre André João Antonil, <em>Cultura e Opulência do Brasil</em>, 1710' },
+        { citacao: 'O ouro das minas foi a pedra-ímã da gente do Brasil e com tão veemente atração '
+                 + 'que muita parte dos moradores das capitanias, principalmente da Bahia, correu '
+                 + 'para buscá-la, levando escravos que ocupavam as lavouras de cana de açúcar. '
+                 + 'Quando o governador da Bahia se queixou ao rei que as minas estavam atraindo '
+                 + 'muita gente, a Metrópole proibiu, da Bahia para Minas, o trânsito de escravos, '
+                 + 'depois o comércio para os sertões e ida de forasteiros. As medidas de nada '
+                 + 'adiantaram.',
+          autoria: 'Sebastião Rocha Pita, <em>História da América Portuguesa</em>, 1730' },
+        'Em redor das minas formou-se rapidamente uma população urbana com uma atividade comercial '
+      + 'intensa, graças ao grande poder aquisitivo que a mineração proporcionava. A população das '
+      + 'minas chegou a 50 mil almas em 1705. Grande parte dessa gente estava ao redor de Morro '
+      + 'Vermelho.',
+        { citacao: 'Havia nas minas gerais uma engrenagem fiscal que, além de ter sido '
+                 + 'obstrucionista em relação do desenvolvimento econômico, foi também escorchante '
+                 + 'e poucas pessoas não tentaram transgredi-la. Deixar de pagar os quintos era '
+                 + 'comum e generalizado. Uma tão pesada contribuição era naturalmente muito mal '
+                 + 'acolhida pelos mineiros e quem podia procurava subtrair-se.',
+          autoria: 'H. Handelmann, <em>História do Brasil</em>, 1860' },
       ],
     },
-  ],
-  fontes: [
-    'Arquivo Público Mineiro: registros de datas minerais e sesmarias do termo de Caeté.',
-    'Livros de óbito da paróquia: causa mortis e idade revelam as condições de trabalho melhor que qualquer crônica.',
-    'Bibliografia sobre mineração colonial em Minas Gerais (produção acadêmica da UFMG e da UFOP).',
-    'Levantamento de campo: identificar catas, canais, mundéus e outros vestígios físicos no território.',
-    'Memória oral: o que as famílias contam sobre "o tempo do ouro" e sobre o que veio depois.',
+    {
+      id: 'cronologia', titulo: '500 anos de mineração no Brasil',
+      blocos: [
+        '(“Brasil: Cronologia de 500 Anos de Mineração – Ouro, Ferro, Diamante, 1494-1803”, '
+      + '<a href="http://www.geologiadobrasil.com.br/1494_1803.html" target="_blank" '
+      + 'rel="noopener">geologiadobrasil.com.br</a>)',
+        { lista: [
+          '<strong>1674.</strong> Carta Régia incentiva os colonos a saírem em busca de ouro. '
+        + 'Fernão Dias Pais Leme organiza uma bandeira, que explora por sete anos os vales dos '
+        + 'Rios das Mortes, das Velhas, Paraopeba, Araçuaí e Jequitinhonha, de grande importância, '
+        + 'pois, embora não tendo a expedição descoberto jazidas, traça o caminho de futuras '
+        + 'descobertas.',
+          '<strong>1680.</strong> Primeira descoberta de ouro em terras do atual Estado de Minas '
+        + 'Gerais, nas margens do Rio das Velhas, atribuída a Manuel de Borba Gato.',
+          '<strong>1682.</strong> A bandeira de Bartolomeu Bueno da Silva, o Anhanguera, apesar de '
+        + 'não conseguir descobrir jazidas de ouro, encontra em Goiás indígenas com ornamentos de '
+        + 'ouro nativo.',
+          '<strong>1699.</strong> A bandeira de Antônio Dias chega onde hoje se localiza a cidade '
+        + 'de Ouro Preto, então Vila Rica, na região das Minas de Ouro, atualmente o Estado de '
+        + 'Minas Gerais, encontrando ouro em abundância.',
+          '<strong>1700.</strong> Adotado o quinto do ouro, sistema de tributação previsto no '
+        + 'regimento de 1603, que definia o pagamento à Coroa Portuguesa de 20% do ouro apurado e '
+        + 'fundido.',
+          '<strong>1701.</strong> São descobertas grandes jazidas de ouro em Minas Gerais (Caeté, '
+        + 'Cuiabá, Morro Vermelho e Ribeiro Comprido-Viracopos).',
+        ] },
+      ],
+    },
+    {
+      id: 'ouro-em-morro-vermelho', titulo: 'Ouro em Morro Vermelho',
+      blocos: [
+        'A exploração do ouro em Morro Vermelho teria começado nos fins do século 17 com a chegada '
+      + 'dos primeiros bandeirantes. Primeiramente, eles começaram a catar ouro de aluvião no '
+      + 'Córrego Santo Antônio, Ribeirão Comprido e em dezenas de cursos de água. Depois, '
+      + 'procuraram as pepitas em barrancos.',
+        'Só mais tarde, a partir de 1701, começaram a explorar ouro em centenas de minas e '
+      + 'escavações em montanhas. A partir daí, Morro Vermelho tornou-se o centro das atenções de '
+      + 'milhares de bandeirantes, comerciantes, mascates e da Coroa Portuguesa, chegando a '
+      + 'agrupar mais de 10 mil pessoas, espalhadas pelos povoados, fazendas, ribeirões, grotas e '
+      + 'montanhas. O ouro explorado chegou a ser tanto que o povoado guarda, nas localidades de '
+      + 'Carrancas e do Cutão, ruínas de engenhos de apuração do ouro.',
+        'Até 1715, ainda era grande exploração do ouro nos ribeirões de Morro Vermelho. Em março '
+      + 'deste ano, por ordem do rei de Portugal, o governador dom Brás Baltasar da Silveira, de '
+      + 'São Paulo e Minas, acabou convencendo as comarcas a aceitaram a cobrança do quinto do '
+      + 'ouro também pelo número de bateias. Cada bateia pagaria dez oitavas de ouro por ano '
+      + '(cerca de 35 gramas). A cobrança foi aceita pelas comarcas do Carmo, Vila Rica e Rio das '
+      + 'Mortes. Mas a comarca do Rio das Velhas reagiu e o povo de Morro Vermelho se rebelou, '
+      + 'conseguindo a volta do antigo sistema.',
+        { figura: 'Interior de galeria de mina no distrito.',
+          arquivo: 'figura-lavra-ouro.jpg',
+          alt: 'Interior de galeria de mina escavada na rocha, estreita e escura, com o túnel se '
+             + 'afunilando ao fundo.' },
+      ],
+    },
+    {
+      id: 'as-grandes-minas', titulo: 'As grandes minas de Morro Vermelho',
+      blocos: [
+        '(Extraído de <em>As minas do Brasil e sua legislação</em>, do professor João Pandiá '
+      + 'Calógeras, 1903, com segunda edição de 1938 revista pelo mineralogista Djalma Guimarães)',
+        'As jazidas auríferas da região de Caeté se acham distribuídas em uma área de cerca de 30 '
+      + 'quilômetros de comprimento, de norte a sul, por 15 quilômetros de largura, de oeste para '
+      + 'leste. É uma faixa estendendo-se desde a encosta norte da Serra da Piedade, onde se '
+      + 'encontram as minas de Mãe Catarina, até, para o sul, as minas de Guilherme e da '
+      + 'Esperança, nas fraldas da Serra do Gandarela, nos limites com Rio Acima. Partindo de '
+      + 'oeste, ela vai desde Papa-Farinha, próximo a Sabará, até as minas de Roça Grande e da '
+      + 'Serra de Luís Soares, no divisor de águas das bacias do Rio São Francisco e do Rio Doce.',
+        'De Caeté parte para o sul a estrada que vai a Juca Vieira e Morro Vermelho e continua até '
+      + 'a Fazenda do Cutão, facilitando assim o acesso às minas de Carrapato, Tinguá, Carrancas e '
+      + 'Viracopos, Geriza, Pernambuco, Bela Vista, Cutão, Engenho e a Fazenda Maquiné.',
+        'Muitas das minas de ouro da região, localizadas em pontos de difícil acesso, como as dos '
+      + 'Crioulos, do Guilherme e outras, em Morro Vermelho, foram lavradas por escravos fugidos, '
+      + 'quilombolas, que embora trabalhando com grandes dificuldades e às ocultas sempre tiravam '
+      + 'algum resultado, além de ficarem livres do jugo de seus senhores. São tantas as galerias '
+      + 'e escavações dos bandeirantes em Morro Vermelho que uma das minas está situada no quintal '
+      + 'de uma residência em rua da área urbana do distrito.',
+      ],
+    },
+    {
+      id: 'carrancas-e-viracopos', titulo: 'Minas do Carrancas e Viracopos',
+      blocos: [
+        'As localidades de Carrancas e Viracopos, em Morro Vermelho, estão situados em encostas '
+      + 'opostas de um mesmo espigão, nove quilômetros a sudoeste de Caeté, e aí se encontram '
+      + 'numerosas galerias e escavações a céu aberto, localizadas em vieiros-camadas de '
+      + 'quartzo-piritosos ou em faixas de filitos com lentes de quartzo.',
+        'O pequeno povoado de Viracopos ou Ribeiro Comprido fica no alto do espigão, em uma '
+      + 'pequena chapada, e toda a vertente do Ribeirão Juca Vieira, ou do Inferno, tem esse nome. '
+      + 'As águas que vertem para o Ribeirão do Morro Vermelho, ou Ribeirão Comprido, pertencem ao '
+      + 'Carrancas.',
+        'De todas as galerias a mais importante é a denominada 65, de Carrancas, bastante extensa '
+      + 'e que acompanha um vieiro-camada bem definido, trabalhado até meados do século 20 por uma '
+      + 'mineradora. Mas, pelas informações dos conhecedores mais antigos do lugar, a galeria '
+      + 'principal era a 66, que teria ainda hoje uma importante massa de minério. Atualmente, ela '
+      + 'está arriada em parte e não pode ser estudada em toda sua extensão.',
+        'Foram constatados por pesquisas ouro e outros minerais em dezenas de galerias e '
+      + 'escavações de Carrancas e Viracopos. Estas minas são formadas por grandes catas ou talhos '
+      + 'abertos, com algumas galerias e planos inclinados, trabalhados pelos antigos.',
+        { sub: 'Mina de Viracopos' },
+        'É uma jazida a dois quilômetros do Carrancas, na margem do ribeirão de Morro Vermelho. A '
+      + 'mina também é chamada de Rocinha ou do Capitão Jimmy. Em 1894, a mina era trabalhada pelo '
+      + 'seu proprietário James Andrew, que adquiriu em 1876 terras na Fazenda do Ribeirão '
+      + 'Comprido e as registrou em 1893.',
+        'Esta mina e as de Carrancas, Santa Cruz e Tinguá pertenceram depois à antiga Minas and '
+      + 'Goyaz Gold Company. Mais tarde, com a dissolução desta companhia, as propriedades foram '
+      + 'tomadas pelo Estado para pagamento de impostos, sendo arrematadas em leilão em 1923 por '
+      + 'Charles Henry Bennet Ayre. As minas de Carrancas, Moreira e Santa Cruz faziam parte do '
+      + 'patrimônio desta companhia.',
+        'A mina de Rocinha ou Viracopos parou em 1900 e apenas era trabalhada intermitentemente, '
+      + 'até alguns anos depois, por um encarregado da conservação do material, que extraía um '
+      + 'pouco de ouro das partes mais acessíveis dos filões. Para a exploração desta jazida, '
+      + 'foram praticados, em várias direções, diversas galerias e planos inclinados, além de '
+      + 'muitas escavações a céu aberto. Ao norte da jazida de Viracopos, na margem direita do '
+      + 'ribeirão, acham-se as lavras do Cedro e do Alto do Gago. A nordeste, ficam as do Borges.',
+        { sub: 'Minas do Cedro (Carrancas)' },
+        'Essas minas acham-se situadas nas proximidades das de Rocinha, nas encostas da margem '
+      + 'direita do ribeirão do Carrancas. São galerias na maior parte baixas em consequência de '
+      + 'arreamentos ou de aterro hidráulico. O comprimento total da galeria principal aproxima-se '
+      + 'de 300 metros.',
+        { sub: 'Minas do Borges (Carrancas)' },
+        'Essas minas são constituídas por algumas galerias e planos inclinados a nordeste e leste '
+      + 'de Rocinha, na margem direita do Ribeirão Comprido. Numa grande escavação que há no lado '
+      + 'de baixo desse caminho, encontram-se dois planos inclinados de forte declive. Na base da '
+      + 'encosta, há um pequeno poço e uma galeria. A galeria segue para o norte, com 15 metros de '
+      + 'comprimento. Próximo a esta galeria, existe outra de poucos metros de extensão, porém '
+      + 'larga e de grande altura. Mais para jusante encontram-se algumas pequenas galerias '
+      + 'entupidas e finalmente uma alta e larga, com 12 metros de comprimento e conhecida como a '
+      + 'Mina dos Borges propriamente dita.',
+        { sub: 'Minas do Alto do Gago (Carrancas)' },
+        'São várias galerias e numerosas escavações a céu aberto, situadas ao norte de Rocinha, '
+      + 'perto e pouco acima das minas do Cedro, no alto do morro entre os ribeirões Comprido e do '
+      + 'Juca Vieira. As galerias, em geral, começam em escavações a céu aberto.',
+      ],
+    },
+    {
+      id: 'minas-do-cutao', titulo: 'Minas do Cutão',
+      blocos: [
+        'Estas minas estão situadas nos terrenos da Fazenda do Cutão, ou Furnas de Caeté, a 15 '
+      + 'quilômetros a sudoeste de Caeté e a cinco quilômetros ao sul do povoado de Morro '
+      + 'Vermelho. Existem aí alguns vieiros-camadas que foram trabalhados em épocas diversas, por '
+      + 'escavações subterrâneas e superficiais. Os principais desses vieiros são os em que se '
+      + 'localizam as minas de Fernandes, Luís Antônio, Portão e do Canga. Na mesma zona, '
+      + 'encontram-se ainda as minas das Bruacas, Cutão, Arcanjo, Água de Sapo, Mãe Isabel, Quebra '
+      + 'Braço, Paciência e Pedra do Sino.',
+        { sub: 'Mina do Fernandes' },
+        'Esta mina se acha colocada em uma encosta a 1,5 quilômetro da sede da Fazenda do Cutão. '
+      + 'Existem duas galerias, uma inferior e outra em nível superior, ligadas por alguns planos '
+      + 'inclinados, chamadas de Mina do Esgoto, ou de Baixo, e Mina de Cima. A do Esgoto à '
+      + 'direita tem 22m de comprimento. Na Mina de Cima, a galeria principal segue para noroeste, '
+      + 'até 24m. Nesta mina há uma rede emaranhada de galerias separados por pilares. Abaixo da '
+      + 'mina do Fernandes, na estrada para a usina, vê-se um estreito dique de anfibolito.',
+        { sub: 'Mina do Portão' },
+        'Está a 500m da sede da Fazenda do Cutão. Trata-se de um pequeno plano inclinado com '
+      + 'direção sudeste e 17m de comprimento. São camadas alternadas de filito e de itabirito, '
+      + 'estando este atravessado por veios lenticulares de quartzo. Esta cabeceira é mais recente '
+      + 'e foi aberta pelo Barão da Estrela.',
+        { sub: 'Mina do Arcanjo' },
+        'Perto da Fazenda do Cutão, cerca de um quilômetro para noroeste, existe um pequeno plano '
+      + 'inclinado, seguindo para sudeste. Esta galeria fica na margem esquerda do Córrego do '
+      + 'Nambu, perto do lugar onde havia a casa do Arcanjo. Na margem esquerda desse córrego, '
+      + 'pouco a montante da referida casa, encontra-se ainda um pequeno plano inclinado no '
+      + 'quartzo branco e quartzito no filito.',
+        { sub: 'Minas do Luís Antônio' },
+        'A dois quilômetros da Fazenda do Cutão, estão estas minas, na encosta oriental do Morro '
+      + 'do Azeite, na vertente das Furnas. As minas ficam na antiga Fazenda de Luís Antônio, '
+      + 'adquirida pelo Barão da Estrela. Na encosta oeste do Morro do Azeite, há galerias '
+      + 'antigas, já fora dos limites da Fazenda do Cutão. Perto, a poucos metros a nordeste '
+      + 'destas galerias, há mais duas outras inclinadas e, pouco abaixo, a nordeste, outra com '
+      + 'poucos metros de profundidade. Nas minas do Luís Antônio, a dimensão é de cerca de 50m. '
+      + 'Seguindo a direção da galeria de baixo às de cima, são 75m. A espessura é de um metro e '
+      + 'de 2,50m na de baixo.',
+        { sub: 'Mina do Canga' },
+        'A dois quilômetros ao sul da sede da Fazenda do Cutão há na encosta de um morro três '
+      + 'principais faixas mineralizadas, distanciadas poucos metros umas das outras e que foram '
+      + 'exploradas pelos antigos por meio de planos inclinados.',
+        { sub: 'Mina das Bruacas' },
+        'Fica a dois quilômetros a sudoeste da Fazenda Cutão e em frente, a oeste, da Mina do '
+      + 'Canga. Consiste, principalmente, em escavações a céu aberto em filitos com lentes de '
+      + 'quartzo. A 100 metros ao norte deste ponto há uma galeria com água seguindo para oeste.',
+        { sub: 'Mina Água de Sapo' },
+        'Esta mina está a 1,5 km da Fazenda do Cutão, na encosta sul do Morro Água de Sapo. É um '
+      + 'plano inclinado, com cerca de 32 metros de comprimento, seguindo para leste.',
+        { sub: 'Mina Mãe Isabel' },
+        'É um plano inclinado, a 800 metros da Fazenda do Cutão, do lado de baixo do rego. Este '
+      + 'plano inclinado acompanha um vieiro-camada, lenticular, de quartzo, branco e cinzento, '
+      + 'com pirita e cavernoso, encaixado no filito sericítico.',
+        { sub: 'Mina Quebra-Braço' },
+        'Esta jazida, distante 60 metros da sede da fazenda, consiste em lentes, de pequeno '
+      + 'comprimento delgadas, de quartzo cinzento, às vezes cavernoso, no filito sericítico.',
+        { sub: 'Mina do Cutão' },
+        'É um poço, atualmente cheio d’água, situado abaixo da Mina do Fernandes.',
+        { sub: 'Mina da Paciência' },
+        'Esta mina fica a dois quilômetros ao norte da Fazenda do Cutão e a igual distância de '
+      + 'Morro Vermelho. Já está fora dos limites da fazenda. Existem pequenas bocas, galerias, '
+      + 'dirigidas para nordeste, em níveis diferentes, e delas partem planos inclinados, para '
+      + 'sudeste, acompanhando a faixa mineralizada.',
+        { sub: 'Mina Pedra do Sino' },
+        'Situada a sudeste da Mina da Paciência, cerca de 500m ao norte de Cutão. É uma galeria no '
+      + 'filito hematítico, cinzento, tenro, com rumo noroeste. Parece que a galeria visa atingir '
+      + 'o vieiro-camada da mina anterior, que está em nível mais alto. É uma galeria de nível, em '
+      + 'parte com água e tendo provavelmente mais de cem metros de comprimento.',
+        { sub: 'Minas do Córrego do Teixeira' },
+        'Estas minas se localizam no vale do córrego do Teixeira, ao norte das minas do José '
+      + 'Fernandes. Consistem em várias galerias penetrando no filito com lentes de quartzo. A '
+      + 'Galeria 10 ou Mina da Cachoeira tem um comprimento de 16 metros. A Galeria 16 ou Mina do '
+      + 'Meio é uma escavação com rumo sudeste, na encosta norte do Morro do Adão.',
+        { sub: 'Minas do Córrego do Paneleiro' },
+        'Estas minas ficam situadas no lado esquerdo ou sul do Córrego do Paneleiro. São galerias '
+      + 'de pequena extensão, atravessando filito decomposto, e com lentes de quartzo. A Galeria 4 '
+      + 'é conhecida por Mina do Pau d’Óleo.',
+      ],
+    },
+    {
+      id: 'minas-do-maquine', titulo: 'Minas do Maquiné',
+      blocos: [
+        'Na Fazenda do Maquiné, situada a aproximadamente 20 quilômetros ao sul de Caeté e a sete '
+      + 'de Morro Vermelho, encontram-se as minas dos Crioulos, do Guilherme, da Cândida e Boa '
+      + 'Esperança.',
+        { sub: 'Mina dos Crioulos' },
+        'Esta mina está a dois quilômetros para leste da fazenda Maquiné, na encosta ocidental da '
+      + 'serra deste nome e foi explorada por escravos. Há aí uma galeria arriada e com água, '
+      + 'dirigida para leste. Na beira do caminho, a 20m para noroeste da galeria anterior, há uma '
+      + 'escavação no quartzito friável, onde existia uma galeria, hoje entupida. Para leste, '
+      + 'depois de um pequeno córrego, sobe-se a Serra de Mato Grosso, sobre itabirito coberto de '
+      + 'canga. A Fazenda Mato Grosso fica a sudeste, atrás da serra, no fundo do vale. Depois '
+      + 'dela, há serras e vales, em direção a Ouro Preto.',
+        { sub: 'Mina do Guilherme' },
+        'Também explorada por escravos, esta mina se encontra na encosta norte da Serra do '
+      + 'Gandarela, dois quilômetros ao sul da Fazenda Maquiné. A escarpa mede uns 10 metros de '
+      + 'altura e está na encosta sul da Serra do Gandarela, no contato das séries de Minas e '
+      + 'Itacolomi. Este material segue uns 70m para sudeste até uma cachoeira, formada por '
+      + 'córrego de vale profundo.',
+        { sub: 'Minas da Cândida' },
+        'Constam estas minas de algumas galerias curtas que ficam em frente à Fazenda Maquiné, a '
+      + 'uns 500m para noroeste, no espigão entre Carrapato e Cândida. No lado oeste do espigão, '
+      + 'na vertente de Carrapato, há duas galerias, que são planos inclinados seguindo para '
+      + 'leste.',
+        { sub: 'Minas da Boa Esperança' },
+        'Estas minas estão situadas em terrenos da Fazenda Retiro, a nove quilômetros a sudeste da '
+      + 'Fazenda Maquiné e perto da Água Limpa e dos morros Três Irmãos. Em baixo, para sudoeste, '
+      + 'no pé do morro, há duas galerias vindo para leste, das quais uma obstruída na boca.',
+      ],
+    },
+    {
+      id: 'minas-do-geriza', titulo: 'Minas do Geriza',
+      blocos: [
+        'Estas minas, antigamente designadas pelo nome de Borges, acham-se situadas a cerca de '
+      + 'três quilômetros a sudeste das do Carrapato e a igual distância para leste do arraial do '
+      + 'Morro Vermelho. Elas se distribuem pelo vale do Córrego Carrapato, que nasce alguns '
+      + 'quilômetros mais ao sul, nas encostas da Serra do Piacó, nome local da Serra de '
+      + 'Gandarela. Distinguem-se as minas do Vai-Vem, as de Ajunta-Vaca e as da Cachoeira.',
+        { sub: 'Mina de Vai-Vem' },
+        'Encontra-se uma galeria na margem direita do córrego do mesmo nome e no pé de uma pequena '
+      + 'cachoeira. Esta galeria é normal às camadas e está em parte invadida por lama e água. '
+      + 'Esta galeria se encontra arriada e cheia d’água. Aqui a pirita se mostra decomposta, '
+      + 'restando leitos porosos, ferruginosos, da rocha.',
+        { sub: 'Mina Ajunta-Vaca' },
+        'Mais acima, na margem esquerda do córrego, no lugar Ajunta-Vaca, existem duas galerias, '
+      + 'de uns 40m de comprimento, no filito, uma seguindo a direção e outra o mergulho. '
+      + 'Encontra-se ainda, mais para cima, outra galeria, na margem esquerda do córrego, no '
+      + 'filito hematítico. Estas minas ficam na encosta sul de um morro. Próximo, em uma grota a '
+      + 'oeste, fica um poço fundo e cheio d’água.',
+        { sub: 'Mina da Cachoeira' },
+        'Nesta mina existe uma galeria localizada em uma faixa de filitos sericíticos e filito '
+      + 'grafitoso, com veios-camadas de quartzo cinzento e branco, repousando sobre uma faixa de '
+      + 'clorita-xisto. A galeria, que está na base de uma cachoeira, no Córrego Geriza, na margem '
+      + 'esquerda, segue no princípio para oeste e depois para sudoeste.',
+      ],
+    },
+    {
+      id: 'outras-grandes-minas', titulo: 'Outras grandes minas',
+      blocos: [
+        { sub: 'Minas da Boa Vista' },
+        'Estas minas estão situadas a três quilômetros para sudeste do arraial de Morro Vermelho. '
+      + 'São dois grupos de galerias localizadas em faixas mineralizadas, que ocorrem na encosta '
+      + 'da margem esquerda dos córregos do Inácio e Boa Vista. O grupo norte é conhecido pela '
+      + 'designação de Mina do Matarelli, por haver sido trabalhado, há uns 30 anos, por um homem '
+      + 'chamado Leoni Matarelli. O outro grupo, mais ao sul, fica perto da jazida de amianto e '
+      + 'das minas de Bela Vista, e a ele é reservado o nome de Boa Vista propriamente dito. A '
+      + 'Mina do Matarelli consiste, a faixa mineralizada principal, em um vieiro-camada, '
+      + 'alcançando até 12m e 15m.',
+        { sub: 'Minas da Bela Vista (Olhos d’Água)' },
+        'Ficam no alto do mesmo nome, na propriedade denominada Olhos d’Água, cerca de 300m ao sul '
+      + 'da sede da fazenda, no distrito de Morro Vermelho, três quilômetros ao sul do povoado. A '
+      + 'jazida é constituída pela parte superior da mesma faixa mineralizada em que se acham '
+      + 'localizadas, para leste, mais abaixo na encosta, as galerias J, K e L de Boa Vista.',
+        { sub: 'Minas do Morro do Canudo (Carneiro)' },
+        'São galerias situadas em um morro existente no lugar Carneiro, localidade de Morro '
+      + 'Vermelho, a sudeste do morro da Bela Vista e ao norte das minas do Engenho. Encontra-se '
+      + 'uma primeira galeria na encosta sul do morro, com uns cinco metros de comprimento. Esta '
+      + 'galeria foi aberta recentemente com o fim de alcançar uma escavação colocada a 20m para '
+      + 'noroeste.',
+        { sub: 'Minas de Pernambuco' },
+        'Encontram-se estas minas situadas em um morro a três quilômetros para oeste de Morro '
+      + 'Vermelho. São galerias, a maior parte inclinadas, e escavações a céu aberto em filitos '
+      + 'com veios lenticulares e cordões de quartzo. A galeria de norte está entupida, por '
+      + 'material de enxurrada, a uns 15m do cruzamento. A jazida já foi muito trabalhada, tendo '
+      + 'as galerias mais de 300m de comprimento. No alto do morro, aflora um veio de quartzo e o '
+      + 'rasgão comunica-se com outro mais fundo e maior.',
+        { sub: 'Minas do Engenho (Cachoeira)' },
+        'Estas minas encontram-se situadas na Fazenda da Cachoeira, distante seis quilômetros para '
+      + 'o sul do arraial de Morro Vermelho. São vários planos inclinados, com forte ângulo, '
+      + 'descendo para sudeste e distribuídos ao longo de uma faixa mineralizada encaixada nos '
+      + 'filitos sericíticos, em uma extensão de 150m.',
+      ],
+    },
   ],
   relacionadas: [
-    { nome: 'História de Resistência', href: 'historia-de-resistencia.html', txt: 'Quem trabalhou nas lavras, e o que veio depois.', olho: '02' },
-    { nome: 'Estrada Real', href: 'estrada-real.html', txt: 'Por onde o ouro saía, e por onde tudo mais entrava.', olho: '08' },
-    { nome: 'Arraial de Viracopos', href: 'arraial-de-viracopos.html', txt: 'O povoado antes de se chamar Morro Vermelho.', olho: '04' },
+    { nome: 'História de Resistência', href: 'historia-de-resistencia.html', txt: 'Um povo unido constrói o seu próprio destino', olho: '02' },
+    { nome: 'Arraial de Viracopos', href: 'arraial-de-viracopos.html', txt: 'Entreposto comercial e rota para a Serra da Piedade', olho: '04' },
+    { nome: 'Fazenda do Cutão', href: 'fazenda-do-cutao.html', txt: 'Engenhos de apuração do ouro', olho: '05' },
   ],
 };

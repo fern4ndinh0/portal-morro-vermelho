@@ -1,78 +1,257 @@
 /* ==========================================================================
-   ATRAÇÕES
-   Atrações · 14
-   --------------------------------------------------------------------------
-   Página-índice da família "Atrações". Diferente dos verbetes históricos:
-   aqui o objetivo não é narrar, é INVENTARIAR — e um inventário incompleto
-   publicado como completo é pior que nenhum.
+   14 · ATRAÇÕES
 
-   REGRA EDITORIAL: nenhum bem é listado como "tombado" ou "protegido" sem
-   que o ato de proteção esteja identificado. Atribuir tombamento inexistente
-   a um bem é erro grave: cria falsa segurança jurídica e atrapalha quem
-   tentar protegê-lo de verdade.
+   FONTE: originais/word/14MV.docx — "Pesquisa, texto e fotos: Geraldo Lopes".
+   Texto do documento original, sem acréscimo. As descrições da Matriz são as
+   do Iphan e do Memorial da Arquidiocese de Belo Horizonte, como o documento
+   declara.
    ========================================================================== */
 
 export default {
   slug: 'atracoes',
-  numero: '14',
   titulo: 'Atrações',
-  olho: 'Atrações · 14',
-  tom: 'var(--serra-800)',
-  estado: 'Inventário a levantar',
-  resumo: 'Monumentos culturais protegidos. Antes de convidar alguém a visitar, é preciso saber o que existe, o que está em pé e o que está protegido: as três respostas não são a mesma.',
-  resumoSeo: 'Atrações e monumentos culturais de Morro Vermelho, distrito de Caeté (MG): o inventário do patrimônio edificado e o que falta levantar.',
+  numero: '14',
+  olho: 'Atrações e natureza · 14',
+  tom: 'var(--areia-700)',
+  resumo: 'Monumentos culturais protegidos',
+  resumoSeo: 'Os monumentos de Morro Vermelho, Caeté (MG): a Matriz de Nossa Senhora de Nazareth '
+           + '(1713, tombada pelo Iphan), a Capela do Rosário dos Pretos (1703), o Cruzeiro do '
+           + 'Rosário, o Morro da Santa Cruz e a Pedra do Sino.',
   secoes: [
     {
-      id: 'tres-perguntas', titulo: 'Três perguntas antes da lista',
+      id: 'matriz', titulo: 'Matriz de Nossa Senhora de Nazareth',
       blocos: [
-        { abertura: 'Todo portal de distrito histórico publica uma lista de atrações. Quase nenhum responde antes as três perguntas que decidem se essa lista serve para alguma coisa: <strong>o que existe, em que estado está, e o que está juridicamente protegido.</strong>' },
-        'São perguntas diferentes, e confundi-las tem consequência prática. Um casarão pode existir, estar de pé e não ter nenhuma proteção: é justamente o caso que precisa de atenção urgente. Outro pode estar tombado e caindo. Um terceiro pode já ter sido demolido e continuar aparecendo em folheto.',
-        { lista: [
-          '<strong>Existe?</strong> Inventário de campo, com endereço, coordenada e fotografia datada.',
-          '<strong>Em que estado?</strong> Íntegro, alterado, em ruína, demolido. Com data da vistoria, porque estado muda.',
-          '<strong>Está protegido?</strong> Por qual instância (federal, estadual, municipal), por qual ato, de que ano, e com que perímetro. Sem o número do processo, a resposta é "não sei".',
-          '<strong>Dá para visitar?</strong> A pergunta que o visitante realmente faz. Horário, acesso, propriedade particular ou pública, e a quem pedir.',
-        ] },
-        { nota: 'Enquanto o inventário não existir, este portal não publica lista de atrações. Prefere-se admitir a lacuna a publicar uma lista com erro de proteção, que é o tipo de erro que atrapalha exatamente quem trabalha para preservar.', titulo: 'Por que ainda não há lista aqui' },
+        { abertura: 'Conta a história que em 1182 o cavaleiro Dom Fuas Roupinho perseguia um veado '
+                  + 'e, quando este desapareceu, teve diante dos olhos um abismo, invocando então '
+                  + 'a proteção da Virgem Maria. Foi salvo quando estava prestes a cair de um '
+                  + 'rochedo que despencava para o mar. Pelo milagre, dom Fuas Roupinho, '
+                  + 'alcaide-mor de Porto de Mós, mandou construir no local a Capela da Memória, '
+                  + 'visível do oceano a grande distância. No século 14, foi ali construída uma '
+                  + 'igreja. Dom João II e Dom Manuel fizeram modificações e no século 17 uma '
+                  + 'igreja nova substituiu o velho templo. O título da invocação deu nome à vila '
+                  + 'da Nazaré, onde a imagem é venerada no Santuário de Nossa Senhora da Nazaré. '
+                  + 'Dali a devoção se espalhou por todo o mundo.' },
+        'Na igreja de Morro Vermelho, a cena do primeiro milagre está pintada no teto da nave. A '
+      + 'matriz atual, que substituiu uma antiga capela de 1700, foi erguida em 1713 pelo '
+      + 'capitão-mor Paulo Rodrigues Durão, pai do poeta de O Caramuru, frei Santa Rita Durão. A '
+      + 'data existente na capela-mor (1869) refere-se à sua reforma, pois está também na fachada. '
+      + 'A matriz foi tombada em 1950 pelo Instituto do Patrimônio Histórico e Artístico Nacional '
+      + '(Iphan).',
+        'A paróquia foi criada em 30 de novembro de 1880 pela Lei 2.709 e hoje pertence à '
+      + 'Arquidiocese de Belo Horizonte. Seu primeiro vigário foi o padre Francisco de Assis '
+      + 'Chagas. A imagem de Nossa Senhora de Nazareth mostra a Virgem de túnica, véu e brincos, '
+      + 'com o Menino Jesus nos braços. A matriz foi restaurada recentemente com a ajuda dos '
+      + 'moradores e abriga rico acervo de altares e imagens, com as da padroeira, Senhor dos '
+      + 'Passos e São José de Botas.',
+        { figura: 'Matriz de Nossa Senhora de Nazareth.',
+          arquivo: 'figura-matriz-nazareth.jpg',
+          alt: 'Fachada da Matriz de Nossa Senhora de Nazareth, branca, com frontão triangular e '
+             + 'duas torres quadradas.' },
+        'Segundo o Iphan, a igreja guarda o aspecto original das matrizes setecentistas mineiras '
+      + 'em madeira e adobe, com fachada encimada por frontão triangular e duas torres quadradas '
+      + 'com cobertura de telhados de quatro águas. Tem à frente um amplo adro, ainda hoje cenário '
+      + 'de importantes manifestações religiosas e folclóricas, entre as quais tem especial '
+      + 'relevância a festa da padroeira. Informa que do conjunto de retábulos que decoram o '
+      + 'interior da Matriz, apenas o altar-mor teve a sua talha concluída. Os altares do '
+      + 'cruzeiro, de tábuas lisas, conservam interessante pintura ilusionista à imitação de '
+      + 'talha, solução provisória que geralmente antecedia a confecção do retábulo definitivo.',
+        'Na capela-mor situam-se as principais obras ornamentais do templo, tanto no que se refere '
+      + 'à talha quanto à imaginária e pintura. A estrutura do retábulo é bastante simples, mas a '
+      + 'confecção da talha é de boa qualidade. Colunas torsas e quartelões constituem os '
+      + 'elementos de suporte, coroados por uma arcada côncava, tendo ao centro um medalhão com o '
+      + 'brasão da Virgem. Os nichos laterais apresentam duas excelentes peças de imaginária '
+      + 'mineira, São João Nepomuceno e Santo Antônio.',
+        'No trono, a imagem de Nossa Senhora de Nazareth, que tem origem portuguesa. O forro da '
+      + 'capela-mor apresenta pintura de estilo rococó com muro-parapeito contínuo nas laterais, '
+      + 'sem ligação com a visão da parte central, que ilustra o tema da Assunção da Virgem, em '
+      + 'moldura de nuvens brancas e cinzentas. Atrás do mesmo veem-se as figuras dos quatro '
+      + 'doutores da Igreja, os santos Gregório e Jerônimo à esquerda e Ambrósio e Agostinho à '
+      + 'direita. Também o forro da nave é decorado de pintura de perspectiva ilusionista, '
+      + 'provavelmente de fins do século 19.',
+        'Atrás do muro-parapeito retilíneo, com painéis decorados de entrelaçados geométricos, os '
+      + 'quatro evangelistas são identificados por seus atributos, o leão, o touro, a águia e o '
+      + 'anjo, desenhados de modo sumário. A visão do quadro central ilustra o tema do milagre de '
+      + 'Nossa Senhora de Nazareth.',
+        'Segundo o Iphan, no forro do subcoro à entrada da igreja, uma interessante pintura de '
+      + 'caráter popular ilustra as personificações femininas das virtudes teologais – Fé, '
+      + 'Esperança e Caridade. A Fé com a cruz, seu atributo tradicional, é representada em frente '
+      + 'à própria Matriz de Nossa Senhora de Nazareth. A Esperança com a âncora e a Caridade com '
+      + 'três crianças são, sem dúvida, inspiradas em habitantes da localidade de Morro Vermelho.',
       ],
     },
     {
-      id: 'o-que-se-sabe', titulo: 'O que já se sabe',
+      id: 'memorial', titulo: 'Memorial da Arquidiocese de Belo Horizonte',
       blocos: [
-        'O conjunto mais evidente do distrito é o seu núcleo histórico, organizado em torno da <strong>Igreja Matriz</strong>, a fachada de duas torres que aparece na fotografia mais antiga do acervo deste portal, com o cruzeiro à esquerda e o terreiro de terra batida em frente.',
-        'A matriz atual foi erguida em 1713 pelo capitão-mor <strong>Paulo Rodrigues Durão</strong>, pai do poeta Frei Santa Rita Durão, no lugar de uma capela de 1700. Foi tombada em 1950 pelo <strong>IPHAN</strong>, que a descreve como um exemplar que conserva o aspecto original das matrizes setecentistas mineiras em madeira e adobe, com fachada encimada por frontão triangular e duas torres quadradas de telhado em quatro águas.',
-        'A comparação entre a fotografia antiga da Matriz e o mesmo ponto hoje é, ela própria, o melhor inventário informal que o distrito tem: mostra o que permaneceu, o que mudou e o que sumiu. É o que a seção <a href="index.html#antes-depois">Antes e depois</a> existe para fazer, e ela precisa de mais pares de imagens.',
-        { lacuna: 'O que falta, para além da Matriz: <strong>a lista dos demais bens edificados do distrito</strong>, com endereço, proprietário, estado de conservação e situação de proteção. Existe algum outro bem tombado em Morro Vermelho, pelo IPHAN, pelo IEPHA-MG ou pelo município de Caeté? Se sim, quais, por qual processo? Se não, quais deveriam ser propostos?' },
-        { sub: 'Bens a verificar, um por um' },
-        { lista: [
-          'Igreja Matriz: construção (1713) e tombamento federal (IPHAN, 1950) documentados. Falta reformas posteriores, acervo de imaginária e alfaia, e horário de visitação.',
-          'Cruzeiro e terreiro, elementos do conjunto que costumam ficar de fora dos processos.',
-          'Casario do núcleo histórico: quantas edificações de interesse, em que ruas, em que estado.',
-          'Capelas e oratórios dispersos pelo território rural.',
-          'Vestígios da mineração e dos caminhos coloniais, ver <a href="fazenda-do-cutao.html">Fazenda do Cutão</a> e <a href="estrada-real.html">Estrada Real</a>.',
-        ] },
+        { sub: 'Arquitetura' },
+        'A Igreja Matriz de Nossa Senhora de Nazareth é o edifício de maior destaque no distrito '
+      + 'de Morro Vermelho, implantado em um amplo adro alteado, razoavelmente plano e pavimentado '
+      + 'em terra vermelha, origem do nome do povoado. O partido arquitetônico segue o modelo '
+      + 'tradicional da arquitetura religiosa barroca luso-brasileira, elaborado e difundido a '
+      + 'partir das últimas décadas do século 17 e século 18. Consiste em um corpo alongado, cuja '
+      + 'entrada é ladeada por duas torres quadradas, externas, mais altas, seguidas pela nave '
+      + 'única, em altura intermediária, e a capela-mor, um pouco mais baixa, modelo que foi '
+      + 'amplamente empregado nas igrejas matrizes mineiras coloniais.',
+        'O templo é resultado da sobreposição de camadas históricas, materializadas em inúmeras '
+      + 'intervenções. Seu sistema construtivo em madeira e adobe é característico das igrejas '
+      + 'mais antigas e situadas em freguesias com menos recursos, chegando ao nosso tempo como '
+      + 'testemunho material de técnicas, saberes e fazeres tradicionais. Seu interior, por outro '
+      + 'lado, foi objeto de atenção e do cuidado dos devotos, passando por diversas alterações '
+      + 'que, entretanto, concorreram para a constituição de uma unidade estilística rococó, '
+      + 'caracterizada pelos espaços amplos, bem definidos e iluminados de forma equilibrada; '
+      + 'pelas superfícies lisas e claras nas paredes, altares e forros; pelo altar-mor e '
+      + 'tribunas, forros e altares colaterais que se amoldam bem às características do espaço '
+      + 'rococó.',
+        { sub: 'Iconografia' },
+        'A devoção a Nossa Senhora de Nazareth tem sua origem ligada à história de nobre português '
+      + 'dom Fuás Roupinho, que, durante a caça a um animal, viu seu cavalo saltar sobre um '
+      + 'penhasco. Lembrando-se de uma pequenina imagem da Virgem Maria que avistara em sua '
+      + 'corrida, implorou por seu socorro e, milagrosamente, o cavalo estacou, salvando-o da '
+      + 'queda. Refeito do susto, dom Fuás dirigiu-se ao local onde avistara Nossa Senhora para '
+      + 'lhe agradecer, quando encontrou preso a ela um pergaminho que narrava a história de sua '
+      + 'efígie, já venerada em Nazareth nos primeiros tempos do cristianismo. Lendo este relato, '
+      + 'dom Fuás mandou erguer no local em que encontraram a imagem um santuário que perpetuasse '
+      + 'o culto de sua protetora, Nossa Senhora de Nazareth. A igreja foi construída no alto de '
+      + 'um penedo, em Portugal, e é visível do mar, a longa distância, por isso a Virgem '
+      + 'tornou-se padroeira dos navegantes. Foram eles que propagaram o seu culto, '
+      + 'transportando-o para o Brasil, que aqui se localizou principalmente na Amazônia, Pará, '
+      + 'Minas Gerais e Rio de Janeiro. Em Minas Gerais foram construídas várias igrejas no '
+      + 'período colonial sob sua invocação.',
+        { sub: 'Átrio' },
+        'Segundo memorial da Arquidiocese de Belo Horizonte, o átrio da igreja (entrada) apresenta '
+      + 'no forro pintura da segunda metade do século 19, representando as três virtudes teologais '
+      + '– Fé, Esperança e Caridade –, por meio de figuras femininas. As virtudes teologais são um '
+      + 'caminho para um maior conhecimento e amor de Deus, dons divinos que ajudam o fiel a '
+      + 'praticar atos virtuosos no seu dia a dia. Somam-se às virtudes teologais as virtudes '
+      + 'cardeais: Prudência, Justiça, Força e Temperança.',
+        'À esquerda do átrio localiza-se o batistério, cuja pia batismal, esculpida em pedra '
+      + 'sabão, é datável do século 18, com acabamento elaborado ao gosto joanino.',
+        { sub: 'Nave' },
+        'O forro da nave, em abóboda facetada de formado retangular, mostra pintura à têmpera com '
+      + 'características neoclássicas, de fins do século 19. Apresenta painéis com as '
+      + 'representações dos quatro evangelistas – João, Mateus, Lucas e Marcos – nas laterais '
+      + 'esquerda e direita, e do milagre de Nossa Senhora de Nazareth a dom Fuas Roupinho, ao '
+      + 'centro. À esquerda do arco-cruzeiro, localiza-se altar colateral de Nossa Senhora das '
+      + 'Dores e Senhor dos Passos, peça em madeira recortada com pintura simulando talha, de '
+      + 'gosto rococó tardio.',
+        'Na cartela estão representados símbolos da Paixão de Cristo: coroa de espinhos e punhal '
+      + 'cravado, além da inscrição Ecce Homo, o que justifica a exposição no trono das duas '
+      + 'imagens. À direita do arco-cruzeiro, o altar colateral de São José, também em madeira '
+      + 'recortada e policromada, com inscrição em cartela: “Esposo de Maria da qual nasceu '
+      + 'Jesus”.',
+        'Integrados ao arco-cruzeiro, encontram-se dois púlpitos em formado de caixa retangular '
+      + 'com ângulos chanfrados, de fins do século 18, destinados a homilias e sermões. A inserção '
+      + 'dos púlpitos no arco-cruzeiro constitui solução menos frequente nas igrejas mineiras '
+      + 'setecentistas, localizando-se geralmente no lado esquerdo e direito da nave.',
+        { figura: 'Nave da Matriz.',
+          arquivo: 'galeria-nave-matriz.jpg',
+          alt: 'Interior da Matriz de Nossa Senhora de Nazareth, com a nave, o forro pintado e o '
+             + 'altar-mor ao fundo.' },
+        { sub: 'Capela-mor' },
+        'No forro da capela-mor localiza-se pintura rococó da última fase dos tetos em '
+      + 'perspectivas em Minas, cujo quadro central tem por tema a Assunção de Nossa Senhora ao '
+      + 'céu. O altar-mor, datável de fins do século 18 ou início do 19, ao gosto rococó, possui '
+      + 'monograma da Virgem Maria, símbolos da Eucaristia e representação do Divino Espírito '
+      + 'Santo no forro camarim. Nele está entronizada a imagem de Nossa Senhora de Nazareth, peça '
+      + 'de meados do século 18, de provável origem portuguesa, obra de artista erudito, com '
+      + 'tratamento requintado.',
       ],
     },
     {
-      id: 'como-fazer', titulo: 'Como se faz um inventário',
+      id: 'capela-do-rosario', titulo: 'Capela de Nossa Senhora do Rosário dos Pretos',
       blocos: [
-        'É trabalho volumoso e não é difícil. O IEPHA-MG mantém metodologia própria de inventário de bens culturais, usada por municípios mineiros para instruir tombamento e para pleitear repasse do ICMS Patrimônio Cultural: significa que existe, para a Prefeitura de Caeté, um incentivo financeiro concreto para fazê-lo.',
-        { nota: 'Esse é o argumento que costuma destravar a conversa com o poder público: inventariar patrimônio não é só zelo cultural, é receita. Vale levá-lo à mesa junto com o pedido.', titulo: 'O argumento prático' },
-        { figura: 'Vista do núcleo histórico ou da Igreja Matriz, do mesmo ponto da fotografia antiga do acervo.', arquivo: 'figura-atracoes.jpg', legenda: '<strong>Detalhe de forro barroco pintado</strong>, com o monograma de Maria ao centro. É o tipo de peça que o tombamento protege e que a falta de verba de manutenção ameaça.', alt: 'Detalhe de forro barroco pintado, com moldura dourada em volutas e o monograma de Maria ao centro.', credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro · autoria a confirmar' },
+        'A mais antiga edificação de Morro Vermelho, a Capela de Nossa Senhora do Rosário dos '
+      + 'Pretos do Arraial do Morro Vermelho foi construída por escravos em 1703. Tem corpo único '
+      + 'com sacristia na lateral direita. No seu interior, possui nave com coro cercado de '
+      + 'balaustrada de madeira, teto pintado com a imagem da Virgem do Rosário e ornamentos de '
+      + 'anjos e flores.',
+        'Nas extremidades, há pinturas das imagens dos evangelistas. Também na nave há o púlpito '
+      + 'do lado esquerdo e dois altares sem grandes ornamentações. O altar-mor é todo pintado, '
+      + 'imitando mármore. O teto é pintado, tendo uma pomba ao centro e anjos nas laterais.',
+        'Apesar da sua importância histórica, a capela não é protegida pelo Iphan pelo simples '
+      + 'motivo de apresentar no teto interno pinturas superpostas, mas é tombada pelo patrimônio '
+      + 'histórico municipal. Foi recentemente restaurada.',
+        { figura: 'Capela de Nossa Senhora do Rosário dos Pretos.',
+          arquivo: 'galeria-capela-rosario.jpg',
+          alt: 'Fachada branca da Capela de Nossa Senhora do Rosário dos Pretos, de corpo único, '
+             + 'com porta central e sineira.' },
       ],
     },
-  ],
-  fontes: [
-    'IEPHA-MG: inventário de bens culturais, metodologia e processos de tombamento estadual na região de Caeté.',
-    'IPHAN: cadastro de bens tombados e processos em andamento em Minas Gerais.',
-    'Prefeitura de Caeté: Conselho Municipal de Patrimônio, leis de tombamento municipal e prestação de contas do ICMS Patrimônio Cultural.',
-    'Arquivo da Paróquia de Morro Vermelho: livro de tombo, obras e reformas da Matriz, inventário de alfaias e imaginária.',
-    'Levantamento de campo com GPS e fotografia datada, a base de tudo.',
-    'Moradores e proprietários: estado de conservação, autorização de acesso e histórico de reformas.',
+    {
+      id: 'cruzeiro-do-rosario', titulo: 'Cruzeiro do Rosário',
+      blocos: [
+        'Um dos pontos centenários e de tradicionais romarias de fé em Morro Vermelho, o Cruzeiro '
+      + 'do Rosário também recebia anualmente fiéis para a santa missa e era local de peregrinações '
+      + 'durante todo o ano. As ruínas do antigo cruzeiro ainda estão de pé. Lideranças '
+      + 'comunitárias se organizam para restaurar o cruzeiro e as romarias ao local.',
+      ],
+    },
+    {
+      id: 'morro-da-santa-cruz', titulo: 'Morro da Santa Cruz',
+      blocos: [
+        'Também conhecido como Morro Vermelho, este monte deu nome ao povoado devido à ausência de '
+      + 'vegetação em parte de seu cume. Também conhecido como Morro da Santa Cruz, é o maior '
+      + 'ponto de referência e orgulho da comunidade.',
+        'Ao sopé desta montanha, passava a Estrada Real, por onde circulavam bandeirantes, '
+      + 'fiscais, tropeiros e toda a sorte de gente, levando toneladas de ouro da Serra da '
+      + 'Piedade, Caeté, Viracopos, Ribeirão Comprido e Cuiabá para o porto de Parati, no Rio de '
+      + 'Janeiro, de onde seguiam para Portugal e toda a Europa. Mais à frente, pelo Caminho dos '
+      + 'Emboabas, já no local chamado Retiro dos Capetas, ficava um posto fiscal da Coroa, onde a '
+      + 'força policial dos Dragões Reais garantia a cobrança de altos impostos sobre o metal '
+      + 'extraído e sobre animais, ferramentas, mantimentos e roupas que seguiam para as quase 800 '
+      + 'minas de ouro da região.',
+        'Outro marco importante do monte eram as romarias religiosas centenárias. Grupos de '
+      + 'católicos seguiam a pé do povoado até o cume do morro, onde reluzia um cruzeiro. Ali '
+      + 'participavam de missa campal, que atraia gente de toda a região. Contam os mais antigos '
+      + 'que os peregrinos conseguiam muitas graças com a caminhada até o alto do Morro Vermelho. '
+      + 'A imponente cruz de madeira, com os símbolos do martírio de Jesus Cristo, era vista de '
+      + 'todos os locais do distrito, mas acabou queimada por um raio, sendo substituída por uma '
+      + 'cruz de metal de 15 metros, com iluminação especial, que pode ser avistada a longa '
+      + 'distância.',
+        'O escritor, antropologista e estudioso inglês Richard Burton (1821/1890), no livro '
+      + '<em>Viagem do Rio de Janeiro a Morro Velho</em> (1867), descreve detalhes de sua rápida '
+      + 'passagem pelo Morro Vermelho: “...Esse morro, realmente vermelho, e em forma de esfinge, '
+      + 'ergue-se a suleste de Morro Velho; um raio destruíra, recentemente, seu cruzeiro...”.',
+        'A formação rochosa faz parte da Serra do Gongo Soco, do complexo Serra do Espinhaço, que '
+      + 'se estende por toda a Região Central de Minas. Em busca do ouro, paulistas e ricos '
+      + 'portugueses atingiram o Ribeirão Comprido também pelo caminho de Ouro Preto, passando por '
+      + 'Rio Acima. Por este trecho, avistava-se um morro vermelho. Do planalto em redor do morro, '
+      + 'as caravanas de bandeirantes, tropeiros, fiscais e autoridades se dirigiram por um lado '
+      + 'para a Vila Nova da Rainha (Caeté), por outro para Sabará margeando o Ribeirão Comprido e '
+      + 'ainda por outro caminho, pelo Cutão, para Raposos. A comunidade se organiza para reativar '
+      + 'as peregrinações religiosas ao local.',
+        { figura: 'Morro da Santa Cruz.',
+          arquivo: 'galeria-morro-santa-cruz.jpg',
+          alt: 'O Morro da Santa Cruz, com a rocha avermelhada exposta no cume e a cruz de metal '
+             + 'no alto.' },
+      ],
+    },
+    {
+      id: 'pedra-do-sino', titulo: 'Pedra do Sino',
+      blocos: [
+        'Ao ser tocada, uma grande pedra de granito, sobre outras, produz som de um sino, ouvido a '
+      + 'quilômetros de distância. A ressonância é produzida devido à sobreposição de um conjunto '
+      + 'de pedras, sendo que uma delas fica praticamente sem apoio, produzido eco ao ser tocada '
+      + 'por outra pedra ou metal. A intensa vegetação no local ajuda a aumentar o som em ritmo '
+      + 'contínuo.',
+      ],
+    },
+    {
+      id: 'corporacao-musical', titulo: 'Corporação Musical Santa Cecília',
+      blocos: [
+        'A Corporação Musical Santa Cecília, de Morro Vermelho, também nasceu junto com a '
+      + 'Cavalhada Nossa Senhora de Nazareth, no início do século 18. É considerada uma das mais '
+      + 'antigas de Minas Gerais, conservando em seu repertório músicas coloniais, populares e '
+      + 'folclóricas.',
+        'Parte do acervo musical foi passada de ouvido, de geração a geração. Além de manter viva '
+      + 'a banda de mais de 300 anos, o povo de Morro Vermelho transmite para suas crianças a arte '
+      + 'da boa música. Sob a batuta do mestre José Leal, a Oficina de Música treina crianças e '
+      + 'jovens da comunidade.',
+      ],
+    },
   ],
   relacionadas: [
-    { nome: 'Parque do Gandarela', href: 'parque-do-gandarela.html', txt: 'O patrimônio natural ao redor.', olho: '15' },
-    { nome: 'Festas e Tradições', href: 'festas-e-tradicoes.html', txt: 'O patrimônio que não é feito de pedra.', olho: '17' },
-    { nome: 'Como chegar', href: 'index.html#visite', txt: 'Rota, distâncias e informação prática.', olho: 'Visitar' },
+    { nome: 'Bens Históricos', href: 'bens-historicos.html', txt: 'Relíquias do passado desprotegidas', olho: '22' },
+    { nome: 'Festas e Tradições', href: 'festas-e-tradicoes.html', txt: 'Patrimônio imaterial conservado', olho: '17' },
+    { nome: 'Sociedade Musical Santa Cecília', href: 'sociedade-musical-santa-cecilia.html', txt: 'A banda do distrito' },
   ],
 };

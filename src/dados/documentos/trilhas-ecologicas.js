@@ -1,75 +1,142 @@
 /* ==========================================================================
-   TRILHAS ECOLÓGICAS
-   Atrações · 20
-   --------------------------------------------------------------------------
-   Vale a mesma regra dura de "Cachoeiras e Cascatas": trilha publicada sem
-   acesso verificado, sem autorização e sem descrição honesta de dificuldade
-   manda gente real para um lugar real. Aqui há um agravante — trilha longa
-   em serra, sem sinal de celular, com sol de meio-dia em campo rupestre.
+   20 · TRILHAS ECOLÓGICAS
+
+   FONTE: originais/word/20MV.docx — "Pesquisa, texto e fotos: Geraldo Lopes".
+   Texto do documento original, sem acréscimo.
    ========================================================================== */
 
 export default {
   slug: 'trilhas-ecologicas',
-  numero: '20',
   titulo: 'Trilhas Ecológicas',
-  olho: 'Atrações · 20',
+  numero: '20',
+  olho: 'Festas, tradições e saberes · 20',
   tom: 'var(--serra-800)',
-  estado: 'A levantar · publicação condicionada a acesso e segurança',
-  resumo: 'Caminhos de esportes e lazer. Alguns são de mineiro do século XVIII, outros de tropeiro, outros de gado, e quase todos continuam de pé porque alguém nunca parou de usá-los.',
-  resumoSeo: 'Trilhas ecológicas de Morro Vermelho, distrito de Caeté (MG): o levantamento em curso, os caminhos históricos e as regras de publicação responsável.',
+  resumo: 'Caminhos do esporte e lazer',
+  resumoSeo: 'Quem procura Morro Vermelho pelas trilhas: caminhantes, ciclistas, trilheiros, '
+           + 'fora-de-estrada, aventureiros e turistas, e o que o distrito oferece a cada um '
+           + 'deles.',
   secoes: [
     {
-      id: 'caminhos-antigos', titulo: 'Trilha nova quase nunca é nova',
+      id: 'abertura', titulo: null,
       blocos: [
-        { abertura: 'Num distrito com trezentos anos de mineração, transporte e roça, quase todo caminho de serra <strong>já era caminho antes de virar lazer</strong>. Isso muda o que uma trilha é: ela não é só percurso, é documento em uso.' },
-        'Vale a pena registrar essa camada enquanto se faz o levantamento, porque ela é o que distingue uma trilha daqui de uma trilha de qualquer lugar bonito:',
-        { lista: [
-          '<strong>Caminhos coloniais:</strong> trechos de calçamento, muros de arrimo, cortes em rocha. Ver <a href="estrada-real.html">Estrada Real</a>.',
-          '<strong>Caminhos de serviço da mineração:</strong> acesso a lavras, levadas e engenhos. Ver <a href="fazenda-do-cutao.html">Fazenda do Cutão</a>.',
-          '<strong>Caminhos de tropa e de gado:</strong> os que ligavam sítios, currais e o núcleo do povoado.',
-          '<strong>Caminhos devocionais:</strong> os que levam a capelas, cruzeiros e pontos de romaria.',
-        ] },
-        { nota: 'Um percurso sinalizado que conte o que era cada trecho vale muito mais (para o visitante, para a escola e para a proteção do próprio caminho) do que um percurso que só informa distância e desnível. E custa a mesma caminhada.', titulo: 'A oportunidade específica deste distrito' },
+        { abertura: 'Morro Vermelho não pertence apenas aos seus atuais 938 moradores e aos '
+                  + 'egressos, filhos da terra que partem para estudar ou trabalhar em terras '
+                  + 'distantes e sempre voltam para rever a família e buscar energias positivas, '
+                  + 'emanadas em todos os cantos do lugar.' },
+        'Morro Vermelho também pertence aos que vieram de longe e aqui se assentaram fazendo do '
+      + 'povoado sua segunda terra natal.',
+        'Esta pátria emboaba também acolhe com alegria os que aqui aportam para apreciar a '
+      + 'exuberância da natureza, subir montanhas, buscar ar puro, vento no rosto, sol morno e '
+      + 'água pura na pele.',
+        'Aqui são bem recebidos todos os caminhantes, os ciclistas, os motociclistas, os turistas '
+      + 'e os aventureiros que, como seus moradores, não têm medo da poeira nem do barro nem da '
+      + 'adversidade ou do tempo ruim.',
+        'Também aqui são vistos com bons olhos todos os que lutam por uma boa causa e contra '
+      + 'prepotência política e econômica que quer impor regras e acabar com tradições e riquezas '
+      + 'históricas, religiosas e ambientais, conquistadas a duras penas.',
+        'O povo de Morro Vermelho abraça, conta histórias e causos e leva para o fundo de sua '
+      + 'cozinha todos os visitantes que, como ele, têm amor a todo tipo de liberdade.',
+        { figura: 'Trilha em Morro Vermelho.',
+          arquivo: 'figura-trilhas.jpg',
+          alt: 'Trilha de terra subindo entre a vegetação, com as serras ao fundo.' },
       ],
     },
     {
-      id: 'a-regra', titulo: 'A regra desta página',
+      id: 'os-caminhantes', titulo: 'Os caminhantes',
       blocos: [
-        'A mesma que vale para as cachoeiras, com um item a mais. Nenhuma trilha é publicada aqui sem:',
-        { lista: [
-          '<strong>Acesso verificado em campo</strong>, com coordenada de início e de fim.',
-          '<strong>Autorização registrada</strong> de quem é dono da terra atravessada, e trilha longa atravessa a terra de várias pessoas.',
-          '<strong>Dificuldade descrita honestamente:</strong> distância real, desnível acumulado, tempo médio, exposição ao sol, trechos expostos, disponibilidade de água e de sombra.',
-          '<strong>Condições de resgate:</strong> onde há sinal de celular, por onde entra veículo, qual é o ponto de apoio mais próximo. É o item que trilha em serra exige e que quase nenhum portal publica.',
-        ] },
-        { lacuna: 'O que falta: <strong>o inventário dos caminhos.</strong> Quais existem, para onde vão, de quem é a terra, em que estado estão e quais podem receber visitante. Enquanto não existir, esta página descreve o conjunto e não indica percurso.' },
+        'Agências turísticas de Belo Horizonte já incluíram o povoado de Morro Vermelho no seu '
+      + 'roteiro de caminhadas. O passeio, que inclui a Cachoeira de Santo Antônio, é rápido e '
+      + 'leve: a viagem dura quase todo dia e a trilha preferida entre o arraial e a cachoeira é '
+      + 'percorrida em cerca de duas horas. É um bom roteiro, ainda mais para quem quer entrar em '
+      + 'contato com a natureza.',
+        'Morro Vermelho recebe muitos caminhantes, em geral grupos de Belo Horizonte e cidades '
+      + 'vizinhas. Eles não querem apenas melhorar suas condições físicas, mas também apreciar '
+      + 'belezas naturais, florestas da Mata Atlântica, montanhas exuberantes, cachoeiras e muitos '
+      + 'pássaros cantando por toda a parte.',
+        'Em geral, as turmas vêm de carro, deixados com segurança na praça da Matriz, e partem '
+      + 'para longos percursos de mais de duas horas. Gostam de apreciar a Cachoeira de Santo '
+      + 'Antônio a sete quilômetros do povoado, mas também sobem o Morro da Santa Cruz, às vezes '
+      + 'esticam até o Cutão, local de relíquias históricas e dezenas de minas de ouro '
+      + 'abandonadas. Mas há muitos outros caminhos interessantes no lugar.',
       ],
     },
     {
-      id: 'como-marcar', titulo: 'Como se abre uma trilha sem estragar o lugar',
+      id: 'os-ciclistas', titulo: 'Os ciclistas',
       blocos: [
-        'Duas coisas se decidem antes da primeira placa, e errar qualquer uma custa caro depois.',
-        { sub: 'Onde o caminho passa' },
-        'Em campo rupestre ferruginoso (vegetação que ocorre nesta serra e em quase nenhum outro lugar), o solo é raso e a recuperação é lenta. Trilha mal traçada vira erosão em uma estação de chuva, e o atalho que os visitantes abrem sozinhos vira o novo caminho. Traçado que acompanha curva de nível e aproveita percurso já consolidado resolve quase todo o problema.',
-        { sub: 'Quem cuida depois' },
-        'Trilha sinalizada e não mantida fica pior que trilha sem sinalização: a placa dá confiança que o caminho já não merece. Definir quem faz a manutenção (associação de moradores, prefeitura, condutores locais) é parte da decisão de abrir, e não um detalhe para depois.',
-        { nota: 'Onde a trilha entrar no Parque Nacional da Serra do Gandarela ou na sua zona de amortecimento, as regras são do ICMBio e não do distrito. Confirmar antes de planejar qualquer percurso.', titulo: 'Quando a decisão não é local' },
-        { figura: 'Trecho de trilha, com autorização de quem detém a terra.', arquivo: 'figura-trilhas.jpg', legenda: '<strong>Caminhantes em trilha no distrito.</strong> Nenhuma trilha é publicada aqui com traçado ou GPS antes de acesso, autorização do proprietário e segurança conferidos, e esta fotografia não é exceção à regra.', alt: 'Grupo de caminhantes num trecho de trilha de terra entre mata e capim alto.', credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro · autoria a confirmar' },
+        'O esporte mais difundido entre os visitantes de Morro Vermelho são as bicicletas. Com '
+      + 'bikes coloridas e roupas confortáveis, os esportistas chegam aos bandos no povoado aos '
+      + 'sábados, domingos e feriados, mas há gente também no meio da semana. Antes de tomar as '
+      + 'diversas trilhas que levam a cachoeiras e locais de exuberantes belezas naturais, como o '
+      + 'Parque do Gandarela, eles se concentram na praça da Matriz e aproveitam para fotografar '
+      + 'as atrações do povoado.',
+        'Depois de um rápido contato com o lugar, partem em grupos, mochilas nas costas, e só '
+      + 'voltam à tarde, dão uma parada rápida e partem de volta para casa. Alguns contam que '
+      + 'fazem em média percursos de 60 quilômetros por dia.',
       ],
     },
-  ],
-  fontes: [
-    'Moradores, condutores locais e proprietários rurais: quem conhece os caminhos e quem autoriza a passagem.',
-    'ICMBio: regras de visitação e trilhas oficiais no Parque Nacional da Serra do Gandarela.',
-    'Instituto Estrada Real: traçados reconhecidos, para identificar quais trilhas são trechos históricos.',
-    'IEPHA-MG e IPHAN: caminhos coloniais inventariados ou tombados na região.',
-    'Prefeitura de Caeté, Secretarias de Turismo e Meio Ambiente: projetos de sinalização e manutenção.',
-    'Corpo de Bombeiros: histórico de ocorrências e pontos críticos de resgate.',
-    'Levantamento de campo com GPS: traçado, desnível, tempo real e pontos de água.',
+    {
+      id: 'os-trilheiros', titulo: 'Os trilheiros',
+      blocos: [
+        'Apesar de não serem bem vistos por parte da comunidade devido aos danos e erosões que '
+      + 'alguns mais afoitos provocam nos caminhos e montanhas de Morro Vermelho, estes '
+      + 'esportistas de fim de semana têm dado uma grande contribuição para o povoado. Eles chegam '
+      + 'em pequenos grupos de amigos, todos devidamente paramentados, dão uma rápida parada no '
+      + 'lugarejo e partem para as trilhas.',
+        'Quase todos conhecem bem os caminhos de todas as cachoeiras e cascatas do lugar, escalam '
+      + 'montes, atravessam cursos d’água e descobrem novas atrações ambientais e históricas do '
+      + 'lugar, denunciando à comunidade qualquer depredação ou devastação de seus bens naturais. '
+      + 'Alguns mais ousados fazem percursos dentro de minas de ouro abandonadas.',
+        'O povo de Morro Vermelho só não tolera uns poucos trilheiros e motociclistas abusados que '
+      + 'andam em disparada pelas ladeiras do lugar, colocando em risco a vida de crianças e '
+      + 'animais.',
+      ],
+    },
+    {
+      id: 'os-fora-de-estrada', titulo: 'Os fora-de-estrada',
+      blocos: [
+        'Morro Vermelho é considerado um dos locais mais badalados de Minas pelos amantes das '
+      + 'disputas esportivas Off Road. Aqui está o ponto central do Festival Jeepipoca, competição '
+      + 'anual de jipeiros válida pelo Campeonato Mineiro de Jipe-Cross e pela Copa Mineira de Off '
+      + 'Road.',
+        'No povoado, os caminhos ligam pontos importantes para o 4x4 mineiro. As trilhas de Morro '
+      + 'Vermelho também são apreciadas pelos amantes do MotoCross, que disputam a Copa Cross '
+      + 'Country, do Trail Clube de Minas Gerais, uma das emoções do motociclismo Off Road do '
+      + 'Brasil.',
+      ],
+    },
+    {
+      id: 'os-aventureiros', titulo: 'Os aventureiros',
+      blocos: [
+        'A turma que gosta de aventuras chega ao povoado em geral de ônibus ou de carona. Na '
+      + 'maioria das vezes casais, eles vêm com mochilona nas costas, barracas, alimentos e '
+      + 'bebidas. Partem a pé para locais de grande beleza para fincar acampamento, onde ficam por '
+      + 'dois ou três dias.',
+        'Em geral, são jovens que respeitam a natureza, recolhem todo o lixo produzido no mato e '
+      + 'defendem propostas da comunidade de manter intatas suas belezas naturais.',
+      ],
+    },
+    {
+      id: 'os-turistas', titulo: 'Os turistas',
+      blocos: [
+        'Os turistas que chegam a Morro Vermelho para conhecer suas atrações são recebidos com '
+      + 'pompa pelos moradores. Afinal, além da visita, eles deixam no povoado recursos com '
+      + 'hospedagem, alimentação e compras, o que amplia a renda de pequenos comerciantes, '
+      + 'artesãos e trabalhadores informais.',
+        'Sua importância é tanta que um grupo de egressos do povoado promove expedições por todos '
+      + 'os rincões do lugar para descobrir novas riquezas históricas e naturais, com vistas a '
+      + 'atraí-los com mais frequência. Este grupo entende que o turismo é a salvação econômica do '
+      + 'lugarejo, por ser uma atividade perene que não polui o meio ambiente nem devasta as '
+      + 'riquezas naturais, ao contrário de atividades industriais que assolam os recursos, '
+      + 'deixando para trás fome e miséria, como ocorreu no passado de Morro Vermelho com a '
+      + 'desenfreada mineração do ouro.',
+        'Morro Vermelho pretende oferecer brevemente aos turistas uma agenda cheia de atrações. '
+      + 'Também prepara um bom receptivo para que voltem, sempre com mais amigos.',
+      ],
+    },
   ],
   relacionadas: [
-    { nome: 'Cachoeiras e Cascatas', href: 'cachoeiras-e-cascatas.html', txt: 'Aonde boa parte das trilhas chega.', olho: '16' },
-    { nome: 'Estrada Real', href: 'estrada-real.html', txt: 'O caminho mais antigo de todos.', olho: '08' },
-    { nome: 'Parque do Gandarela', href: 'parque-do-gandarela.html', txt: 'A serra e as regras que valem dentro dela.', olho: '15' },
+    { nome: 'Cachoeiras e Cascatas', href: 'cachoeiras-e-cascatas.html', txt: 'Lazer e belezas naturais', olho: '16' },
+    { nome: 'Parque do Gandarela', href: 'parque-do-gandarela.html', txt: 'Matas e mananciais ainda preservados', olho: '15' },
+    { nome: 'Serviços', href: 'servicos.html', txt: 'Onde fica, como chegar, o que ver, comer, comprar', olho: '26' },
   ],
 };

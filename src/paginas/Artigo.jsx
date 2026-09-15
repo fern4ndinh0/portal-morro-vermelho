@@ -17,7 +17,6 @@
 import { Fragment, useRef } from 'react';
 import { Icone } from '../dados/icones.jsx';
 import { MARCA, SITE } from '../dados/navegacao.js';
-import { linkZap, ZAP_CONFIGURADO } from '../dados/contato.js';
 import { tempoDeLeitura } from '../dados/documentos/index.js';
 import { useProgressoDeLeitura, useSecaoAtiva } from '../ganchos/rolagem.js';
 import { Chassi } from '../componentes/Chassi.jsx';
@@ -48,7 +47,6 @@ export function metaArtigo(doc) {
         },
       },
       publisher: { '@type': 'Organization', name: `Portal ${MARCA.nome}` },
-      creativeWorkStatus: 'Draft',
     },
   };
 }
@@ -59,15 +57,18 @@ export function metaArtigo(doc) {
    -------------------------------------------------------------------------- */
 
 function Sumario({ secoes }) {
-  const ativa = useSecaoAtiva(secoes.map((s) => s.id), '-15% 0px -70% 0px');
+  /* A abertura de cada capitulo nao tem titulo — e o texto que vem logo
+     abaixo do olho, como num livro. Ela existe no corpo, mas nao no sumario. */
+  const comTitulo = secoes.filter((s) => s.titulo);
+  const ativa = useSecaoAtiva(comTitulo.map((s) => s.id), '-15% 0px -70% 0px');
 
-  if (secoes.length < 2) return null;
+  if (comTitulo.length < 2) return null;
 
   return (
     <aside className="sumario" aria-label="Sumário desta página">
       <p className="sumario__titulo">Nesta página</p>
       <ol className="sumario__lista">
-        {secoes.map((s) => (
+        {comTitulo.map((s) => (
           <li key={s.id}>
             <a
               className="sumario__link"
@@ -168,9 +169,6 @@ export function Artigo({ doc, anterior, proximo }) {
                 <Icone nome="relogio" />
                 <span>{minutos} min de leitura</span>
               </span>
-              <span className="artigo-ficha__item">
-                <Icone nome="doc" />Estado: <strong>{doc.estado}</strong>
-              </span>
             </div>
           </div>
         </header>
@@ -187,33 +185,10 @@ export function Artigo({ doc, anterior, proximo }) {
                   quebraria o ritmo vertical e a capitular. */}
               {doc.secoes.map((s) => (
                 <Fragment key={s.id}>
-                  <h2 id={s.id}>{s.titulo}</h2>
+                  {s.titulo && <h2 id={s.id}>{s.titulo}</h2>}
                   {s.blocos.map((b, i) => <Bloco b={b} key={i} />)}
                 </Fragment>
               ))}
-
-              <div className="aparato">
-                <div>
-                  <p className="aparato__titulo">Contribua com este verbete</p>
-                  <p style={{
-                    fontSize: 'var(--t-sm)', color: 'var(--texto-suave)',
-                    marginBottom: 'var(--e-4)',
-                  }}>
-                    Sabe algo sobre este assunto? Tem documento, fotografia ou lembrança
-                    de família? É assim que esta página deixa de ser rascunho.
-                  </p>
-                  <a
-                    className="btn btn--zap"
-                    href={linkZap(`Olá! Sobre a página '${doc.titulo}' do portal de Morro Vermelho, `
-                      + 'tenho a seguinte informação/material para contribuir:')}
-                    target="_blank"
-                    rel="noopener"
-                    data-pendente={ZAP_CONFIGURADO ? undefined : 'sim'}
-                  >
-                    <Icone nome="whatsapp" /> Contribuir pelo WhatsApp
-                  </a>
-                </div>
-              </div>
 
               <Irmaos anterior={anterior} proximo={proximo} />
             </article>

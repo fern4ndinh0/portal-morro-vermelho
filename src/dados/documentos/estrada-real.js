@@ -1,32 +1,8 @@
 /* ==========================================================================
-   ESTRADA REAL
-   Nossa História · Capítulo IV
-   --------------------------------------------------------------------------
-   REGRA EDITORIAL QUE GOVERNA ESTE ARQUIVO — e ela é o ponto mais importante
-   do projeto: NENHUM fato sobre Morro Vermelho foi inventado.
+   08 · ESTRADA REAL
 
-   Cada verbete separa explicitamente duas coisas:
-     (a) CONTEXTO REGIONAL — o que é documentado sobre Minas Gerais e vale
-         como pano de fundo. Verdadeiro, porém genérico.
-     (b) O QUE FALTA SABER — as perguntas específicas sobre Morro Vermelho,
-         dentro de caixas "Lacuna documental", mais a lista de fontes a
-         consultar ao final.
-
-   Assim a página já nasce com dupla utilidade: introdução para o leitor
-   comum e roteiro de pesquisa para quem for escrever a versão definitiva.
-
-   BLOCOS DISPONÍVEIS dentro de cada seção (ver fonte/modelos/artigo.mjs):
-     'texto'                        parágrafo
-     { abertura: '…' }              parágrafo com capitular
-     { sub: '…' }                   subtítulo <h3>
-     { lista: ['…', '…'] }          lista com marcador de filete
-     { citacao: '…', autoria: '…' } citação em papel envelhecido
-     { lacuna: '…' }                caixa tracejada "Lacuna documental"
-     { nota: '…', titulo: '…' }     caixa de nota editorial
-     { figura: '…', arquivo: '…', legenda: '…' }   espaço de imagem
-
-   Sumário, tempo de leitura, barra de progresso, "como citar" e navegação
-   entre capítulos são derivados do conteúdo — nada disso se digita.
+   FONTE: originais/word/08MV.docx — "Pesquisa, texto e fotos: Geraldo Lopes".
+   Texto do documento original, sem acréscimo.
    ========================================================================== */
 
 export default {
@@ -34,52 +10,112 @@ export default {
   titulo: 'Estrada Real',
   numero: '08',
   olho: 'Nossa História · 08',
-  tom: 'var(--terra-700)',
-  estado: 'Rascunho estruturado',
-  resumo: 'A Estrada Real não era uma estrada. Era um sistema de caminhos controlados pela Coroa, e o que passava por eles era fiscalizado.',
-  resumoSeo: 'A Estrada Real e Morro Vermelho, distrito de Caeté (MG): o sistema de caminhos coloniais, o que se sabe e o que falta documentar.',
+  tom: 'var(--terra-900)',
+  resumo: 'Caminho dos bandeirantes, fiscais e tropeiros',
+  resumoSeo: 'A Estrada Real por Morro Vermelho: os caminhos de Ouro Preto a Sabará, Caeté e '
+           + 'Raposos, os registros fiscais da Coroa e o Caminho Velho que hoje é rota de '
+           + 'ecoturismo.',
   secoes: [
     {
-      id: 'o-que-era', titulo: 'O que a Estrada Real era de fato',
+      id: 'abertura', titulo: null,
       blocos: [
-        { abertura: 'O nome no singular engana. A Estrada Real foi um <strong>conjunto de caminhos oficiais</strong> que a Coroa portuguesa autorizou e, mais importante, os únicos por onde era permitido transitar entre as minas e o litoral.' },
-        'A lógica era fiscal, não logística. Concentrando o trânsito em rotas conhecidas, a Coroa podia instalar registros e postos de cobrança e garantir a arrecadação do quinto: um quinto de todo o ouro extraído. Abrir picada por fora era crime.',
-        { lista: [
-          '<strong>Caminho Velho:</strong> ligava a região mineradora ao porto de Paraty, no Rio de Janeiro. O mais antigo.',
-          '<strong>Caminho Novo:</strong> aberto depois, encurtava o percurso até o Rio de Janeiro e tornou-se a rota principal.',
-          '<strong>Caminho dos Diamantes:</strong> seguia para o norte, em direção ao Serro e a Diamantina.',
-          '<strong>Caminho do Sabarabuçu:</strong> trecho ligado à região de Sabará e Caeté, historicamente associado à lenda da serra reluzente de prata.',
-        ] },
+        { abertura: 'Do Rio de Janeiro e Ouro Preto a Vila Real (Sabará), à Vila Nova da Rainha '
+                  + '(Caeté) e a Raposos, todos os caminhos passaram por Morro Vermelho. As '
+                  + 'primeiras picadas foram abertas pelos bandeirantes por volta de 1650, quando '
+                  + 'os colonizadores subiram o Rio das Velhas em busca de ouro e pedras '
+                  + 'preciosas. No início do século 18, mais de 10 mil pessoas circulavam em redor '
+                  + 'de Morro Vermelho e todos buscavam inicialmente a exploração dos veios (nos '
+                  + 'leitos dos rios), que eram superficiais; dos tabuleiros (nas margens), que '
+                  + 'eram pouco profundos; e, depois, as grupiaras (nas encostas), que eram mais '
+                  + 'profundas.' },
+        'De Ouro Preto até lá, o caminho, além do Rio das Velhas, era um só: seguia-se por '
+      + 'Cachoeira do Campo e São Bartolomeu até Rio Acima, de onde se tomava a picada pelo '
+      + 'Maquiné, Lopes e Nascente, de onde já se podia avistar a formação rochosa que deu nome ao '
+      + 'povoado. Pelo tabuleiro do Morro Vermelho, seguia-se a trilha por um planalto para '
+      + 'Viracopos e Caeté e, à esquerda, às margens do rico Ribeirão Comprido, atingia-se Sabará. '
+      + 'Do monte de esfinge podia-se pegar uma trilha mais curta até o povoado de Morro Vermelho, '
+      + 'às margens do Ribeirão Comprido. Dali se pegavam caminhos para Raposos e Conceição do Rio '
+      + 'Acima, através da Fazenda do Cutão, onde ainda existem ruínas de antigo castelo do Barão '
+      + 'da Estrella, que também hospedava autoridades e ricos mineradores.',
+        'De outra parte, pelo Rio das Velhas e Serra da Piedade, há registro de um caminho '
+      + 'inverso, em direção ao Rio São Francisco. Por ali, milhares de tropeiros e mascates da '
+      + 'Bahia e Pernambuco chegaram a Morro Vermelho e depois a Ouro Preto e outras povoações, '
+      + 'trazendo animais e mercadorias e levando ouro ilegal, porque o trecho não era da Estrada '
+      + 'Real. Este ouro, além de seguir para toda a Europa, foi também usado para ornar dezenas '
+      + 'de igrejas suntuosas de Salvador.',
+        'Em todo o trecho de Ouro Preto a Morro Vermelho, ainda podem ser observadas ruínas '
+      + 'diversas, sobretudo de postos de parada e de muros de pedra onde os tropeiros amarravam '
+      + 'seus animais para pernoite ou descanso. Também podem ser vistas pontes centenárias de '
+      + 'madeira e de pedras, sinal de tráfego intenso na região.',
+        { figura: 'Trecho antigo da Estrada Real.',
+          arquivo: 'figura-estrada-real.jpg',
+          alt: 'Trecho de caminho antigo de terra e pedra, margeado por muros de pedra seca e '
+             + 'vegetação.' },
       ],
     },
     {
-      id: 'e-aqui', titulo: 'E o trecho daqui',
+      id: 'a-estrada-real', titulo: 'A Estrada Real',
       blocos: [
-        'Caeté ocupa posição relevante nessa geografia colonial: a antiga Vila Nova da Rainha, junto à Serra da Piedade, esteve na rede de caminhos da região do Sabarabuçu.',
-        { lacuna: 'A pergunta específica desta página é: <strong>por onde exatamente passava o caminho no território de Morro Vermelho, e o que dele ainda existe?</strong> Trechos de calçamento, pontes, muros de arrimo, marcos e ranchos de tropa são o tipo de vestígio que sobrevive, e que ninguém procura até alguém decidir procurar.' },
-        { nota: 'Um trecho identificado e sinalizado de caminho colonial é, ao mesmo tempo, patrimônio, conteúdo educativo e atrativo turístico concreto. É o item desta lista com maior retorno prático para o distrito.', titulo: 'Por que este levantamento vale a pena' },
+        'Únicas vias de acesso às reservas de ouro, as estradas construídas do Rio de Janeiro e '
+      + 'São Paulo em direção ao interior de Minas Gerais adquiriram natureza oficial. A '
+      + 'circulação de pessoas, mercadorias, ouro e diamante era obrigatoriamente feita por estas '
+      + 'rotas, sendo crime passar por outros caminhos. O interesse fiscal prevalecia sobre '
+      + 'qualquer outro: cumpria, antes de tudo, ter as rotas de comunicação com as minas '
+      + 'devidamente controladas e fiscalizadas, para que nelas se pudesse extrair uma massa cada '
+      + 'vez maior de tributos para o tesouro real.',
+        'O nome Estrada Real passou a se referir então àquelas vias que, pela sua antiguidade, '
+      + 'importância ou natureza oficial, eram propriedade de coroa. Durante todo o século XVIII e '
+      + 'também em parte do XIX, quando a era mineradora já se fora e os caminhos se tornaram '
+      + 'livres e empobrecidos, as estradas reais foram os troncos viários principais do '
+      + 'centro-sul do território colonial.',
+        'Ao longo dos caminhos reais espalharam-se os antigos registros, postos fiscais de '
+      + 'controle. Eram de diversos tipos: registros do ouro, que fiscalizavam o transporte do '
+      + 'metal e cobravam o quinto; registros de entradas, que cobravam pelo tráfego de pessoas, '
+      + 'mercadorias e animais; registros de demarcação, responsáveis pelo severo policiamento do '
+      + 'contrabando e pela cobrança dos direitos de entrada na zona do ouro; e contagens, que '
+      + 'tributavam o trânsito de animais. Os prédios dos registros eram instalados em locais '
+      + 'estratégicos dos caminhos: passagens entre serras, desfiladeiros, margens de cursos '
+      + 'd’água. No seu interior se colocava o pessoal empregado: um administrador, um contador, '
+      + 'um fiel e dois ou quatro soldados. Um portão com cadeado fechava a entrada.',
+        'As estradas reais foram ainda os eixos principais do intenso processo de urbanização. Ao '
+      + 'longo do seu leito ou nas ruas margens se distribuíram as centenas de arraiais, povoados '
+      + 'e vilas em que se organizou a massa populacional envolvida com a economia da mineração e '
+      + 'outras a ela associadas. O povoado à beira do caminho, com o cruzeiro, a capela, o '
+      + 'pelourinho, o rancho de tropas, a venda, a oficina e as casas de pau-a-pique, simbolizou, '
+      + 'durante longo tempo, o processo de nucleação urbana.',
+        'No auge da mineração, esses caminhos se viram percorridos por imigrantes paulistas, '
+      + 'baianos, pernambucanos e europeus; por tropeiros do sul e de São Paulo; por boiadeiros '
+      + 'dos rios São Francisco e das Velhas; por sertanistas da Bahia e das vilas paulistas; por '
+      + 'escravos negros e índios; por mascates, administradores reais, homens do fisco, soldados '
+      + 'mercenários e milícias oficiais.',
+        { figura: 'Tropeiros na estrada.',
+          arquivo: 'galeria-tropeiros.jpg',
+          alt: 'Imagem antiga de tropeiros conduzindo animais carregados por um caminho de terra.' },
       ],
     },
     {
-      id: 'o-que-passava', titulo: 'O que passava por ali',
+      id: 'ecoturismo', titulo: 'Ecoturismo',
       blocos: [
-        'Caminho colonial não transportava só ouro. Descia metal e pedra; subia sal, ferramenta, tecido, vinho, azeite, papel, imagem sacra, e gente, em ambos os sentidos, incluindo pessoas escravizadas levadas do litoral para as lavras.',
-        'Era também por onde circulavam notícia, ordem régia, carta de família e doença. Uma estrada é sempre um vetor: das duas coisas que este distrito registra em sua própria memória (a busca do ouro e a epidemia da bexiga), as duas chegaram por caminho.',
-        { figura: 'Trecho de calçamento antigo, ponte, marco ou vestígio de caminho no território do distrito.', arquivo: 'figura-estrada-real.jpg', legenda: '<strong>Trecho de caminho de terra no distrito.</strong> Falta o que daria a esta imagem valor documental pleno: a coordenada de GPS, a escala visível e a data, e a confirmação de que este traçado coincide com o da Estrada Real.', alt: 'Caminho de terra estreito descendo entre barrancos e vegetação densa, com luz do sol ao fundo.', credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro · autoria a confirmar' },
+        'O projeto Estrada Real do governo de Minas definiu três caminhos da Estrada Real. O '
+      + 'Caminho Velho, de Paraty às minas de ouro, que passava por Morro Vermelho; o Caminho dos '
+      + 'Diamantes, que ia até Diamantina; e o Caminho Novo, trajeto mais recente que se '
+      + 'transformou na BR-040.',
+        'Em seus 1.400 quilômetros de extensão, a Estrada Real se espalha por 177 cidades e '
+      + 'distritos, dos quais 162 em Minas, sede das riquezas cobiçadas pela coroa, oito do Rio de '
+      + 'Janeiro, onde vivia a corte, e sete em São Paulo, de onde partiam os bandeirantes. Três '
+      + 'séculos depois, os novos aventureiros buscam trilhas de escravos, trechos ainda '
+      + 'autênticos e roteiros.',
+        'O objetivo do Instituto Estrada Real, criado pelo Sistema Fiemg, é resgatar esses antigos '
+      + 'trajetos e inseri-los como rotas turísticas, de cultura e de lazer, já que todos os '
+      + 'caminhos da Estrada Real apresentam atrativos naturais, históricos e culturais, '
+      + 'permitindo a exploração sustentável da atividade turística, gerando mais emprego e renda '
+      + 'para a população dos municípios.',
       ],
     },
-  ],
-  fontes: [
-    'Instituto Estrada Real: mapeamento oficial dos traçados e trechos reconhecidos.',
-    'IEPHA-MG e IPHAN: inventários de caminhos coloniais e bens tombados na região.',
-    'Arquivo Público Mineiro: mapas coloniais e registros de postos de cobrança.',
-    'Levantamento de campo com GPS: identificar e georreferenciar vestígios no distrito.',
-    'Memória oral: tropeiros, moradores antigos e proprietários rurais sabem onde estão os trechos velhos.',
-    'Prefeitura de Caeté: planos de turismo e patrimônio que já mencionem o traçado.',
   ],
   relacionadas: [
-    { nome: 'A Busca do Ouro', href: 'a-busca-do-ouro.html', txt: 'O que descia por estes caminhos.', olho: '03' },
-    { nome: 'Como chegar', href: 'index.html#visite', txt: 'As estradas de hoje até o distrito.', olho: 'Visitar' },
-    { nome: 'Epidemia da Bexiga', href: 'epidemia-da-bexiga.html', txt: 'O que também viajava pelos caminhos.', olho: '11' },
+    { nome: 'Retiro dos Capetas', href: 'retiro-dos-capetas.html', txt: 'Posto fiscal da Coroa Portuguesa', olho: '06' },
+    { nome: 'Arraial de Viracopos', href: 'arraial-de-viracopos.html', txt: 'Entreposto comercial e rota para a Serra da Piedade', olho: '04' },
+    { nome: 'Trilhas Ecológicas', href: 'trilhas-ecologicas.html', txt: 'Caminhos de esportes e lazer', olho: '20' },
   ],
 };

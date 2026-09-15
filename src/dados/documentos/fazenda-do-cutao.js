@@ -1,72 +1,141 @@
 /* ==========================================================================
-   FAZENDA DO CUTÃO
-   Nossa História · 05
-   --------------------------------------------------------------------------
-   REGRA EDITORIAL QUE GOVERNA ESTE ARQUIVO: nenhum fato sobre Morro Vermelho
-   foi inventado. O verbete separa explicitamente o CONTEXTO REGIONAL
-   documentado — verdadeiro, porém genérico — das PERGUNTAS específicas sobre
-   este lugar, que ficam em caixas "Lacuna documental".
+   05 · FAZENDA DO CUTÃO
+
+   FONTE: originais/word/05MV.docx — "Pesquisa, texto e fotos: Geraldo Lopes".
+   Texto do documento original, sem acréscimo.
    ========================================================================== */
 
 export default {
   slug: 'fazenda-do-cutao',
-  numero: '05',
   titulo: 'Fazenda do Cutão',
+  numero: '05',
   olho: 'Nossa História · 05',
-  tom: 'var(--areia-800)',
-  estado: 'A pesquisar',
-  resumo: 'Engenhos de apuração do ouro. Extrair era só metade do trabalho: a outra metade acontecia em estruturas de pedra e madeira que hoje quase ninguém sabe reconhecer no mato.',
-  resumoSeo: 'A Fazenda do Cutão e os engenhos de apuração do ouro em Morro Vermelho, distrito de Caeté (MG): o que se sabe, o que falta documentar e onde procurar.',
+  tom: 'var(--areia-900)',
+  resumo: 'Engenhos de apuração do ouro',
+  resumoSeo: 'A Fazenda do Cutão, a três quilômetros de Morro Vermelho: as Furnas de Caeté, o '
+           + 'Palácio do Barão da Estrella, a lagoa, o paredão, o túnel e a casa de apuração do '
+           + 'ouro.',
   secoes: [
     {
-      id: 'o-que-e', titulo: 'O que era um engenho de apuração',
+      id: 'abertura', titulo: null,
       blocos: [
-        { abertura: 'Tirar ouro do chão era só o começo. O minério saía misturado a cascalho, areia e terra, e <strong>separar o metal do resto</strong> exigia água encanada, desnível, força mecânica e mão de obra, quase sempre escravizada.' },
-        'É por isso que as fazendas de apuração ficavam onde ficavam: não onde havia ouro, mas onde havia água com queda suficiente para mover engenho. Ler a paisagem de uma dessas fazendas é ler uma decisão de engenharia tomada há trezentos anos.',
-        { lista: [
-          '<strong>Levadas e canais:</strong> sulcos abertos na encosta para trazer água de longe até o ponto de lavagem. São o vestígio que mais sobrevive, e o que menos se reconhece: parecem valas naturais.',
-          '<strong>Mundéus e canoas:</strong> tanques e calhas de madeira onde o cascalho era revolvido na corrente, para que o ouro, mais pesado, se depositasse no fundo.',
-          '<strong>Engenhos de pilões:</strong> conjuntos de mãos de pedra ou ferro, movidos por roda d’água, que trituravam o minério de rocha até virar pó.',
-          '<strong>Bateias:</strong> o acabamento manual, feito por pessoa, prato a prato. O gesto que dá nome ao Levante das Bateias.',
-        ] },
-        { nota: 'Tudo acima é documentado para a mineração colonial das Minas como região. Nada disso é, por enquanto, uma afirmação sobre a Fazenda do Cutão especificamente. A diferença entre as duas coisas é a razão de existir deste portal.', titulo: 'O que é contexto e o que é fato local' },
+        { abertura: 'Não se tem notícia dos primeiros exploradores do ouro na Fazenda do Cutão, a '
+                  + 'três quilômetros de Morro Vermelho, mas estima-se que a exploração tenha se '
+                  + 'iniciado logo após a descoberta, em 1701, de grandes jazidas em Cuiabá, '
+                  + 'Caeté, Morro Vermelho e Ribeirão Comprido. Na Fazenda do Cutão, durante todo '
+                  + 'o ciclo do ouro, desenvolveu-se um polo de mineração de ouro identificado nos '
+                  + 'registros minerários como Furnas de Caeté, onde estava de pé até a década de '
+                  + '1960 o Palácio do Barão.' },
+        'Na região há ainda um conjunto de minas subterrâneas, lavradios e de barragem histórica, '
+      + 'que eram usados para represar a água do Córrego Cachoeira e transportá-la por meio de '
+      + 'túneis e galerias até o antigo engenho de apuração, onde o material extraído das minas '
+      + 'era moído para a coleta das pepitas de ouro.',
+        'Mas foi o Barão da Estrella que deu números gigantescos às minas de ouro do Cutão já no '
+      + 'século 19, quando criou um sistema avançado e moderno de extração e apuração. Com a morte '
+      + 'do Barão em 1910, não se sabe até quando se seguiu a exploração do ouro. Ao que parece, '
+      + 'as minas teriam sido desativadas por baixo rendimento. Em 1938, decreto do presidente '
+      + 'Getúlio Vargas declarou caduca autorização concedida a João José de Macedo em 1934 para '
+      + 'fazer pesquisas de ouro nos terrenos denominados Furnas do Cutão, no distrito de Morro '
+      + 'Vermelho, em Caeté, pertencentes a Dona Teresa Cristina de Vasconcelos Menezes de '
+      + 'Drummond (Baronesa da Estrela).',
+        'Depois do Barão, a Fazenda do Cutão teria passado por vários proprietários, até ser '
+      + 'adquirida pela Companhia Siderúrgica Belgo Mineira, através da Companhia Agrícola e '
+      + 'Florestal (CAF), que implantou na área uma vasta área de reflorestamento, destinada '
+      + 'abastecer de carvão vegetal uma usina siderúrgica em Sabará. Mais recentemente, as terras '
+      + 'foram adquiridas pela Vale, com a finalidade de implantar na área um arrojado complexo de '
+      + 'mineração de ferro, o Projeto Apolo. Uma pequena parte das terras também integra o Parque '
+      + 'Nacional da Serra do Gandarela, criado pelo governo federal em 2014.',
+        { figura: 'Ruínas na Fazenda do Cutão.',
+          arquivo: 'figura-fazenda-do-cutao.jpg',
+          alt: 'Ruínas de construção em pedra na Fazenda do Cutão, cercadas por vegetação.' },
       ],
     },
     {
-      id: 'o-cutao', titulo: 'A fazenda daqui',
+      id: 'barao-da-estrella', titulo: 'O Barão da Estrella',
       blocos: [
-        'A Fazenda do Cutão é citada na memória do distrito como um dos lugares onde o ouro de Morro Vermelho era apurado. É um dos itens em que a memória oral está claramente à frente da documentação: as pessoas sabem o nome, sabem mais ou menos onde fica, e não existe ainda um levantamento que registre isso.',
-        { lacuna: 'As perguntas desta página são cinco, e todas têm resposta possível: <strong>onde exatamente ficava a fazenda, de quem era, em que período operou, que estruturas ainda existem no terreno e quem é o proprietário atual?</strong> Sem a última, nenhuma das outras vira visita, pesquisa ou tombamento.' },
-        { sub: 'O que procurar em campo' },
-        { lista: [
-          'Alinhamentos de pedra seca em meia encosta: quase sempre levada ou muro de arrimo.',
-          'Depressões retangulares regulares perto de curso d’água: tanques.',
-          'Pedras com cavidades circulares polidas: base de pilão.',
-          'Acúmulos de cascalho rolado fora de leito de rio: rejeito de lavagem. Denunciam a atividade mesmo quando nada mais restou.',
-        ] },
-        { nota: 'Vestígio fotografado sem coordenada perde metade do valor documental. Leve GPS (o do celular basta) e fotografe com algo de escala conhecida no quadro.', titulo: 'Como registrar' },
+        'José Joaquim de Maya Monteiro, primeiro e único Barão da Estrella, nasceu no Rio de '
+      + 'Janeiro em 25 de julho de 1854 e faleceu de mielite crônica em 25 de outubro de 1910, em '
+      + 'Morro Vermelho, onde foi sepultado. Era filho do empresário e banqueiro português Joaquim '
+      + 'de Maya Monteiro, Conde da Estrella, e de sua segunda mulher, Luísa Amália da Silva Maia, '
+      + 'filha de José Antônio da Silva Maya. O Barão da Estrella era irmão de Antônio Joaquim '
+      + 'Maia Monteiro, Barão de Maya Monteiro, e meio-irmão de Joaquim Manuel Monteiro, segundo '
+      + 'Conde da Estrella. O título faz referência à Serra da Estrella, em Portugal.',
+        'Recebeu o título de Barão, que faz referência à Serra da Estrella, em Portugal, por '
+      + 'decreto imperial de 13 de outubro de 1876. Também era Comendador de 1ª Classe da Ducal '
+      + 'Ordem Ernestina da Casa de Saxe e recebeu a comenda da Legião de Honra francesa, no grau '
+      + 'de Cavaleiro. Casou com Thereza de Vasconcellos Drummond, com quem teve duas filhas, '
+      + 'Thereza Christina e Isabelle, ambas falecidas menores.',
+        'O Barão da Estrella era licenciado em direito pela Universidade de Paris, fidalgo das '
+      + 'casa imperial do Rio de Janeiro e da casa real de Portugal, além de amigo pessoal de Dom '
+      + 'Pedro II. Foi ele o responsável pela organização dos funerais do imperador brasileiro em '
+      + '1891, em Paris. Também era comendador da Ordem de Nossa Senhora da Conceição de Vila '
+      + 'Viçosa.',
+        'O Barão da Estrella era amigo pessoal de Dom Pedro II e esteve com o imperador brasileiro '
+      + 'por ocasião de seu falecimento em 5 de dezembro de 1891, em Paris. Além de acompanhar os '
+      + 'momentos derradeiros de Dom Pedro II, o Barão participou da organização do funeral e foi '
+      + 'encarregado da expedição dos convites para a cerimônia de despedida do imperador, que foi '
+      + 'enterrado em jazigo da família imperial em Portugal.',
+        'O Barão da Estrella, como o pai, dedicou-se a atividades empresariais e, além dessas, '
+      + 'teve participação ativa em outras de caráter social. Com o Barão de Sant’Anna de Nery e o '
+      + 'Marquês de Barral fundou em Paris a Sociedade de Estudos Brasileiros.',
+        'Advogado, empresário e fazendeiro, ainda jovem adquiriu a Fazenda do Cutão, em Morro '
+      + 'Vermelho, com uma área de 580 alqueires, para criação de gado e lavoura, mas decidiu '
+      + 'também explorar dezenas de minas abandonadas em suas terras, implantando um sistema '
+      + 'moderno e avançado de apuração do ouro.',
+        'O Barão da Estrela era muito amigo do povo de Morro Vermelho e sempre que podia '
+      + 'participava de rodas de bate papo na porta das casas nas ladeiras do povoado. Em sua '
+      + 'homenagem, após o falecimento, o povo deu nome de Beco do Barão à rua que ligava a via '
+      + 'principal do povoado ao cemitério, hoje Rua José Cirilo Grillo.',
+        { figura: 'Ruínas do casarão do Barão da Estrella.',
+          arquivo: 'galeria-barao-da-estrella.jpg',
+          alt: 'Ruínas de paredes de pedra do antigo casarão do Barão da Estrella, na Fazenda do '
+             + 'Cutão.' },
       ],
     },
     {
-      id: 'quem-trabalhou', titulo: 'Quem trabalhou ali',
+      id: 'palacio-do-barao', titulo: 'O Palácio do Barão',
       blocos: [
-        'Um engenho de apuração não funcionava sozinho, e a pergunta sobre quem o operava é a mais importante desta página, e a mais fácil de deixar de fora, porque é a que menos aparece em documento de propriedade.',
-        'Inventários e testamentos são a fonte mais direta: eles listam, lado a lado, as estruturas da fazenda e as pessoas escravizadas que nela trabalhavam, com nome, idade, procedência declarada e ofício. É um documento difícil de ler pelo que é, e é exatamente por isso que ele importa.',
-        { figura: 'Vestígio de engenho, levada, tanque ou base de pilão no terreno da fazenda.', arquivo: 'figura-fazenda-do-cutao.jpg', legenda: '<strong>Água descendo sobre lajes de pedra na região do Cutão.</strong> O acervo documenta ali um paredão de pedra que represava água conduzida por túnel até um grande engenho de apuração do ouro.', alt: 'Queda de água em degraus sobre lajes de pedra, cercada de mata fechada.', credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro · autoria a confirmar' },
+        'Do antigo palácio, que ficou de pé até a década de 1960, hoje só restam ruínas na antiga '
+      + 'sede na Fazenda do Cutão. O casarão de dois andares também teria servido de pousada para '
+      + 'fiscais e autoridades da Coroa Portuguesa e do império. A área hoje é uma reserva natural '
+      + 'de vegetação da mata atlântica e de eucaliptos, pertencente a mineradora Vale.',
       ],
     },
-  ],
-  fontes: [
-    'Cartório de Caeté, livros de notas: escrituras, inventários e testamentos que citem a fazenda, seus engenhos e as pessoas que nela trabalhavam.',
-    'Arquivo Público Mineiro: registros de datas minerais, sesmarias e cartas de concessão de água.',
-    'IEPHA-MG e IPHAN: inventários de bens culturais e de patrimônio ferroviário/industrial da região de Caeté.',
-    'Levantamento de campo com GPS: identificar e georreferenciar estruturas remanescentes.',
-    'Proprietário atual do terreno: autorização de acesso é o primeiro passo prático de tudo o que está nesta página.',
-    'Memória oral: moradores antigos e famílias vizinhas sabem onde ficam as ruínas e como eram chamadas.',
+    {
+      id: 'casa-de-apuracao', titulo: 'Casa de apuração do ouro',
+      blocos: [
+        { sub: 'Lagoa do Cutão' },
+        'A chamada Lagoa do Cutão é uma represa construída, ao que parece, pelo Barão da Estrela '
+      + 'ou seus antecessores para captar as águas do Córrego da Cachoeira até a casa de apuração '
+      + 'do ouro. A lagoa tem cerca de 60 metros de largura na parte maior e uns 200 metros de '
+      + 'comprimento, tendo hoje partes cobertas por vegetação. Ainda é utilizada para pesca.',
+        { sub: 'Paredão de Pedra' },
+        'Para captar água do Córrego da Cachoeira e levá-la até a casa de apuração do ouro, foi '
+      + 'construído pelo Barão da Estrela ou seus antecessores a represa Cutão. O barramento das '
+      + 'águas foi feito por meio de um paredão histórico de 20 metros de altura por 30 metros de '
+      + 'largura, erguido com grandes blocos de pedra. À esquerda do paredão há um canal '
+      + 'encachoeirado e à direita a água flui por um rego, que ligava a barragem ao engenho de '
+      + 'apuração do ouro.',
+        { sub: 'Túnel do Canal' },
+        'A captação das águas da Lagoa do Cutão para a casa de apuração do ouro próxima ao Palácio '
+      + 'do Barão era feita por meio de um canal de cerca de 300 metros de comprimento. No seu '
+      + 'início, ao sair da lagoa, o canal com cerca de um metro de largura é amparado por altos '
+      + 'arcos de pedra até chegar à beira do morro, seguindo por um túnel de 1,5m de altura por '
+      + 'cerca de 100 metros e descendo após a montanha até à casa de apuração. Hoje com a ruptura '
+      + 'do canal antes do túnel, a água jorra de volta ao Córrego da Cachoeira.',
+        { sub: 'Casa de Apuração' },
+        'Perto do Palácio do Barão, hoje ainda existem ruínas históricas do antigo engenho de '
+      + 'apuração do ouro. São muros de até 15 metros de altura e 30 de largura, que represavam a '
+      + 'água vinda da barragem. Por bicas nos muros, a água seguia para a lavagem do ouro apurado '
+      + 'das pedras moídas. Sabe-se que, depois do fim da exploração do ouro, já no século 20, a '
+      + 'água do barramento foi desviada para redes de captação para fornecimento a diversas casas '
+      + 'e uma escola existentes perto do palácio.',
+      ],
+    },
   ],
   relacionadas: [
-    { nome: 'A Busca do Ouro', href: 'a-busca-do-ouro.html', txt: 'O que trouxe gente para estas montanhas, e a que custo humano.', olho: '03' },
-    { nome: 'Levante das Bateias', href: 'levante-das-bateias.html', txt: 'O gesto de apurar ouro virou nome de revolta.', olho: '10' },
-    { nome: 'Retiro dos Capetas', href: 'retiro-dos-capetas.html', txt: 'Onde a Coroa cobrava o que saía daqui.', olho: '06' },
+    { nome: 'A Busca do Ouro', href: 'a-busca-do-ouro.html', txt: 'Bandeirantes levam riqueza e deixam miséria', olho: '03' },
+    { nome: 'Arraial de Viracopos', href: 'arraial-de-viracopos.html', txt: 'Entreposto comercial e rota para a Serra da Piedade', olho: '04' },
+    { nome: 'Parque do Gandarela', href: 'parque-do-gandarela.html', txt: 'Matas e mananciais ainda preservados', olho: '15' },
   ],
 };

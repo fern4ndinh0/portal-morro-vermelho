@@ -1,78 +1,113 @@
 /* ==========================================================================
-   OS DRAGÕES REAIS
-   Nossa História · 07
-   --------------------------------------------------------------------------
-   REGRA EDITORIAL: nenhum fato sobre Morro Vermelho foi inventado. O que é
-   documentado sobre o regimento como instituição vem separado do que ainda
-   precisa ser provado sobre a presença dele AQUI.
+   07 · OS DRAGÕES REAIS
+
+   FONTE: originais/word/07MV.docx — "Pesquisa, texto e fotos: Geraldo Lopes".
+   Texto do documento original, sem acréscimo.
    ========================================================================== */
 
 export default {
   slug: 'os-dragoes-reais',
-  numero: '07',
   titulo: 'Os Dragões Reais',
+  numero: '07',
   olho: 'Nossa História · 07',
-  tom: 'var(--terra-900)',
-  estado: 'Rascunho estruturado',
-  resumo: 'Força militar para arrecadar e conter rebeliões. A Coroa aprendeu, do jeito mais caro, que cobrar imposto em terra de minerador exige cavalaria, e criou uma.',
-  resumoSeo: 'Os Dragões Reais em Morro Vermelho, distrito de Caeté (MG): o regimento de cavalaria que garantia a cobrança do quinto e reprimia revoltas nas Minas.',
+  tom: 'var(--serra-900)',
+  resumo: 'Força militar para cobrar impostos e conter motins',
+  resumoSeo: 'A Companhia de Cavalaria Auxiliar de Dragões Reais de Morro Vermelho: a tropa que '
+           + 'a Coroa Portuguesa instalou no povoado para garantir a ordem nas minas e fiscalizar '
+           + 'a cobrança do quinto do ouro.',
   secoes: [
     {
-      id: 'quem-eram', titulo: 'Quem eram os Dragões',
+      id: 'abertura', titulo: null,
       blocos: [
-        { abertura: 'Dragão era o soldado que se deslocava a cavalo e combatia a pé, <strong>infantaria montada</strong>. Em terreno de serra, com povoados espalhados e caminhos longos, era exatamente a tropa de que a Coroa precisava.' },
-        'O Regimento de Dragões de Minas Gerais foi criado no início do século XVIII, sob o governo do Conde de Assumar, na esteira das revoltas que sacudiram a capitania, e com uma missão explícita: garantir que o ouro chegasse ao seu destino e que a ordem régia fosse cumprida onde a autoridade civil sozinha não bastava.',
-        { lista: [
-          '<strong>Escolta de comboios de ouro</strong> pelos caminhos, até as casas de fundição e daí ao litoral.',
-          '<strong>Guarnição de registros e contagens:</strong> o posto fiscal só funcionava porque havia tropa nele.',
-          '<strong>Repressão de motins:</strong> a função que rendeu ao regimento a fama que ele tem na memória mineira.',
-          '<strong>Perseguição a descaminhos:</strong> ouro que circulava por fora das rotas autorizadas, e quem o transportava.',
-        ] },
-        { nota: 'Era uma tropa paga, fardada e permanente, num tempo em que a regra eram as ordenanças locais: vizinhos convocados. Essa diferença explica por que a chegada dos Dragões marcou a memória dos povoados: era o Estado aparecendo em pessoa, armado e de fora.', titulo: 'Por que eles se destacavam' },
+        { abertura: 'No início do século 18, as minas de ouro de Morro Vermelho eram tantas e tão '
+                  + 'grande a produção que a Coroa Portuguesa decidiu instalar no povoado, além de '
+                  + 'todo aparato imperial de fiscalização e arrecadação de impostos, uma '
+                  + 'Companhia de Ordenança a Pé e uma Companhia de Cavalaria Auxiliar de Dragões '
+                  + 'Reais, até então só existente em Vila Rica e, mais tarde, em outras seis '
+                  + 'vilas. Os famosos Dragões de Minas, que atuaram em várias rebeliões e motins, '
+                  + 'era a força regular e profissional, organizada em companhias e tinham como '
+                  + 'missão principal a garantia da lei e da ordem nas atividades de exploração do '
+                  + 'ouro e a fiscalização da cobrança de impostos.' },
+        'Com uma grande aglomeração de pessoas com interesses conflitantes desde 1701, Morro '
+      + 'Vermelho comandou a Guerra dos Emboabas de 1707 a 1709 e sediou o Levante das Bateias em '
+      + '1715, registrando uma série de brigas, assassinatos e conflitos entre bandeirantes, '
+      + 'comerciantes e coletores de impostos. Nesta época, Morro Vermelho já tinha mais de 200 '
+      + 'minas de ouro e escavações em montanhas e nas margens de córregos e ribeirões. Era um '
+      + 'fervedouro de gente, de todas as categorias, desde ricos e conceituados bandeirantes e '
+      + 'nobres portugueses a toda a laia de pessoas expulsas pela decadência da cana de açúcar no '
+      + 'Nordeste ou renegadas em Portugal e que queriam se enriquecer rapidamente.',
       ],
     },
     {
-      id: 'aqui', titulo: 'E aqui',
+      id: 'controle-militar', titulo: 'Controle militar',
       blocos: [
-        'A memória do distrito registra a presença dos Dragões em Morro Vermelho, associada ao controle de rebeliões e à cobrança. E aqui a pesquisa avançou de memória para documento.',
-        { sub: 'O que a expedição encontrou em Portugal' },
-        'Uma expedição de pesquisa ao distrito localizou, <strong>em documentos de museu em Portugal, o registro de que em 1719 chegaram ao Brasil duas Companhias de Cavalaria de Dragões Reais</strong> (força especializada ligada diretamente ao rei) e que <strong>uma delas foi destacada para Morro Vermelho</strong>.',
-        'O mesmo registro nomeia as três forças que já operavam no arraial quando a cavalaria chegou:',
-        { lista: [
-          '<strong>Companhia de Ordenança a Pé de Morro Vermelho</strong>',
-          '<strong>Companhia de Ordenança a Pé dos Homens Pardos Libertos de Morro Vermelho</strong>',
-          '<strong>Guardamoria de Terras e Águas de Morro Vermelho e Viracopos</strong>',
-        ] },
-        'Três coisas se aprendem só com esses nomes. Havia estrutura militar permanente no arraial antes de 1719, e não apenas tropa de passagem. Havia <strong>uma companhia formada por homens pardos libertos</strong>, o que diz respeito à composição social do povoado e não só à sua defesa. E havia uma autoridade específica sobre <strong>terras e águas</strong> do arraial e de Viracopos, o que confirma que o controle da água era assunto de Estado no ciclo do ouro.',
-        { nota: 'Isto é fonte primária, com data e acervo, e não tradição oral. É o achado documental mais importante que o acervo de pesquisa deste portal produziu sobre a página 07, e ele chegou por uma reportagem, não por uma consulta de arquivo. Ver <a href="noticias-da-terra.html">Notícias da Terra</a>.', titulo: 'De onde vem esta informação' },
-        { lacuna: '<strong>Falta a identificação exata do acervo.</strong> O registro diz “museu de Portugal” e não nomeia qual, nem o fundo, nem a cota do documento. Sem isso, a informação não pode ser citada academicamente nem reconferida por terceiros, e é a providência número um da pesquisa deste verbete. O caminho mais provável é o <strong>Arquivo Histórico Ultramarino</strong>, em Lisboa, cujos Documentos Avulsos de Minas Gerais já são a fonte de outra transcrição deste portal.' },
-        { sub: 'O que ainda falta' },
-        { lacuna: 'As perguntas específicas: <strong>houve destacamento fixo em Morro Vermelho ou apenas passagem de tropa?</strong> Em que anos? Sob que comando? Onde ficava o quartel ou o pouso? E existe registro de ação dos Dragões contra moradores daqui: nomes, datas, processos?' },
-        'A última pergunta é a mais delicada e a mais valiosa. Se houve repressão documentada, ela tem nomes de gente dos dois lados, e é isso que transforma um verbete genérico sobre cavalaria colonial na história específica deste lugar.',
-        { nota: 'Documentação militar colonial é razoavelmente boa: livros de assentamento, folhas de pagamento, mapas de força e correspondência dos governadores sobreviveram em quantidade. Com a pista de 1719 e os nomes das três forças locais em mão, esta deixou de ser uma das páginas mais abertas do portal e passou a ser uma das mais perto de fechar.', titulo: 'Uma pesquisa com boas chances' },
+        'Para assegurar o domínio na área militar nas minas, sobretudo em Morro Vermelho, '
+      + 'prevendo a possibilidade de novas revoltas e confrontos, a Coroa dissolveu em 1719 '
+      + 'milícias de filhos da terra, reforçando os corpos de dragões, tropa formada por lusitanos '
+      + 'fiéis, subordinados diretamente a Portugal.',
+        'Originalmente, um dragão era um tipo de soldado que se caraterizava por se deslocar a '
+      + 'cavalo, mas para combate a pé. Inicialmente e até meados do século 18, as unidades de '
+      + 'dragões constituíam uma espécie de infantaria montada. Contudo, posteriormente, os '
+      + 'dragões passaram de infantaria montada a tropas de genuína cavalaria. Hoje, a designação '
+      + '“dragões” é mantida como título honorífico de algumas unidades cerimoniais ou blindadas '
+      + 'de diversos exércitos.',
+        'Durante o período colonial, os dragões constituiram um dos mais prestigiados tipos de '
+      + 'tropas no Brasil. Eram bem treinados em Portugal e usavam os tipos de armamentos mais '
+      + 'modernos existentes na Europa. Desempenhavam tanto missões militares de defesa externa '
+      + 'como de segurança interna. Em 1719, chegaram a Minas Gerais duas companhias de dragões '
+      + 'enviadas de Lisboa. A missão principal era a da garantia da segurança dos distritos '
+      + 'mineradores e seus caminhos, funcionando como uma espécie de polícia militar montada.',
       ],
     },
     {
-      id: 'o-outro-lado', titulo: 'O outro lado da farda',
+      id: 'impostos-abusivos', titulo: 'Impostos abusivos',
       blocos: [
-        'Vale registrar o que a palavra "resistência", no lema deste portal, implica: se os Dragões estavam aqui, é porque havia o que conter. A tropa é a prova indireta do conflito.',
-        'Um verbete honesto sobre os Dragões, portanto, não é sobre uniformes e cavalos. É sobre a relação entre um povoado minerador e o aparelho de Estado que vivia dele, e sobre as duas ou três vezes em que essa relação passou do ponto.',
-        { citacao: 'Espaço reservado para a primeira fonte primária localizada sobre a presença dos Dragões em Morro Vermelho.', autoria: 'Documento a localizar · Arquivo Público Mineiro' },
-        { figura: 'Reprodução de documento militar colonial que cite o destacamento no distrito, ou registro do lugar onde ficava o pouso da tropa.', arquivo: 'figura-dragoes-reais.jpg', legenda: 'Reprodução de documento exige crédito do acervo detentor e indicação de fundo, livro e folha.' },
+        'Além de evitar conflitos nas diversas áreas de mineração, a Companhia de Cavalaria '
+      + 'Auxiliar de Dragões de Morro Vermelho tinha a missão de acompanhar o recolhimento dos '
+      + 'impostos sobre metais preciosos, mercadorias e animais. Há notícias dos temidos dragões '
+      + 'reais nas casas de apuração de ouro do Carrancas e da Fazenda do Cutão e também no '
+      + 'Arraial de Viracopos, entreposto comercial à beira da Estrada Real por onde circulavam '
+      + 'todo o ouro de Morro Vermelho, Caeté e Serra da Piedade. Eles também atuaram no posto de '
+      + 'fiscalização do hoje conhecido Retiro dos Capetas, na divisa de Morro Vermelho e Rio '
+      + 'Acima. Por este trecho de estrada construída pela Coroa, eram obrigados a passar todas as '
+      + 'pessoas e mercadorias, para evitar o contrabando e a sonegação de impostos.',
+        'Ao redor de Morro Vermelho, os caminhos reais tinham severo controle fiscal. Eram de '
+      + 'vários tipos: registros do ouro, que fiscalizavam o transporte do metal e cobravam o '
+      + 'quinto; registros de entradas, que cobravam pelo trânsito de pessoas, mercadorias e '
+      + 'animais; registros de demarcação, responsáveis pelo severo policiamento ao contrabando e '
+      + 'pela cobrança dos direitos de entrada na zona do ouro; e contagens, que tributavam o '
+      + 'trânsito de animais.',
+        'As casas dos registros eram instaladas em locais estratégicos, como passagens entre '
+      + 'serras, desfiladeiros e margens de cursos d’água. A circulação de pessoas, mercadorias, '
+      + 'ouro e diamante era obrigatoriamente feita por estas rotas, sendo crime passar por outros '
+      + 'caminhos. O interesse fiscal prevalecia sobre qualquer outro: cumpria, antes de tudo, ter '
+      + 'as rotas de comunicação com as minas controladas e fiscalizadas, para que nelas se '
+      + 'pudesse extrair uma massa cada vez maior de tributos.',
+        'A presença dos Dragões Reais em Morro Vermelho se estendeu até fins do século 18. Há em '
+      + 'museu de Lisboa registro de um requerimento, de 1779, em que o capitão Simão Francisco, '
+      + 'agregado da Companhia de Cavalaria Auxiliar de Dragões de Morro Vermelho, solicita ao rei '
+      + 'de Portugal a sua manutenção no cargo de comando.',
       ],
     },
-  ],
-  fontes: [
-    'Arquivo Público Mineiro: fundos da Secretaria de Governo da Capitania: livros de assentamento, mapas de força e folhas de pagamento do Regimento de Dragões.',
-    'Arquivo Histórico Ultramarino (Lisboa): correspondência dos governadores das Minas com a Coroa, digitalizada no Projeto Resgate.',
-    'Arquivo Histórico do Exército: documentação remanescente de corpos militares coloniais.',
-    'Revista do Arquivo Público Mineiro: edições antigas transcrevem documentação colonial hoje frágil.',
-    'Cartório e arquivo paroquial de Caeté: registros de batismo, casamento e óbito de soldados aquartelados revelam permanência e laços locais.',
-    'Bibliografia sobre a repressão nas Minas setecentistas: para o contexto, sempre citada como contexto.',
+    {
+      id: 'ordenancas', titulo: 'Ordenanças',
+      blocos: [
+        'Além dos dragões reais, o povoado sediava na época a Companhia de Ordenança a Pé de Morro '
+      + 'Vermelho e a Compahia de Ordenança a Pé dos Homens Pardos Libertos de Morro Vermelho, '
+      + 'segundo documentos existentes no Arquivo Histórico Ultramarino, de Lisboa. São vários '
+      + 'requerimentos de militares, solicitando ao rei de Portugal a sua confirmação no exercício '
+      + 'de cargos. Pela documentação parece que a Companhia de Ordenança existiu até o início do '
+      + 'século 19, pois em novembro de 1800 o alferes Manuel Gonçalves de Carvalho pede ao rei o '
+      + 'reconhecimento dele no posto.',
+        'Também havia no local uma chefia de sua majestade para controlar as terras e cursos '
+      + 'd’água. Em março de 1784, João Alves de Carvalho pede ao Rei de Portugal a sua nomeação '
+      + 'como guarda-mor das terras e águas minerais dos distritos de Morro Vermelho e Viracopos.',
+      ],
+    },
   ],
   relacionadas: [
-    { nome: 'Retiro dos Capetas', href: 'retiro-dos-capetas.html', txt: 'O posto que a tropa guarnecia.', olho: '06' },
-    { nome: 'Levante das Bateias', href: 'levante-das-bateias.html', txt: 'A revolta que tropa como esta existia para conter.', olho: '10' },
-    { nome: 'Guerra dos Emboabas', href: 'guerra-dos-emboabas.html', txt: 'O conflito que ensinou a Coroa a militarizar as Minas.', olho: '09' },
+    { nome: 'Levante das Bateias', href: 'levante-das-bateias.html', txt: 'A dura luta contra os impostos exorbitantes', olho: '10' },
+    { nome: 'Guerra dos Emboabas', href: 'guerra-dos-emboabas.html', txt: 'A primeira eleição direta das Américas', olho: '09' },
+    { nome: 'Retiro dos Capetas', href: 'retiro-dos-capetas.html', txt: 'Posto fiscal da Coroa Portuguesa', olho: '06' },
   ],
 };

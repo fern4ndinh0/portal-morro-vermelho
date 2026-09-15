@@ -1,92 +1,557 @@
 /* ==========================================================================
-   GUERRA DOS EMBOABAS
-   Nossa História · 09
-   --------------------------------------------------------------------------
-   ESTA É A PÁGINA MAIS IMPORTANTE DO PORTAL, e a que exige mais cuidado.
+   09 · GUERRA DOS EMBOABAS
 
-   O distrito se apresenta com uma afirmação forte — "aqui nasceu a primeira
-   eleição direta das Américas" — e uma afirmação forte publicada sem fonte
-   se transforma, em poucos anos, em "fato" citado por terceiros que também
-   não conferiram. Foi assim que muita história local virou folclore.
-
-   Por isso o verbete faz o que o projeto inteiro faz, só que com mais rigor:
-   separa o que a historiografia documenta sobre a guerra (a) do que é a
-   afirmação específica deste lugar (b), e trata (b) como a pergunta central
-   da pesquisa — não como conclusão.
-
-   Isso não enfraquece a afirmação. Ao contrário: uma alegação assim, quando
-   documentada, vale muito mais do que quando apenas repetida.
+   FONTE: originais/word/09MV.docx — "Pesquisa, texto e fotos: Geraldo Lopes".
+   Texto do documento original, sem acréscimo. A pesquisa do autor declara-se,
+   no fim do capítulo, baseada em Diogo de Vasconcelos (1901), Isaias Golgher
+   (1956) e Eduardo José Afonso (1998).
    ========================================================================== */
 
 export default {
   slug: 'guerra-dos-emboabas',
-  numero: '09',
   titulo: 'Guerra dos Emboabas',
+  numero: '09',
   olho: 'Nossa História · 09',
   tom: 'var(--terra-700)',
-  estado: 'Rascunho estruturado · afirmação central a documentar',
-  resumo: 'A primeira eleição direta das Américas. Entre 1707 e 1709, a disputa pelas minas virou guerra aberta, e, no meio dela, homens armados escolheram seu próprio governante por aclamação, contra a vontade da Coroa.',
-  resumoSeo: 'A Guerra dos Emboabas e Morro Vermelho, distrito de Caeté (MG): o conflito de 1707-1709, a aclamação de Manuel Nunes Viana e a afirmação local sobre a primeira eleição direta das Américas.',
+  resumo: 'A primeira eleição direta das Américas',
+  resumoSeo: 'Em dezembro de 1707, em Morro Vermelho, os povos de Sabará, Rio das Velhas e Caeté '
+           + 'elegeram Manuel Nunes Viana governador das Minas Gerais — a primeira eleição direta '
+           + 'das Américas, e o início da Guerra dos Emboabas.',
   secoes: [
     {
-      id: 'a-guerra', titulo: 'O que a guerra foi',
+      id: 'abertura', titulo: null,
       blocos: [
-        { abertura: 'Descobrir ouro é uma coisa; <strong>ficar com ele</strong> é outra. Os paulistas abriram as minas no fim do século XVII. Em uma década, chegou tanta gente de fora (do reino, da Bahia, de Pernambuco) que os descobridores viraram minoria na própria descoberta.' },
-        'Emboaba era como os paulistas chamavam esses recém-chegados. A palavra não era elogio. A disputa por lavras, por abastecimento e por preços foi escalando até virar conflito armado aberto, entre 1707 e 1709, numa região onde a Coroa praticamente não tinha presença militar.',
+        { abertura: 'Morro Vermelho é conhecido, na história antiga de Minas Gerais, como palco da '
+                  + 'primeira eleição direta das Américas. Em dezembro de 1707, como ato supremo '
+                  + 'de resistência às determinações de Portugal e dos desmandos de paulistas nas '
+                  + 'comarcas mineiras, os povos de Sabará, Rio das Velhas e de Caeté marcharam '
+                  + 'para Morro Vermelho e elegeram o líder da comunidade Manuel Nunes Vieira '
+                  + 'governador das Minas Gerais. A revolução, que se estendeu até 1709, abriu '
+                  + 'caminho para uma série de rebeliões e motins e criou as câmaras que deram ao '
+                  + 'povo o direito de se manifestar. A Guerra das Emboabas, na verdade, definiu a '
+                  + 'formação e a identidade de Minas Gerais.' },
+        '<em>De duas origens vinham os forasteiros: reinóis (portugueses e das ilhas) e baianos '
+      + '(nascidos na Bahia e Nordeste do Brasil). Por zombaria, paulistas os chamavam Emboabas, '
+      + 'por usarem polainas, que cobriam o peito dos pés, como uma ave.</em>',
+        { figura: 'Quadro de 1749 sobre a Guerra dos Emboabas.',
+          legenda: 'O primeiro e único registro iconográfico sobre a Guerra dos Emboabas é um '
+                 + 'quadro de 1749, pintado em Salvador (BA), a pedido de um guerrilheiro emboaba '
+                 + 'salvo da morte em batalha por intercessão a Nossa Senhora de Nazareth. A '
+                 + 'igreja à esquerda do quadro é bem semelhante às ruínas da ermida antiga de '
+                 + 'Morro Vermelho, pintada no teto na entrada da Matriz atual.',
+          credito: 'Quadro do Museu do Mosteiro de São Bento, Salvador, Bahia' },
+      ],
+    },
+    {
+      id: 'minas-de-ouro', titulo: 'Minas de ouro',
+      blocos: [
+        'No início do século 18, chegou às minas gerais uma torrente humana tão grande que ninguém '
+      + 'estava mais em condições de impedir a avalanche contínua.',
+        { citacao: 'Cada ano, vem nas frotas quantidade de portugueses e de estrangeiros para '
+                 + 'passar às minas. Das cidades, vilas, recôncavos e sertões do Brasil, vão '
+                 + 'brancos, pardos e pretos, muitos índios de que os paulistas se servem. A '
+                 + 'mistura é de toda condição de pessoas, homens, moços e velhos, pobres e ricos, '
+                 + 'nobres e plebeus, seculares, clérigos e religiosos de diversos institutos, '
+                 + 'muitos dos quais não têm no Brasil convento nem casa.',
+          autoria: 'André João Antonil, <em>Cultura e Opulência do Brasil</em>, 1711' },
+        { citacao: 'O ouro das minas do Sul foi a pedra-ímã da gente do Brasil e com tão veemente '
+                 + 'atração que muita parte dos moradores das capitanias, principalmente da Bahia, '
+                 + 'correu para buscá-la, levando escravos que ocupavam as lavouras de '
+                 + 'cana-de-açúcar.',
+          autoria: 'Sebastião Rocha Pita, <em>História da América Portuguesa</em>, 1730' },
+        'Quando o governador da Bahia se queixou ao Rei de que as minas estavam atraindo muita '
+      + 'gente, a Metrópole proibiu, da Bahia para Minas, o trânsito de escravos, depois o '
+      + 'comércio para os sertões e ida de forasteiros. As medidas de nada adiantaram.',
+        'Em redor das minas formou-se rapidamente uma população urbana com uma atividade comercial '
+      + 'intensa, graças ao grande poder aquisitivo que a mineração proporcionava. A população das '
+      + 'minas chegou à cifra das 50 mil almas, em 1705. Havia condições para um comércio próspero '
+      + 'e ativo. Os comerciantes se enriqueceram rapidamente e tornaram-se um fator '
+      + 'social-econômico importante, cuja tendência política pendia para os emboabas. A luta dos '
+      + 'emboabas e paulistas iniciou-se desde o aparecimento desses dois grupos, de mineradores e '
+      + 'comerciantes, uns representando a Coroa Portuguesa e outros, o povo brasileiro. As '
+      + 'contradições socioeconômicas provocaram conflitos entre as duas classes antagônicas.',
+        { citacao: 'Havia nas minas gerais uma engrenagem fiscal que, além de ter sido '
+                 + 'obstrucionista em relação do desenvolvimento econômico, foi também escorchante '
+                 + 'e poucas pessoas não tentaram transgredi-la. Deixar de pagar os quintos era '
+                 + 'comum e generalizado. Uma tão pesada contribuição era naturalmente muito mal '
+                 + 'acolhida pelos mineiros e quem podia procurava subtrair-se.',
+          autoria: 'H. Handelmann, <em>História do Brasil</em>, 1931' },
+      ],
+    },
+    {
+      id: 'tirania', titulo: 'Tirania',
+      blocos: [
+        'Em 1703, a Coroa criou a Superintendência das Minas, diretamente subordinada ao Rei, '
+      + 'dando ao superintendente poderes totais, sem dar conta a quem quer que fosse, ao '
+      + 'governador inclusive. O primeiro foi José Vaz Pinto, sucedido, em 1705, pelo paulista e '
+      + 'guarda-mor tenente-general Manoel de Borba Gato, sediado em Sabará.',
+        'O poder arrecadador era representado pelos paulistas, de forma que a oposição ao tributo '
+      + 'significava na prática estar contra eles. Este fator teve papel importante no sentido de '
+      + 'atrair as massas populares para o lado dos emboabas. Outro fator que impelia o povo a '
+      + 'favor dos revoltosos era o tratamento despótico e desdenhoso que os paulistas dispensavam '
+      + 'a todos. Assim, elementos do campo não tiveram motivos de ordem econômica para estar '
+      + 'contra a administração dos antigos bandeirantes. O comportamento sobranceiro destes '
+      + 'induziu-os a tomar posição a favor dos forasteiros.',
+        'Em nome de Portugal, os paulistas não limitavam sua luta ao terreno burocrático, mas '
+      + 'também ao campo pessoal. Praticavam toda espécie de violência contra aqueles que '
+      + 'participavam da exploração do ouro, ato por eles considerado um esbulho de seus direitos '
+      + 'de descobridores.',
+        'Os paulistas, que já se achavam em minoria, procuravam contrabalançar a desvantagem '
+      + 'numérica e econômica com o uso ostensivo do poder governamental a seu favor. A '
+      + 'Superintendência e a Guardamoria se encontrava, desde 1705, nas mãos de uma só pessoa: '
+      + 'Manoel de Borba Gato, o mais genuíno representante do despotismo bandeirante, que se '
+      + 'estabeleceu em Sabará. A maioria da população, que já era apreciável, protestava contra '
+      + 'as injustiças e denunciava os escândalos e excessos. O poder arrecadador de Portugal era '
+      + 'representado pelos paulistas e este fator teve papel importante na atração das massas '
+      + 'populares para o lado dos emboabas. Outro fator que impelia o povo a favor do líder dos '
+      + 'emboabas, Manuel Nunes Viana, era o tratamento despótico e desdenhoso que os paulistas '
+      + 'dispensavam a todos.',
+      ],
+    },
+    {
+      id: 'resistencia', titulo: 'Resistência',
+      blocos: [
+        'Os conflitos se generalizavam, as inimizades e indisposições tornaram-se fenômeno '
+      + 'natural. <em>“Estavam os opostos divididos em duas parcialidades, uma dos naturais de São '
+      + 'Paulo e a outra dos forasteiros, os emboabas”</em> (Rocha Pita, 1730).',
+        'As ofensas e o despotismo dos antigos bandeirantes provocavam ressonância entre o povo em '
+      + 'geral, que começou a identificar o fenômeno como inerente aos paulistas. A luta passou a '
+      + 'tomar um conteúdo político.',
+        'Num domingo, quando o povo se achava no adro da igreja do arraial de Morro Vermelho, lá '
+      + 'estavam também os paulistas Jerônimo Pedroso de Barros e seu cunhado Júlio César Moreira. '
+      + 'Passou por eles um forasteiro armado de uma espingarda e com soberba. Os paulistas '
+      + 'exigiram que entregasse a arma, que diziam tê-la furtado. Aos clamores do agredido, '
+      + 'muitos acudiram em seu socorro, à frente Manuel Nunes Viana, que tentou acalmar os '
+      + 'ânimos, mas as duas partes avançaram em palavras até o desafio. Arrebatado pelos '
+      + 'insultos, Nunes sem trepidar chamou os paulistas à luta, mas foi contido.',
+        'Jerônimo Pedroso retirou-se para casa e Nunes, cercado de amigos, permaneceu no adro da '
+      + 'igreja e ouviu missa. Os emboabas festejaram o triunfo. Pedroso caiu em grande '
+      + 'abatimento, abafando a cólera. Correu de plano, então, um boato de estarem os paulistas '
+      + 'ajustados para invadiram numa noite a casa de Nunes e botarem todos a ferro e fogo. '
+      + 'Jerônimo Pedroso era sobrinho de Manoel Borba Gato, superintendente das Minas Gerais, que '
+      + 'foi ao distrito para apaziguar os ânimos, indo à casa de Nunes para disfarçar os planos '
+      + 'de vingança. Com a presença do tenente-general, os paulistas se animaram e chegaram até a '
+      + 'incendiar casas dos emboabas e a matar dois negros de Nunes. Borba Gato voltou a Sabará '
+      + 'para arquitetar um plano contra Nunes.',
+        'A casa de Manuel Nunes era um verdadeiro castelo de armas. Seu único trabalho foi '
+      + 'convocar e pôr a sua gente em ordem. Sua numerosa escravatura, só ela, formava uma legião '
+      + 'de combatentes sob o comando de um negro fiel, de nome Bigode. Forasteiros de Sabará, Rio '
+      + 'das Velhas e do Caeté marcharam para o arraial e se uniram para defender Nunes. Diante do '
+      + 'movimento, paulistas amigos de Nunes tentaram sossegar os ânimos e lavraram termo de '
+      + 'ajuste, no qual as partes se comprometeram a restabelecer a harmonia. Manuel Nunes não '
+      + 'desejava outra coisa. O ajuste foi assinado, mas a paz entre eles foi de pouca duração.',
+      ],
+    },
+    {
+      id: 'conflitos', titulo: 'Conflitos',
+      blocos: [
+        'Morro Vermelho ficou comovido com outro fato. Os empregados de José Pardo, em plena rua, '
+      + 'mataram um português e correram para a casa do patrão, sendo perseguidos pelo povo. '
+      + 'Negou-se José Pardo a entregar os assassinos. Em represália, ele foi morto pela massa '
+      + 'revoltada. A morte de José Pardo provocou um alarme entre os paulistas, que estavam '
+      + 'prontos para devolver o golpe. A situação no arraial estava pronta para explodir.',
+        'Em 12 outubro de 1707, Borba Gato publicou edital que intimava Manuel Nunes a deixar as '
+      + 'minas gerais dentro de 24 horas, sob alegação de que havia trazido, pelo caminho proibido '
+      + 'da Bahia para Minas, gado e comboios de fazenda e se furtado a pagar os quintos devidos. '
+      + 'A intimação era arbitrária e ilegal.',
+        { citacao: 'Ordeno e mando ao capitão-mor Manoel Nunes Viana despeje estas Minas em termo '
+                 + 'de vinte e quatro horas com combinação de que, não o fazendo, se lhe '
+                 + 'confiscarão os bens, será preso e castigado como o são os estrangeiros das '
+                 + 'leis e todos aqueles que descaminham a Fazenda de SM que Deus guarde e para '
+                 + 'que venha a notícia do dito capitão Manoel Nunes Viana a se fixar no arraial '
+                 + 'de Caeté.',
+          autoria: 'Manuscrito do Arquivo Histórico Ultramarino, Documentos Avulsos de Minas '
+                 + 'Gerais, Lisboa' },
+        'No dia seguinte, Manuel Nunes, apesar de saber que o tenente-general Borba Gato não tinha '
+      + 'forças para despejá-lo das minas, respondeu enérgica e altivamente, mas sem bravatas, '
+      + 'procurando escorar-se nas leis vigentes. O libelo de Nunes é tremendo contra os desmandos '
+      + 'dos paulistas e a malversação dos cargos públicos para encobrir crimes e perpetrar '
+      + 'injustiças.',
+        'O povo, tomando conhecimento da ordem de expulsão de seu chefe, ficou indignado com Borba '
+      + 'Gato e os paulistas. Os chefes dos emboabas resolveram convocar seus partidários. Os '
+      + 'moradores começaram a se dirigir à residência de Nunes, transformando-a num verdadeiro '
+      + 'quartel-general dos forasteiros. Em novo edital, Borba Gato ameaçou os moradores com '
+      + 'penalidades, caso prestassem ajuda ao seu adversário. Foi a gota que transbordou a taça '
+      + 'dos sofrimentos e humilhações a que eram submetidos os emboabas.',
+      ],
+    },
+    {
+      id: 'eleicao-direta', titulo: 'Eleição direta',
+      blocos: [
+        'Em fins de novembro de 1707, um boato aterrador se espalhou com a rapidez de um raio, '
+      + 'fazendo certo que os paulistas, em conluio no Rio das Velhas, tinham deliberado matar, '
+      + 'num só e mesmo golpe, todos os forasteiros moradores do distrito de Caeté. A vingança '
+      + 'estaria marcada para 10 de janeiro de 1708, à hora da missa, em todo o arraial. Nesse '
+      + 'ato, os paulistas cairiam sobre os forasteiros e os passariam a ferro e bala. Ainda que '
+      + 'falso e imaginário, o boato seguiu o seu curso e produziu grande efeito calamitoso.',
+        { citacao: 'Alvoroçados, os emboabas pegaram as armas e marcharam para o arraial: os de '
+                 + 'Sabará sob o comando do português Manuel da Silva Rios; os do Rio das Velhas '
+                 + 'sob o de Agostinho Monteiro de Azevedo, pernambucano; e os de Caeté comandados '
+                 + 'pelo baiano Luís do Couto. Este grande exército marchou em boa ordem, cheio de '
+                 + 'entusiasmo, para a casa de Manuel Nunes Viana e, lá chegando, pela voz de Luiz '
+                 + 'do Couto, foi ele proclamado Governador de Minas. Foi Manuel Nunes o primeiro '
+                 + 'governador eleito, que se erigiu na América, fato o mais característico de '
+                 + 'toda a nossa história.',
+          autoria: 'Dezembro de 1707' },
+        'Proclamado governador, Manuel Nunes Viana estabeleceu o governo em suas casas sitas no '
+      + 'distrito de Caeté. Era o início da guerra civil entre paulistas e emboabas. A resposta a '
+      + 'Borba Gato foi a imediata mobilização de todas as forças e, em pouco tempo, formou-se um '
+      + 'exército com 2 mil homens. Sem grandes dificuldades, os emboabas dominaram a situação em '
+      + 'Caeté. Alguns paulistas fugiram para Sabará, outros não foram molestados.',
+      ],
+    },
+    {
+      id: 'revolucao', titulo: 'Revolução',
+      blocos: [
+        'Uma vez tomado o poder, organizou-se imediatamente um governo, que começou a funcionar '
+      + 'eficientemente graças ao apoio popular de que gozava. <em>“Era o primeiro governo '
+      + 'legítimo que aparecia nas terras americanas, oriundo da vontade do próprio povo e Minas '
+      + 'teve o seu primeiro governador eleito e sustentado pela força das armas”</em>. O próprio '
+      + 'Borba Gato, em carta ao governador Fernando Lancastre, do Rio de Janeiro, dizia que todos '
+      + 'reconheceram Manuel Nunes como general e lhe prestavam obediência. No distrito de Caeté, '
+      + 'reinou a maior ordem pública, talvez jamais experimentada pelos moradores.',
+        'O povoado era o primeiro centro do levante: urgia garantir a sua sobrevivência como '
+      + 'núcleo irradiador, pois havia, ao seu redor, arraiais com maioria dos paulistas, que '
+      + 'podiam assaltar a capital dos emboabas. A primeira providência consistia em bloquear a '
+      + 'estrada que conduzia a Sabará, centro administrativo das Minas Gerais e residência do '
+      + 'superintendente Borba Gato.',
+        'Os paulistas dos arraiais de Sabará, Rio das Velhas, Raposos e Roça Grande, onde '
+      + 'dominavam, tratavam de se defender e fizeram grandes preparativos. Sabiam eles que o '
+      + 'arraial de Caeté, onde se instalou o governo emboaba, mantido isolado, bloqueado, teria '
+      + 'que sucumbir forçosamente, se não conseguisse dominar os outros distritos da zona '
+      + 'mineradora.',
+        'Em Sabará, a luta foi rápida, mas sangrenta. Todo o Vale do Rio das Velhas caiu, em '
+      + 'seguida, em poder dos emboabas. Era o fim do baluarte administrador das minas. Em '
+      + 'assembleias, o povo de Sabará, Rio das Velhas, Raposos e Roça Grande aclamou Nunes '
+      + 'governador de Minas. Ele governou por dois anos e seus atos foram reconhecidos pelas '
+      + 'autoridades metropolitanas, devido à base popular. A figura de Nunes projetou-se por '
+      + 'dezenas de anos na vida colonial, como símbolo de resistência de um povo oprimido contra '
+      + 'o poder tirânico de Portugal.',
+      ],
+    },
+    {
+      id: 'capao-da-traicao', titulo: 'Capão da Traição',
+      blocos: [
+        'Manoel Nunes abafou vários levantes contra seu governo, feitos pela resistência dos '
+      + 'paulistas. Na violenta batalha de Cachoeira do Campo (Ouro Preto), Manuel Nunes Viana '
+      + 'saiu consagrado quando decidiu libertar os vencidos, já prisioneiros. Logo depois foi '
+      + 'ungido pelos frades e jurou que governaria Minas segundo as leis do Reino, sendo aclamado '
+      + 'pelo povo. Saiu-se vitorioso também na expedição à Serra de Ouro Preto, depois seguiu '
+      + 'para conquistar o arraial do Carmo ou Ribeirão Acima. Ali, depois de várias escaramuças, '
+      + 'o grupo de Manuel Nunes foi cercado e abatido, mas continuou no Carmo tentando reparar o '
+      + 'desastre.',
+        'Nisso, um exército formidável de paulistas foi formado no Rio das Mortes com fugitivos do '
+      + 'Rio das Velhas e das Gerais e prisioneiros soltos em Cachoeira do Campo. O arraial do '
+      + 'Carmo foi cercado pelos paulistas dispostos a expulsar os forasteiros definitivamente e a '
+      + 'acabar com o novo governo. Resistindo em trincheiras, os emboabas pediram socorro a '
+      + 'Manuel Nunes, que mandou uma tropa de mil homens ao arraial. Assaltados com a notícia, os '
+      + 'paulistas levantaram o cerco e seguiram rumo a São Paulo. No dia seguinte, chegaram os '
+      + 'geralistas de Nunes, mas o arraial já estava livre. O comandante das tropas, sargento-mor '
+      + 'Bento do Amaral Coutinho, destacou o capitão Gonçalo Ribeiro Corso para seguir o inimigo '
+      + 'e depois ele próprio foi ao comando.',
+        'Para embaraçar a marcha dos emboabas que os perseguiam, um grupo de paulistas ficou a '
+      + 'quatro léguas do arraial, numa campina de capão denso e cerrado. Ali esperou a investida '
+      + 'emboaba e, protegido pela ramagem e árvores, surpreendeu o exército do Capitão Corso. '
+      + 'Perdido no tiroteio e com muitas baixas, o sargento Amaral Coutinho resolveu suspender o '
+      + 'ataque e cercou a mata.',
+        'Ao fim de dois dias, atormentados pela fome e sede, os paulistas se renderam, tendo '
+      + 'Amaral lhes prometido e jurado que não lhes faria mal. Logo após entregarem as armas, '
+      + 'Amaral investiu sobre os paulistas e imolou cerca de 300, passando o local a chamar Capão '
+      + 'da Traição. Caiu a última resistência dos paulistas e os emboabas haviam conquistado toda '
+      + 'Minas Gerais.',
+      ],
+    },
+    {
+      id: 'corte-parada', titulo: 'Corte parada',
+      blocos: [
+        'O levante dos emboabas perturbou gravemente a vida econômica do Rio de Janeiro, sede da '
+      + 'governadoria e que vivia em função das Minas Gerais. Os comerciantes deixaram de vender e '
+      + 'receber o que deviam de seus clientes nas minas e estavam prontos a ir ao governador para '
+      + 'pedir o reembolso das dívidas.',
+        'Em 23 de janeiro de 1709, escreveu um português a um amigo de Lisboa (cartas arquivadas '
+      + 'no Conselho Ultramarino):',
+        { citacao: 'Os emboabas, levantados contra os paulistas nas minas, sobrelevantaram seu '
+                 + 'capitão-mor e mestre-de-campo e mais oficiais de milícia para não obedecerem a '
+                 + 'outros, com que houve alguns mortos, enviarão os paulistas a impedir o Caminho '
+                 + 'Novo para não passar carregação nenhuma para as Minas e pólvora, chumbo e '
+                 + 'armas na mão e mandar para as tropas, e agora dizem vir os emboabas abaixo a '
+                 + 'queimar os paulistas, creio que haverá muita mortandade de parte a parte.' },
+        'Outra carta de 6 de fevereiro de 1709:',
+        { citacao: 'O negócio das Minas há muitos dias que está parado, porque andam divididos em '
+                 + 'duas facções, sendo capitão de uma delas, que são todos os que não são '
+                 + 'paulistas, um Manoel Nunes Viana, natural da vila e morador nos sertões da '
+                 + 'Bahia, este se acha com mais de 6 mil homens armados, é homem que leva após si '
+                 + 'muita gente por ser muito rico, facinoroso e intrépido, por cujas razões é o '
+                 + 'que introduz nas minas muitas tropas da Bahia, para onde vai a maior parte do '
+                 + 'ouro que elas produzem, contra as ordem de SM e com grande prejuízo de sua '
+                 + 'Real Fazenda, porque não paga quintos e na casa deles se acham pouco mais de '
+                 + 'duas arrobas de ouro.' },
+      ],
+    },
+    {
+      id: 'governador-cercado', titulo: 'Governador cercado',
+      blocos: [
+        'A guerra civil nas montanhas mineiras era de grande amplitude e não se enquadrava dentro '
+      + 'dos movimentos esporádicos que se verificavam frequentemente de caráter local. O exército '
+      + 'dos emboabas era numeroso, tanto assim que se falava em cifras de 15 mil a 30 mil homens '
+      + 'em armas. Na véspera da partida do governador Fernando Lencastre para as minas, o povo já '
+      + 'sabia que Manoel Nunes Viana não chefiava apenas um levante, mas um governo regular, '
+      + 'apoiado pelas forças armadas dos mineiros, sendo os paulistas expulsos ou submetidos ao '
+      + 'governo estabelecido.',
+        'Depois de receber cartas de Borba Gato, o governador do Rio de Janeiro, Fernando '
+      + 'Lencastre enviou relatório ao Rei de Portugal. Pensando tratar-se apenas de um levante no '
+      + 'distrito de Caeté, ele elaborou um plano para abafar o movimento.',
+        'Cumprindo decisão tomada em 10 de janeiro de 1709, Dom Fernando, depois de cuidadosos '
+      + 'preparativos, se pôs em marcha em 3 de março, rumo às Minas Gerais, acompanhado de tão '
+      + 'grande séquito que, segundo um missivista (carta de 23-1-1709), esperava-se que a cidade '
+      + 'do Rio de Janeiro ficasse meio despovoada. Muitos comerciantes acompanharam o governador '
+      + 'para resolver negócios em Minas. A tropa era constituída de vários terços de dragões. O '
+      + 'objetivo era devolver, a ferro e fogo, aos paulistas todas as posições perdidas. O '
+      + 'próprio governador já se referira a um exército de 10 mil homens, pronto para socorrer os '
+      + 'paulistas. As forças eram bem treinadas e levava muito material de guerra.',
+        'Todo mundo sabia dos pormenores e da estratégia contra os emboabas. A indiscrição '
+      + 'favoreceu os inimigos, que se prepararam com uma força de 8 mil a 10 mil homens. Correu '
+      + 'em Minas a notícia de que o governador levava carroças cheias de correntes para algemar '
+      + 'todos os moradores e conduzi-los como escravos. Na iminência de se submeter à tirania, o '
+      + 'povo preferiu lutar. À medida que a caravana avançava rumo à Mantiqueira, as fileiras dos '
+      + 'forasteiros se engrossavam. Desde o Rio de Janeiro, o comboio estava sob constante '
+      + 'observação. Os próprios emboabas determinaram o local para a batalha decisiva. Nunes '
+      + 'convocou a melhor tropa e acampou perto de Congonhas, a oito léguas de Ouro Preto, e '
+      + 'esperou o governador.',
+        'Quando Dom Fernando chegou, 4 mil emboabas se postaram numa colina. Ao amanhecer, o '
+      + 'governador se assustou com o exército nas montanhas e, atônito e estupefato, ouviu o '
+      + 'brado dos emboabas: <em>“Viva Manoel Nunes, morra o governador”</em>. Dom Fernando '
+      + 'convocou conferência e ouviu do representante emboaba que não teria acesso às minas. '
+      + 'Atemorizado, levantou acampamento e se pôs em marcha de volta ao Rio de Janeiro, feliz '
+      + 'por ter escapado, mas derrotado e desmoralizado. O episódio consolidou o governo '
+      + 'revolucionário das Minas Gerais.',
+      ],
+    },
+    {
+      id: 'vitoria-total', titulo: 'Vitória total',
+      blocos: [
+        'A derrota infligida ao governador metropolitano encerrou uma brilhante fase da luta de um '
+      + 'povo contra a tirania. Com a expulsão do governador, os emboabas iriam travar uma nova '
+      + 'batalha, desta vez na diplomacia em Lisboa.',
+        'A Secretaria de Estado, que comandava o reino, tomou conhecimento do sucesso dos emboabas '
+      + 'em junho de 1709, através de relatório de Dom Fernando, já estabelecido por ordem real em '
+      + 'São Paulo. Aos poucos, a Guerra dos Emboabas acabou tomando as ruas de Lisboa e foi '
+      + 'levada, em agosto de 1709, ao Conselho Ultramarino, a quem competida resolver as questões '
+      + 'políticas fora de Portugal e que desaprovou a atitude de Dom Fernando, substituído por '
+      + 'Antônio de Albuquerque. <em>“Não é necessário observar as formalidades das leis, '
+      + 'principalmente em partes tão remotas em que elas se não podem observar”</em>, recomendou '
+      + 'o Conselho ao novo governador.',
+        'O povo mineiro não estava para mendigar justiça perante o Conselho. O vitorioso movimento '
+      + 'emboaba impôs suas leis não apenas em Minas, mas ao próprio Conselho e ao Reino. Lisboa '
+      + 'ainda ignorava a amplitude do levante. Entre os objetivos da guerra estava a criação de '
+      + 'órgãos governamentais populares. Uma corrente dos emboabas já pleiteava a separação de '
+      + 'Portugal.',
+        'Para tratar das reivindicações de Minas, foi enviado a Lisboa o frei Francisco de '
+      + 'Meneses, homem inteligente e afeito a negócios públicos, integrado ao movimento dos '
+      + 'forasteiros. A ele cabia demonstrar e convencer a Corte de Justiça sobre as justas causas '
+      + 'dos emboabas. Explicou ao Conselho Ultramarino que os emboabas dispunham de mais de 10 '
+      + 'mil homens em armas, que os paulistas tinham sido derrotados, o governador expulso e que '
+      + 'não havia no Brasil força que pudesse deter o movimento, que podia inclusive tomar até o '
+      + 'Rio de Janeiro sem dificuldades.',
+        'O frei embaixador de Minas Gerais obteve uma vitória completa. Fez desaparecer todas as '
+      + 'leis em contrário, ficaram esquecidas as ofensas ao governador. Manuel Nunes e todos os '
+      + 'companheiros foram indultados. Portugal aceitou tudo que os mineiros exigiam. Lisboa '
+      + 'reconheceu sua impotência diante dos bravos mineiros e foi obrigada a se desfazer de '
+      + 'qualquer tentativa de castigo. Foi uma vitória total do povo montanhês na sua primeira '
+      + 'luta política contra a prepotência tirânica.',
+        'Mesmo antes das decisões do Conselho Ultramarino, o governador Albuquerque esteve em '
+      + 'Caeté, onde foi bem recebido por Nunes, que foi tratado como governador eleito pelo povo. '
+      + 'O líder dos emboabas, perante uma Junta, entregou o cargo, prestando obediência ao '
+      + 'nomeado pelo rei. Albuquerque aprovou todos os atos praticados pelo governo emboaba. A '
+      + 'partir desta data, o período histórico dos emboabas atingiu seu esplendor e transformou-se '
+      + 'num símbolo para Minas e para o Brasil, pela luta ativa contra a tirania e pelo amor à '
+      + 'liberdade.',
+      ],
+    },
+    {
+      id: 'liberdade', titulo: 'Liberdade',
+      blocos: [
+        'O período histórico dos emboabas se estendeu até a Inconfidência Mineira, incluindo a '
+      + 'revolta, em 1715, do povo de Morro Vermelho contra o governador Braz Baltazar pela '
+      + 'cobrança dos quintos pelo sistema de bateias; o levante de 1720, em Vila Rica, contra as '
+      + 'casas de fundição; os motins do sertão na terceira década do século 18; e as lutas dos '
+      + 'garimpeiros contra a proibição de catar diamantes.',
+        'A Guerra dos Emboabas não foi travada apenas para expulsar os paulistas, mas para '
+      + 'reformar a estrutura estatal e o regime social e econômico feudal reinante. Baniu-se '
+      + 'definitivamente de Minas Gerais o direito de conquista dos bandeirantes. Acabou com a '
+      + 'divisão da população em duas categorias distintas, uma de posse de todos os privilégios e '
+      + 'a outra submetida à condição de inferioridade.',
+        { citacao: 'Com a vitória dos emboabas ficou consagrada a existência de assembleias '
+                 + 'deliberativas locais, que tiveram papel importante sob forma de câmaras '
+                 + 'municipais, único órgão administrativo onde o povo podia defender seus '
+                 + 'direitos em face da voracidade fiscal da Coroa. A guerra civil implantou nas '
+                 + 'terras mineiras a forma de oposição ativa contra qualquer sistema de '
+                 + 'prepotência.' },
+        'Pesquisa baseada nas seguintes obras: <em>História Antiga das Minas Gerais</em>, de Diogo '
+      + 'de Vasconcelos, 1901; <em>Guerra dos Emboabas, a primeira guerra civil nas Américas</em>, '
+      + 'de Isaias Golgher, 1956; <em>A Guerra dos Emboabas</em>, de Eduardo José Afonso, 1998.',
+      ],
+    },
+    {
+      id: 'datas', titulo: 'Datas',
+      blocos: [
+        { sub: '12 de outubro de 1707' },
+        'Publicação pelo superintendente da Coroa, Manoel Borba Gato, de edital intimando Manoel '
+      + 'Nunes Viana, acusado de sonegação de impostos, a deixar as minas dentro de 24 horas, sob '
+      + 'pena de confiscação de todos os seus bens. Manuel Nunes respondeu no dia seguinte e se '
+      + 'negou a deixar as minas, já que a intimação era arbitrária e ilegal.',
+        { sub: 'Novembro de 1707' },
+        'Em fins de novembro de 1707, um boato aterrador se espalhou com a rapidez de um raio, '
+      + 'fazendo certo que os paulistas, em conluio no Rio das Velhas, tinham deliberado matar num '
+      + 'só e mesmo golpe todos os forasteiros moradores no distrito das minas. O golpe estaria '
+      + 'marcado para 10 de janeiro de 1708, à hora da missa, em todos os arraiais de povoações do '
+      + 'distrito. Neste ato, os paulistas cairiam sobre os forasteiros e os passariam a ferro e a '
+      + 'bala.',
+        { sub: 'Dezembro de 1707' },
+        { citacao: 'Alvoroçados, os emboabas pegaram as armas e marcharam para o arraial de Caeté: '
+                 + 'os de Sabará sob o comando do português Manuel da Silva Rios; os do Rio das '
+                 + 'Velhas sob o de Agostinho Monteiro de Azevedo, pernambucano; e os de Caeté se '
+                 + 'formaram comandados pelo baiano Luís do Couto. O grande exército marchou em '
+                 + 'boa ordem, cheio de entusiasmo para a casa de Manuel Nunes Viana e, lá '
+                 + 'chegando, pela voz de Luís do Couto, foi ele proclamado Governador de Minas '
+                 + 'Gerais. Foi a primeira eleição direta na América, fato o mais característico '
+                 + 'de toda a nossa história.' },
+        'Proclamado governador, Manuel Nunes Viana estabeleceu o governo em suas casas no arraial '
+      + 'de Caeté. Em manifesto disse não ia tolerar vinganças e respeitar por justiça o direito '
+      + 'de cada um e que combateria os excessos dos caudilhos que afligiam as populações e '
+      + 'castigaria os criminosos.',
+        { sub: 'Janeiro de 1708' },
+        'Depois de vários triunfos na região de Ouro Preto, Manuel Nunes e Frei Francisco de '
+      + 'Meneses conseguiram uma brilhante vitória em Cachoeira do Campo, aprisionando centenas de '
+      + 'paulistas. Num ato de bondade, o novo governador decidiu libertar todos os prisioneiros. '
+      + 'No dia seguinte, durante missa solene, Manuel Nunes foi ungido e sagrado pelos frades, '
+      + 'prometendo governar Minas pelas leis do Reino e tratar a todos com justiça. O povo '
+      + 'reunido prestou um juramento de fidelidade e Nunes saiu da igreja aclamado entre vivas da '
+      + 'multidão.',
+        { sub: 'Fevereiro de 1708' },
+        'Na região do Rio das Mortes, os emboabas foram cercados pelos paulistas no arraial da '
+      + 'Ponta do Morro, resistiram em trincheiras e antes de serem mortos pediram socorro a '
+      + 'Manuel Nunes. Com a notícia da chegada dos geralistas, os paulistas fugiram em direção a '
+      + 'São Paulo, mas foram perseguidos pelas tropas do sargento-mor Bento do Amaral Coutinho e '
+      + 'a quatro léguas dali cercados em um capão de uma campina. Depois de dois dias e com fome '
+      + 'e sede se renderam, mas depois de entregarem as armas foram mortos. A matança atingiu '
+      + 'mais de 300 paulistas.',
+        { sub: 'Janeiro de 1709' },
+        'O superintendente das minas, Borba Gato, envia carta ao governador do Rio de Janeiro, '
+      + 'Fernando Martins Mascarenhas de Lencastre, comunicando que os emboabas haviam conquistado '
+      + 'todas as minas e constituído governo próprio.',
+        { sub: 'Março de 1709' },
+        'Cumprindo decisão tomada em 10 de janeiro de 1709, o governador do Rio de Janeiro, depois '
+      + 'de cuidadosos preparativos, se pôs em marcha rumo a Minas Gerais, acompanhado de 10 mil '
+      + 'homens. É cercado em Congonhas e expulso pelos emboabas, derrotado e desmoralizado.',
+        { sub: 'Junho de 1709' },
+        'Assumindo as rédeas da capitania, o governador de São Paulo, Antônio de Albuquerque parte '
+      + 'para Minas, em tom pacífico, agora sem grande aparato de força, e levando apenas escolta '
+      + 'de 20 soldados. Dirigiu-se em primeiro lugar ao arraial de Caeté, onde convocou uma junta '
+      + 'e perante todos Manuel Nunes Viana depôs o governo e a regência das minas e fez o '
+      + 'juramento de submissão de fidelidade aos ministros do Rei.',
+        'A Secretaria de Estado de Portugal, que comandava o Reino, toma conhecimento do sucesso '
+      + 'dos emboabas, por relatório de Dom Fernando. A Guerra dos Emboabas toma as ruas de '
+      + 'Lisboa.',
+        { sub: 'Agosto de 1709' },
+        'A Guerra dos Emboabas é levada ao Conselho Ultramarino, a quem competida resolver as '
+      + 'questões políticas fora de Portugal e que desaprovou a atitude de Dom Fernando, '
+      + 'substituído por Antônio de Albuquerque. Frei Francisco de Meneses convence a Corte de '
+      + 'Justiça das justas causas dos emboabas e obtém uma vitória completa.',
+      ],
+    },
+    {
+      id: 'republica-dos-emboabas', titulo: 'República dos Emboabas (de 1707 a 1709)',
+      blocos: [
         { lista: [
-          '<strong>Manuel Nunes Viana</strong>, comerciante e homem de poder no sertão do São Francisco, foi <strong>aclamado governador</strong> pelos emboabas, um cargo que nenhum rei lhe deu e que nenhuma lei previa.',
-          '<strong>O episódio do Capão</strong> (rendição de paulistas seguida de matança) entrou para a memória do conflito como marco da sua brutalidade.',
-          '<strong>O desfecho institucional</strong> veio em 1709: a Coroa criou a capitania de São Paulo e Minas do Ouro e mandou um governador de fato, para nunca mais deixar aquele vácuo se repetir.',
-          '<strong>A consequência de longo prazo</strong> foi o aparato fiscal e militar que se montou em seguida: registros, contagens, casas de fundição e, pouco depois, os Dragões.',
+          '<strong>Caeté (Morro Vermelho)</strong> – Aclamado governador, Manuel Nunes estabeleceu '
+        + 'o governo em suas casas do arraial de Caeté.',
+          '<strong>Sabará</strong> – Depois os emboabas marcharam para Sabará, sede da Guardamoria '
+        + 'e da Superintendência das Minas, comandadas por Manuel Borba Gato.',
+          '<strong>Raposos</strong> – A revolução não teve dificuldades para ocupar os arraiais do '
+        + 'Rio das Velhas, Raposos e Roça Grande.',
+          '<strong>Rio Acima</strong> – Os emboabas seguiram para o arraial de Santo Antônio, em '
+        + 'direção à Cachoeira do Campo.',
+          '<strong>Ouro Preto</strong> – Depois da dura batalha de Cachoeira, os emboabas entraram '
+        + 'em triunfo nos arraiais de Vila Rica e Antônio Dias, domínio de ricos portugueses.',
+          '<strong>Mariana</strong> – Em seguida, os emboabas dominaram o arraial de Ribeirão do '
+        + 'Carmo.',
+          '<strong>Itabirito</strong> – Entre os distritos conquistados estavam os de Bação e Rio '
+        + 'das Pedras.',
+          '<strong>Piranga</strong> – Os emboabas sofreram o primeiro grande revés no arraial de '
+        + 'Guarapiranga, onde houve reação dos paulistas.',
+          '<strong>São João del-Rei e Tiradentes</strong> – Seguiu-se a grande batalha do Rio das '
+        + 'Mortes e Ponta do Morro (Capão da Traição).',
+          '<strong>Congonhas</strong> – Vindo do Rio de Janeiro, o governador tentou enfrentar os '
+        + 'emboabas em Congonhas, de onde foi expulso.',
         ] },
-        { nota: 'Tudo acima é documentado para a guerra como episódio da história das Minas, e é assunto de bibliografia acadêmica extensa. Nada disso, por si só, é uma afirmação sobre Morro Vermelho.', titulo: 'O que é contexto e o que é fato local' },
+        { sub: 'Arraiais conquistados' },
+        'Morro Vermelho, Caeté, Sabará, Rio das Velhas, Roça Grande, Raposos, Santo Antônio do Rio '
+      + 'Acima, Cachoeira, Ouro Preto, Vila Rica, Ribeirão do Carmo, Congonhas de Ouro Preto, '
+      + 'Antônio Dias, São Bartolomeu, Tijuco, Rio das Pedras, Bação, Rio das Mortes, Ponta do '
+      + 'Morro, Guarapiranga, Miguel Garcia, Bacalhau e outros.',
       ],
     },
     {
-      id: 'a-afirmacao', titulo: 'A afirmação deste distrito',
+      id: 'frases', titulo: 'Frases',
       blocos: [
-        'Morro Vermelho se apresenta como o lugar onde nasceu <strong>a primeira eleição direta das Américas</strong>, ligando essa origem à aclamação de Manuel Nunes Viana durante a Guerra dos Emboabas.',
-        'A afirmação tem lógica interna. Uma aclamação por assembleia de homens armados, escolhendo um governante contra a ordem estabelecida, é de fato um ato de escolha coletiva anterior a qualquer eleição representativa formal no continente, e a região de Caeté estava no coração geográfico do conflito.',
-        { lacuna: 'Mas a pergunta que decide esta página é específica e responde-se com documento: <strong>a aclamação de Nunes Viana ocorreu no território que hoje é Morro Vermelho?</strong> Em que data, diante de quantos, registrada por quem? Existe crônica, carta, devassa ou testemunho de época que nomeie o lugar? E a expressão "primeira eleição direta das Américas" é leitura de historiador, tradição local ou formulação recente?' },
-        { nota: 'As duas respostas possíveis são valiosas. Se a documentação confirmar o local, o distrito passa a ter um marco de história política nacional com endereço, e isso muda o que ele pode reivindicar em patrimônio, em turismo e em currículo escolar. Se a documentação apontar outro lugar, o que resta é uma tradição local sobre a guerra, que continua sendo memória legítima e continua merecendo registro, apenas com outro nome.', titulo: 'Por que vale a pena responder, e não só afirmar' },
-        'Enquanto a pergunta estiver aberta, este portal a mantém aberta. É o que a nota de método do projeto determina, e é o que dá credibilidade ao resto.',
+        '(Isaias Golgher, historiador)',
+        { citacao: 'A Guerra dos Emboabas foi a pedra angular na qual se edificou a civilização '
+                 + 'mineira.' },
+        { citacao: 'A primeira guerra civil que se travou no continente americano teve por palco '
+                 + 'as terras das Minas Gerais ou, mais propriamente, as montanhas e vales que '
+                 + 'abrangem o território que, partindo de Caeté, passando por Sabará, Ouro Preto, '
+                 + 'Mariana, Lafaiete, segue até São João del Rei.' },
+        { citacao: 'A massa humana heterogênea que acorreu às minas para o trato à mineração '
+                 + 'transformou-se num núcleo politicamente homogêneo, formando dessa maneira dois '
+                 + 'grupos nitidamente antagônicos: os paulistas e os emboabas.' },
+        { citacao: 'A guerra civil não foi travada apenas para expulsar os paulistas em si, mas '
+                 + 'para reformar a estrutura estatal e o regime social-econômico feudal reinante. '
+                 + 'Baniu-se definitivamente das Minas Gerais o direito de conquista que os '
+                 + 'bandeirantes estavam gozando por terem sido os primeiros colonizadores. Acabou '
+                 + 'com a divisão da população branca em duas categorias distintas, uma de posse '
+                 + 'de todos os privilégios e a outra submetida à condição de inferioridade.' },
+        { citacao: 'Com a vitória dos emboabas, ficou consagrada a existência de assembleias '
+                 + 'deliberativas locais, que não havia antes. Tiveram elas um papel importante, '
+                 + 'posteriormente, sob a forma de câmaras municipais, único órgão administrativo '
+                 + 'onde o povo tinha assento e podia defender seus direitos em face da '
+                 + 'incomensurável voracidade da Coroa peninsular. A guerra civil vitoriosa '
+                 + 'implantou nas terras mineiras a forma de oposição ativa contra qualquer '
+                 + 'sistema de prepotência.' },
+        { citacao: 'Temos, portanto, a registrar uma vitória completa do povo montanhês, na sua '
+                 + 'primeira luta política contra a prepotência tirânica, tanto doméstica como '
+                 + 'metropolitana. Com a vitória militar e diplomática dos emboabas, não se '
+                 + 'encerra a luta, ao contrário, ela continua, embora às vezes com outra versão.' },
+        { citacao: 'O período histórico dos emboabas se estendeu praticamente até a Inconfidência '
+                 + 'Mineira. Entendemos por “período emboaba” a forma de luta política com armas '
+                 + 'na mão tendo objetivos limitados: imposição pelas armas ao governador Braz '
+                 + 'Baltazar de Silveira, impondo a cobrança dos quintos não pelo sistema de '
+                 + 'capitação, mas por uma quantidade certa de ouro; o levante de 1720 de Vila '
+                 + 'Rica contra as casas de fundição; os motins do sertão na terceira década do '
+                 + 'século XVIII; as lutas dos garimpeiros contra a proibição de catar diamantes. '
+                 + 'Estas lutas eram caracteristicamente emboabas, no fundo eram políticas, pois '
+                 + 'política é qualquer forma de luta contra o poder. Entretanto, todas essas '
+                 + 'ações tiveram objetivos restritos e limitados, ao passo que a Inconfidência '
+                 + 'era um movimento de sentido político infinitamente mais amplo. Mas sem o '
+                 + 'aparecimento do primeiro, o dos emboabas, seria impossível a manifestação do '
+                 + 'segundo.' },
+        { citacao: 'Com essa guerra civil, se inicia a formação da fisionomia social-histórica de '
+                 + 'Minas Gerais.' },
+        { citacao: 'O povo mineiro não estava para mendigar justiça perante o Conselho '
+                 + 'Ultramarino; o vitorioso movimento emboaba impôs suas leis não apenas nas '
+                 + 'Minas Gerais, mas também ao próprio Conselho, ao Rei e ao secretário de '
+                 + 'Estado.' },
+        { citacao: 'A partir dessa data (dezembro de 1709), o período histórico emboaba adquiria '
+                 + 'seu maior esplendor, saindo do episódico e entrando definitivamente como fator '
+                 + 'de maior importância nas eclosões das lutas políticas em Minas Gerais, que '
+                 + 'brilham como faróis, iluminando o passado e indicando o futuro às gerações, '
+                 + 'pela luta ativa contra a tirania e pelo amor à liberdade.' },
       ],
     },
-    {
-      id: 'como-provar', titulo: 'Como se prova uma coisa dessas',
-      blocos: [
-        'A pesquisa é viável, e o caminho é razoavelmente claro. Documentação sobre a Guerra dos Emboabas existe em quantidade: o problema nunca foi a falta de fonte, e sim o cruzamento entre a fonte e a geografia local.',
-        { lista: [
-          '<strong>Crônicas de época:</strong> os relatos setecentistas do conflito são a primeira parada, e alguns já estão publicados e digitalizados.',
-          '<strong>Correspondência dos governadores</strong> com a Coroa, no Arquivo Histórico Ultramarino, pelo Projeto Resgate. É onde o poder colonial descreve o que estava acontecendo enquanto acontecia.',
-          '<strong>Devassas e processos</strong> abertos depois do conflito: nomeiam pessoas e lugares com precisão que crônica nenhuma tem.',
-          '<strong>Toponímia histórica:</strong> o nome do lugar em 1708 não era o de hoje. Cruzar o topônimo de época com o território atual é metade do trabalho.',
-          '<strong>Bibliografia especializada:</strong> a guerra tem historiografia consolidada; verificar se algum autor já localizou a aclamação pode encurtar tudo.',
-        ] },
-        { citacao: 'Espaço reservado para a primeira citação de fonte primária que situe a aclamação, com fundo, livro, folha e transcrição.', autoria: 'Documento a localizar' },
-        { figura: 'Reprodução de crônica, carta ou mapa de época que trate da guerra e da região de Caeté.', arquivo: 'figura-guerra-dos-emboabas.jpg', legenda: 'Reprodução de documento exige crédito do acervo detentor e indicação de fundo, livro e folha.' },
-      ],
-    },
-    {
-      id: 'metodo', titulo: 'Nota de método',
-      blocos: [
-        'Este portal não publica narrativa histórica sem fonte identificada, e a regra vale com mais força justamente onde a história é mais bonita, porque é ali que a tentação de arredondar é maior.',
-        'A afirmação sobre a primeira eleição direta das Américas está nesta página porque é o que o distrito diz de si, e isso é um dado sobre o distrito. Ela está declarada como afirmação a documentar porque ainda não foi documentada aqui. As duas coisas são verdadeiras ao mesmo tempo, e dizer as duas é mais honesto (e mais útil a quem for pesquisar) do que escolher uma.',
-      ],
-    },
-  ],
-  fontes: [
-    'Arquivo Histórico Ultramarino (Lisboa) / Projeto Resgate: correspondência sobre as Minas nos anos de 1707 a 1710, digitalizada e de acesso público.',
-    'Arquivo Público Mineiro: devassas, processos e documentação da capitania criada em 1709.',
-    'Crônicas setecentistas sobre a Guerra dos Emboabas: verificar edições críticas disponíveis e o que dizem sobre a localização da aclamação.',
-    'Revista do Arquivo Público Mineiro: transcrições antigas de documentação hoje frágil.',
-    'Bibliografia acadêmica sobre a Guerra dos Emboabas e sobre Manuel Nunes Viana: levantamento sistemático, verificando se a localização já foi estabelecida.',
-    'Arquivo da Paróquia de Morro Vermelho e Cartório de Caeté: para cruzar nomes de época com o território.',
-    'Toponímia histórica da região do Sabarabuçu: mapas coloniais e nomes de lugar anteriores aos atuais.',
   ],
   relacionadas: [
-    { nome: 'História de Resistência', href: 'historia-de-resistencia.html', txt: 'O eixo em torno do qual o distrito organiza a própria memória.', olho: '02' },
-    { nome: 'A Busca do Ouro', href: 'a-busca-do-ouro.html', txt: 'A riqueza que estava em disputa.', olho: '03' },
-    { nome: 'Os Dragões Reais', href: 'os-dragoes-reais.html', txt: 'A resposta militar que a Coroa montou depois.', olho: '07' },
+    { nome: 'Levante das Bateias', href: 'levante-das-bateias.html', txt: 'A dura luta contra os impostos exorbitantes', olho: '10' },
+    { nome: 'Os Dragões Reais', href: 'os-dragoes-reais.html', txt: 'Força militar para arrecadar e conter rebeliões', olho: '07' },
+    { nome: 'Diretas-Já', href: 'diretas-ja.html', txt: 'Primeiro grito contra a ditadura militar', olho: '13' },
   ],
 };

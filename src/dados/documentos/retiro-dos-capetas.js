@@ -1,72 +1,96 @@
 /* ==========================================================================
-   RETIRO DOS CAPETAS
-   Nossa História · 06
-   --------------------------------------------------------------------------
-   REGRA EDITORIAL: nenhum fato sobre Morro Vermelho foi inventado. Contexto
-   regional documentado e perguntas locais aparecem separados, de propósito.
+   06 · RETIRO DOS CAPETAS
 
-   ATENÇÃO AO NOME: o índice do projeto grafa "Retiro dos Capetas"; parte da
-   documentação anterior deste portal usava "Retiro do Capetas", no singular.
-   A forma corrente no distrito precisa ser confirmada com moradores antes da
-   publicação — e, uma vez confirmada, corrigida aqui e em navegacao.js.
+   FONTE: originais/word/06MV.docx — "Pesquisa, texto e fotos: Geraldo Lopes".
+   Texto do documento original, sem acréscimo.
    ========================================================================== */
 
 export default {
   slug: 'retiro-dos-capetas',
-  numero: '06',
   titulo: 'Retiro dos Capetas',
+  numero: '06',
   olho: 'Nossa História · 06',
-  tom: 'var(--grafite-700)',
-  estado: 'A pesquisar',
-  resumo: 'Posto fiscal da Coroa Portuguesa. O ouro não podia sair sem passar por aqui, e um nome como este raramente é gentileza de quem pagava.',
-  resumoSeo: 'O Retiro dos Capetas, posto fiscal da Coroa em Morro Vermelho, distrito de Caeté (MG): o que era um registro colonial e o que falta documentar.',
+  tom: 'var(--grafite-800)',
+  resumo: 'Posto fiscal da Estrada Real',
+  resumoSeo: 'O Retiro dos Capetas, na Fazenda do Maquiné, divisa de Morro Vermelho com Rio '
+           + 'Acima: posto fiscal da Coroa Portuguesa no desfiladeiro da Estrada Real, e a lenda '
+           + 'que lhe deu o nome.',
   secoes: [
     {
-      id: 'o-registro', titulo: 'O que era um registro',
+      id: 'abertura', titulo: null,
       blocos: [
-        { abertura: 'A Coroa portuguesa não vigiava as minas: vigiava os <strong>caminhos</strong>. Concentrando o trânsito em rotas autorizadas, bastava instalar postos nos pontos de passagem obrigatória para taxar tudo o que entrava e saía.' },
-        'Esses postos tinham nomes variados (registro, contagem, casa de registro) e função sempre igual: conferir carga, cobrar o que era devido e anotar. Ficavam onde a geografia não deixava alternativa: uma garganta de serra, uma travessia de rio, o único ponto praticável de uma vertente.',
-        { lista: [
-          '<strong>O quinto:</strong> a quinta parte de todo o ouro extraído, devida ao rei. Sua cobrança mudou de forma várias vezes ao longo do século XVIII, e cada mudança gerou atrito.',
-          '<strong>Entradas:</strong> taxa sobre mercadorias que entravam na região das minas: sal, ferramenta, tecido, gado, pessoas escravizadas.',
-          '<strong>Passagens:</strong> cobrança pelo uso de travessias e pontes, muitas vezes arrematada por contratadores particulares.',
-          '<strong>Livros de registro:</strong> onde tudo isso era anotado. Quando sobrevivem, são a fonte mais rica que existe sobre o movimento de um lugar.',
-        ] },
-        { nota: 'Tudo acima é documentado para as Minas coloniais como região. Que o Retiro dos Capetas tenha exercido essas funções é o que esta página precisa comprovar, e é uma hipótese forte, dada a posição do distrito na rede de caminhos do Sabarabuçu.', titulo: 'O que é contexto e o que é fato local' },
+        { abertura: 'Contavam os antigos em Morro Vermelho que no chamado Retiro dos Capetas, na '
+                  + 'Fazenda do Maquiné, divisa entre Morro Vermelho e Rio Acima, funcionava um '
+                  + 'posto fiscal da Coroa Portuguesa. No local ainda existem ruínas de um grande '
+                  + 'paredão de pedra com argolas para animais e no local denominado Vargem do '
+                  + 'Lima ruínas de residências, bem como uma casa de pedra já em território de '
+                  + 'Rio Acima. Essas construções seriam abrigos para fiscais e tropas '
+                  + 'portuguesas.' },
+        'No início do século 18, a Coroa Portuguesa financiou a construção de estradas como únicas '
+      + 'vias de acesso às reservas de ouro, procedentes do Rio de Janeiro e São Paulo em direção '
+      + 'ao interior de Minas Gerais. A circulação de pessoas, mercadorias, ouro e diamante era '
+      + 'obrigatoriamente feita por estas rotas, sendo crime passar por outros caminhos. Ao longo '
+      + 'destes caminhos reais espalharam-se os antigos registros, que eram postos fiscais de '
+      + 'controle.',
+        'As estradas eram de diversos tipos: registros do ouro, que fiscalizavam o transporte do '
+      + 'metal e cobravam o quinto; registros de entradas, que cobravam pelo tráfego de pessoas, '
+      + 'mercadorias e animais; registros de demarcação, responsáveis pelo severo policiamento do '
+      + 'contrabando e pela cobrança dos direitos de entrada na zona do ouro; e contagens, que '
+      + 'tributavam o trânsito de animais. Os prédios dos registros eram instalados em locais '
+      + 'estratégicos dos caminhos: passagens entre serras, desfiladeiros, margens de cursos '
+      + 'd’água. No seu interior se colocava o pessoal empregado: um administrador, um contador, '
+      + 'um fiel e dois ou quatro soldados. Um portão com cadeado fechava a entrada.',
+        'O Retiro dos Capetas está situado num desfiladeiro e por ali eram obrigados a passar '
+      + 'todos os bandeirantes, tropeiros e mascates, sendo exigido o pagamento de impostos. '
+      + 'Muitos seguiam com tropas carregadas de ouro, vindas da Serra da Piedade, Caeté, Cuiabá, '
+      + 'Viracopos, Morro Vermelho e, por outro trecho das Furnas do Caeté (Cutão). No sentido '
+      + 'inverso, as tropas vinham do Rio de Janeiro e São Paulo, trazendo mercadorias e '
+      + 'ferramentas para abastecer mais de 800 minas de ouro da região.',
+        'Os fiscais só liberavam o ouro quintado, isto é, aquele que já tivesse passado pago os '
+      + 'impostos e continham o selo real. O metal sem procedência era confiscado e os '
+      + 'contrabandistas sujeitos à prisão. Também ali passavam pela fiscalização os mascates que '
+      + 'iam em direção à área mineradora e eram obrigados a pagar impostos sobre diversos '
+      + 'produtos, como carne, mantimentos, bebidas e animais.',
       ],
     },
     {
-      id: 'o-nome', titulo: 'O nome',
+      id: 'a-lenda', titulo: 'O nome',
       blocos: [
-        'Topônimo é documento. "Retiro dos Capetas" não é nome que um posto fiscal escolha para si. É nome que se ganha de quem passa por ele. Vale a pena tratar essa hipótese com seriedade, porque nomes assim guardam a avaliação popular de uma instituição por séculos depois de ela desaparecer.',
-        { lacuna: 'Duas perguntas, e a segunda é a que interessa: <strong>onde exatamente ficava o retiro</strong>, e <strong>de onde vem o nome?</strong> É apelido dado aos cobradores? Referência aos Dragões Reais destacados ali? Corruptela de um nome mais antigo? Ou nada disso, e a explicação é outra? Todas as hipóteses são interessantes, inclusive a que desmente a leitura mais bonita.' },
-        { nota: 'Enquanto a origem do nome não for documentada, este portal não a afirma. Uma explicação plausível e não verificada, repetida em site oficial, vira "fato" em cinco anos, e este é exatamente o tipo de invenção que o projeto existe para não cometer.', titulo: 'Por que não escolhemos uma explicação' },
+        'O nome Retiro dos Capetas foi dado já no início do século 20, quando o local havia se '
+      + 'transformado em uma fazenda de criação de gado leiteiro. Contam os mais antigos que o '
+      + 'fazendeiro vivia um grande tormento com a presença de vários fantasmas de capetas, que '
+      + 'atacavam sua família e as pessoas que por ali passavam.',
+        'A lenda era de os espíritos eram de dois escravos, que haviam sido enterrados vivos para '
+      + 'vigiar um baú de ouro. Contam os mais antigos que as pessoas boas que por ali passavam só '
+      + 'levavam um susto dos fantasmas, mas as pessoas más eram puxadas pelos cabelos e agredidas '
+      + 'por capetas invisíveis. Os demônios só sossegavam por um tempo quando o padre José '
+      + 'Evangelista Marques Guimarães (Padre Nico), vigário da Paróquia de Nossa Senhora de '
+      + 'Nazareth de Morro Vermelho por mais de 50 anos, ia a cavalo até a fazenda para benzer '
+      + 'pessoas, animais e currais. Isso já nas décadas de 1930 e 1940. Dizem que ele era o único '
+      + 'padre capaz de aplacar a fúria dos capetas.',
       ],
     },
     {
-      id: 'onde', titulo: 'Onde procurar',
+      id: 'casa-forte', titulo: 'Casa Forte',
       blocos: [
-        'Postos fiscais deixam menos vestígio que engenhos: eram construções pequenas, muitas vezes de pau a pique, e o que sobra costuma ser o alicerce e o topônimo.',
-        { lista: [
-          'A localização provável está no cruzamento entre o traçado do caminho colonial e o limite natural que o obrigava a passar num ponto só.',
-          'Alicerces de pedra em plataforma aplainada, à beira do caminho velho.',
-          'O nome no cadastro rural, em escritura antiga ou em mapa do IBGE: topônimos sobrevivem em papel de cartório muito depois de sumirem da fala.',
-          'Menções em livros de registro do termo de Caeté, no Arquivo Público Mineiro.',
-        ] },
+        'No século 18, era comum encontrar construções de pedra às margens dos caminhos por onde '
+      + 'se transportava o ouro e todos os mantimentos que abasteciam a região.',
+        'Em Rio Acima, pode-se citar o Curralinho, construção de pedra que possivelmente foi um '
+      + 'dos primeiros curtumes de Minas Gerais e ainda um ponto de parada de negociantes que '
+      + 'buscavam animais, couro e outras encomendas.',
+        'Próximo dali está a Casa Forte, onde o ouro da Coroa Portuguesa era protegido durante a '
+      + 'noite dos ataques de quilombolas e ladrões que espreitavam as caravanas.',
+        'Na região hoje conhecida como Para-Raios, foi construída pelos escravos uma Capela de '
+      + 'Pedras, provavelmente idealizada por mineradores, que dessa forma agradeciam um presente '
+      + 'divino, já que haviam encontrado ouro nos arredores. A prova disso são as Catas de Ouro '
+      + 'da Fazenda Capão, de propriedade do Sr. Modestino, onde se pode encontrar inúmeras bocas '
+      + 'de minas de ouro, escavadas na pedra bruta por escravos.',
       ],
     },
-  ],
-  fontes: [
-    'Arquivo Público Mineiro: livros de registro, contagens e passagens do termo de Caeté; documentação da Real Extração e dos contratadores.',
-    'Cartório de Caeté: escrituras e cadastros rurais em que o topônimo apareça.',
-    'IBGE: cartas topográficas e nomes de lugar registrados em levantamentos antigos.',
-    'Instituto Estrada Real: traçado reconhecido dos caminhos na região, para cruzar com a localização provável.',
-    'IEPHA-MG e IPHAN: inventários de bens culturais do distrito.',
-    'Memória oral, prioridade máxima nesta página: a origem do nome só sobrevive na fala.',
   ],
   relacionadas: [
-    { nome: 'Estrada Real', href: 'estrada-real.html', txt: 'O caminho que tornava o posto inevitável.', olho: '08' },
-    { nome: 'Os Dragões Reais', href: 'os-dragoes-reais.html', txt: 'A força que garantia a cobrança.', olho: '07' },
-    { nome: 'Levante das Bateias', href: 'levante-das-bateias.html', txt: 'O que acontecia quando a cobrança passava do ponto.', olho: '10' },
+    { nome: 'Estrada Real', href: 'estrada-real.html', txt: 'Caminho de bandeirantes, fiscais e tropeiros', olho: '08' },
+    { nome: 'Os Dragões Reais', href: 'os-dragoes-reais.html', txt: 'Força militar para arrecadar e conter rebeliões', olho: '07' },
+    { nome: 'Estórias, Casos e Lendas', href: 'estorias-casos-e-lendas.html', txt: 'Trezentos anos de literatura oral', olho: '25' },
   ],
 };

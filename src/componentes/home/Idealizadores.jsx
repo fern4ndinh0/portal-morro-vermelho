@@ -21,7 +21,7 @@
 
 import { CaixaDeMidia } from '../CaixaDeMidia.jsx';
 import { Icone } from '../../dados/icones.jsx';
-import { IDEALIZADORES, IDEALIZADORES_ABERTURA } from '../../dados/home.js';
+import { IDEALIZADORES } from '../../dados/home.js';
 import { Revelar } from '../../ganchos/Revelar.jsx';
 
 function Perfil({ pessoa, inverso, atraso }) {
@@ -71,9 +71,8 @@ export function Idealizadores() {
     <section className="secao" id="idealizadores" data-superficie="papel" aria-labelledby="idealizadores-titulo">
       <div className="envelope">
         <Revelar as="header" style={{ maxWidth: '46rem', marginBottom: 'var(--e-7)' }}>
-          <p className="olho">Quem faz este acervo existir</p>
+          <p className="olho">Pesquisa e texto</p>
           <h2 className="titulo-secao" id="idealizadores-titulo">Geraldo Lopes e Viviane Pinheiro</h2>
-          <p className="linha-fina">{IDEALIZADORES_ABERTURA}</p>
         </Revelar>
 
         <div className="idealizadores__linhas">
@@ -82,9 +81,8 @@ export function Idealizadores() {
         </div>
 
         <p className="idealizadores__mais">
-          Os mais de quarenta anos de pesquisa que sustentam este acervo, e o que mudou
-          na reconstrução desta versão, estão contados em{' '}
-          <a href="sobre-o-portal.html">Como este portal foi feito</a>.
+          O portal é resultado de mais de 40 anos de pesquisas e coleta de informações
+          sobre o distrito. Ver <a href="sobre-o-portal.html">Sobre o Portal</a>.
         </p>
       </div>
     </section>

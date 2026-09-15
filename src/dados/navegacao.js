@@ -92,10 +92,8 @@ export const MENU = [
         ],
       },
       {
-        titulo: 'Museu Digital',
+        titulo: 'Acervo e patrimônio',
         itens: [
-          { nome: 'Acervo', href: 'index.html#acervo', desc: 'Documentos, fotografias e depoimentos digitalizados', secao: 'acervo' },
-          { nome: 'Antes e depois', href: 'index.html#antes-depois', desc: 'A mesma esquina, com um século de diferença', secao: 'antes-depois' },
           { nome: 'Galeria de Fotos', href: 'galeria-de-fotos.html', desc: 'O acervo fotográfico, e o que ele exige' },
           { nome: 'Mídia e Redes', href: 'midia-e-redes.html', desc: 'Onde acompanhar o distrito' },
           { nome: 'Notícias da Terra', href: 'noticias-da-terra.html', desc: 'O que ameaça o patrimônio hoje' },
@@ -129,7 +127,6 @@ export const MENU = [
     ],
   },
 
-  { rotulo: 'Colabore', href: 'index.html#colabore', secao: 'colabore' },
 ];
 
 /* --- Mapa do site (rodapé) + origem do menu mobile ------------------------
@@ -192,10 +189,8 @@ export const MENU_RODAPE = [
     ],
   },
   {
-    titulo: 'Museu Digital',
+    titulo: 'Acervo e patrimônio',
     itens: [
-      { nome: 'Acervo', href: 'index.html#acervo', secao: 'acervo' },
-      { nome: 'Antes e depois', href: 'index.html#antes-depois', secao: 'antes-depois' },
       { nome: '23 · Notícias da Terra', href: 'noticias-da-terra.html' },
       { nome: '24 · Mídia e Redes', href: 'midia-e-redes.html' },
       { nome: '29 · Galeria de Fotos', href: 'galeria-de-fotos.html' },
@@ -204,7 +199,6 @@ export const MENU_RODAPE = [
   {
     titulo: 'Participar',
     itens: [
-      { nome: 'Enviar seu acervo', href: 'index.html#colabore', secao: 'colabore' },
       { nome: 'Falar no WhatsApp', zap: 'Olá! Escrevo pelo portal de Morro Vermelho.' },
       { nome: 'Área para escolas' },
       { nome: '00 · Como este portal foi feito', href: 'sobre-o-portal.html' },

@@ -15,10 +15,10 @@ import { Chassi } from '../componentes/Chassi.jsx';
 
 const SAIDAS = [
   { nome: 'Página inicial', href: 'index.html' },
-  { nome: 'Museu Digital', href: 'index.html#acervo' },
   { nome: 'História e linha do tempo', href: 'index.html#historia' },
-  { nome: 'Como visitar o distrito', href: 'index.html#visite' },
-  { nome: 'Doar acervo', href: 'index.html#colabore' },
+  { nome: 'Como chegar ao distrito', href: 'index.html#visite' },
+  { nome: 'Galeria de Fotos', href: 'galeria-de-fotos.html' },
+  { nome: 'Serviços', href: 'servicos.html' },
 ];
 
 export const META_404 = {

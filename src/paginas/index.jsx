@@ -11,7 +11,7 @@
    RECEITA
    Que CSS e que JS cada tipo de página recebe. tokens e base são a fundação;
    chassi é navbar/rodapé/botões; home e artigo só entram onde são usados.
-   Uma página de documento não carrega as ~1.200 linhas de hero, comparador e
+   Uma página de documento não carrega as linhas de hero, cartões e
    acervo que nunca usa.
    ========================================================================== */
 

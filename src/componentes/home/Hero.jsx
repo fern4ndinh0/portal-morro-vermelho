@@ -21,12 +21,9 @@
 
 import { useEffect, useRef } from 'react';
 import { Icone } from '../../dados/icones.jsx';
-import { ACERVO } from '../../dados/home.js';
 import { useMovimento } from '../../ganchos/movimento.jsx';
 import { useAoRolar } from '../../ganchos/rolagem.js';
 import { CaixaDeMidia } from '../CaixaDeMidia.jsx';
-import { AVerificar } from '../Texto.jsx';
-import { Numero } from '../Numero.jsx';
 
 /* Três planos de serra. O fator de parallax é diferente por plano: o plano
    de fundo se move MENOS, que é o que produz sensação de profundidade real. */
@@ -108,20 +105,14 @@ export function Hero() {
 
           <p className="hero__lema">Amor à Liberdade</p>
 
-          <p className="hero__frase">
-            O arquivo aberto de um distrito histórico de Minas: documentos,
-            fotografias, vozes de moradores e a tradição que ainda para as ruas
-            todos os anos.
-          </p>
-
           <div className="hero__acoes">
-            <a className="btn btn--primario" href="#acervo">
-              Entrar no Museu Digital
+            <a className="btn btn--primario" href="#historia">
+              Ler a história
               <Icone nome="seta-dir" />
             </a>
-            <a className="btn btn--claro" href="#visite">
+            <a className="btn btn--claro" href="servicos.html">
               <Icone nome="pin" />
-              Como visitar
+              Serviços
             </a>
           </div>
         </div>
@@ -147,29 +138,11 @@ export function Hero() {
         />
       </div>
 
-      <a className="hero__rolar" href="#revelacoes">
+      <a className="hero__rolar" href="#historia">
         Explorar
         <span className="hero__rolar-trilho" aria-hidden="true" />
       </a>
 
-      {/* Barra do hero: informação útil, não enfeite. */}
-      <div className="hero__barra">
-        <span className="hero__barra-item">
-          <Icone nome="pin" />
-          A <strong>±35 km</strong>
-          <AVerificar marca title="Distância a medir e confirmar">distância a confirmar</AVerificar>
-          {' '}de Belo Horizonte
-        </span>
-        <span className="hero__barra-item">
-          <Icone nome="calendario" />
-          Próxima festa: <strong>Cavalhadas</strong>
-          <AVerificar marca title="Data da próxima edição a confirmar">data a confirmar</AVerificar>
-        </span>
-        <span className="hero__barra-item">
-          <Icone nome="doc" />
-          <strong><Numero valor={ACERVO.length} /></strong> peças no acervo digital
-        </span>
-      </div>
     </section>
   );
 }

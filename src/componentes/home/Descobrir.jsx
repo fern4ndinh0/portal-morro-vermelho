@@ -67,8 +67,8 @@ export function Descobrir() {
           }}
         >
           <div style={{ maxWidth: '40rem' }}>
-            <p className="olho">Cinco caminhos</p>
-            <h2 className="titulo-secao" id="descobrir-titulo">Por onde você quer entrar</h2>
+            <p className="olho">Capítulos</p>
+            <h2 className="titulo-secao" id="descobrir-titulo">Por onde começar</h2>
           </div>
           <hr className="filete" style={{ flex: 1, minWidth: '6rem', marginBottom: 'var(--e-4)' }} />
         </Revelar>

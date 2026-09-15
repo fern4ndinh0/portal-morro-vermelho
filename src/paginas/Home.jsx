@@ -9,27 +9,23 @@
    ========================================================================== */
 
 import { MARCA, SITE } from '../dados/navegacao.js';
-import { MOSTRAR_CAVALHADAS } from '../dados/home.js';
 import { Chassi } from '../componentes/Chassi.jsx';
 import { Hero } from '../componentes/home/Hero.jsx';
-import { Revelacoes } from '../componentes/home/Revelacoes.jsx';
-import { Cavalhadas } from '../componentes/home/Cavalhadas.jsx';
 import { Descobrir } from '../componentes/home/Descobrir.jsx';
 import { Historia } from '../componentes/home/Historia.jsx';
 import { Idealizadores } from '../componentes/home/Idealizadores.jsx';
-import { Acervo } from '../componentes/home/Acervo.jsx';
-import { AntesDepois } from '../componentes/home/AntesDepois.jsx';
 import { Visite } from '../componentes/home/Visite.jsx';
-import { Colabore } from '../componentes/home/Colabore.jsx';
 import { Loader } from '../componentes/home/Loader.jsx';
 
 export const META_HOME = {
   slug: 'index',
-  titulo: `${MARCA.nome} | Portal Cultural e Museu Digital, Distrito de Caeté, Minas Gerais`,
-  tituloOg: `${MARCA.nome} | Portal Cultural e Museu Digital`,
-  descricao: 'Portal cultural e museu digital de Morro Vermelho, distrito de Caeté, '
-           + 'Minas Gerais. Acervo histórico, memória oral, patrimônio, Cavalhadas, '
-           + 'gastronomia e informações para visitar o distrito.',
+  titulo: `${MARCA.nome}, amor à liberdade | Distrito de Caeté, Minas Gerais`,
+  tituloOg: `${MARCA.nome}, amor à liberdade`,
+  /* A descrição é a dos próprios autores, no release de lançamento
+     (originais/word/Release.docx). */
+  descricao: 'O portal de Morro Vermelho, distrito de Caeté, na região metropolitana de '
+           + 'Belo Horizonte, é resultado de mais de 40 anos de pesquisas e coleta de '
+           + 'informações sobre o povoado. Conta toda a sua história de resistência.',
 
   /* TODO gerar uma versão 1200×630 a partir de uma fotografia REAL do
      distrito. Enquanto não houver, uso a foto real em formato retrato: as
@@ -49,11 +45,11 @@ export const META_HOME = {
         '@type': 'WebSite',
         '@id': `${SITE}/#site`,
         name: `Portal ${MARCA.nome}`,
-        alternateName: `Museu Digital de ${MARCA.nome}`,
+        alternateName: `${MARCA.nome}, amor à liberdade`,
         url: `${SITE}/`,
         inLanguage: 'pt-BR',
-        description: 'Portal cultural e museu digital dedicado à preservação da memória '
-                   + 'e ao turismo do distrito de Morro Vermelho, Caeté, Minas Gerais.',
+        description: 'Resultado de mais de 40 anos de pesquisas e coleta de informações '
+                   + 'sobre o distrito de Morro Vermelho, em Caeté, Minas Gerais.',
       },
       {
         '@type': ['TouristDestination', 'Place'],
@@ -83,15 +79,10 @@ export function Home() {
     <Chassi slug="index">
       <main id="conteudo">
         <Hero />
-        <Revelacoes />
-        {MOSTRAR_CAVALHADAS && <Cavalhadas />}
         <Descobrir />
         <Historia />
         <Idealizadores />
-        <Acervo />
-        <AntesDepois />
         <Visite />
-        <Colabore />
       </main>
       <Loader />
     </Chassi>

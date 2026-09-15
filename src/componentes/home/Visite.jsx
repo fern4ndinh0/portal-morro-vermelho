@@ -21,10 +21,16 @@ import { Revelar } from '../../ganchos/Revelar.jsx';
 
 const DESTINO = 'Morro+Vermelho%2C+Ca%C3%A9t%C3%A9+-+MG';
 
+/* As três distâncias e os três acessos são os do capítulo 26, Serviços, como
+   o documento os dá. Nada aqui é estimado. */
 const PRATICO = [
-  { icone: 'pin',    titulo: 'Onde fica:', txt: 'distrito de Caeté, MG, região metropolitana de Belo Horizonte.' },
-  { icone: 'igreja', titulo: 'Horário da igreja:', txt: 'a confirmar com a paróquia.' },
-  { icone: 'garfo',  titulo: 'Onde comer:', txt: 'levantar estabelecimentos locais e listá-los de graça, para apoiar a economia do distrito.' },
+  { icone: 'pin', titulo: 'Onde fica:',
+    txt: 'distrito de Caeté, a 10 quilômetros da sede do município. Liga-se também a Sabará '
+       + '(16 km), Raposos (14 km) e Rio Acima (18 km).' },
+  { icone: 'seta-dir', titulo: 'O acesso mais comum:',
+    txt: 'de Belo Horizonte por Caeté, pela BR-381, subindo a Serra da Piedade.' },
+  { icone: 'seta-dir', titulo: 'O trecho mais curto:',
+    txt: 'por Nova Lima e Raposos. Da Savassi são 45 quilômetros, com 14 de estrada de terra.' },
 ];
 
 export function Visite() {
@@ -37,8 +43,8 @@ export function Visite() {
             <p className="olho">Informação prática</p>
             <h2 className="titulo-secao" id="visite-titulo">Como chegar</h2>
             <p className="linha-fina" style={{ marginBottom: 'var(--e-6)' }}>
-              Morro Vermelho é distrito de Caeté, na região metropolitana de Belo
-              Horizonte. Abra a rota direto no seu celular e siga daí.
+              O povoado de Morro Vermelho é um distrito de Caeté, município da Região
+              Metropolitana de Belo Horizonte. Todos os acessos são por estrada de terra.
             </p>
 
             {/* Links de rota do Google Maps. Funcionam em qualquer aparelho: no

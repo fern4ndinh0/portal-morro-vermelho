@@ -174,8 +174,8 @@ export function Drawer({ aberto, fechar }) {
                 depois={item.href ? <> <Icone nome="seta-dir" /></> : null}
                 /* Ir para uma âncora da PRÓPRIA página deve fechar o menu —
                    senão o painel fica por cima do destino. Repare que o teste
-                   é sobre o href já resolvido: 'index.html#colabore' só vira
-                   '#colabore' quando se está na home. */
+                   é sobre o href já resolvido: 'index.html#historia' só vira
+                   '#historia' quando se está na home. */
                 onClick={alvo(item.href, slug)?.startsWith('#') ? fechar : undefined}
               />
             ))}

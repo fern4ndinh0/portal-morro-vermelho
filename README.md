@@ -343,13 +343,15 @@ Só `.docx`. Um `.doc` do Word 97 é outro formato, binário; abra no Word e
 salve como `.docx`. Arquivos `~$algo.docx` são ignorados — são o bloqueio que
 o Word cria enquanto o documento está aberto, e não são documentos.
 
-### Acrescentar uma peça ao acervo
+### Mexer numa seção da home
 
-Acrescente um objeto a `ACERVO`, em `src/dados/home.js`. Os quatro contadores
-da seção se atualizam sozinhos.
+`src/dados/home.js`. `MANIFESTO`, `CAMINHOS`, `LINHA_DO_TEMPO` e
+`IDEALIZADORES` são listas de dados, não markup.
 
-O mesmo vale para `LINHA_DO_TEMPO`, `REVELACOES`, `CAMINHOS` e
-`O_QUE_ACEITAMOS` — todos são listas de dados, não markup.
+> A home foi limpa em setembro de 2026 pela mesma regra dos verbetes, e o
+> cabeçalho de `home.js` lista o que saiu e por quê. Um marco novo na linha
+> do tempo precisa de uma data que esteja escrita em algum `.docx`, e o campo
+> `href` leva ao capítulo de onde ela veio.
 
 ### Colocar uma imagem
 
@@ -402,7 +404,8 @@ bloqueado = portal íntegro e legível. Numa página pré-renderizada isso impor
 ainda mais: o HTML sai perfeito do gerador, e seria o navegador a escondê-lo.
 
 **2. Nenhum número é digitado à mão.**
-Os contadores derivam das listas de dados (`ACERVO.length`, e não `4`).
+O tempo de leitura e a numeração dos capítulos derivam do conteúdo, não de
+constantes escritas ao lado.
 
 **3. Nenhum link morto.**
 Página que ainda não existe não vira link — e agora isso é impossível de
@@ -423,8 +426,7 @@ partir de estado React — mas o contrato com o CSS não mudou.
 | Tempo de leitura | contado no navegador | contado na geração, **já no HTML** |
 | Links de WhatsApp | `href` escrito por JS em tempo de execução | montados na geração, **funcionam sem JS** |
 | Referência ABNT | montada no navegador | já no HTML; só a data de acesso é atualizada |
-| Seção Cavalhadas | desativada dentro de um comentário HTML | componente inteiro, desligado por `MOSTRAR_CAVALHADAS` |
-| Acervo, linha do tempo | blocos de HTML a duplicar à mão | listas de dados |
+| Linha do tempo | blocos de HTML a duplicar à mão | lista de dados |
 | Ícones | função que devolve string | componente, com o mesmo sprite podado |
 | `aria-current` do menu | JS varria o documento e escrevia em nós alheios | cada link compara o próprio `data-secao` |
 | Comentários no HTML | removidos pelo gerador | não existem — JSX não os emite |

@@ -114,6 +114,14 @@
   text-transform: uppercase;
 }
 
+/* ENDEREÇO NU NÃO PODE ESTOURAR A TELA.
+   O verbete 24 publica os endereços como o documento original os traz: por
+   extenso. Um deles tem 160 caracteres e, sem permissão de quebra, empurrava
+   a página inteira para 793px num celular de 390 — a barra de rolagem
+   horizontal que não pode existir. 'anywhere' quebra dentro do endereço; o
+   resto da prosa continua com a quebra normal do português. */
+.prosa a { overflow-wrap: anywhere; }
+
 /* ==========================================================================
    4. CORPO DO ARTIGO + SUMÁRIO LATERAL
    ========================================================================== */

@@ -241,16 +241,36 @@
   pointer-events: none;
 }
 /* No celular não existe "lado esquerdo": o texto ocupa a largura toda, então
-   o véu passa a vir de baixo, cobrindo o bloco inteiro de conteúdo. */
-@media (max-width: 48rem) {
+   o véu passa a vir de baixo, cobrindo o bloco inteiro de conteúdo.
+
+   A PARADA É ONDE O TÍTULO COMEÇA, e não no meio da tela: com a foto real,
+   "Morro Vermelho" cai em cima das nuvens e some. O véu tem de estar forte
+   já aos 70% de altura — o que ainda deixa o terço de cima da fotografia
+   (céu, torre, cruzeiro) em luz plena. Contraste é requisito, não gosto. */
+@media (max-width: 64rem) {
   .hero__base {
     background:
       linear-gradient(to top,
         var(--grafite-1000) 0%,
-        rgba(8, 8, 10, 0.92) 32%,
-        rgba(8, 8, 10, 0.62) 58%,
-        rgba(8, 8, 10, 0.25) 82%,
-        rgba(8, 8, 10, 0.1) 100%);
+        rgba(8, 8, 10, 0.95) 42%,
+        rgba(8, 8, 10, 0.88) 64%,
+        rgba(8, 8, 10, 0.66) 77%,
+        rgba(8, 8, 10, 0.30) 90%,
+        rgba(8, 8, 10, 0.10) 100%);
+  }
+  /* Com o véu subindo, o enquadramento sobe junto: assim o que fica na faixa
+     clara é a torre e a cruz, e não o chão. */
+  .hero__midia { object-position: 50% 42% !important; }
+
+  /* O véu sozinho não salva tipo branco em cima de nuvem branca, e escurecer
+     a fotografia inteira até salvar seria matar a fotografia. A sombra no
+     texto resolve o ponto exato onde o problema está — as letras — e deixa a
+     imagem viva. Vale para o título, o lema e a frase: é o bloco todo que
+     cai sobre o céu. */
+  .hero__titulo,
+  .hero__lema,
+  .hero__frase {
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.7), 0 2px 22px rgba(0, 0, 0, 0.85);
   }
 }
 
@@ -263,8 +283,15 @@
 /* Agrupa o texto do hero para que, no modo retrato, ele seja UM item de grade
    ao lado da moldura — e não cinco itens se espalhando pelas colunas. */
 /* Em tela cheia o texto não pode atravessar o monitor inteiro: a coluna de
-   leitura fica à esquerda e o footage respira à direita. */
-.hero__texto { min-width: 0; max-width: min(46rem, 66vw); }
+   leitura fica à esquerda e o footage respira à direita.
+
+   NO CELULAR NÃO EXISTE "ao lado": 66vw de 390px são 257px, e nessa medida
+   o nome próprio quebra em "Verme / lho" — exatamente o defeito que a trava
+   existe para evitar. Abaixo de 64rem a coluna ocupa a largura toda. */
+.hero__texto { min-width: 0; }
+@media (min-width: 64rem) {
+  .hero__texto { max-width: min(46rem, 66vw); }
+}
 
 .hero__olho {
   display: flex;
@@ -361,6 +388,26 @@ html:not([data-revelar-ativo]) .hero__linha > span { transform: none; }
 .hero__barra strong { color: var(--areia-300); font-weight: 600; }
 .hero__barra-item { display: inline-flex; align-items: center; gap: 0.45rem; }
 .hero__barra .icone { width: 0.9rem; height: 0.9rem; }
+
+/* NO CELULAR A BARRA SAI DO ABSOLUTO E ENTRA NO FLUXO.
+   Presa ao rodapé do hero, com os três itens quebrando em três linhas, ela
+   cresce para cima e passa por cima dos botões — o "Como visitar" ficava
+   metade escondido. Virando linha da grade, ela empurra em vez de cobrir.
+   align-content: end mantém as duas linhas (conteúdo e barra) no pé da
+   tela, que é onde o hero as quer. */
+@media (max-width: 64rem) {
+  .hero {
+    align-content: end;
+    padding-bottom: 0;
+  }
+  .hero__barra {
+    position: static;
+    inset: auto;
+    margin-top: var(--e-6);
+    justify-content: flex-start;
+    gap: var(--e-2) var(--e-4);
+  }
+}
 
 /* Convite para rolar: uma linha que desce devagar. Sem animate-bounce. */
 .hero__rolar {

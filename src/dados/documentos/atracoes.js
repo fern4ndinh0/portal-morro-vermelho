@@ -43,10 +43,6 @@ export default {
       + 'com o Menino Jesus nos braços. A matriz foi restaurada recentemente com a ajuda dos '
       + 'moradores e abriga rico acervo de altares e imagens, com as da padroeira, Senhor dos '
       + 'Passos e São José de Botas.',
-        { figura: 'Matriz de Nossa Senhora de Nazareth.',
-          arquivo: 'figura-matriz-nazareth.jpg',
-          alt: 'Fachada da Matriz de Nossa Senhora de Nazareth, branca, com frontão triangular e '
-             + 'duas torres quadradas.' },
         'Segundo o Iphan, a igreja guarda o aspecto original das matrizes setecentistas mineiras '
       + 'em madeira e adobe, com fachada encimada por frontão triangular e duas torres quadradas '
       + 'com cobertura de telhados de quatro águas. Tem à frente um amplo adro, ainda hoje cenário '
@@ -77,6 +73,18 @@ export default {
       + 'Esperança e Caridade. A Fé com a cruz, seu atributo tradicional, é representada em frente '
       + 'à própria Matriz de Nossa Senhora de Nazareth. A Esperança com a âncora e a Caridade com '
       + 'três crianças são, sem dúvida, inspiradas em habitantes da localidade de Morro Vermelho.',
+        { figura: 'A Matriz em fotografia antiga.',
+          arquivo: 'f-atracoes-matriz-antiga.jpg',
+          alt: 'Fotografia antiga em sépia da Matriz de duas torres, com o mastro erguido e uma multidão reunida no adro.',
+          credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
+        { figura: 'A nave da Matriz.',
+          arquivo: 'f-atracoes-nave.jpg',
+          alt: 'Interior da Matriz: a nave com os altares laterais, o arco-cruzeiro e o altar-mor iluminado ao fundo.',
+          credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
+        { figura: 'O altar-mor.',
+          arquivo: 'f-atracoes-altar-mor.jpg',
+          alt: 'Altar-mor em talha, com colunas torsas, nichos laterais e a imagem da padroeira no trono, cercada de flores brancas.',
+          credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
       ],
     },
     {
@@ -142,10 +150,6 @@ export default {
       + 'com ângulos chanfrados, de fins do século 18, destinados a homilias e sermões. A inserção '
       + 'dos púlpitos no arco-cruzeiro constitui solução menos frequente nas igrejas mineiras '
       + 'setecentistas, localizando-se geralmente no lado esquerdo e direito da nave.',
-        { figura: 'Nave da Matriz.',
-          arquivo: 'galeria-nave-matriz.jpg',
-          alt: 'Interior da Matriz de Nossa Senhora de Nazareth, com a nave, o forro pintado e o '
-             + 'altar-mor ao fundo.' },
         { sub: 'Capela-mor' },
         'No forro da capela-mor localiza-se pintura rococó da última fase dos tetos em '
       + 'perspectivas em Minas, cujo quadro central tem por tema a Assunção de Nossa Senhora ao '
@@ -154,6 +158,18 @@ export default {
       + 'Santo no forro camarim. Nele está entronizada a imagem de Nossa Senhora de Nazareth, peça '
       + 'de meados do século 18, de provável origem portuguesa, obra de artista erudito, com '
       + 'tratamento requintado.',
+        { figura: 'O forro da nave.',
+          arquivo: 'f-atracoes-forro-milagre.jpg',
+          alt: 'Pintura no forro de tábuas: Nossa Senhora entre nuvens e, abaixo, o cavaleiro dom Fuas Roupinho com o cavalo estacado à beira do penhasco.',
+          credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
+        { figura: 'Detalhe da talha.',
+          arquivo: 'f-atracoes-talha-monograma.jpg',
+          alt: 'Detalhe da talha dourada do altar, com o monograma de Maria ao centro de uma cartela em relevo.',
+          credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
+        { figura: 'O coro e o subcoro.',
+          arquivo: 'f-atracoes-coro.jpg',
+          alt: 'Vista do interior da igreja a partir da capela-mor: o coro de madeira sobre a entrada e o forro de tábuas pintado.',
+          credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
       ],
     },
     {
@@ -170,10 +186,14 @@ export default {
         'Apesar da sua importância histórica, a capela não é protegida pelo Iphan pelo simples '
       + 'motivo de apresentar no teto interno pinturas superpostas, mas é tombada pelo patrimônio '
       + 'histórico municipal. Foi recentemente restaurada.',
-        { figura: 'Capela de Nossa Senhora do Rosário dos Pretos.',
-          arquivo: 'galeria-capela-rosario.jpg',
-          alt: 'Fachada branca da Capela de Nossa Senhora do Rosário dos Pretos, de corpo único, '
-             + 'com porta central e sineira.' },
+        { figura: 'Interior da Capela do Rosário.',
+          arquivo: 'f-atracoes-rosario-interior.jpg',
+          alt: 'Interior da capela: nave estreita de paredes claras, altar-mor pintado imitando mármore e o forro de tábuas decorado.',
+          credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
+        { figura: 'O forro pintado da capela.',
+          arquivo: 'f-atracoes-rosario-forro.jpg',
+          alt: 'Pintura do forro: Nossa Senhora com o Menino entregando o rosário a São Domingos, com anjos ao redor e a inscrição Regina Sacratissimi Rosarii.',
+          credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
       ],
     },
     {
@@ -183,6 +203,10 @@ export default {
       + 'do Rosário também recebia anualmente fiéis para a santa missa e era local de peregrinações '
       + 'durante todo o ano. As ruínas do antigo cruzeiro ainda estão de pé. Lideranças '
       + 'comunitárias se organizam para restaurar o cruzeiro e as romarias ao local.',
+        { figura: 'As ruínas do cruzeiro.',
+          arquivo: 'f-atracoes-cruzeiro-rosario.jpg',
+          alt: 'Cruzeiro de madeira escura ainda de pé no meio da vegetação alta, com uma pessoa ao lado.',
+          credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
       ],
     },
     {
@@ -219,10 +243,14 @@ export default {
       + 'para a Vila Nova da Rainha (Caeté), por outro para Sabará margeando o Ribeirão Comprido e '
       + 'ainda por outro caminho, pelo Cutão, para Raposos. A comunidade se organiza para reativar '
       + 'as peregrinações religiosas ao local.',
-        { figura: 'Morro da Santa Cruz.',
-          arquivo: 'galeria-morro-santa-cruz.jpg',
-          alt: 'O Morro da Santa Cruz, com a rocha avermelhada exposta no cume e a cruz de metal '
-             + 'no alto.' },
+        { figura: 'O Morro da Santa Cruz.',
+          arquivo: 'f-atracoes-morro-santa-cruz.jpg',
+          alt: 'O morro ao entardecer, com a rocha avermelhada exposta no cume e a cruz recortada contra o céu.',
+          credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
+        { figura: 'O cruzeiro no alto do morro.',
+          arquivo: 'f-atracoes-cruzeiro-martirio.jpg',
+          alt: 'Cruzeiro de metal no alto do morro, com os instrumentos da Paixão fixados nos braços, visto entre as árvores.',
+          credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
       ],
     },
     {
@@ -233,6 +261,10 @@ export default {
       + 'de pedras, sendo que uma delas fica praticamente sem apoio, produzido eco ao ser tocada '
       + 'por outra pedra ou metal. A intensa vegetação no local ajuda a aumentar o som em ritmo '
       + 'contínuo.',
+        { figura: 'A Pedra do Sino.',
+          arquivo: 'f-atracoes-pedra-do-sino.jpg',
+          alt: 'Mão batendo com um martelo na face de um grande bloco de granito assentado sobre outras pedras, no meio da mata.',
+          credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
       ],
     },
     {
@@ -246,6 +278,10 @@ export default {
       + 'a banda de mais de 300 anos, o povo de Morro Vermelho transmite para suas crianças a arte '
       + 'da boa música. Sob a batuta do mestre José Leal, a Oficina de Música treina crianças e '
       + 'jovens da comunidade.',
+        { figura: 'A Corporação Musical Santa Cecília.',
+          arquivo: 'f-atracoes-banda.jpg',
+          alt: 'Músicos da banda, de camisa clara e boné, tocando instrumentos de sopro sentados diante de uma casa.',
+          credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
       ],
     },
   ],

@@ -47,10 +47,10 @@ export default {
       + 'diversas, sobretudo de postos de parada e de muros de pedra onde os tropeiros amarravam '
       + 'seus animais para pernoite ou descanso. Também podem ser vistas pontes centenárias de '
       + 'madeira e de pedras, sinal de tráfego intenso na região.',
-        { figura: 'Trecho antigo da Estrada Real.',
-          arquivo: 'figura-estrada-real.jpg',
-          alt: 'Trecho de caminho antigo de terra e pedra, margeado por muros de pedra seca e '
-             + 'vegetação.' },
+        { figura: 'Caminho antigo.',
+          arquivo: 'f-estrada-caminho.jpg',
+          alt: 'Caminho de terra subindo entre as árvores, com o sol atravessando a folhagem.',
+          credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
       ],
     },
     {
@@ -88,9 +88,14 @@ export default {
       + 'dos rios São Francisco e das Velhas; por sertanistas da Bahia e das vilas paulistas; por '
       + 'escravos negros e índios; por mascates, administradores reais, homens do fisco, soldados '
       + 'mercenários e milícias oficiais.',
-        { figura: 'Tropeiros na estrada.',
-          arquivo: 'galeria-tropeiros.jpg',
-          alt: 'Imagem antiga de tropeiros conduzindo animais carregados por um caminho de terra.' },
+        { figura: 'Marco de pedra à beira do caminho.',
+          arquivo: 'f-estrada-marco.jpg',
+          alt: 'Marco de pedra branca e um poste de madeira à margem de uma estrada de terra ladeada de eucaliptos.',
+          credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
+        { figura: 'Carroça na estrada de terra.',
+          arquivo: 'f-estrada-carroca.jpg',
+          alt: 'Carroça de madeira puxada por dois burros, conduzida por um homem, numa estrada de terra.',
+          credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
       ],
     },
     {
@@ -110,6 +115,10 @@ export default {
       + 'caminhos da Estrada Real apresentam atrativos naturais, históricos e culturais, '
       + 'permitindo a exploração sustentável da atividade turística, gerando mais emprego e renda '
       + 'para a população dos municípios.',
+        { figura: 'A estrada na serra.',
+          arquivo: 'f-estrada-serra.jpg',
+          alt: 'Estrada de terra serpenteando pelo alto da serra, com montanhas azuladas no horizonte.',
+          credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
       ],
     },
   ],

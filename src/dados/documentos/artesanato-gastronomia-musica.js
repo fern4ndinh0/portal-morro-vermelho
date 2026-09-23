@@ -47,15 +47,23 @@ export default {
       + 'bordadeiras tecem a renda em pano desfiado de algodão ou linho, que serve de adorno '
       + 'requintado de roupas de cama, toalhas e caminhos-de-mesa, além de peças de igreja, como '
       + 'os sanguíneos, que forram altares.',
-        { figura: 'Bordado de bainha aberta.',
-          arquivo: 'galeria-bainha-aberta.jpg',
-          alt: 'Detalhe de um bordado de bainha aberta em pano claro, com os fios desfiados e '
-             + 'trançados formando a renda.' },
         { sub: 'Ricos bordados vão até para o exterior' },
         'Em Morro Vermelho são produzidas diferentes peças e entre as mais encomendadas estão '
       + 'lençóis, viróis, fronhas, panos de prato, forros de bandeja, caminhos e toalhas de mesa. '
       + 'Para atender as encomendas há no povoado duas escolas de bordados, com frequência de '
       + 'idosos, donas de casa e até crianças.',
+        { figura: 'A bainha aberta sendo feita.',
+          arquivo: 'f-saberes-bainha-fazendo.jpg',
+          alt: 'Mãos de bordadeira trabalhando o pano esticado num bastidor redondo, com os fios já desfiados em grade.',
+          credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
+        { figura: 'Detalhe da renda.',
+          arquivo: 'f-saberes-bainha-detalhe.jpg',
+          alt: 'Detalhe do bordado de bainha aberta: faixas de fios trançados formando desenhos geométricos vazados.',
+          credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
+        { figura: 'Peça pronta.',
+          arquivo: 'f-saberes-bainha-peca.jpg',
+          alt: 'Pano cor-de-rosa com faixa de bainha aberta e barra de crochê, dobrado sobre uma cadeira.',
+          credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
       ],
     },
     {
@@ -65,6 +73,10 @@ export default {
       + 'peças em tricô, crochê e lã. A arte dos antepassados é conservada pelas costureiras de '
       + 'Morro Vermelho, especialistas na fabricação de roupas artesanais de grande beleza. '
       + 'Algumas peças podem ser encontradas para pronta entrega, mas a maioria só sob encomenda.',
+        { figura: 'Bordando.',
+          arquivo: 'f-saberes-bordando.jpg',
+          alt: 'Mãos de duas bordadeiras trabalhando juntas sobre um pano bordado com flores coloridas.',
+          credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
       ],
     },
     {
@@ -73,6 +85,14 @@ export default {
         'Na oficina de arte e pinturas, dirigida pela artista plástica Valéria Glória, alunos '
       + 'aprendem, além da confecção de telas, pinturas especiais em toalhas, vidros etc. As '
       + 'obras, de rara beleza, podem ser adquiridas por preços bem acessíveis.',
+        { figura: 'A oficina de pintura.',
+          arquivo: 'f-saberes-oficina-pintura.jpg',
+          alt: 'Mulheres e crianças sentadas em volta de uma mesa cheia de tintas e pincéis, pintando panos.',
+          credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
+        { figura: 'Pintura em tecido.',
+          arquivo: 'f-saberes-pintura-pano.jpg',
+          alt: 'Pano branco com rosas vermelhas e brancas pintadas à mão e barra de renda.',
+          credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
       ],
     },
     {
@@ -82,9 +102,10 @@ export default {
       + 'culinária aprendidos com as avós, sobretudo em relação aos temperos. Mas aqui podem se '
       + 'comer um ótimo frango com quiabo e angu, uma ótima carne moída com ora-pró-nóbis ou um '
       + 'rico feijão tropeiro à moda emboaba.',
-        { figura: 'Saberes do distrito.',
-          arquivo: 'figura-saberes.jpg',
-          alt: 'Preparo de comida em fogão a lenha, com panelas de ferro sobre a chapa quente.' },
+        { figura: 'No fogão a lenha.',
+          arquivo: 'f-saberes-fogao.jpg',
+          alt: 'Panelas sobre a chapa do fogão a lenha, com couve refogada, angu e carne já servidos em tigelas.',
+          credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
       ],
     },
     {
@@ -114,6 +135,26 @@ export default {
         { sub: 'Doces, canudos e compotas' },
         'Especialidades das doceiras de Morro Vermelho, o doce de leite (com ou sem mandioca) e os '
       + 'famosos canudinhos, recheados de doce de leite, trazem sabor ao paladar dos visitantes.',
+        { figura: 'A queca.',
+          arquivo: 'f-saberes-queca.jpg',
+          alt: 'Bolo escuro cortado em fatias, com frutas cristalizadas e castanhas na massa.',
+          credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
+        { figura: 'Rosquinhas e biscoitos.',
+          arquivo: 'f-saberes-rosquinhas.jpg',
+          alt: 'Mesa com biscoitos, rosquinhas e broas arrumados em pratos e sacos.',
+          credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
+        { figura: 'Os canudinhos.',
+          arquivo: 'f-saberes-canudos.jpg',
+          alt: 'Travessa cheia de canudinhos recheados de doce de leite, polvilhados de açúcar.',
+          credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
+        { figura: 'O tacho.',
+          arquivo: 'f-saberes-tacho.jpg',
+          alt: 'Tacho grande sobre o fogo, com a massa do doce sendo cozida.',
+          credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
+        { figura: 'O mel do distrito.',
+          arquivo: 'f-saberes-mel.jpg',
+          alt: 'Fileiras de potes e bisnagas de mel arrumados sobre uma bancada.',
+          credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
       ],
     },
   ],

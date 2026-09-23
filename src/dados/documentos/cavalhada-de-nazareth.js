@@ -64,10 +64,18 @@ export default {
       + 'de famílias locais que moram em vários cantos do país e até do exterior. Eles voltam à '
       + 'terra natal para agradecer a proteção da Virgem durante o ano. Com os visitantes, '
       + 'estima-se, no dia da festa, um público cinco vezes maior que a população local.',
-        { figura: 'A Cavalhada na praça da Matriz.',
-          arquivo: 'figura-cavalhada.jpg',
-          alt: 'Cavaleiros da Cavalhada em formação na praça, diante da Matriz iluminada, à '
-             + 'noite.' },
+        { figura: 'O embaixador cristão.',
+          arquivo: 'f-cavalhada-cristao.jpg',
+          alt: 'Cavaleiro de capa e capacete azuis sobre um cavalo branco empinado, à noite, sob os enfeites da praça.',
+          credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
+        { figura: 'O embaixador mouro.',
+          arquivo: 'f-cavalhada-mouro.jpg',
+          alt: 'Cavaleiro de capa branca sobre cavalo branco, de perfil, diante dos arcos iluminados da praça à noite.',
+          credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
+        { figura: 'Os pares na praça.',
+          arquivo: 'f-cavalhada-pares-fogos.jpg',
+          alt: 'Dois cavaleiros lado a lado sob chuva de fogos de artifício, com o andor iluminado logo atrás.',
+          credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
       ],
     },
     {
@@ -94,6 +102,10 @@ export default {
         'Em outras regiões durante a festa da Cavalhada ocorre o levantamento do mastro, que é '
       + 'trançado com fitas, entrelaçadas pelos movimentos executados de forma bastante '
       + 'sincronizada pelos cavaleiros.',
+        { figura: 'A cavalhada diante da Matriz.',
+          arquivo: 'f-cavalhada-matriz-dia.jpg',
+          alt: 'Cavaleiro empinando o cavalo diante da Matriz de duas torres, de dia, com a fileira de cavaleiros e o público ao fundo.',
+          credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
       ],
     },
     {
@@ -138,6 +150,10 @@ export default {
       + 'traçando metas, planejando ações e buscando recursos. Nos dias da festa contam com o '
       + 'auxílio dos mordomos, centenas de voluntários que contribuem para a festa e ajudam na '
       + 'execução de várias tarefas.',
+        { figura: 'A ornamentação.',
+          arquivo: 'f-cavalhada-ornamentacao.jpg',
+          alt: 'Homens e mulheres em volta de uma mesa, montando à mão os enfeites de flores e fitas da festa.',
+          credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
       ],
     },
     {
@@ -152,6 +168,10 @@ export default {
       + 'festa. Com varas, eles espantam crianças e adultos nas casas e nos quintais. Pela '
       + 'tradição, a função dos mascarados seria espantar demônios e todos os males das casas, das '
       + 'pessoas e das ruas para a chegada de Nossa Senhora.',
+        { figura: 'O cortejo pela rua.',
+          arquivo: 'f-cavalhada-mascarados.jpg',
+          alt: 'Cortejo descendo a rua do povoado entre o público, que assiste dos dois lados.',
+          credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
       ],
     },
     {
@@ -195,6 +215,10 @@ export default {
       + 'conduzida por mais de 200 cavaleiros até Morro Vermelho (10 quilômetros), onde é recebida '
       + 'por uma multidão. Após a novena, é levada em procissão à casa de um morador, onde é '
       + 'ornamentada para a cavalhada do dia seguinte.',
+        { figura: 'A Bandeira de Nazareth.',
+          arquivo: 'f-cavalhada-bandeira.jpg',
+          alt: 'Andor iluminado com a imagem da padroeira, conduzido entre cavaleiros à noite.',
+          credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
       ],
     },
     {
@@ -203,6 +227,18 @@ export default {
         'O mastro de madeira, com cerca de 20 metros, pintado de branco e com fitas entrelaçadas e '
       + 'a Bandeira de Nazareth em seu cume, fica erguido por cerca de duas semanas. Os moradores '
       + 'acreditam que este período é um tempo de graça para o povoado.',
+        { figura: 'O levantamento do mastro.',
+          arquivo: 'f-cavalhada-mastro-levante.jpg',
+          alt: 'Dezenas de homens erguendo juntos o mastro de madeira com o auxílio de tesouras, na rua de terra.',
+          credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
+        { figura: 'O mastro erguido.',
+          arquivo: 'f-cavalhada-mastro-erguido.jpg',
+          alt: 'O mastro branco erguido sobre o povoado, com as fitas entrelaçadas e a bandeira no cume.',
+          credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
+        { figura: 'O mastro e os cavaleiros.',
+          arquivo: 'f-cavalhada-mastro-campo.jpg',
+          alt: 'Mastro erguido num campo aberto, com as fitas esticadas até o chão e um cavaleiro ao lado.',
+          credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
       ],
     },
     {
@@ -218,6 +254,14 @@ export default {
       + 'Menino Jesus e fazem questão de que eles sejam usados durante a festa, mesmo que por '
       + 'pouco tempo. As vestes são devolvidas aos fiéis e guardadas como proteção para muitos '
       + 'males do corpo e da alma.',
+        { figura: 'Os arcos de enfeites.',
+          arquivo: 'f-cavalhada-enfeites.jpg',
+          alt: 'Arcos de enfeites brancos iluminados na noite, formando a passagem por onde correm os cavaleiros.',
+          credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
+        { figura: 'A praça enfeitada.',
+          arquivo: 'f-cavalhada-arcos.jpg',
+          alt: 'A praça à noite, com arcos azuis iluminados e a Matriz ao fundo.',
+          credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
       ],
     },
     {
@@ -244,9 +288,14 @@ export default {
       + 'conserva uma tradição ímpar, a do “linguajar dos fogos de artifício”. Durante o evento, '
       + 'os fogueteiros conversam entre si por meio dos fogos, tradição de comunicação direta, '
       + 'ajudam a marcar as evoluções do evento.',
-        { figura: 'Fogos na noite da Cavalhada.',
-          arquivo: 'galeria-cavalhada-fogos.jpg',
-          alt: 'Fogos de artifício explodindo no céu sobre a praça durante a Cavalhada.' },
+        { figura: 'Os fogos sobre o povoado.',
+          arquivo: 'f-cavalhada-fogos.jpg',
+          alt: 'Fogos de artifício explodindo sobre as luzes do povoado, vistos de longe na noite.',
+          credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
+        { figura: 'A festa vista do alto.',
+          arquivo: 'f-cavalhada-aerea.jpg',
+          alt: 'Vista aérea panorâmica do largo da Matriz cheio de gente e cavaleiros, com o povoado em volta.',
+          credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
       ],
     },
     {

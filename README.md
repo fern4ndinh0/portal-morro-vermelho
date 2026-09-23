@@ -353,6 +353,28 @@ o Word cria enquanto o documento está aberto, e não são documentos.
 > do tempo precisa de uma data que esteja escrita em algum `.docx`, e o campo
 > `href` leva ao capítulo de onde ela veio.
 
+### Trazer as fotografias do acervo
+
+```bash
+python ferramentas/preparar-acervo.py
+```
+
+A pasta de origem é a que os autores mantêm fora do repositório, com as
+fotografias que hoje compõem os documentos do Word. Os arquivos são nomeados
+`NNMVxx`: **NN é o capítulo, xx a ordem dentro dele** — o nome do arquivo já
+diz a que texto a foto pertence. Conferimos por hash: 303 dos 349 arquivos são
+byte a byte idênticos às imagens embutidas nos `.docx`.
+
+O script lê o `MANIFESTO` no topo dele — que é a curadoria — e escreve em
+`midia/` a versão reduzida de cada foto escolhida: no máximo 1600 px de
+largura, 1,6 megapixel de área e 320 KB. **Os originais não entram no git**
+(são 261 MB); o que entra é o resultado, e por isso o site continua gerando em
+qualquer máquina, com ou sem a pasta.
+
+Para encaixar uma foto nova num verbete, acrescente o bloco `{ figura }` à
+seção certa de `src/dados/documentos/<slug>.js`. O `alt` é obrigatório para a
+imagem aparecer.
+
 ### Colocar uma imagem
 
 Salve o arquivo em `midia/` e aponte para ele. Se o arquivo não existir, o

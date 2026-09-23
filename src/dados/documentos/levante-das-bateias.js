@@ -84,6 +84,10 @@ export default {
       + 'pela primeira vez entrasse para as Minas. Além disso, as Câmaras cobrariam de cada loja '
       + 'ou venda no município dez arrobas e de cada escravo duas e meia a cada ano. '
       + '(<em>História Antiga das Minas Gerais</em>, Diogo de Vasconcelos)',
+        { figura: 'Bateia com ouro.',
+          arquivo: 'f-bateias-bateia.jpg',
+          alt: 'Mãos segurando uma bateia de madeira com uma camada de ouro fino depositada no fundo.',
+          credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
       ],
     },
     {
@@ -97,6 +101,10 @@ export default {
                  + 'Baltasar da Silveira, e, com abundante “barbaridade” – para usar sua própria '
                  + 'expressão – gritaram, em seus nobres ouvidos: “Viva o povo!”',
           autoria: 'Richard Burton, 1867' },
+        { figura: 'Córrego onde se bateava.',
+          arquivo: 'f-bateias-corrego.jpg',
+          alt: 'Córrego de águas rasas e avermelhadas correndo pela mata, com troncos caídos sobre o leito.',
+          credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
       ],
     },
   ],

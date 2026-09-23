@@ -30,6 +30,11 @@ export default {
                   + 'pesquisadores de todo o país. Morro Vermelho já foi assunto para filme de '
                   + 'curta metragem e, de uns tempos para cá, se tornou centro de atenções das '
                   + 'reportagens de jornais e televisão.' },
+        { figura: 'O Compromisso da Irmandade do Rosário.',
+          arquivo: 'f-cultura-compromisso-capa.jpg',
+          alt: 'Frontispício do livro manuscrito: Compromisso da Irmandade da Virgem Senhora do Rozario dos Pretos do Arraval do Morro Vermelho, ano de 1790.',
+          legenda: 'O Compromisso da Irmandade da Virgem Senhora do Rozario dos Pretos do Arrayal do Morro Vermelho, de 1790.',
+          credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
       ],
     },
     {
@@ -213,6 +218,22 @@ export default {
       + 'para criação de mais emprego e renda nesta área para a população. '
       + '<a href="http://livros01.livrosgratis.com.br/cp156189.pdf" target="_blank" '
       + 'rel="noopener">Leia mais</a>',
+        { figura: 'Página do Compromisso.',
+          arquivo: 'f-cultura-compromisso-pagina.jpg',
+          alt: 'Página manuscrita do Compromisso, com capitular ornamentada e o texto em letra do século 18.',
+          credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
+        { figura: 'A Lavagem do Cristo.',
+          arquivo: 'f-cultura-lavagem-cristo.jpg',
+          alt: 'Devotos em volta da imagem do Senhor dos Passos dentro da igreja, durante o ritual da lavagem.',
+          credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
+        { figura: 'Um músico da banda.',
+          arquivo: 'f-cultura-musico.jpg',
+          alt: 'Músico de cabelos brancos tocando uma tuba, visto de baixo contra o céu azul.',
+          credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
+        { figura: 'O tapete de serragem.',
+          arquivo: 'f-cultura-tapete.jpg',
+          alt: 'Moradores montando à mão o tapete de serragem na rua de terra, diante da igreja.',
+          credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
       ],
     },
     {
@@ -236,6 +257,14 @@ export default {
         'Estudo psicológico do professor Miguel Mahfoud revela mistérios de tradição medieval '
       + 'repetida nas madrugadas da quaresma no povoado de Morro Vermelho. Fiéis se envolvem em '
       + 'ritual religioso e obrigados a ficar em silêncio e a nunca olhar para trás.',
+        { figura: 'A escola e a Matriz.',
+          arquivo: 'f-cultura-escola.jpg',
+          alt: 'Turma de crianças sentada no gramado diante da Matriz, com a professora de pé ao lado.',
+          credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
+        { figura: 'A Cavalhada Mirim.',
+          arquivo: 'f-cultura-cavalhada-mirim.jpg',
+          alt: 'Crianças com cavalos de pau enfeitados, em fila diante da capela iluminada, durante a Cavalhada Mirim.',
+          credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
       ],
     },
   ],

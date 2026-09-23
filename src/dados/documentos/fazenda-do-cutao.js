@@ -45,9 +45,10 @@ export default {
       + 'foram adquiridas pela Vale, com a finalidade de implantar na área um arrojado complexo de '
       + 'mineração de ferro, o Projeto Apolo. Uma pequena parte das terras também integra o Parque '
       + 'Nacional da Serra do Gandarela, criado pelo governo federal em 2014.',
-        { figura: 'Ruínas na Fazenda do Cutão.',
-          arquivo: 'figura-fazenda-do-cutao.jpg',
-          alt: 'Ruínas de construção em pedra na Fazenda do Cutão, cercadas por vegetação.' },
+        { figura: 'A mata do Cutão.',
+          arquivo: 'f-cutao-mata.jpg',
+          alt: 'Encosta de mata fechada com afloramentos de rocha, e duas pessoas subindo entre as árvores.',
+          credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
       ],
     },
     {
@@ -86,10 +87,10 @@ export default {
       + 'participava de rodas de bate papo na porta das casas nas ladeiras do povoado. Em sua '
       + 'homenagem, após o falecimento, o povo deu nome de Beco do Barão à rua que ligava a via '
       + 'principal do povoado ao cemitério, hoje Rua José Cirilo Grillo.',
-        { figura: 'Ruínas do casarão do Barão da Estrella.',
-          arquivo: 'galeria-barao-da-estrella.jpg',
-          alt: 'Ruínas de paredes de pedra do antigo casarão do Barão da Estrella, na Fazenda do '
-             + 'Cutão.' },
+        { figura: 'Retrato do Barão da Estrella.',
+          arquivo: 'f-cutao-retrato-barao.jpg',
+          alt: 'Retrato fotográfico antigo, em sépia, de homem jovem de bigode farto, cabelo repartido e casaco escuro de gola alta.',
+          credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
       ],
     },
     {
@@ -99,6 +100,10 @@ export default {
       + 'sede na Fazenda do Cutão. O casarão de dois andares também teria servido de pousada para '
       + 'fiscais e autoridades da Coroa Portuguesa e do império. A área hoje é uma reserva natural '
       + 'de vegetação da mata atlântica e de eucaliptos, pertencente a mineradora Vale.',
+        { figura: 'O Palácio do Barão.',
+          arquivo: 'f-cutao-palacio-barao.jpg',
+          alt: 'Casarão colonial de dois andares, de paredes vermelhas e brancas, com escada externa e janelas fechadas.',
+          credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
       ],
     },
     {
@@ -130,6 +135,22 @@ export default {
       + 'das pedras moídas. Sabe-se que, depois do fim da exploração do ouro, já no século 20, a '
       + 'água do barramento foi desviada para redes de captação para fornecimento a diversas casas '
       + 'e uma escola existentes perto do palácio.',
+        { figura: 'A Lagoa do Cutão.',
+          arquivo: 'f-cutao-lagoa.jpg',
+          alt: 'Lagoa de águas escuras e paradas, cercada pela mata que se reflete na superfície.',
+          credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
+        { figura: 'O paredão de pedra da barragem.',
+          arquivo: 'f-cutao-paredao.jpg',
+          alt: 'Paredão alto de blocos de pedra encaixados, com água escorrendo pela face e vegetação no topo.',
+          credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
+        { figura: 'O túnel do canal.',
+          arquivo: 'f-cutao-tunel.jpg',
+          alt: 'Interior de túnel escavado na rocha clara, baixo e estreito, com duas pessoas agachadas dentro.',
+          credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
+        { figura: 'Ruínas do engenho de apuração.',
+          arquivo: 'f-cutao-casa-apuracao.jpg',
+          alt: 'Água caindo em degraus sobre um muro alto de pedra tomado pela vegetação, nas ruínas do engenho.',
+          credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
       ],
     },
   ],

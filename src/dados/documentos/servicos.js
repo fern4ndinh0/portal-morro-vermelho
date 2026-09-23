@@ -28,6 +28,10 @@ export default {
                   + 'turistas e forasteiros, que procuram locais aprazíveis para descanso, higiene '
                   + 'mental, aventura e contato com a natureza. Por aqui ainda há reservas da Mata '
                   + 'Atlântica, ar puro, água cristalina e uma boa comida caseira.' },
+        { figura: 'O povoado visto do alto.',
+          arquivo: 'f-servicos-aerea.jpg',
+          alt: 'Vista aérea do povoado: a Matriz de duas torres, o largo gramado e o casario de telhados vermelhos em volta.',
+          credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
       ],
     },
     {
@@ -37,6 +41,10 @@ export default {
       + 'Belo Horizonte, Minas Gerais, Brasil. Está a 10 quilômetros da sede do município, mas se '
       + 'liga também a Sabará (16 quilômetros), Raposos (14 quilômetros) e Rio Acima (18 '
       + 'quilômetros). Todos os acessos são por estrada de terra.',
+        { figura: 'Mapa do distrito.',
+          arquivo: 'f-servicos-mapa.jpg',
+          alt: 'Mapa do distrito com a legenda das estradas, minas de ouro, localidades históricas, quedas d’água e pontos de peregrinação.',
+          credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
       ],
     },
     {
@@ -51,6 +59,10 @@ export default {
           'O trecho mais curto é por Nova Lima e Raposos. Da Savassi, em BH, são 45 quilômetros, '
         + 'com estrada de terra de 14 quilômetros.',
         ] },
+        { figura: 'A chegada ao povoado.',
+          arquivo: 'f-servicos-povoado.jpg',
+          alt: 'O povoado visto de longe ao entardecer, encaixado entre os morros de mata.',
+          credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
       ],
     },
     {
@@ -81,6 +93,10 @@ export default {
           '<strong>Restaurante da Lili.</strong> Rua José Evangelista Marques.',
           '<strong>Restaurante Fazenda Máximo</strong>, na estrada da Charneca.',
         ] },
+        { figura: 'Restaurante no distrito.',
+          arquivo: 'f-servicos-restaurante.jpg',
+          alt: 'Salão de restaurante com mesas e bancos de madeira, grandes tonéis ao fundo e uma bandeira na parede.',
+          credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
       ],
     },
     {
@@ -91,6 +107,10 @@ export default {
           '<strong>Pousada Xavier</strong>, Praça da Matriz.',
           'Casas para temporada.',
         ] },
+        { figura: 'Pousada no distrito.',
+          arquivo: 'f-servicos-pousada.jpg',
+          alt: 'Casas de pousada com telhado de telha vermelha, cercadas de vegetação na encosta.',
+          credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
       ],
     },
     {

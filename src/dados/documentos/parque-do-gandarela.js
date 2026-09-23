@@ -70,10 +70,14 @@ export default {
       + 'espécies da águia-cinzenta, do capacetinho-do-oco-do-pau, da onça parda, do cateto e da '
       + 'onça pintada. Na flora, a vegetação compreende formas de campos rupestres, campos '
       + 'graminosos, cerrados e florestas, todos em bom estado de preservação.',
-        { figura: 'Serra do Gandarela.',
-          arquivo: 'figura-parque-do-gandarela.jpg',
-          alt: 'Vista da Serra do Gandarela, com campos rupestres no primeiro plano e serras '
-             + 'cobertas de mata ao fundo.' },
+        { figura: 'A serra sob neblina.',
+          arquivo: 'f-gandarela-serra-neblina.jpg',
+          alt: 'Encosta coberta de mata fechada, com a neblina descendo sobre o alto da serra.',
+          credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
+        { figura: 'Observação de aves no parque.',
+          arquivo: 'f-gandarela-observadores.jpg',
+          alt: 'Quatro pessoas de mochila e binóculo, de costas, olhando para o alto numa trilha de terra dentro da mata.',
+          credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
       ],
     },
     {
@@ -99,6 +103,14 @@ export default {
         'Em Morro Vermelho, entre as atrações do parque, está a Cachoeira de Santo Antônio, na '
       + 'divisa com o município de Raposos. Essa cachoeira possui tons azulados contrastantes com '
       + 'os paredões rochosos avermelhados.',
+        { figura: 'Vale dentro do parque.',
+          arquivo: 'f-gandarela-vale.jpg',
+          alt: 'Vale extenso coberto de mata e campo, com serras sobrepostas até o horizonte.',
+          credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
+        { figura: 'Mirante sobre a serra.',
+          arquivo: 'f-gandarela-mirante.jpg',
+          alt: 'Duas pessoas de pé num mirante, de costas, diante de um mar de montanhas azuladas.',
+          credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
       ],
     },
     {
@@ -132,6 +144,10 @@ export default {
           'Córregos e nascentes.',
           'Florestas da Mata Atlântica.',
         ] },
+        { figura: 'Estrada dentro da mata.',
+          arquivo: 'f-gandarela-estrada-mata.jpg',
+          alt: 'Estrada de terra vista de dentro de um veículo, entrando por um túnel de mata alta.',
+          credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
       ],
     },
     {
@@ -145,9 +161,14 @@ export default {
       + 'abrigo dos mamíferos, que tem 340 metros de comprimento, sendo a maior paleotoca '
       + 'identificada no Brasil até hoje, fica na área a ser destruída pelo Projeto Apolo. O '
       + 'patrimônio paleontológico tem grande valor histórico para todo o mundo.',
-        { figura: 'Paleotoca da Serra do Gandarela.',
-          arquivo: 'galeria-paleotoca.jpg',
-          alt: 'Entrada da paleotoca escavada na encosta, galeria larga e baixa aberta na terra.' },
+        { figura: 'A paleotoca.',
+          arquivo: 'f-gandarela-paleotoca.jpg',
+          alt: 'Galerias arredondadas escavadas em barranco de rocha clara, com duas aberturas em arco lado a lado.',
+          credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
+        { figura: 'O marco do parque.',
+          arquivo: 'f-gandarela-marco.jpg',
+          alt: 'Marco de aço recortado com a inscrição Serra Gandarela, fincado em terra vermelha, com a serra ao fundo.',
+          credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
       ],
     },
   ],

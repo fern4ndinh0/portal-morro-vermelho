@@ -24,6 +24,10 @@ export default {
                  + 'caminhos tão ásperos como são os das minas, que dificultosamente se poderá '
                  + 'dar conta do número de pessoas que atualmente lá estão...',
           autoria: 'Padre André João Antonil, 1710' },
+        { figura: 'Bateia com ouro.',
+          arquivo: 'f-ouro-bateia.jpg',
+          alt: 'Bateia de madeira escura com dezenas de pepitas de ouro reunidas no fundo.',
+          credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
       ],
     },
     {
@@ -101,6 +105,10 @@ export default {
                  + 'comum e generalizado. Uma tão pesada contribuição era naturalmente muito mal '
                  + 'acolhida pelos mineiros e quem podia procurava subtrair-se.',
           autoria: 'H. Handelmann, <em>História do Brasil</em>, 1860' },
+        { figura: 'Lavra de ouro em fotografia antiga.',
+          arquivo: 'f-ouro-lavra-antiga.jpg',
+          alt: 'Fotografia antiga, em sépia, de uma lavra a céu aberto: paredões de terra escavados em degraus, cercados de mata.',
+          credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
       ],
     },
     {
@@ -151,10 +159,10 @@ export default {
       + '(cerca de 35 gramas). A cobrança foi aceita pelas comarcas do Carmo, Vila Rica e Rio das '
       + 'Mortes. Mas a comarca do Rio das Velhas reagiu e o povo de Morro Vermelho se rebelou, '
       + 'conseguindo a volta do antigo sistema.',
-        { figura: 'Interior de galeria de mina no distrito.',
-          arquivo: 'figura-lavra-ouro.jpg',
-          alt: 'Interior de galeria de mina escavada na rocha, estreita e escura, com o túnel se '
-             + 'afunilando ao fundo.' },
+        { figura: 'Cata a céu aberto.',
+          arquivo: 'f-ouro-cata-aberta.jpg',
+          alt: 'Grande cata a céu aberto aberta na rocha, com duas pessoas de pé no interior, dando a escala da escavação.',
+          credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
       ],
     },
     {
@@ -178,6 +186,10 @@ export default {
       + 'algum resultado, além de ficarem livres do jugo de seus senhores. São tantas as galerias '
       + 'e escavações dos bandeirantes em Morro Vermelho que uma das minas está situada no quintal '
       + 'de uma residência em rua da área urbana do distrito.',
+        { figura: 'Interior de galeria.',
+          arquivo: 'f-ouro-galeria-grupo.jpg',
+          alt: 'Interior de galeria de mina escavada na rocha, com um grupo de pessoas agachadas sob o teto baixo.',
+          credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
       ],
     },
     {
@@ -233,6 +245,10 @@ export default {
         'São várias galerias e numerosas escavações a céu aberto, situadas ao norte de Rocinha, '
       + 'perto e pouco acima das minas do Cedro, no alto do morro entre os ribeirões Comprido e do '
       + 'Juca Vieira. As galerias, em geral, começam em escavações a céu aberto.',
+        { figura: 'Galeria com pilares.',
+          arquivo: 'f-ouro-galeria-pilares.jpg',
+          alt: 'Galeria de mina com pilares de rocha deixados de pé entre as aberturas, e uma pessoa de enxada ao lado.',
+          credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
       ],
     },
     {
@@ -311,6 +327,10 @@ export default {
         'Estas minas ficam situadas no lado esquerdo ou sul do Córrego do Paneleiro. São galerias '
       + 'de pequena extensão, atravessando filito decomposto, e com lentes de quartzo. A Galeria 4 '
       + 'é conhecida por Mina do Pau d’Óleo.',
+        { figura: 'Galeria em perspectiva.',
+          arquivo: 'f-ouro-galeria-fundo.jpg',
+          alt: 'Galeria estreita e escura que se afunila ao fundo, com as marcas das ferramentas na rocha das paredes.',
+          credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
       ],
     },
     {
@@ -342,6 +362,10 @@ export default {
         'Estas minas estão situadas em terrenos da Fazenda Retiro, a nove quilômetros a sudeste da '
       + 'Fazenda Maquiné e perto da Água Limpa e dos morros Três Irmãos. Em baixo, para sudoeste, '
       + 'no pé do morro, há duas galerias vindo para leste, das quais uma obstruída na boca.',
+        { figura: 'Boca de mina na mata.',
+          arquivo: 'f-ouro-boca-mata.jpg',
+          alt: 'Homem de pé diante de uma boca de mina baixa e estreita, aberta no barranco em meio à vegetação fechada.',
+          credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
       ],
     },
     {
@@ -368,6 +392,10 @@ export default {
       + 'grafitoso, com veios-camadas de quartzo cinzento e branco, repousando sobre uma faixa de '
       + 'clorita-xisto. A galeria, que está na base de uma cachoeira, no Córrego Geriza, na margem '
       + 'esquerda, segue no princípio para oeste e depois para sudoeste.',
+        { figura: 'Boca de mina na encosta.',
+          arquivo: 'f-ouro-boca-encosta.jpg',
+          alt: 'Boca de mina escura aberta na encosta rochosa, com uma pessoa debruçada sobre a entrada.',
+          credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
       ],
     },
     {
@@ -405,6 +433,10 @@ export default {
       + 'o sul do arraial de Morro Vermelho. São vários planos inclinados, com forte ângulo, '
       + 'descendo para sudeste e distribuídos ao longo de uma faixa mineralizada encaixada nos '
       + 'filitos sericíticos, em uma extensão de 150m.',
+        { figura: 'Córrego de águas ferruginosas.',
+          arquivo: 'f-ouro-corrego.jpg',
+          alt: 'Córrego de águas avermelhadas correndo entre barrancos de terra ferruginosa e vegetação.',
+          credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
       ],
     },
   ],

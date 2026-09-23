@@ -34,6 +34,10 @@ export default {
       + 'madrugadora seguindo para o trabalho, lobisomens que assustam pessoas que ficam até tarde '
       + 'da noite nas ruas, almas penadas que perambulam pelas ladeiras nas madrugadas da '
       + 'quaresma e mulas sem cabeça que soltam fogo pelos cascos.',
+        { figura: 'A padroeira.',
+          arquivo: 'f-lendas-padroeira.jpg',
+          alt: 'Imagem de Nossa Senhora de Nazareth com o Menino, coroada e vestida de branco, sobre o andor.',
+          credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
       ],
     },
     {
@@ -115,6 +119,18 @@ export default {
       + 'devotos, o agricultor Sudário Leal, certa vez levou pedras e água ao monte e de lá já '
       + 'retornou debaixo de pesado temporal. A tradição é mantida até hoje por fiéis no auge da '
       + 'estiagem.',
+        { figura: 'Os vestidinhos do Menino Jesus.',
+          arquivo: 'f-lendas-vestidinhos.jpg',
+          alt: 'Caixa com paramentos, vestidos bordados e a imagem do Menino Jesus guardados entre panos.',
+          credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
+        { figura: 'A cachaça recolhida.',
+          arquivo: 'f-lendas-cachaca.jpg',
+          alt: 'Mão de um devoto recolhendo em uma caneca a cachaça que escorreu da imagem, durante a lavagem.',
+          credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
+        { figura: 'A fogueira na praça.',
+          arquivo: 'f-lendas-fogueira.jpg',
+          alt: 'Pilha alta de lenha armada na praça diante da Matriz, pronta para ser acesa.',
+          credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
       ],
     },
     {
@@ -197,6 +213,10 @@ export default {
       + 'mais iluminou a caminhada noturna dos agora apenas dois irmãos. E ele acreditava piamente '
       + 'que a Luz Verde teria sido enviada por Nossa Senhora, sua santa de devoção, e como eles a '
       + 'luz se sentira agoniada com a perda do irmão e se apagado de vez.',
+        { figura: 'A estrada do morro.',
+          arquivo: 'f-lendas-morro-estrada.jpg',
+          alt: 'Estrada de terra subindo o morro ao amanhecer, com uma pessoa a pé na curva.',
+          credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
       ],
     },
     {
@@ -240,6 +260,10 @@ export default {
       + 'e foi consolar seu Virgílio, que mandou celebrar missa em intenção das almas do '
       + 'purgatório todas as sextas-feiras até o resto de sua vida. O caso é repetido de geração '
       + 'em geração em Morro Vermelho.',
+        { figura: 'A encomendação das almas.',
+          arquivo: 'f-lendas-encomendacao.jpg',
+          alt: 'Grupo de pessoas com tochas acesas, de costas, caminhando pela estrada na madrugada.',
+          credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
       ],
     },
     {

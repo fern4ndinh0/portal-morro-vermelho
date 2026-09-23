@@ -67,20 +67,11 @@ MANIFESTO = [
     ('15MV00/image2.jpg',  'galeria-paleotoca.jpg',          TETO_KB_GALERIA),
     ('19MV00/image12.jpg', 'galeria-bainha-aberta.jpg',      TETO_KB_GALERIA),
 
-    # --- Figuras dentro dos verbetes ---------------------------------------
-    ('03MV00/image16.jpg', 'figura-lavra-ouro.jpg',          TETO_KB),
-    ('04MV00/image4.jpg',  'figura-nome-antigo.jpg',         TETO_KB),
-    ('08MV00/image3.jpg',  'figura-estrada-real.jpg',        TETO_KB),
-    ('05MV00/image5.jpg',  'figura-fazenda-do-cutao.jpg',    TETO_KB),
-    ('11MV00/image6.jpg',  'figura-epidemia-da-bexiga.jpg',  TETO_KB),
-    ('18MV00/image32.jpg', 'figura-matriz-nazareth.jpg',     TETO_KB),
-    ('18MV00/image20.jpg', 'figura-cavalhada.jpg',           TETO_KB),
-    ('16MV00/image9.jpg',  'figura-cachoeiras.jpg',          TETO_KB),
-    ('15MV00/image6.jpg',  'figura-parque-do-gandarela.jpg', TETO_KB),
-    ('19MV00/image1.jpg',  'figura-saberes.jpg',             TETO_KB),
-    ('14MV00/image13.jpg', 'figura-atracoes.jpg',            TETO_KB),
+    # --- A única figura de verbete que ainda sai daqui ----------------------
+    # O capítulo 12 não tem foto na pasta do acervo: o retrato da família com
+    # os seis filhos padres veio do próprio .docx. As demais figuras dos
+    # verbetes vêm agora de ferramentas/preparar-acervo.py.
     ('12MV00/image5.jpg',  'figura-familia-de-padres.jpg',   TETO_KB),
-    ('20MV00/image7.jpg',  'figura-trilhas.jpg',             TETO_KB),
 ]
 
 

@@ -51,6 +51,14 @@ export default {
       + 'necessário cercar o morro para deter a fúria dos trilheiros nos fins de semana e '
       + 'feriados, colocar uma fiscalização permanente na área e também providenciar o plantio de '
       + 'árvores no monte para a recomposição dos danos causados.',
+        { figura: 'O morro devastado.',
+          arquivo: 'f-noticias-morro-devastado.jpg',
+          alt: 'Encosta do morro com a terra vermelha revolvida e exposta, sem vegetação, e a cruz do cume ao fundo.',
+          credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
+        { figura: 'Erosão nas trilhas.',
+          arquivo: 'f-noticias-erosao.jpg',
+          alt: 'Vala funda aberta pela erosão na encosta de terra vermelha, cortando o capim.',
+          credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
       ],
     },
     {
@@ -97,6 +105,10 @@ export default {
       + 'burros e potros pastam com tranquilidade. A falta de respeito grassa por toda parte, mas '
       + 'em Morro Vermelho muito mais. A Prefeitura de Caeté e a Paróquia têm conhecimento do '
       + 'assunto, mas fazem ouvidos de mercador.',
+        { figura: 'O cemitério.',
+          arquivo: 'f-noticias-cemiterio.jpg',
+          alt: 'Cemitério de cruzes simples de madeira e sepulturas de terra, com dois cavalos pastando entre elas.',
+          credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
       ],
     },
     {
@@ -131,6 +143,10 @@ export default {
       + 'livros. É de graça.',
         'Os livros estão sendo doados por egressos do Morro Vermelho, por gente que mora fora e '
       + 'pelos que adotaram o povoado como terra natal.',
+        { figura: 'A biblioteca da escola.',
+          arquivo: 'f-noticias-biblioteca.jpg',
+          alt: 'Estante envidraçada cheia de livros empilhados, na escola municipal.',
+          credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
       ],
     },
     {
@@ -208,6 +224,14 @@ export default {
       + 'do ouro”, observa. Ele salienta que, após as descobertas, o grupo pretende buscar o apoio '
       + 'de autoridades e técnicos para abrir os caminhos e tornar as riquezas culturais passíveis '
       + 'de visitação pública.',
+        { figura: 'Os Desbravadores em campo.',
+          arquivo: 'f-noticias-desbravadores.jpg',
+          alt: 'Grupo de pessoas de pé no alto de um morro, de costas, olhando a serra ao longe.',
+          credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
+        { figura: 'Abrindo caminho na mata.',
+          arquivo: 'f-noticias-expedicao.jpg',
+          alt: 'Duas pessoas subindo um barranco íngreme, agarradas à vegetação, durante a expedição.',
+          credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
       ],
     },
     {
@@ -252,6 +276,10 @@ export default {
       + 'entre o balneário de Juca Vieira e o povoado de Morro Vermelho.',
         'A aplicação de rejeitos de minério de ferro sobre o pavimento de terra é uma tecnologia '
       + 'desenvolvida pela Unifei, em projeto financiado pela mineradora Vale.',
+        { figura: 'A estrada de terra.',
+          arquivo: 'f-noticias-estrada.jpg',
+          alt: 'Estrada de terra vermelha descendo entre morros cobertos de mata.',
+          credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
       ],
     },
   ],

@@ -49,9 +49,10 @@ export default {
       + 'Diariamente, há gente alertando os novos habitantes sobre os riscos da bexiga, ainda '
       + 'encravada em ossos sepultados no local. Lenda ou realidade, não há hoje qualquer temor '
       + 'por parte de quem não teve um antepassado coberto por sete palmos de terra neste local.',
-        { figura: 'Registro da epidemia da bexiga.',
-          arquivo: 'figura-epidemia-da-bexiga.jpg',
-          alt: 'Reprodução de registro histórico relativo à epidemia de varíola de 1895.' },
+        { figura: 'O povoado em fotografia antiga.',
+          arquivo: 'f-bexiga-povoado-antigo.jpg',
+          alt: 'Fotografia antiga em preto e branco: a igreja de duas torres no alto e o casario baixo descendo a encosta.',
+          credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
       ],
     },
     {
@@ -80,6 +81,14 @@ export default {
       + 'Mariana, Ouro Preto, Lima Duarte, Sabará, Pitangui, Barbacena, Ressaquinha, São João '
       + 'Nepomuceno, Peçanha, Abaeté e Minas Novas, entre outros, depois de fazer cerca de 5 mil '
       + 'vítimas em mais de cem cidades e povoados em 1873/1874.',
+        { figura: 'Rua de calçamento em fotografia antiga.',
+          arquivo: 'f-bexiga-rua-antiga.jpg',
+          alt: 'Fotografia antiga em preto e branco de uma ladeira de pedras, com casas de porta e janela dos dois lados.',
+          credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
+        { figura: 'Cruzeiro do cemitério.',
+          arquivo: 'f-bexiga-cruzeiro-cemiterio.jpg',
+          alt: 'Cruzeiro alto de madeira escura fincado no gramado do cemitério, com o muro de pedra e as sepulturas ao fundo.',
+          credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
       ],
     },
     {
@@ -128,6 +137,10 @@ export default {
       + 'princípio, são pequenas brotoejas, que evoluem depois para pústulas (bolhas purulentas). '
       + 'Nas formas mais graves, os pacientes apresentam hemorragias na pele e nas mucosas, '
       + 'falecendo entre o quinto e o sexto dia.',
+        { figura: 'O caminho do cemitério.',
+          arquivo: 'f-bexiga-caminho-cemiterio.jpg',
+          alt: 'Estrada de terra subindo entre casas e vegetação, com dois cães no meio do caminho.',
+          credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
       ],
     },
   ],

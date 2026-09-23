@@ -37,10 +37,14 @@ export default {
       + 'jipeiros, motoqueiros, aventureiros e por famílias nos fins de semana e feriados. Está a '
       + 'cinco quilômetros de Morro Vermelho, com três quilômetros por estrada em boas condições e '
       + 'dois por estrada ruim, além de 300 metros de caminhada.',
-        { figura: 'Cachoeira em Morro Vermelho.',
-          arquivo: 'figura-cachoeiras.jpg',
-          alt: 'Queda d’água alta despencando de um paredão rochoso sobre um poço, cercada por '
-             + 'mata fechada.' },
+        { figura: 'A Cachoeira de Santo Antônio.',
+          arquivo: 'f-cachoeiras-santo-antonio.jpg',
+          alt: 'Queda d’água caindo de um paredão de rocha avermelhada sobre um poço de água esverdeada, cercado de mata.',
+          credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
+        { figura: 'A queda vista de baixo.',
+          arquivo: 'f-cachoeiras-queda-alta.jpg',
+          alt: 'Queda d’água alta e estreita descendo por um paredão escuro de rocha, entre a vegetação.',
+          credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
       ],
     },
     {
@@ -56,6 +60,10 @@ export default {
       + 'paredão de pedras do Córrego da Cachoeira e tem cerca de 25 metros de altura, jorrando '
       + 'água cristalina sobre um poço, cercada por densa mata. Conhecida apenas por alguns '
       + 'nativos, esta cachoeira em mata fechada ainda é inexplorada aos olhos dos turistas.',
+        { figura: 'Poço entre paredões.',
+          arquivo: 'f-cachoeiras-poco.jpg',
+          alt: 'Poço de água turquesa formado ao pé de uma queda, entre paredões de rocha estratificada.',
+          credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
       ],
     },
     {
@@ -66,6 +74,10 @@ export default {
       + 'significantes de mata e grande mananciais de água. As nascentes abastecem vários trechos '
       + 'encachoeirados até o Ribeirão Juca Vieira. Por serem propriedade particular, as '
       + 'corredeiras são mantidas ainda quase inexploradas.',
+        { figura: 'Cascatas em degraus.',
+          arquivo: 'f-cachoeiras-cascatas-geriza.jpg',
+          alt: 'Água descendo em vários degraus de pedra, no meio da mata fechada.',
+          credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
       ],
     },
     {
@@ -86,6 +98,10 @@ export default {
       + 'utilizadas para criatório de peixes e lazer de proprietários e de suas famílias. As '
       + 'lagoas estão localizadas a três quilômetros do povoado, logo atrás do Morro da Santa '
       + 'Cruz.',
+        { figura: 'Uma das represas.',
+          arquivo: 'f-cachoeiras-lagoa.jpg',
+          alt: 'Represa de águas escuras e paradas, cercada de vegetação baixa e mata ao fundo.',
+          credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
       ],
     },
     {
@@ -122,9 +138,10 @@ export default {
       + 'dezenas de nascentes, cachoeiras, lagoas e cascatas, muitas desconhecidas dos turistas. '
       + 'Ali estão a Cachoeira do Maquiné ou Cachoeira Grande, de 50 metros de altura, a Cachoeira '
       + 'do Trovão, a Cachoeira do Mergulho e a Cachoeira do córrego da Cachoeira.',
-        { figura: 'Poço de cachoeira no distrito.',
-          arquivo: 'galeria-cachoeira-poco.jpg',
-          alt: 'Poço de águas claras ao pé de uma cachoeira, cercado por rochas e vegetação.' },
+        { figura: 'Cachoeira do Maquiné.',
+          arquivo: 'f-cachoeiras-maquine.jpg',
+          alt: 'Cascata larga escorrendo por uma laje inclinada de pedra escura, no meio da floresta.',
+          credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
       ],
     },
     {
@@ -134,6 +151,10 @@ export default {
       + 'vinda de nascentes de montanha. Abaixo da Capela do Rosário, no início da estrada para '
       + 'Raposos, ele forma pequenas queda d’água e poços, boas para banho. A área é conhecida '
       + 'apenas dos nativos, que pouco desfrutam de suas belezas e lazer.',
+        { figura: 'Banho na cachoeira, em fotografia antiga.',
+          arquivo: 'f-cachoeiras-banho-antigo.jpg',
+          alt: 'Fotografia antiga em preto e branco: pessoas tomando banho no poço ao pé de uma cachoeira alta.',
+          credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
       ],
     },
   ],

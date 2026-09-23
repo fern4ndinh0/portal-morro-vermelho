@@ -36,9 +36,10 @@ export default {
       + 'históricas, religiosas e ambientais, conquistadas a duras penas.',
         'O povo de Morro Vermelho abraça, conta histórias e causos e leva para o fundo de sua '
       + 'cozinha todos os visitantes que, como ele, têm amor a todo tipo de liberdade.',
-        { figura: 'Trilha em Morro Vermelho.',
-          arquivo: 'figura-trilhas.jpg',
-          alt: 'Trilha de terra subindo entre a vegetação, com as serras ao fundo.' },
+        { figura: 'Trilha para o alto do morro.',
+          arquivo: 'f-trilhas-caminhada.jpg',
+          alt: 'Trilha de terra subindo o morro de capim, com um grupo de caminhantes a meio caminho do cume.',
+          credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
       ],
     },
     {
@@ -58,6 +59,10 @@ export default {
       + 'Antônio a sete quilômetros do povoado, mas também sobem o Morro da Santa Cruz, às vezes '
       + 'esticam até o Cutão, local de relíquias históricas e dezenas de minas de ouro '
       + 'abandonadas. Mas há muitos outros caminhos interessantes no lugar.',
+        { figura: 'Caminhantes na mata.',
+          arquivo: 'f-trilhas-caminhantes.jpg',
+          alt: 'Grupo de caminhantes de mochila descendo uma trilha de terra ladeada de vegetação alta.',
+          credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
       ],
     },
     {
@@ -72,6 +77,18 @@ export default {
         'Depois de um rápido contato com o lugar, partem em grupos, mochilas nas costas, e só '
       + 'voltam à tarde, dão uma parada rápida e partem de volta para casa. Alguns contam que '
       + 'fazem em média percursos de 60 quilômetros por dia.',
+        { figura: 'Ciclistas no povoado.',
+          arquivo: 'f-trilhas-ciclistas.jpg',
+          alt: 'Dezenas de ciclistas com roupas coloridas reunidos com suas bicicletas diante do casario.',
+          credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
+        { figura: 'Subindo a ladeira de pedra.',
+          arquivo: 'f-trilhas-ciclistas-ladeira.jpg',
+          alt: 'Dois ciclistas subindo a ladeira de calçamento de pedra do povoado, observados por moradores.',
+          credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
+        { figura: 'Descanso à beira da lagoa.',
+          arquivo: 'f-trilhas-descanso-lagoa.jpg',
+          alt: 'Dois ciclistas de capacete sentados à sombra, à margem de uma lagoa espelhada.',
+          credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
       ],
     },
     {
@@ -89,6 +106,10 @@ export default {
         'O povo de Morro Vermelho só não tolera uns poucos trilheiros e motociclistas abusados que '
       + 'andam em disparada pelas ladeiras do lugar, colocando em risco a vida de crianças e '
       + 'animais.',
+        { figura: 'Trilheiros paramentados.',
+          arquivo: 'f-trilhas-trilheiros.jpg',
+          alt: 'Motociclistas de trilha, de capacete e roupa de proteção, parados numa rua do povoado.',
+          credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
       ],
     },
     {
@@ -102,6 +123,10 @@ export default {
       + 'Vermelho também são apreciadas pelos amantes do MotoCross, que disputam a Copa Cross '
       + 'Country, do Trail Clube de Minas Gerais, uma das emoções do motociclismo Off Road do '
       + 'Brasil.',
+        { figura: 'Jipes na rua.',
+          arquivo: 'f-trilhas-jipes.jpg',
+          alt: 'Gaiolas e jipes de competição, enlameados, estacionados na rua do povoado.',
+          credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
       ],
     },
     {
@@ -131,6 +156,10 @@ export default {
       + 'desenfreada mineração do ouro.',
         'Morro Vermelho pretende oferecer brevemente aos turistas uma agenda cheia de atrações. '
       + 'Também prepara um bom receptivo para que voltem, sempre com mais amigos.',
+        { figura: 'Motos diante da Matriz.',
+          arquivo: 'f-trilhas-motos-matriz.jpg',
+          alt: 'Fileira de motos de trilha estacionadas no largo, diante da fachada da Matriz.',
+          credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
       ],
     },
   ],

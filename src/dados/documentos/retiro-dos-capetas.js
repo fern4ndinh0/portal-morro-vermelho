@@ -51,6 +51,10 @@ export default {
       + 'contrabandistas sujeitos à prisão. Também ali passavam pela fiscalização os mascates que '
       + 'iam em direção à área mineradora e eram obrigados a pagar impostos sobre diversos '
       + 'produtos, como carne, mantimentos, bebidas e animais.',
+        { figura: 'Ruína da casa de pedra.',
+          arquivo: 'f-capetas-casa-pedra.jpg',
+          alt: 'Parede de pedras sobrepostas com um vão de janela aberto, por onde se vê a mata do outro lado.',
+          credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
       ],
     },
     {
@@ -68,6 +72,10 @@ export default {
       + 'Nazareth de Morro Vermelho por mais de 50 anos, ia a cavalo até a fazenda para benzer '
       + 'pessoas, animais e currais. Isso já nas décadas de 1930 e 1940. Dizem que ele era o único '
       + 'padre capaz de aplacar a fúria dos capetas.',
+        { figura: 'O desfiladeiro.',
+          arquivo: 'f-capetas-desfiladeiro.jpg',
+          alt: 'Campo rupestre de vegetação rasteira, com uma trilha de terra vermelha cortando o alto da serra.',
+          credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
       ],
     },
     {
@@ -85,6 +93,14 @@ export default {
       + 'divino, já que haviam encontrado ouro nos arredores. A prova disso são as Catas de Ouro '
       + 'da Fazenda Capão, de propriedade do Sr. Modestino, onde se pode encontrar inúmeras bocas '
       + 'de minas de ouro, escavadas na pedra bruta por escravos.',
+        { figura: 'Muro de pedra na mata.',
+          arquivo: 'f-capetas-muro.jpg',
+          alt: 'Muro comprido de pedras avermelhadas encaixadas, coberto de liquens, no meio do mato.',
+          credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
+        { figura: 'A serra do Maquiné.',
+          arquivo: 'f-capetas-serra.jpg',
+          alt: 'Serra coberta de mata baixa e campo, com cumes sobrepostos sob um céu de nuvens.',
+          credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
       ],
     },
   ],

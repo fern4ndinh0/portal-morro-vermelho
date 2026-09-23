@@ -29,6 +29,10 @@ export default {
                   + 'tranquilidade para todos. Depois recebem a benção final. Ainda na porta da '
                   + 'matriz, eles se despedem com um abraço, seguindo felizes cada um para o seu '
                   + 'destino e prometendo retornar no ano seguinte.' },
+        { figura: 'O Santíssimo exposto.',
+          arquivo: 'f-outras-te-deum.jpg',
+          alt: 'Ostensório dourado sobre o altar enfeitado de flores e velas acesas, na noite do Te Deum.',
+          credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
       ],
     },
     {
@@ -51,6 +55,10 @@ export default {
         'O texto foi musicado por compositores famosos, como Marc-Antoine Charpentier, Henry '
       + 'Purcell, Jean-Baptiste Lully, Mozart, Haydn, Berlioz, Bruckner, Dvorák, Antônio Francisco '
       + 'Braga, Antônio Teixeira, João de Sousa Carvalho e José Maurício Garcia.',
+        { figura: 'O altar na noite de 8 de setembro.',
+          arquivo: 'f-outras-santissimo.jpg',
+          alt: 'Altar armado com dossel de flores brancas, velas e o ostensório ao centro, cercado de anjos.',
+          credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
       ],
     },
     {
@@ -150,6 +158,15 @@ export default {
       + 'Eugênio Pacelli, mais tarde Papa Pio XII.',
         'Carta enviada ao Papa Pio IX em 1865 pelo arcebispo de Mariana, dom Antônio Ferreira '
       + 'Viçoso.',
+        { figura: 'A carta ao Papa Pio IX.',
+          arquivo: 'f-outras-carta-vicoso.jpg',
+          alt: 'Carta manuscrita em papel envelhecido, com selo em relevo no pé da página.',
+          legenda: 'A carta enviada ao Papa Pio IX em 1865 pelo arcebispo de Mariana, dom Antônio Ferreira Viçoso.',
+          credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
+        { figura: 'Segunda folha da carta.',
+          arquivo: 'f-outras-carta-2.jpg',
+          alt: 'Segunda folha da carta manuscrita, com a assinatura e o selo em relevo.',
+          credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
       ],
     },
     {
@@ -169,6 +186,14 @@ export default {
           '<strong>Jornal Diário de Minas, 25/09/1866</strong> — projeto propõe instalação da '
         + 'paróquia de Morro Vermelho.',
         ] },
+        { figura: 'O Minas Geraes.',
+          arquivo: 'f-outras-minas-geraes.jpg',
+          alt: 'Página do jornal Minas Geraes com a seção Secção Alheia e, apontada por uma seta vermelha, a coluna sobre Morro Vermelho.',
+          credito: 'Jornal Minas Geraes' },
+        { figura: 'O jornal A Actualidade.',
+          arquivo: 'f-outras-actualidade.jpg',
+          alt: 'Página do jornal A Actualidade, com uma seta vermelha apontando a notícia sobre o distrito.',
+          credito: 'Jornal A Actualidade' },
       ],
     },
   ],

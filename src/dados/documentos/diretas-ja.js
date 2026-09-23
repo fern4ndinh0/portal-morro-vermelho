@@ -30,6 +30,11 @@ export default {
       + 'clamor nacional. Mais uma vez, o povo morro-vermelhense compreendeu as aflições '
       + 'brasileiras, apontou o caminho e tomou a dianteira, como fez em dezembro de 1707, quando '
       + 'elegeu o primeiro governador das Minas Gerais, na primeira eleição diretas da Américas.',
+        { figura: 'Reportagem do jornal Opinião.',
+          arquivo: 'f-diretas-opiniao.jpg',
+          alt: 'Recorte do jornal Opinião, de Caeté, com fotografia do ato na praça da Matriz: um homem ao microfone lendo um documento, cercado de pessoas e crianças.',
+          legenda: 'O ato de 7 de setembro de 1983 na praça da Matriz, noticiado pelo jornal <em>Opinião</em>, de Caeté.',
+          credito: 'Jornal Opinião, Caeté, 17 de setembro de 1983' },
       ],
     },
     {
@@ -70,6 +75,11 @@ export default {
         + 'Morro Vermelho, foi uma profissão de fé na capacidade de nossa própria gente gerir o '
         + 'seu destino.',
         ], autoria: 'Otaviano Lage, jornal Folha de S.Paulo, em 08/09/1983' },
+        { figura: 'A coluna de Otaviano Lage.',
+          arquivo: 'f-diretas-folha.jpg',
+          alt: 'Recorte de jornal com a coluna intitulada “A Independência”, em três colunas de texto.',
+          legenda: 'A coluna transcrita acima, como saiu no jornal.',
+          credito: 'Folha de S.Paulo, 8 de setembro de 1983' },
       ],
     },
   ],

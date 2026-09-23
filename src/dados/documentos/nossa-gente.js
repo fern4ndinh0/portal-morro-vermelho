@@ -109,6 +109,14 @@ export default {
                  + 'Sagrado Coração de Jesus um templo naquele mistério geográfico. Fê-lo e fez-se '
                  + 'o arraial, a que o fundador chamou O Burgo do Coração.',
           autoria: 'João Guimarães Rosa, discurso de posse na Academia Brasileira de Letras, 1967' },
+        { figura: 'Retrato do padre João de Santo Antônio.',
+          arquivo: 'f-gente-padre-joao.jpg',
+          alt: 'Retrato antigo, em sépia, de sacerdote idoso de cabelos brancos e barba, em traje eclesiástico.',
+          credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
+        { figura: 'A matriz de Cordisburgo.',
+          arquivo: 'f-gente-cordisburgo.jpg',
+          alt: 'Igreja matriz de duas torres, pintada de branco e rosa, com palmeiras altas à frente.',
+          credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
       ],
     },
     {
@@ -141,6 +149,10 @@ export default {
       + 'Guimarães (1863); Maria Rodrigues de Oliveira Sobrinho (1866); Henrique Evangelista '
       + 'Marques Guimarães (1868); Mariana Evangelista Marques Guimarães (1870); Clara Evangelista '
       + 'Marques Guimarães (1872); Pedro Evangelista Marques Guimarães (1874).',
+        { figura: 'Retrato do professor.',
+          arquivo: 'f-gente-professor.jpg',
+          alt: 'Retrato antigo em preto e branco de homem de bigode e terno escuro, sentado de mãos cruzadas.',
+          credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
       ],
     },
     {
@@ -170,6 +182,10 @@ export default {
       + 'eucaliptos, pertencente à mineradora Vale. Em sua homenagem, a população de Morro '
       + 'Vermelho deu nome de Beco do Barão à via que leva a Rua de Baixo até o Cemitério, hoje '
       + 'Rua José Cirilo Grillo.',
+        { figura: 'Lembrança do falecimento do Barão.',
+          arquivo: 'f-gente-barao-obito.jpg',
+          alt: 'Santinho de falecimento impresso em francês, com o retrato gravado do Barão da Estrella e a data de 25 de outubro de 1910.',
+          credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
       ],
     },
     {
@@ -296,6 +312,10 @@ export default {
       + 'Alice Evangelista Marques (1897), Carlindo Evangelista Marques (1898), Agenor Evangelista '
       + 'Marques (1902), Ivone Evangelista Marques (1904), Olinto Evangelista Marques (1906), '
       + 'Adelina Rodrigues Guimarães (1907).',
+        { figura: 'Retrato de família.',
+          arquivo: 'f-gente-senhora.jpg',
+          alt: 'Senhora idosa de vestido xadrez, de pé no quintal, apoiada numa bengala.',
+          credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
       ],
     },
     {
@@ -357,6 +377,10 @@ export default {
       + 'tecem a renda em pano desfiado de algodão ou linho, que serve de adorno requintado de '
       + 'roupas de cama, toalhas e caminhos-de-mesa, além de peças para igrejas, como os '
       + 'sanguíneos, que forram altares.',
+        { figura: 'Dona Lica.',
+          arquivo: 'f-gente-dona-lica.jpg',
+          alt: 'Retrato antigo, em tom alaranjado, de senhora idosa de cabelos brancos, sentada ao lado de uma parede clara.',
+          credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
       ],
     },
     {
@@ -383,6 +407,10 @@ export default {
       + 'insubstituível no povoado. Ensinou filhas e conterrâneas o segredo da cantoria religiosa, '
       + 'mas nenhuma delas será como a dona Clarinda da Conceição Pinheiro. Mas Clarinda '
       + 'certamente deixou um rastro de esperança nesta terra de tão poucos talentos.',
+        { figura: 'Nas festas do distrito.',
+          arquivo: 'f-gente-pintora.jpg',
+          alt: 'Senhora de blusa vermelha e óculos, de perfil, segurando um objeto erguido durante uma festa.',
+          credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
       ],
     },
     {
@@ -414,6 +442,10 @@ export default {
       + 'parentes e amigos.',
         'Todo o povo de Morro Vermelho se sente orgulhoso de ter ao seu lado um vizinho que deixou '
       + 'por toda parte um rastro de luz e esperança.',
+        { figura: 'Geraldo Baixinho.',
+          arquivo: 'f-gente-geraldo-baixinho.jpg',
+          alt: 'Senhor idoso de camisa listrada, sentado num sofá, com as mãos no colo, olhando para a câmera.',
+          credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
       ],
     },
   ],

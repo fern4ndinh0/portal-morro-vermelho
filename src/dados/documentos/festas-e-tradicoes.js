@@ -24,6 +24,10 @@ export default {
                   + 'Senhora de Nazareth, de Nossa Senhora do Rosário dos Pretos e da Semana '
                   + 'Santa. Também são mantidas outras festas folclóricas seculares, como a '
                   + 'Cavalhada, o Aluá e a Contradança.' },
+        { figura: 'A imagem da padroeira.',
+          arquivo: 'f-festas-padroeira.jpg',
+          alt: 'Imagem de Nossa Senhora de Nazareth com o Menino Jesus ao colo, coroada, sobre o andor enfeitado.',
+          credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
       ],
     },
     {
@@ -161,6 +165,26 @@ export default {
       + 'agradecimento, a comunidade de Morro Vermelho mandou ornar o templo com um retrato '
       + 'pintado do Papa Pio IX, que fica sobre o arco do cruzeiro, local mais elevado da igreja. '
       + 'A atitude reafirma o compromisso dos fiéis com a fé católica.',
+        { figura: 'Meninas com as velas.',
+          arquivo: 'f-festas-velas.jpg',
+          alt: 'Duas meninas segurando bandejas com velas acesas, em meio à multidão da festa.',
+          credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
+        { figura: 'O ofertório.',
+          arquivo: 'f-festas-ofertorio.jpg',
+          alt: 'Fiéis reunidos dentro da igreja em volta de uma mesa coberta de bolos, doces e guloseimas trazidos de oferta.',
+          credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
+        { figura: 'O tapete na rua.',
+          arquivo: 'f-festas-tapete.jpg',
+          alt: 'Tapete de serragem colorida estendido pela rua à noite, sob arcos de enfeites, com a igreja iluminada ao fundo.',
+          credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
+        { figura: 'A procissão luminosa.',
+          arquivo: 'f-festas-procissao-velas.jpg',
+          alt: 'Multidão de fiéis com velas acesas dentro da igreja, durante a celebração noturna.',
+          credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
+        { figura: 'A romaria.',
+          arquivo: 'f-festas-romaria.jpg',
+          alt: 'Fila de romeiros subindo a pé uma estrada de terra na encosta, em direção ao alto do morro.',
+          credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
       ],
     },
     {
@@ -195,6 +219,22 @@ export default {
       + 'milagrosos. A tradição já foi tema de documentário “Água Benta, Fé Ardente; Água Ardente, '
       + 'Fé Benta”, do diretor João Luiz Ornelas, premiado no Festival de Tiradentes em 2000 e no '
       + 'Festival do Rio em 1999.',
+        { figura: 'A imagem do Senhor dos Passos.',
+          arquivo: 'f-festas-senhor-dos-passos.jpg',
+          alt: 'Imagem do Senhor dos Passos em tamanho natural, com a coroa de espinhos, sendo molhada com cachaça por mãos que seguram um copo.',
+          credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
+        { figura: 'A lavagem, em detalhe.',
+          arquivo: 'f-festas-lavagem-pes.jpg',
+          alt: 'Detalhe dos pés da imagem dentro de uma bacia de cobre, com a cachaça sendo derramada de uma garrafa.',
+          credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
+        { figura: 'Procissão da Quaresma.',
+          arquivo: 'f-festas-quaresma.jpg',
+          alt: 'Fila de fiéis subindo uma estrada de terra em procissão, com estandartes roxos.',
+          credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
+        { figura: 'Velas ao pé do cruzeiro.',
+          arquivo: 'f-festas-cruzeiro-velas.jpg',
+          alt: 'Cruzeiro recortado contra a noite, com duas pessoas acendendo velas na base.',
+          credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
       ],
     },
     {
@@ -210,10 +250,10 @@ export default {
       + 'Morro Vermelho, prossegue no domingo com missa solene na Matriz, seguida de procissão '
       + 'luminosa até o outeiro do Rosário, acompanhada por banda de música e cortejo de guardas '
       + 'de congado de cidades vizinhas.',
-        { figura: 'Forró no Largo do Rosário.',
-          arquivo: 'galeria-forro-rosario.jpg',
-          alt: 'Grupo de pessoas reunido no Largo do Rosário durante festa, com a capela ao '
-             + 'fundo.' },
+        { figura: 'O estandarte na rua.',
+          arquivo: 'f-festas-estandarte.jpg',
+          alt: 'Estandarte bordado com a imagem da santa, conduzido em cortejo pela rua, acompanhado de tambores.',
+          credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
       ],
     },
     {
@@ -225,6 +265,10 @@ export default {
       + 'Nossa Senhora. Crianças da comunidade se vestem de anjos e cantam os 15 mistérios do '
       + 'terço com músicas tradicionais. As coroações, em geral, são seguidas de leilões, '
       + 'barraquinhas e quermesses.',
+        { figura: 'A coroação.',
+          arquivo: 'f-festas-coroacao.jpg',
+          alt: 'Crianças vestidas de anjo, de branco e rosa, em volta do andor durante a coroação de Nossa Senhora.',
+          credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
       ],
     },
     {
@@ -236,6 +280,10 @@ export default {
       + 'típicos. São oito peças executadas e dançadas. No início e no final de cada peça, a banda '
       + 'exibe uma valsa e se inicia com um apito do marcador. Os dançarinos podem ser em qualquer '
       + 'número par. Em Morro Vermelho a contradança é executada somente em ocasiões especiais.',
+        { figura: 'A contradança.',
+          arquivo: 'f-festas-contradanca.jpg',
+          alt: 'Fileiras de dançarinos com lenços e trajes típicos, dançando no gramado à noite.',
+          credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
       ],
     },
     {
@@ -264,6 +312,10 @@ export default {
         'Assim, a comunidade consegue repassar com mais facilidade às novas gerações manifestações '
       + 'culturais herdadas dos pais e avós, preservando a memória coletiva de um povo que sempre '
       + 'teve participação decisiva na história do País.',
+        { figura: 'A Cavalhada Mirim.',
+          arquivo: 'f-cavalhada-mirim.jpg',
+          alt: 'Crianças em fila com cavalos de pau enfeitados de papel colorido, diante da capela iluminada.',
+          credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
       ],
     },
     {
@@ -283,6 +335,10 @@ export default {
         'A festa começa com uma concentração na sede do povoado com batuques e cânticos, seguindo '
       + 'o cortejo, com os convidados em vestes especiais e sombrinhas coloridas, até a Capela do '
       + 'Rosário, onde é servida a bebida.',
+        { figura: 'O cortejo do Aluá.',
+          arquivo: 'f-festas-alua.jpg',
+          alt: 'Cortejo de pessoas com sombrinhas coloridas e roupas de festa, descendo a rua do povoado.',
+          credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
       ],
     },
   ],

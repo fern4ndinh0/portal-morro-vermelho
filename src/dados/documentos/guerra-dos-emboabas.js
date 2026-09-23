@@ -34,11 +34,9 @@ export default {
       + '(nascidos na Bahia e Nordeste do Brasil). Por zombaria, paulistas os chamavam Emboabas, '
       + 'por usarem polainas, que cobriam o peito dos pés, como uma ave.</em>',
         { figura: 'Quadro de 1749 sobre a Guerra dos Emboabas.',
-          legenda: 'O primeiro e único registro iconográfico sobre a Guerra dos Emboabas é um '
-                 + 'quadro de 1749, pintado em Salvador (BA), a pedido de um guerrilheiro emboaba '
-                 + 'salvo da morte em batalha por intercessão a Nossa Senhora de Nazareth. A '
-                 + 'igreja à esquerda do quadro é bem semelhante às ruínas da ermida antiga de '
-                 + 'Morro Vermelho, pintada no teto na entrada da Matriz atual.',
+          arquivo: 'f-emboabas-quadro-1749.jpg',
+          alt: 'Quadro a óleo em moldura dourada: cenas da guerra pintadas em vários planos — casas, cavaleiros, soldados e figuras em combate — com uma cartela de texto ao pé.',
+          legenda: 'O primeiro e único registro iconográfico sobre a Guerra dos Emboabas é um quadro de 1749, pintado em Salvador (BA), a pedido de um guerrilheiro emboaba salvo da morte em batalha por intercessão a Nossa Senhora de Nazareth.',
           credito: 'Quadro do Museu do Mosteiro de São Bento, Salvador, Bahia' },
       ],
     },
@@ -76,6 +74,11 @@ export default {
                  + 'comum e generalizado. Uma tão pesada contribuição era naturalmente muito mal '
                  + 'acolhida pelos mineiros e quem podia procurava subtrair-se.',
           autoria: 'H. Handelmann, <em>História do Brasil</em>, 1931' },
+        { figura: 'Detalhe do quadro de 1749.',
+          arquivo: 'f-emboabas-quadro-ermida.jpg',
+          alt: 'Detalhe do quadro: figura de Nossa Senhora sobre a paisagem e, apontada por uma seta vermelha, a pequena igreja de duas torres ao fundo.',
+          legenda: 'A igreja à esquerda do quadro é bem semelhante às ruínas da ermida antiga de Morro Vermelho, pintada no teto na entrada da Matriz atual.',
+          credito: 'Quadro do Museu do Mosteiro de São Bento, Salvador, Bahia' },
       ],
     },
     {

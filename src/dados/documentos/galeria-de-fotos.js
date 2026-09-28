@@ -79,10 +79,10 @@ export default {
                + 'o céu.',
             legenda: 'O Morro da Santa Cruz, que deu nome ao povoado, com o cruzeiro no cume.',
             credito: CREDITO },
-          { arquivo: 'galeria-cachoeira-poco.jpg',
-            alt: 'Queda de água entre paredões de rocha avermelhada, formando poço de água '
-               + 'esverdeada cercado de mata.',
-            legenda: 'Poço entre paredões de rocha, numa das cachoeiras do distrito.',
+          { arquivo: 'f-cachoeiras-santo-antonio-queda.jpg',
+            alt: 'Queda d’água branca descendo entre paredões de rocha avermelhada e estriada até '
+               + 'um poço de água verde e transparente.',
+            legenda: 'A Cachoeira de Santo Antônio, a cinco quilômetros do povoado.',
             credito: CREDITO },
           { arquivo: 'galeria-paleotoca.jpg',
             alt: 'Galerias arredondadas escavadas em barranco de rocha clara, com aberturas em '

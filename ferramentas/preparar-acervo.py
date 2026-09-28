@@ -131,9 +131,7 @@ MANIFESTO = [
     ('15MV02x.jpg', 'f-gandarela-mirante.jpg'),
 
     # --- 16 · Cachoeiras e Cascatas ----------------------------------------
-    ('16MV01.jpg', 'f-cachoeiras-santo-antonio.jpg'),
     ('16MV10.jpg', 'f-cachoeiras-poco.jpg'),
-    ('16MV09.jpg', 'f-cachoeiras-queda-alta.jpg'),
     ('16MV17.jpg', 'f-cachoeiras-cascatas-geriza.jpg'),
     ('16MV07.jpg', 'f-cachoeiras-lagoa.jpg'),
     ('16MV11.jpg', 'f-cachoeiras-maquine.jpg'),
@@ -322,14 +320,8 @@ MANIFESTO = [
     ('15MV03.jpg', 'f-gandarela-travessia.jpg'),
     ('15MV10.jpg', 'f-gandarela-barranco.jpg'),
     # cap. 16
-    ('16MV13.jpg', 'f-cachoeiras-estrelas.jpg'),
     ('16MV02.jpg', 'f-cachoeiras-estrelas-poco.jpg'),
-    ('16MV15.jpg', 'f-cachoeiras-banho.jpg'),
     ('16MV12.jpg', 'f-cachoeiras-trovao.jpg'),
-    ('docx:16MV00.docx:media/image6.jpg', 'f-cachoeiras-ribeirao.jpg'),
-    ('docx:16MV00.docx:media/image12.jpg', 'f-cachoeiras-lagoa-geriza.jpg'),
-    ('docx:16MV00.docx:media/image11.jpeg', 'f-cachoeiras-lagoa-mata.jpg'),
-    ('docx:16MV00.docx:media/image13.jpg', 'f-cachoeiras-cascata-mata.jpg'),
     # cap. 17
     ('docx:17MV00.docx:media/image1.jpg', 'f-festas-cortejo-rua.jpg'),
     ('17MV02.jpg', 'f-festas-andor.jpg'),
@@ -421,6 +413,16 @@ MANIFESTO = [
     (r'Galeria de Fotos\Nossa história - Nossa Gente, Nossa História\Escola Municipal Anézia Maria Pinheiro.jpeg', 'f-gente-escola-anezia.jpg'),
     (r'Galeria de Fotos\Nossa história - Nossa Gente, Nossa História\Professor João Evangelista Marques Guimarães.jpg', 'f-gente-professor-joao.jpg'),
     (r'Galeria de Fotos\Nossa história - Nossa Gente, Nossa História\Professora Jovelina Evangelista (1).jpeg', 'f-gente-dona-jove.jpg'),
+
+    # cap. 16: fotos da pasta 'Galeria de Fotos\Atrações - Cachoeiras e Cascatas',
+    # uma por lugar, com o nome dele. Substituem as do .docx nas mesmas seções.
+    (r'Galeria de Fotos\Atrações - Cachoeiras e Cascatas\Sto Antonio.jpg', 'f-cachoeiras-santo-antonio-queda.jpg'),
+    (r'Galeria de Fotos\Atrações - Cachoeiras e Cascatas\Cachu Estrellas.jpg', 'f-cachoeiras-estrelas-queda.jpg'),
+    (r'Galeria de Fotos\Atrações - Cachoeiras e Cascatas\Cachu Maquine.jpg', 'f-cachoeiras-maquine-grande.jpg'),
+    (r'Galeria de Fotos\Atrações - Cachoeiras e Cascatas\Lagoas do Geriza.jpg', 'f-cachoeiras-lagoas-geriza-alto.jpg'),
+    (r'Galeria de Fotos\Atrações - Cachoeiras e Cascatas\Lagoas do Geriza (1).jpg', 'f-cachoeiras-lagoas-geriza-placa.jpg'),
+    (r'Galeria de Fotos\Atrações - Cachoeiras e Cascatas\Ribeirão comprido.jpg', 'f-cachoeiras-ribeirao-comprido.jpg'),
+    (r'Galeria de Fotos\Atrações - Cachoeiras e Cascatas\Balneário do Taquaril.jpg', 'f-cachoeiras-taquaril.jpg'),
 
     # --- Avulsos ------------------------------------------------------------
     # Ficheiros sem o prefixo NNMV, que não estão nos .docx. São registro

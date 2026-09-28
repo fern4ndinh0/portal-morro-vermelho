@@ -41,10 +41,6 @@ export default {
       + 'Belo Horizonte, Minas Gerais, Brasil. Está a 10 quilômetros da sede do município, mas se '
       + 'liga também a Sabará (16 quilômetros), Raposos (14 quilômetros) e Rio Acima (18 '
       + 'quilômetros). Todos os acessos são por estrada de terra.',
-        { figura: 'Mapa do distrito.',
-          arquivo: 'f-servicos-mapa.jpg',
-          alt: 'Mapa do distrito com a legenda das estradas, minas de ouro, localidades históricas, quedas d’água e pontos de peregrinação.',
-          credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
       ],
     },
     {
@@ -81,6 +77,10 @@ export default {
           'Cachoeiras de Santo Antônio, das Estrelas e do Maquiné',
           'Retiro dos Capetas, ruínas de um posto fiscal da Coroa Portuguesa',
         ] },
+        { figura: 'Mapa do distrito.',
+          arquivo: 'f-servicos-mapa.jpg',
+          alt: 'Mapa do distrito com as atrações marcadas — Matriz, Capela do Rosário, Pedra do Sino, ruínas, cachoeiras, Retiro dos Capetas — e a legenda das estradas, minas de ouro, localidades históricas, quedas d’água e pontos de peregrinação.',
+          credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
       ],
     },
     {
@@ -96,7 +96,7 @@ export default {
         { figura: 'Restaurante no distrito.',
           arquivo: 'f-servicos-restaurante.jpg',
           alt: 'Salão de restaurante com mesas e bancos de madeira, grandes tonéis ao fundo e uma bandeira na parede.',
-          credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
+          credito: 'Reprodução da internet' },
       ],
     },
     {

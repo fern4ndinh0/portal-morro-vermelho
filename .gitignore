@@ -11,3 +11,6 @@ originais/word/imagens/
 
 # Arquivo de bloqueio que o Word cria enquanto o documento está aberto.
 ~$*.docx
+
+# Cache do Python gerado ao rodar as ferramentas.
+__pycache__/

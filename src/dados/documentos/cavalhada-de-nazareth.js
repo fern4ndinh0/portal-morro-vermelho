@@ -31,6 +31,10 @@ export default {
       + 'muçulmanos, que aceitam a fé cristã. Trazida por portugueses emboabas, procedentes do '
       + 'Nordeste do Brasil, a cavalhada de Morro Vermelho se diferencia de outras do país, '
       + 'marcadas por guerras ou disputas.',
+        { figura: 'A cavalhada de outros tempos.',
+          arquivo: 'f-cavalhada-antiga.jpg',
+          alt: 'Fotografia antiga, à noite: o embaixador cristão, de capa azul e coroa, empina o cavalo branco enfeitado ao lado da Bandeira de Nossa Senhora de Nazareth.',
+          credito: 'Arquivo da Cavalhada' },
         'No dia 7 de setembro, após a novena, às 21 horas, na praça toda enfeitada e cercada de '
       + 'cordas e bandeirolas, o público aguarda ansioso o início da cavalhada. Os fogueteiros '
       + 'iniciam os diálogos da cavalhada, através de salvas de fogos de artifício, aguardando-se '
@@ -39,11 +43,23 @@ export default {
       + 'desfile até a praça, sob intensa queima de fogos dos dois lados. Esta conversa singular '
       + 'de comunicação direta entre fogueteiros ajuda a marcar as evoluções do evento e assume '
       + 'valores carregados de simbolismo.',
+        { figura: 'A praça em festa.',
+          arquivo: 'f-cavalhada-matriz-fogos.jpg',
+          alt: 'A Matriz iluminada à noite, com a multidão na praça, os arcos enfeitados e fogos de artifício explodindo no céu.',
+          credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
         'À frente vêm os dois embaixadores, com bengalas iluminadas, seguido por dois cavaleiros '
       + 'com a Bandeira de Nossa Senhora de Nazareth, e os demais pares. Ao chegar à praça, os 24 '
       + 'cavaleiros são recebidos por apoteose de fogos e aplausos da multidão. Logo depois, os '
       + 'dois embaixadores, cercados pelos demais cavaleiros, iniciam a movimentação diante da '
       + 'bandeira.',
+        { figura: 'Os embaixadores e a bandeira.',
+          arquivo: 'f-cavalhada-embaixadores-fogos.jpg',
+          alt: 'Os dois embaixadores coroados, de capa azul e de capa branca, avançam a cavalo com a bandeira enfeitada de flores entre eles, sob chuva de fogos, rente à parede da igreja.',
+          credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
+        { figura: 'Os pares na praça.',
+          arquivo: 'f-cavalhada-pares-fogos.jpg',
+          alt: 'Dois cavaleiros lado a lado sob chuva de fogos de artifício, com o andor iluminado logo atrás.',
+          credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
         'A cavalhada começa com o embaixador mouro, de capa branca, símbolo da conversão e do '
       + 'batismo, saudando com embaixadas a bandeira, recebida do imperador cristão, de azul, que '
       + 'também a venera. Logo depois, os mouros hasteiam a Bandeira de Nazareth em mastro no seu '
@@ -64,18 +80,6 @@ export default {
       + 'de famílias locais que moram em vários cantos do país e até do exterior. Eles voltam à '
       + 'terra natal para agradecer a proteção da Virgem durante o ano. Com os visitantes, '
       + 'estima-se, no dia da festa, um público cinco vezes maior que a população local.',
-        { figura: 'O embaixador cristão.',
-          arquivo: 'f-cavalhada-cristao.jpg',
-          alt: 'Cavaleiro de capa e capacete azuis sobre um cavalo branco empinado, à noite, sob os enfeites da praça.',
-          credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
-        { figura: 'O embaixador mouro.',
-          arquivo: 'f-cavalhada-mouro.jpg',
-          alt: 'Cavaleiro de capa branca sobre cavalo branco, de perfil, diante dos arcos iluminados da praça à noite.',
-          credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
-        { figura: 'Os pares na praça.',
-          arquivo: 'f-cavalhada-pares-fogos.jpg',
-          alt: 'Dois cavaleiros lado a lado sob chuva de fogos de artifício, com o andor iluminado logo atrás.',
-          credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
       ],
     },
     {
@@ -99,13 +103,17 @@ export default {
       + 'vermelho (mouros). Na sequência, ocorrem as embaixadas, trocas de insultos e acusações, '
       + 'desafio dos mouros aos cristãos; as batalhas, e por fim o pedido de trégua pelos mouros, '
       + 'finalizando com o batismo e a conversão destes últimos ao cristianismo.',
+        { figura: 'Cavalhada de cristãos e mouros.',
+          arquivo: 'f-cavalhada-matriz-dia.jpg',
+          alt: 'Cavaleiro de roupa escura empinando um cavalo preto diante de uma igreja de duas torres, de dia, com cavaleiros de azul de um lado e de vermelho do outro.',
+          credito: 'Reprodução da internet' },
         'Em outras regiões durante a festa da Cavalhada ocorre o levantamento do mastro, que é '
       + 'trançado com fitas, entrelaçadas pelos movimentos executados de forma bastante '
       + 'sincronizada pelos cavaleiros.',
-        { figura: 'A cavalhada diante da Matriz.',
-          arquivo: 'f-cavalhada-matriz-dia.jpg',
-          alt: 'Cavaleiro empinando o cavalo diante da Matriz de duas torres, de dia, com a fileira de cavaleiros e o público ao fundo.',
-          credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
+        { figura: 'O mastro e os cavaleiros.',
+          arquivo: 'f-cavalhada-mastro-campo.jpg',
+          alt: 'Mastro erguido num campo aberto, com as fitas esticadas até o chão e cavaleiros em volta.',
+          credito: 'Reprodução da internet' },
       ],
     },
     {
@@ -150,9 +158,9 @@ export default {
       + 'traçando metas, planejando ações e buscando recursos. Nos dias da festa contam com o '
       + 'auxílio dos mordomos, centenas de voluntários que contribuem para a festa e ajudam na '
       + 'execução de várias tarefas.',
-        { figura: 'A ornamentação.',
-          arquivo: 'f-cavalhada-ornamentacao.jpg',
-          alt: 'Homens e mulheres em volta de uma mesa, montando à mão os enfeites de flores e fitas da festa.',
+        { figura: 'A comissão de festeiros.',
+          arquivo: 'f-cavalhada-comissao.jpg',
+          alt: 'Grupo numeroso de moças e rapazes de camiseta azul da comissão de festa, reunidos para uma foto à noite.',
           credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
       ],
     },
@@ -168,9 +176,13 @@ export default {
       + 'festa. Com varas, eles espantam crianças e adultos nas casas e nos quintais. Pela '
       + 'tradição, a função dos mascarados seria espantar demônios e todos os males das casas, das '
       + 'pessoas e das ruas para a chegada de Nossa Senhora.',
-        { figura: 'O cortejo pela rua.',
-          arquivo: 'f-cavalhada-mascarados.jpg',
-          alt: 'Cortejo descendo a rua do povoado entre o público, que assiste dos dois lados.',
+        { figura: 'Os mascarados.',
+          arquivo: 'f-cavalhada-mascarados-grupo.jpg',
+          alt: 'Grupo de mascarados com máscaras de rosto branco, roupas velhas e coloridas e bolsas a tiracolo, numa rua de pedra.',
+          credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
+        { figura: 'Os mascarados pela rua.',
+          arquivo: 'f-cavalhada-mascarados-rua.jpg',
+          alt: 'Mascarados de roupa colorida descendo uma rua de pedra do povoado, acompanhados de moradores com tambores e sanfona.',
           credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
       ],
     },
@@ -183,6 +195,10 @@ export default {
       + 'moradores e visitantes para a grande festa que se aproxima. Por tradição, muita gente, '
       + 'sobretudo os jovens, atravessam a noite nas ruas à espera da alvorada, quando iniciam os '
       + 'preparativos para ornamentação da praça e da igreja.',
+        { figura: 'A banda na matina.',
+          arquivo: 'f-cavalhada-matina.jpg',
+          alt: 'Músicos da banda tocando à noite diante da parede branca da igreja, ao lado do mastro.',
+          credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
       ],
     },
     {
@@ -205,6 +221,14 @@ export default {
           '<strong>Lenços brancos</strong> – Desejo de paz e de um bom ano para todos os moradores '
         + 'e visitantes.',
         ] },
+        { figura: 'As fitas do mastro.',
+          arquivo: 'f-cavalhada-fitas-mastro.jpg',
+          alt: 'Cavaleiros de azul e de branco em volta do mastro, segurando as fitas entrelaçadas, à noite.',
+          credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
+        { figura: 'Mouro e cristão.',
+          arquivo: 'f-cavalhada-pares-galope.jpg',
+          alt: 'Um cavaleiro de branco e outro de azul galopando lado a lado, acenando, à noite.',
+          credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
       ],
     },
     {
@@ -215,9 +239,25 @@ export default {
       + 'conduzida por mais de 200 cavaleiros até Morro Vermelho (10 quilômetros), onde é recebida '
       + 'por uma multidão. Após a novena, é levada em procissão à casa de um morador, onde é '
       + 'ornamentada para a cavalhada do dia seguinte.',
+        { figura: 'A bandeira em Caeté.',
+          arquivo: 'f-cavalhada-bandeira-caete.jpg',
+          alt: 'A bandeira enfeitada de flores sobre uma carroça puxada por burro, diante de uma igreja de torres brancas ao entardecer, com tocadores de caixa.',
+          credito: 'Luís Xavier' },
         { figura: 'A Bandeira de Nazareth.',
           arquivo: 'f-cavalhada-bandeira.jpg',
-          alt: 'Andor iluminado com a imagem da padroeira, conduzido entre cavaleiros à noite.',
+          alt: 'A bandeira emoldurada de flores, com a pintura da padroeira, levada numa carroça entre cavaleiros à noite.',
+          credito: 'Luís Xavier' },
+        { figura: 'A bandeira no campo.',
+          arquivo: 'f-cavalhada-mirim.jpg',
+          alt: 'Pessoas de camiseta laranja carregando a bandeira emoldurada de flores num campo de terra, de dia, com o povoado ao fundo.',
+          credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
+        { figura: 'A veneração da bandeira.',
+          arquivo: 'f-cavalhada-ornamentacao.jpg',
+          alt: 'Fiéis emocionados tocando a pintura da padroeira na bandeira, cercada de rosas brancas e azuis.',
+          credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
+        { figura: 'O cortejo da bandeira.',
+          arquivo: 'f-cavalhada-mascarados.jpg',
+          alt: 'Público em volta de uma rua em curva, com a bandeira enfeitada de branco ao fundo e pessoas de camiseta verde.',
           credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
       ],
     },
@@ -231,13 +271,17 @@ export default {
           arquivo: 'f-cavalhada-mastro-levante.jpg',
           alt: 'Dezenas de homens erguendo juntos o mastro de madeira com o auxílio de tesouras, na rua de terra.',
           credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
+        { figura: 'O mastro na noite.',
+          arquivo: 'f-cavalhada-mastro-noite.jpg',
+          alt: 'O mastro branco visto de baixo, à noite, com a bandeira no cume e as tesouras de madeira apoiadas na base.',
+          credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
         { figura: 'O mastro erguido.',
           arquivo: 'f-cavalhada-mastro-erguido.jpg',
-          alt: 'O mastro branco erguido sobre o povoado, com as fitas entrelaçadas e a bandeira no cume.',
+          alt: 'O mastro erguido sobre o povoado, de dia, com as fitas entrelaçadas e a bandeira no cume.',
           credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
-        { figura: 'O mastro e os cavaleiros.',
-          arquivo: 'f-cavalhada-mastro-campo.jpg',
-          alt: 'Mastro erguido num campo aberto, com as fitas esticadas até o chão e um cavaleiro ao lado.',
+        { figura: 'A placa do mastro.',
+          arquivo: 'f-cavalhada-mastro-placa.jpg',
+          alt: 'Placa de metal presa ao mastro branco: “Mastro preparado para receber o estandarte de Nossa Senhora de Nazareth”, com os nomes dos colaboradores e a data de 20 de agosto de 1986.',
           credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
       ],
     },
@@ -256,11 +300,15 @@ export default {
       + 'males do corpo e da alma.',
         { figura: 'Os arcos de enfeites.',
           arquivo: 'f-cavalhada-enfeites.jpg',
-          alt: 'Arcos de enfeites brancos iluminados na noite, formando a passagem por onde correm os cavaleiros.',
+          alt: 'Arcos de enfeites brancos iluminados na noite, com a bandeira ao centro e o público embaixo.',
           credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
         { figura: 'A praça enfeitada.',
           arquivo: 'f-cavalhada-arcos.jpg',
           alt: 'A praça à noite, com arcos azuis iluminados e a Matriz ao fundo.',
+          credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
+        { figura: 'Os enfeites sendo montados.',
+          arquivo: 'f-cavalhada-enfeites-preparo.jpg',
+          alt: 'Enfeites de papel em forma de balões coloridos presos aos mourões, na praça de terra, de dia, com moradores ao fundo.',
           credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
       ],
     },
@@ -275,6 +323,14 @@ export default {
         'O embaixador mouro usa também capa branca e coroa brilhante da mesma cor. O cristão veste '
       + 'capa azul e coroa azul. Os cavalos levam cela, tendo no peito guizos e fitas coloridas. '
       + 'Trazem ainda rosas coloridas, adornando os freios.',
+        { figura: 'O traje do embaixador mouro.',
+          arquivo: 'f-cavalhada-traje-mouro.jpg',
+          alt: 'Cavaleiro de camisa branca, gravata preta e coroa branca num cavalo branco enfeitado de azul, à noite.',
+          credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
+        { figura: 'O traje do cavaleiro cristão.',
+          arquivo: 'f-cavalhada-traje-cristao.jpg',
+          alt: 'Cavaleiro de camisa azul, calça branca e capacete azul num cavalo castanho com rosas no freio, à noite.',
+          credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
       ],
     },
     {
@@ -290,7 +346,15 @@ export default {
       + 'ajudam a marcar as evoluções do evento.',
         { figura: 'Os fogos sobre o povoado.',
           arquivo: 'f-cavalhada-fogos.jpg',
-          alt: 'Fogos de artifício explodindo sobre as luzes do povoado, vistos de longe na noite.',
+          alt: 'Fogos de artifício explodindo sobre a igreja iluminada, vista de longe na noite.',
+          credito: 'Robson de Oliveira' },
+        { figura: 'Fogos sobre a igreja.',
+          arquivo: 'f-cavalhada-fogos-igreja.jpg',
+          alt: 'Fogos vermelhos e dourados explodindo sobre uma igreja e os telhados do povoado, à noite.',
+          credito: 'Robson de Oliveira' },
+        { figura: 'Fogos sobre as torres.',
+          arquivo: 'f-cavalhada-fogos-torres.jpg',
+          alt: 'Fogos roxos e dourados no céu escuro, acima das torres amarelas iluminadas da igreja.',
           credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
         { figura: 'A festa vista do alto.',
           arquivo: 'f-cavalhada-aerea.jpg',
@@ -302,6 +366,10 @@ export default {
       id: 'as-embaixadas', titulo: 'As embaixadas',
       blocos: [
         { sub: 'Do embaixador mouro ao receber a Bandeira' },
+        { figura: 'O embaixador mouro.',
+          arquivo: 'f-cavalhada-mouro-bandeira.jpg',
+          alt: 'O embaixador mouro, de capa branca e coroa, empinando o cavalo branco à noite, com o braço erguido.',
+          credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
         { citacao: 'Neste momento, quando no entusiasmo desta solenidade deparo com a imagem da '
                  + 'Santíssima Virgem de Nazareth, fico extasiado de prazer. Não posso e nem devo '
                  + 'cumprir minha missão sem que antes adore e venere esta sublime imagem. '
@@ -309,6 +377,10 @@ export default {
                  + 'homenagens à Santíssima Virgem, rainha do céu e da terra. Imploremos a ela o '
                  + 'seu auxílio.' },
         { sub: 'Do imperador cristão, ao venerar a Bandeira' },
+        { figura: 'O imperador cristão.',
+          arquivo: 'f-cavalhada-cristao.jpg',
+          alt: 'O imperador cristão, de capa azul e coroa, sobre um cavalo branco empinado, à noite, sob os enfeites da praça.',
+          credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
         { citacao: 'Ilustre e nobre embaixador, aqui estou, que eu pressuroso venho ao apelo de '
                  + 'vossas palavras. Ilustre e nobre embaixador, chegarei aqui, ao trono de '
                  + 'clareza, tendo pela real sorte a majestade à frente, cingida de riquíssimo '
@@ -323,6 +395,10 @@ export default {
                  + 'Nazareth os louvores, que sejam de alegria, e republica o retrato da Santa '
                  + 'Virgem Maria.' },
         { sub: 'Do embaixador mouro, ao venerar a Bandeira no alto do mastro' },
+        { figura: 'O mouro diante do mastro.',
+          arquivo: 'f-cavalhada-mouro-mastro.jpg',
+          alt: 'O embaixador mouro, de capa branca e coroa, empinando o cavalo branco diante dos arcos, com a mão levantada.',
+          credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
         { citacao: 'Oh, invicto imperador augusto, que sou de régia sorte, piso o plano do mais '
                  + 'alto venturoso nome. Desde aqui vedes a nobreza que rodeia esta praça, eu e '
                  + 'vossa imperial grandeza majestade. Brilhantismo é o vosso nome, augusto César. '
@@ -336,6 +412,14 @@ export default {
                  + 'Senhora de Nazareth. Eu louvo e venero este ato. De vossa gloriosa boca espero '
                  + 'uma boa resposta.' },
         { sub: 'Do imperador cristão, renovando sua leal amizade' },
+        { figura: 'O cristão renova a amizade.',
+          arquivo: 'f-cavalhada-cristao-amizade.jpg',
+          alt: 'O imperador cristão, de capa azul e coroa, num cavalo malhado empinado, à noite.',
+          credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
+        { figura: 'Os embaixadores na praça.',
+          arquivo: 'f-cavalhada-mouro.jpg',
+          alt: 'Dois cavaleiros coroados, de capa branca e de capa azul-clara, em cavalos brancos empinados na praça à noite, diante dos arcos iluminados.',
+          credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
         { citacao: 'Muito alto e poderoso, nobre embaixador, que representa a mais abençoada parte '
                  + 'do universo. Que o destino há de te levar à mais alta e nobre posição, de onde '
                  + 'com dignidade serve à tua pátria. Oh, pátria querida, teu responsável nome se '

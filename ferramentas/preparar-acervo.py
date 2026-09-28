@@ -28,7 +28,7 @@
 #   python ferramentas/preparar-acervo.py
 # =============================================================================
 
-import os, sys
+import io, os, sys, zipfile
 from PIL import Image, ImageOps
 
 if hasattr(sys.stdout, 'reconfigure'):
@@ -37,6 +37,7 @@ if hasattr(sys.stdout, 'reconfigure'):
 RAIZ = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 ORIGEM = r'C:\Arquivos soltos\Site Fernando'
 DESTINO = os.path.join(RAIZ, 'midia')
+WORD = os.path.join(RAIZ, 'originais', 'word')
 
 LARGURA_MAX = 1600
 TETO_KB = 320
@@ -252,6 +253,168 @@ MANIFESTO = [
     ('28MV03.jpg', 'f-outras-minas-geraes.jpg'),
     ('28MV07.jpg', 'f-outras-actualidade.jpg'),
 
+    # --- Conferência com o Word de layout (NNMV00.docx) ---------------------
+    # Fotos que o layout de cada capítulo traz e o site ainda não tinha. Foram
+    # encaixadas pela LEGENDA que o Word põe ao lado de cada foto, e não pelo
+    # nome do arquivo. 'docx:ARQUIVO:media/imagemN' = imagem que só existe
+    # dentro do .docx, lida de originais/word/.
+    # cap. 02
+    ('docx:02MV00.docx:media/image1.jpeg', 'f-historia-panorama.jpg'),
+    ('docx:02MV00.docx:media/image4.jpg', 'f-historia-bandeiras.jpg'),
+    ('docx:02MV00.docx:media/image5.jpg', 'f-historia-mapa.jpg'),
+    ('docx:02MV00.docx:media/image7.jpg', 'f-historia-cruzeiro.jpg'),
+    ('docx:02MV00.docx:media/image10.jpg', 'f-historia-tropa-matriz.jpg'),
+    ('docx:02MV00.docx:media/image13.jpg', 'f-historia-estrada-eucaliptos.jpg'),
+    ('docx:02MV00.docx:media/image11.jpg', 'f-historia-gruta.jpg'),
+    ('docx:02MV00.docx:media/image15.jpg', 'f-historia-casa-antiga.jpg'),
+    ('docx:02MV00.docx:media/image16.jpg', 'f-historia-largo-matriz.jpg'),
+    ('docx:02MV00.docx:media/image18.jpg', 'f-historia-vista-antiga.jpg'),
+    ('docx:02MV00.docx:media/image26.jpg', 'f-historia-casario.jpg'),
+    ('docx:02MV00.docx:media/image25.jpg', 'f-historia-rua-cavalos.jpg'),
+    ('docx:02MV00.docx:media/image21.jpg', 'f-historia-boiada.jpg'),
+    ('docx:02MV00.docx:media/image20.jpg', 'f-historia-estrada-entardecer.jpg'),
+    ('docx:02MV00.docx:media/image17.jpg', 'f-historia-bula.jpg'),
+    ('docx:02MV00.docx:media/image19.jpg', 'f-historia-matriz-multidao.jpg'),
+    ('docx:02MV00.docx:media/image12.jpg', 'f-historia-rua-motos.jpg'),
+    ('docx:02MV00.docx:media/image24.jpg', 'f-historia-artesanato.jpg'),
+    ('docx:02MV00.docx:media/image23.jpg', 'f-historia-rua-antiga.jpg'),
+    ('docx:02MV00.docx:media/image22.jpg', 'f-historia-mineracao.jpg'),
+    # cap. 03
+    ('03MV01.jpg', 'f-ouro-fenda-rocha.jpg'),
+    ('03MV03.jpg', 'f-ouro-galeria-mata.jpg'),
+    ('03MV04.jpg', 'f-ouro-galeria-entulho.jpg'),
+    ('03MV06.jpg', 'f-ouro-galeria-cutao.jpg'),
+    ('03MV08.jpg', 'f-ouro-cruz-esculpida.jpg'),
+    ('03MV09.jpg', 'f-ouro-galeria-luz.jpg'),
+    ('03MV14.jpg', 'f-ouro-boca-folhas.jpg'),
+    ('03MV15.jpg', 'f-ouro-gruta-amarela.jpg'),
+    ('03MV16.jpg', 'f-ouro-gruta-saida.jpg'),
+    # cap. 05
+    ('05MV02.jpg', 'f-cutao-ruinas-palacio.jpg'),
+    # cap. 08
+    ('08MV05.jpg', 'f-estrada-encosta.jpg'),
+    # cap. 09
+    ('09MV03.jpg', 'f-emboabas-quadro-igreja.jpg'),
+    ('09MV05.jpg', 'f-emboabas-monumento.jpg'),
+    ('09MV10.jpg', 'f-emboabas-celebracao.jpg'),
+    ('09MV08.jpg', 'f-emboabas-emboaba-capela.jpg'),
+    ('09MV07.jpg', 'f-emboabas-emboaba-campo.jpg'),
+    # cap. 11
+    ('11MV04.jpg', 'f-bexiga-jornal-1895.jpg'),
+    # cap. 12
+    ('docx:12MV00.docx:media/image1.jpg', 'f-padres-familia.jpg'),
+    ('docx:12MV00.docx:media/image12.jpg', 'f-padres-professor.jpg'),
+    ('docx:12MV00.docx:media/image3.jpg', 'f-padres-casarao.jpg'),
+    ('docx:12MV00.docx:media/image9.jpg', 'f-padres-nico.jpg'),
+    ('docx:12MV00.docx:media/image4.jpg', 'f-padres-joao-capela.jpg'),
+    ('docx:12MV00.docx:media/image11.jpg', 'f-padres-joao-roca.jpg'),
+    ('docx:12MV00.docx:media/image10.jpg', 'f-padres-joao-estatua.jpg'),
+    ('docx:12MV00.docx:media/image8.jpg', 'f-padres-pedro.jpg'),
+    ('docx:12MV00.docx:media/image7.jpg', 'f-padres-benjamim.jpg'),
+    ('docx:12MV00.docx:media/image6.jpg', 'f-padres-alberto.jpg'),
+    # cap. 13
+    ('13MV04.jpg', 'f-diretas-matriz.jpg'),
+    # cap. 14
+    ('14MV05.jpg', 'f-atracoes-senhor-morto.jpg'),
+    ('docx:14MV00.docx:media/image4.jpg', 'f-atracoes-rosario-capela.jpg'),
+    ('14MV12.jpg', 'f-atracoes-morro-palmeiras.jpg'),
+    # cap. 15
+    ('15MV03.jpg', 'f-gandarela-travessia.jpg'),
+    ('15MV10.jpg', 'f-gandarela-barranco.jpg'),
+    # cap. 16
+    ('16MV13.jpg', 'f-cachoeiras-estrelas.jpg'),
+    ('16MV02.jpg', 'f-cachoeiras-estrelas-poco.jpg'),
+    ('16MV15.jpg', 'f-cachoeiras-banho.jpg'),
+    ('16MV12.jpg', 'f-cachoeiras-trovao.jpg'),
+    ('docx:16MV00.docx:media/image6.jpg', 'f-cachoeiras-ribeirao.jpg'),
+    ('docx:16MV00.docx:media/image12.jpg', 'f-cachoeiras-lagoa-geriza.jpg'),
+    ('docx:16MV00.docx:media/image11.jpeg', 'f-cachoeiras-lagoa-mata.jpg'),
+    ('docx:16MV00.docx:media/image13.jpg', 'f-cachoeiras-cascata-mata.jpg'),
+    # cap. 17
+    ('docx:17MV00.docx:media/image1.jpg', 'f-festas-cortejo-rua.jpg'),
+    ('17MV02.jpg', 'f-festas-andor.jpg'),
+    ('17MV03.jpg', 'f-festas-procissao-luminosa.jpg'),
+    ('17MV22.jpg', 'f-festas-caminhada.jpg'),
+    ('docx:17MV00.docx:media/image5.jpg', 'f-festas-mordomos.jpg'),
+    ('17MV23.jpg', 'f-festas-enterro.jpg'),
+    ('17MV21.jpg', 'f-festas-cristo-morto.jpg'),
+    ('17MV28.jpg', 'f-festas-triunfo.jpg'),
+    ('17MV13.jpg', 'f-festas-charola.jpg'),
+    ('17MV14.jpg', 'f-festas-rosario.jpg'),
+    ('17MV26.jpg', 'f-festas-rosario-mastro.jpg'),
+    ('17MV12.jpg', 'f-festas-cavalhada-mirim.jpg'),
+    ('17MV30.jpg', 'f-festas-cavalhada-mirim-embaixadores.jpg'),
+    # cap. 18
+    ('18MV01x.jpg', 'f-cavalhada-antiga.jpg'),
+    ('18MV04x.jpg', 'f-cavalhada-embaixadores-fogos.jpg'),
+    ('18MV14.jpg', 'f-cavalhada-matriz-fogos.jpg'),
+    ('18MV05x.jpg', 'f-cavalhada-mastro-noite.jpg'),
+    ('18MV13.jpg', 'f-cavalhada-bandeira-caete.jpg'),
+    ('18MV25.jpg', 'f-cavalhada-comissao.jpg'),
+    ('18MV26.jpg', 'f-cavalhada-mascarados-grupo.jpg'),
+    ('18MV26x.jpg', 'f-cavalhada-mascarados-rua.jpg'),
+    ('18MV18.jpg', 'f-cavalhada-fogos-igreja.jpg'),
+    ('18MV19.jpg', 'f-cavalhada-fogos-torres.jpg'),
+    ('18MV28x.jpg', 'f-cavalhada-fitas-mastro.jpg'),
+    ('18MV28.jpg', 'f-cavalhada-pares-galope.jpg'),
+    ('18MV12.jpg', 'f-cavalhada-matina.jpg'),
+    ('18MV24.jpg', 'f-cavalhada-enfeites-preparo.jpg'),
+    ('18MV27.jpg', 'f-cavalhada-traje-mouro.jpg'),
+    ('18MV27x.jpg', 'f-cavalhada-traje-cristao.jpg'),
+    ('18MV02.jpg', 'f-cavalhada-mouro-bandeira.jpg'),
+    ('18MV02x.jpg', 'f-cavalhada-mouro-mastro.jpg'),
+    ('18MV03x.jpg', 'f-cavalhada-cristao-amizade.jpg'),
+    ('18MV22.jpg', 'f-cavalhada-mastro-placa.jpg'),
+    # cap. 19
+    ('19MV06.jpg', 'f-saberes-fogao-lenha.jpg'),
+    ('19MV14.jpg', 'f-saberes-assadeira.jpg'),
+    ('19MV36x.jpg', 'f-saberes-doce-de-leite.jpg'),
+    ('19MV33.JPG', 'f-saberes-pintura-flores.jpg'),
+    ('19MV11.jpg', 'f-saberes-pintura-cavalo.jpg'),
+    # cap. 20
+    ('20MV08.jpg', 'f-trilhas-turistas.jpg'),
+    ('20MV10x.jpg', 'f-trilhas-largo-bicicletas.jpg'),
+    ('20MV12x.jpg', 'f-trilhas-motos-ladeira.jpg'),
+    ('20MV11x.jpg', 'f-trilhas-quadriciclo.jpg'),
+    # cap. 21
+    ('21MV01.jpg', 'f-cultura-corrida-saco.jpg'),
+    ('21MV04.jpg', 'f-cultura-banda-igreja.jpg'),
+    ('21MV09.jpg', 'f-cultura-procissao-nazareth.jpg'),
+    ('21MV07.jpg', 'f-cultura-reis.jpg'),
+    ('21MV14.jpg', 'f-cultura-velho-criancas.jpg'),
+    ('21MV13.jpg', 'f-cultura-cachoeira.jpg'),
+    ('21MV11.jpg', 'f-cultura-encomendacao.jpg'),
+    # cap. 22
+    ('22MV04.jpg', 'f-bens-casa-largo.jpg'),
+    ('22MV07.jpg', 'f-bens-casa-varanda.jpg'),
+    ('22MV05.jpg', 'f-bens-casa-palmeiras.jpg'),
+    ('22MV09.jpg', 'f-bens-centenaria-1.jpg'),
+    ('22MV10.jpg', 'f-bens-centenaria-2.jpg'),
+    # cap. 23
+    ('23MV02.jpg', 'f-noticias-trilha-mata.jpg'),
+    ('23MV04.jpg', 'f-noticias-arvore-caida.jpg'),
+    ('23MV05.jpg', 'f-noticias-barranco.jpg'),
+    ('23MV07.jpg', 'f-noticias-gaioleiros.jpg'),
+    ('23MV10.jpg', 'f-noticias-loteamento.jpg'),
+    ('23MV12.jpg', 'f-noticias-praca.jpg'),
+    # cap. 24
+    ('24MV01.jpg', 'f-redes-cavalhada.jpg'),
+    ('24MV02.jpg', 'f-redes-procissao.jpg'),
+    ('24MV03.jpg', 'f-redes-lagoa.jpg'),
+    ('24MV04.jpg', 'f-redes-ribeirao.jpg'),
+    ('24MV05.jpg', 'f-redes-banda.jpg'),
+    # cap. 25
+    ('25MV06.jpg', 'f-lendas-cavaleiro.jpg'),
+    # cap. 27
+    ('27MV10.jpg', 'f-gente-ze-pinheiro.jpg'),
+    ('27MV11.jpg', 'f-gente-capela-sao-jose.jpg'),
+    ('27MV04.jpg', 'f-gente-geraldo-baixinho-2.jpg'),
+    # cap. 28
+    ('28MV04.jpg', 'f-outras-actualidade-1878.jpg'),
+    ('28MV05.jpg', 'f-outras-vigilante.jpg'),
+    ('28MV06.jpg', 'f-outras-diario-de-minas.jpg'),
+    ('28MV08.jpg', 'f-outras-carta-1715.jpg'),
+
     # --- Avulsos ------------------------------------------------------------
     # Ficheiros sem o prefixo NNMV, que não estão nos .docx. São registro
     # recente do estado de conservação dos bens tombados — exatamente o que o
@@ -297,10 +460,18 @@ def main():
         if nome in nomes:
             sys.exit('nome repetido no manifesto: ' + nome)
         nomes.add(nome)
-        p = os.path.join(ORIGEM, origem)
-        if not os.path.exists(p):
-            faltando.append(origem)
-            continue
+        if origem.startswith('docx:'):
+            _, docx, interno = origem.split(':', 2)
+            try:
+                p = io.BytesIO(zipfile.ZipFile(os.path.join(WORD, docx)).read('word/' + interno))
+            except (OSError, KeyError):
+                faltando.append(origem)
+                continue
+        else:
+            p = os.path.join(ORIGEM, origem)
+            if not os.path.exists(p):
+                faltando.append(origem)
+                continue
         (w, h), q, tam = reduzir(p, os.path.join(DESTINO, nome))
         total += tam
         print('  %-38s %5dx%-5d q%d %4d KB   <- %s' % (nome, w, h, q, tam // 1024, origem))

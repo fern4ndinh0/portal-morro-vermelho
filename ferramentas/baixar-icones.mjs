@@ -66,6 +66,8 @@ const DO_LUCIDE = {
   'alerta':     'triangle-alert',
   'check':      'check',
   'copiar':     'copy',
+  'fechar':     'x',
+  'ampliar':    'maximize-2',
 };
 
 /* --------------------------------------------------------------------------

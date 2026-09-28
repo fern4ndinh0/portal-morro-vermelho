@@ -59,6 +59,10 @@ export default {
           arquivo: 'f-noticias-erosao.jpg',
           alt: 'Vala funda aberta pela erosão na encosta de terra vermelha, cortando o capim.',
           credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
+        { figura: 'Os gaioleiros no morro.',
+          arquivo: 'f-noticias-gaioleiros.jpg',
+          alt: 'Grupo de pessoas reunidas no alto do morro, junto a uma torre metálica, ao lado de um carro fora de estrada; serras ao fundo.',
+          credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
       ],
     },
     {
@@ -105,6 +109,10 @@ export default {
       + 'burros e potros pastam com tranquilidade. A falta de respeito grassa por toda parte, mas '
       + 'em Morro Vermelho muito mais. A Prefeitura de Caeté e a Paróquia têm conhecimento do '
       + 'assunto, mas fazem ouvidos de mercador.',
+        { figura: 'O loteamento no alto do morro.',
+          arquivo: 'f-noticias-loteamento.jpg',
+          alt: 'Rua de terra no alto de um morro, com casas simples de um lado, cerca do outro e dois cachorros atravessando.',
+          credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
         { figura: 'O cemitério.',
           arquivo: 'f-noticias-cemiterio.jpg',
           alt: 'Cemitério de cruzes simples de madeira e sepulturas de terra, com dois cavalos pastando entre elas.',
@@ -127,6 +135,10 @@ export default {
       + 'Artístico Nacional (a Matriz é tombada pelo Iphan desde 1950): a reforma teria colocado a '
       + 'praça fora dos padrões do tombamento. Enquanto ninguém se interessa por resolver o '
       + 'problema, segue o perigo para todos os moradores e visitantes.',
+        { figura: 'A proteção de madeira ao lado da Matriz.',
+          arquivo: 'f-noticias-praca.jpg',
+          alt: 'Muro de arrimo e barranco gramado ao lado da Matriz, com a proteção de madeira no alto e a torre da igreja ao fundo.',
+          credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
       ],
     },
     {
@@ -146,7 +158,7 @@ export default {
         { figura: 'A biblioteca da escola.',
           arquivo: 'f-noticias-biblioteca.jpg',
           alt: 'Estante envidraçada cheia de livros empilhados, na escola municipal.',
-          credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
+          credito: 'Tânia Pinheiro' },
       ],
     },
     {
@@ -176,6 +188,10 @@ export default {
       + 'ciclismo, artesanato e gastronomia; e “Patrimônio de Liberdade”, enfocando a Guerra dos '
       + 'Emboabas, o Levante das Bateias, a estrada real e as forças militares no povoado no '
       + 'século 18.',
+        { figura: 'Os Desbravadores na trilha.',
+          arquivo: 'f-noticias-trilha-mata.jpg',
+          alt: 'Grupo de pessoas caminhando em fila por uma trilha dentro da mata.',
+          credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
         { sub: 'Engenhos do ouro' },
         'Além de localidades turísticas já conhecidas, como Pedra do Sino, Cruzeiro do Rosário, '
       + 'Cruzeiro da Santa Cruz e Cachoeira de Santo Antônio, o grupo conseguiu identificar '
@@ -196,6 +212,14 @@ export default {
       + 'que guarda um rico acervo histórico por ter sediado um posto fiscal da Coroa Portuguesa. '
       + 'Também foi documentada uma casa de pedra, em ruínas, que teria sido hospedaria de fiscais '
       + 'e de tropas militares.',
+        { figura: 'Árvores caídas no caminho.',
+          arquivo: 'f-noticias-arvore-caida.jpg',
+          alt: 'Dois homens passando por cima de troncos e galhos de árvores caídas, dentro da mata.',
+          credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
+        { figura: 'Abrindo caminho na mata.',
+          arquivo: 'f-noticias-expedicao.jpg',
+          alt: 'Pessoas em fila atravessando mata fechada, com uma mulher de calça jeans à frente da câmera.',
+          credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
         { sub: 'Riqueza ambiental' },
         'Nas suas pesquisas o grupo descobriu, por documentos encontrados em museu de Portugal, '
       + 'que em 1719 chegaram ao Brasil duas Companhias de Cavalaria de Dragões Reais, força '
@@ -206,6 +230,10 @@ export default {
         'A expedição documentou a Pedra do Sino, que, ao ser tocada, produz som de bronze ouvido a '
       + 'centenas de metros. Também foram visitados centros centenários de romarias, como o '
       + 'Cruzeiro do Morro da Santa Cruz, que deu nome ao povoado, e o Cruzeiro do Rosário.',
+        { figura: 'Mão amiga na subida.',
+          arquivo: 'f-noticias-barranco.jpg',
+          alt: 'Um homem de branco estende a mão para ajudar outro a subir entre a vegetação, junto a um paredão de terra escura.',
+          credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
         { sub: 'Emprego e renda' },
         'Para o arquiteto e urbanista Reginaldo Pinheiro, um dos idealizadores da expedição, Morro '
       + 'Vermelho vive desde o fim do ciclo do ouro uma grande crise econômica, o que vem forçando '
@@ -227,10 +255,6 @@ export default {
         { figura: 'Os Desbravadores em campo.',
           arquivo: 'f-noticias-desbravadores.jpg',
           alt: 'Grupo de pessoas de pé no alto de um morro, de costas, olhando a serra ao longe.',
-          credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
-        { figura: 'Abrindo caminho na mata.',
-          arquivo: 'f-noticias-expedicao.jpg',
-          alt: 'Duas pessoas subindo um barranco íngreme, agarradas à vegetação, durante a expedição.',
           credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
       ],
     },

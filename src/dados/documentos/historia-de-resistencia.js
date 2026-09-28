@@ -38,6 +38,14 @@ export default {
       + 'remete ao século 17, e deve seu surgimento ao extinto arraial de Viracopos ou Ribeiro '
       + 'Comprido, onde já eram registradas ocupações em 1650. Morro Vermelho teria surgido por '
       + 'volta de 1690, mas o registro de conclusão primeira capela só ocorre em 1700.',
+        { figura: 'Morro Vermelho no fundo do vale.',
+          arquivo: 'f-historia-panorama.jpg',
+          alt: 'Panorama de Morro Vermelho: o casario no fundo do vale, entre palmeiras e mata, com serras azuladas ao fundo.',
+          credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
+        { figura: 'Bandeiras de Minas Gerais.',
+          arquivo: 'f-historia-bandeiras.jpg',
+          alt: 'Bandeiras brancas de Minas Gerais, com o triângulo vermelho e o lema “Libertas quae sera tamen”, erguidas por jovens de roupa colorida diante de um telhado colonial.',
+          credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
       ],
     },
     {
@@ -46,6 +54,11 @@ export default {
         'Não se sabe ao certo quais as primeiras bandeiras a chegarem a Morro Vermelho, mas em '
       + '1701 o povoado entra para a história do Brasil e atrai milhares de garimpeiros com a '
       + 'descoberta de grandes jazidas de ouro.',
+        { figura: 'Mapa do início do século 18.',
+          arquivo: 'f-historia-mapa.jpg',
+          alt: 'Mapa antigo manuscrito, em tons de sépia, com rios, serras e povoados desenhados; uma pequena seta vermelha assinala uma capela.',
+          legenda: 'Este mapa, desenhado no início do século 18, mostra rotas navegáveis até as minas de Minas Gerais. A coroa portuguesa financiou a construção de uma estrada do Rio de Janeiro ao centro das minas. São destacados povoados e vilas perto de Caeté. A seta vermelha mostra uma capela sem identificação, que seria o primitivo templo de Nossa Senhora de Nazareth de Morro Vermelho, concluído em 1700.',
+          credito: 'Museu Nacional (reprodução da internet)' },
         'Alguns atribuem as primeiras expedições ao bandeirante paulista Leonardo Nardez, tido '
       + 'como fundador de Caeté, explorador de ouro perto de aldeias indígenas às margens do '
       + 'Ribeirão do Inferno (Juca Vieira). Outros historiadores citam que as primeiras bandeiras '
@@ -76,6 +89,14 @@ export default {
         'O nome Morro Vermelho está relacionado ao Morro da Santa Cruz, em forma de esfinge, que '
       + 'se destaca na paisagem às margens da estrada real. A escassez de vegetação deixa exposta '
       + 'a rocha avermelhada, usada como referência por bandeirantes e tropeiros.',
+        { figura: 'O Morro da Santa Cruz.',
+          arquivo: 'f-atracoes-morro-santa-cruz.jpg',
+          alt: 'O Morro da Santa Cruz ao entardecer: a rocha avermelhada do cume, iluminada pelo sol, com o cruzeiro no alto contra o céu azul.',
+          credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
+        { figura: 'O cruzeiro sobre o vale.',
+          arquivo: 'f-historia-cruzeiro.jpg',
+          alt: 'Grande cruzeiro de estrutura metálica fincado numa encosta de mata verde, com o vale e o povoado ao fundo.',
+          credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
         'A primeira grande descoberta de ouro no povoado ocorreu oficialmente em 1701, quando '
       + 'bandeirantes encontraram grandes jazidas de ouro em Caeté, Cuiabá, Ribeiro Comprido '
       + '(Viracopos) e em dezenas de córregos e minas em Morro Vermelho. (“Brasil: Cronologia de '
@@ -110,6 +131,14 @@ export default {
       + 'que se reduziu a cerca de mil habitantes. Bandeirantes, comerciantes e forasteiros '
       + 'procuraram novas paragens, seguindo principalmente para o Centro-Oeste de Minas, Goiás e '
       + 'Mato Grosso.',
+        { figura: 'Tropa diante da Matriz.',
+          arquivo: 'f-historia-tropa-matriz.jpg',
+          alt: 'Tropa de mulas com cangalhas de madeira atravessando o adro calçado de pedra diante da Matriz de duas torres.',
+          credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
+        { figura: 'Estrada entre eucaliptos.',
+          arquivo: 'f-historia-estrada-eucaliptos.jpg',
+          alt: 'Estrada de terra que sobe entre um eucaliptal e uma palmeira, com parte da mata cortada à beira do caminho.',
+          credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
       ],
     },
     {
@@ -128,6 +157,10 @@ export default {
           autoria: '“O caráter único de Morro Vermelho na Região Metropolitana de Belo '
                  + 'Horizonte”, estudo das arquitetas Simone Marques de Sousa Safe, Luciane '
                  + 'Raposo Faquineli e Staël de Alvarenga Pereira Costa, da UFMG' },
+        { figura: 'Casa antiga.',
+          arquivo: 'f-historia-casa-antiga.jpg',
+          alt: 'Casa colonial térrea de paredes descascadas e telhado de telhas coloniais cedendo, numa rua de calçamento de pedra.',
+          credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
       ],
     },
     {
@@ -142,6 +175,10 @@ export default {
       + 'trabalhava: Romana, Paixão, Moreira, Soledade, Geriza, Facão, Moca, Boa Vista, Santo '
       + 'Antônio, Caquirro, Cillaça, Pernambuco, Lavra Velha, Sambambaia, Paciência, Canga, '
       + 'Brebré e Broacas.',
+        { figura: 'Galeria de pedra.',
+          arquivo: 'f-historia-gruta.jpg',
+          alt: 'Homem de camiseta entrando numa galeria escavada na rocha amarelada, com a boca escura de outra cavidade ao lado.',
+          credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
         'Sua única indústria, além da mineração, era a do fabrico do ferro, que era preparado em '
       + 'três fábricas, sendo que todo o produto delas era enviado em barras para a Companhia '
       + 'Morro Velho. O povoado ainda importava fazendas de secos e molhados de Sabará e exportava '
@@ -241,6 +278,26 @@ export default {
         + 'ferruginosa e um solo aurífero, formando piritas. A Companhia Gongo Soco não foi '
         + 'bem-sucedida nessas lavras, que agora estão abandonadas e cheias de água...',
         ], autoria: 'Richard Burton, <em>Viagem do Rio de Janeiro a Morro Velho</em>, 1868' },
+        { galeria: [
+          { arquivo: 'f-historia-largo-matriz.jpg',
+            alt: 'Vista do alto do largo da Matriz, igreja branca de duas torres diante de um gramado oval, com casario e serras de mata ao redor.',
+            credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
+          { arquivo: 'f-historia-vista-antiga.jpg',
+            alt: 'Fotografia antiga em preto e branco do povoado no fundo do vale: telhados em primeiro plano, a rua com gente reunida e morros de mata ao fundo.',
+            credito: 'Reprodução da internet' },
+          { arquivo: 'f-historia-casario.jpg',
+            alt: 'Casario colorido de telhados de cerâmica ao longo de uma rua calçada que desce em curva entre árvores e bananeiras.',
+            credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
+          { arquivo: 'f-historia-rua-cavalos.jpg',
+            alt: 'Rua de calçamento de pedra em ladeira, com um motociclista e três cavalos e mulas caminhando junto às casas.',
+            credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
+          { arquivo: 'f-historia-boiada.jpg',
+            alt: 'Boiada tocada por dois vaqueiros a cavalo numa rua do povoado, diante de um muro e de uma casa de telhado alaranjado.',
+            credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
+          { arquivo: 'f-historia-estrada-entardecer.jpg',
+            alt: 'Estrada de terra em curva entre árvores e pasto, com o sol se pondo por trás do morro.',
+            credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
+        ] },
       ],
     },
     {
@@ -253,9 +310,17 @@ export default {
       + 'Antônio Evangelista Marques Guimarães por ter dado à Igreja Católica seis filhos padres. '
       + 'Também não se esquece de fatos adversos, como a epidemia de varíola de 1895, conhecida '
       + 'popularmente como Bexiga, que dizimou um terço de sua população.',
+        { figura: 'A Bula de Pio IX.',
+          arquivo: 'f-historia-bula.jpg',
+          alt: 'Documento emoldurado, manuscrito e impresso, encimado pelas palavras “Pius PP IX” e “Ad perpetuam rei memoriam”.',
+          credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
         'Mesmo forjado na labuta do metal e no espírito de justiça, o povo de Morro Vermelho '
       + 'mantém a simplicidade em atender bem os visitantes e em contar, horas a fio, históricas '
       + 'reais, lendas e causos herdados dos antepassados.',
+        { figura: 'O povo diante da Matriz.',
+          arquivo: 'f-historia-matriz-multidao.jpg',
+          alt: 'Fotografia em preto e branco de uma multidão reunida no largo diante da Matriz, com um músico de tuba entre as pessoas.',
+          credito: 'Reprodução da internet' },
         'Gente importante passou pelo distrito, como o padre missionário João de Santo Antônio, '
       + 'nascido em Morro Vermelho em 1824, que foi tutor do estadista João Pinheiro, protetor de '
       + 'escravos e pobres e fundador da cidade de Cordisburgo. Também moraram em Morro Vermelho '
@@ -332,6 +397,10 @@ export default {
         + 'Preto, tem-se a impressão de que o tempo parou; e na escala da evolução arquitetônica '
         + 'parou de fato...',
         ], autoria: 'Expedição – Caminhos Antigos das Minas à Bahia' },
+        { figura: 'Rua do povoado.',
+          arquivo: 'f-historia-rua-motos.jpg',
+          alt: 'Rua de calçamento de pedra com um quadriciclo e uma moto passando entre casas e muros; ao fundo, a torre de uma igreja e o morro.',
+          credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
       ],
     },
     {
@@ -363,6 +432,10 @@ export default {
       + 'mais antigo, configurado por propriedades onde a testada adquiriu maior importância na '
       + 'divisão e apropriação da terra, com extensos terrenos vazios aos fundos – elementos '
       + 'espaciais marcantes e identificadores da paisagem atual”.',
+        { figura: 'Artesanato.',
+          arquivo: 'f-historia-artesanato.jpg',
+          alt: 'Mãos de uma senhora trabalhando uma peça de tecido branco sobre uma grade plástica redonda apoiada no colo.',
+          credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
       ],
     },
     {
@@ -382,6 +455,10 @@ export default {
         + 'tempo, apresentando características originais das primeiras formações portuguesas em '
         + 'Minas Gerais.',
         ] },
+        { figura: 'A rua principal.',
+          arquivo: 'f-historia-rua-antiga.jpg',
+          alt: 'Fotografia antiga, em cores desbotadas, da rua principal vista do alto, com telhados coloniais, crianças na rua e morros ao fundo.',
+          credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
       ],
     },
     {
@@ -412,6 +489,10 @@ export default {
         + 'na compreensão dessa expressiva paisagem. A preservação de Morro Vermelho requer maior '
         + 'cuidado, para que também não venha a desaparecer, engolido pela modernização.',
         ] },
+        { figura: 'Mina a céu aberto.',
+          arquivo: 'f-historia-mineracao.jpg',
+          alt: 'Grande cava de mineração de ferro a céu aberto, com bancadas em degraus na terra avermelhada e serras ao fundo.',
+          credito: 'Reprodução da internet' },
       ],
     },
   ],

@@ -68,6 +68,11 @@ export default {
         'Mesmo com a decadência da exploração do ouro, em 1870, segundo censo da Câmara Municipal '
       + 'de Caeté, o arraial de Viracopos ainda contava com 76 habitantes, 10 dos quais de outros '
       + 'povoados, a maioria ainda envolvida com a exploração do ouro.',
+        { figura: 'Ruínas de uma residência.',
+          arquivo: 'f-viracopos-ruina-bambus.jpg',
+          alt: 'Ruína de parede de alvenaria antiga, com bambus crescendo rente e vegetação sobre o topo.',
+          legenda: 'Ruínas de uma das 14 residências construídas no século 18',
+          credito: 'Reprodução da internet' },
         { figura: 'O Ribeirão Comprido.',
           arquivo: 'f-viracopos-ribeirao.jpg',
           alt: 'Curso d’água raso correndo sobre leito de pedras, entre barrancos de terra e mata fechada.',
@@ -107,22 +112,18 @@ export default {
       + 'que Paulo Barbosa Vilar, morador do Arraial de Viracopos, solicita à Rainha de Portugal e '
       + 'Algarves, dona Maria I, a mercê de lhe passar provisão para recorrer de uma sentença que '
       + 'não lhe fora favorável.',
-        { figura: 'Estrutura de pedra nas ruínas.',
+        { figura: 'Boca de mina.',
           arquivo: 'f-viracopos-arco-pedra.jpg',
-          alt: 'Grande vão em arco aberto num maciço de pedra, com dois homens de pé no interior, dando a escala.',
+          alt: 'Vista de dentro de uma boca de mina escavada na rocha escura, com dois homens caminhando para a saída, aberta para a mata.',
           credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
         { figura: 'Muro de pedra seca.',
           arquivo: 'f-viracopos-muro-pedra.jpg',
           alt: 'Muro de pedras encaixadas sem argamassa, tomado por musgo e vegetação.',
-          credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
+          credito: 'Reprodução da internet' },
         { figura: 'Calçamento de pedra.',
           arquivo: 'f-viracopos-calcamento.jpg',
           alt: 'Piso de pedras miúdas assentadas no chão da mata, coberto por folhas secas.',
-          credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
-        { figura: 'Ruína de parede.',
-          arquivo: 'f-viracopos-ruina-parede.jpg',
-          alt: 'Ruína de parede de pedra e tijolo, de pé no meio da mata, com uma árvore crescendo rente.',
-          credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
+          credito: 'Reprodução da internet' },
       ],
     },
     {
@@ -165,10 +166,11 @@ export default {
       + 'escravos e índios, mais de 10 mil em Morro Vermelho na época, que moravam perto das minas '
       + 'onde trabalhavam. Viracopos era, sim, um entreposto comercial, uma espécie de posto '
       + 'estratégico de apoio a toda mineração.',
-        { figura: 'Ruína entre bambus.',
-          arquivo: 'f-viracopos-ruina-bambus.jpg',
-          alt: 'Ruína de parede de alvenaria antiga, com bambus crescendo rente e vegetação sobre o topo.',
-          credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
+        { figura: 'Ruínas da Capela de Santa Tereza.',
+          arquivo: 'f-viracopos-ruina-parede.jpg',
+          alt: 'Ruínas de paredes de pedra e tijolo de pé no meio da mata, com uma árvore crescendo entre elas.',
+          legenda: 'Ruínas da Capela de Santa Tereza, com capacidade para 200 fiéis',
+          credito: 'Reprodução da internet' },
       ],
     },
     {

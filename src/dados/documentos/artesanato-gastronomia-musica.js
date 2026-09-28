@@ -47,22 +47,22 @@ export default {
       + 'bordadeiras tecem a renda em pano desfiado de algodão ou linho, que serve de adorno '
       + 'requintado de roupas de cama, toalhas e caminhos-de-mesa, além de peças de igreja, como '
       + 'os sanguíneos, que forram altares.',
+        { figura: 'A bainha aberta sendo feita.',
+          arquivo: 'f-saberes-bainha-fazendo.jpg',
+          alt: 'Mãos de bordadeira trabalhando o pano esticado num bastidor redondo, com os fios já desfiados em grade.',
+          credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
         { sub: 'Ricos bordados vão até para o exterior' },
         'Em Morro Vermelho são produzidas diferentes peças e entre as mais encomendadas estão '
       + 'lençóis, viróis, fronhas, panos de prato, forros de bandeja, caminhos e toalhas de mesa. '
       + 'Para atender as encomendas há no povoado duas escolas de bordados, com frequência de '
       + 'idosos, donas de casa e até crianças.',
-        { figura: 'A bainha aberta sendo feita.',
-          arquivo: 'f-saberes-bainha-fazendo.jpg',
-          alt: 'Mãos de bordadeira trabalhando o pano esticado num bastidor redondo, com os fios já desfiados em grade.',
+        { figura: 'Bordando.',
+          arquivo: 'f-saberes-bordando.jpg',
+          alt: 'Mãos de bordadeiras sobre um pano claro bordado com faixas de desenhos geométricos em verde, amarelo e vinho.',
           credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
         { figura: 'Detalhe da renda.',
           arquivo: 'f-saberes-bainha-detalhe.jpg',
-          alt: 'Detalhe do bordado de bainha aberta: faixas de fios trançados formando desenhos geométricos vazados.',
-          credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
-        { figura: 'Peça pronta.',
-          arquivo: 'f-saberes-bainha-peca.jpg',
-          alt: 'Pano cor-de-rosa com faixa de bainha aberta e barra de crochê, dobrado sobre uma cadeira.',
+          alt: 'Detalhe de um pano cinza com faixas de bainha aberta: fios trançados formando desenhos geométricos vazados e uma barra de renda com motivos circulares.',
           credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
       ],
     },
@@ -73,9 +73,9 @@ export default {
       + 'peças em tricô, crochê e lã. A arte dos antepassados é conservada pelas costureiras de '
       + 'Morro Vermelho, especialistas na fabricação de roupas artesanais de grande beleza. '
       + 'Algumas peças podem ser encontradas para pronta entrega, mas a maioria só sob encomenda.',
-        { figura: 'Bordando.',
-          arquivo: 'f-saberes-bordando.jpg',
-          alt: 'Mãos de duas bordadeiras trabalhando juntas sobre um pano bordado com flores coloridas.',
+        { figura: 'Peça pronta.',
+          arquivo: 'f-saberes-bainha-peca.jpg',
+          alt: 'Toalha cor-de-rosa exibida por uma bordadeira, com uma faixa de quadrados bordados em branco e barra de crochê branco.',
           credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
       ],
     },
@@ -93,6 +93,14 @@ export default {
           arquivo: 'f-saberes-pintura-pano.jpg',
           alt: 'Pano branco com rosas vermelhas e brancas pintadas à mão e barra de renda.',
           credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
+        { figura: 'Tela com flores e frutas.',
+          arquivo: 'f-saberes-pintura-flores.jpg',
+          alt: 'Tela pintada com um arranjo de rosas, uvas, laranjas e outras frutas numa fruteira, sobre fundo amarelo e escuro.',
+          credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
+        { figura: 'Tela com cavalo branco.',
+          arquivo: 'f-saberes-pintura-cavalo.jpg',
+          alt: 'Quadro emoldurado com a pintura de um cavalo branco galopando junto a uma cerca de madeira, com mata verde ao fundo.',
+          credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
       ],
     },
     {
@@ -102,6 +110,14 @@ export default {
       + 'culinária aprendidos com as avós, sobretudo em relação aos temperos. Mas aqui podem se '
       + 'comer um ótimo frango com quiabo e angu, uma ótima carne moída com ora-pró-nóbis ou um '
       + 'rico feijão tropeiro à moda emboaba.',
+        { figura: 'Panela com ovos cozidos.',
+          arquivo: 'f-saberes-tacho.jpg',
+          alt: 'Panela grande de alumínio com um prato de cor marrom coberto de ovos cozidos cortados em rodelas.',
+          credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
+        { figura: 'Prato gratinado.',
+          arquivo: 'f-saberes-assadeira.jpg',
+          alt: 'Assadeira com um prato coberto de queijo derretido, já servido em parte, mostrando o recheio de carne.',
+          credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
         { figura: 'No fogão a lenha.',
           arquivo: 'f-saberes-fogao.jpg',
           alt: 'Panelas sobre a chapa do fogão a lenha, com couve refogada, angu e carne já servidos em tigelas.',
@@ -111,14 +127,26 @@ export default {
     {
       id: 'delicias-fogao-a-lenha', titulo: 'Delícias no fogão a lenha',
       blocos: [
+        { figura: 'Carne na chapa do fogão a lenha.',
+          arquivo: 'f-saberes-fogao-lenha.jpg',
+          alt: 'Homem virando carnes numa chapa sobre o fogo de um fogão a lenha de alvenaria, com toras de lenha queimando embaixo.',
+          credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
         { sub: 'Queijão do Morro Vermelho' },
         'No almoço ou jantar, todos os olhos se voltam para o queijão. Parece queijo, mas não é; '
       + 'parece pudim, mas não é. Uma incógnita diverte as quituteiras, que fazem o doce '
       + 'misturando ovos e doce de leite, dando forma à receita, que aprenderam ainda criança. '
       + 'Quem come não esquece mais.',
+        { figura: 'O queijão.',
+          arquivo: 'f-saberes-queca.jpg',
+          alt: 'Doce redondo cor de caramelo, de casca escura, cortado em pedaços que mostram o miolo mais claro.',
+          credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
         { sub: 'Rosquinhas e biscoitos' },
         'As delícias assadas em forno são atração dos cafés em todas as residências de Morro '
       + 'Vermelho. Os visitantes podem fazer encomendas.',
+        { figura: 'Rosquinhas e biscoitos.',
+          arquivo: 'f-saberes-rosquinhas.jpg',
+          alt: 'Mesa forrada de vermelho com rosquinhas, biscoitos e broas em pratos e sacos plásticos.',
+          credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
         { sub: 'Queca do Morro Vermelho' },
         'A queca é um tipo de bolo de origem europeia, que chegou ao povoado durante o ciclo do '
       + 'ouro e tornou-se um dos sabores da culinária tradicional no distrito. A tradição vem '
@@ -129,31 +157,23 @@ export default {
         'As quituteiras e doceiras de Morro Vermelho também se especializam na confecção de outras '
       + 'delícias artesanais, como pães especiais, bolos, geleias e conservas. Também podem ser '
       + 'encontrados aqui sorvetes artesanais, chupe-chupe e creme de açaí.',
+        { figura: 'O mel do distrito.',
+          arquivo: 'f-saberes-mel.jpg',
+          alt: 'Fileiras de potes e bisnagas de mel com tampas amarelas sobre uma bancada, com telhados do povoado ao fundo.',
+          credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
         { sub: 'Cachaça da roça' },
         'Alguns moradores herdaram dos avós a arte de fabricação da cachaça artesanal, que pode '
       + 'ser encontrada em vários locais.',
         { sub: 'Doces, canudos e compotas' },
         'Especialidades das doceiras de Morro Vermelho, o doce de leite (com ou sem mandioca) e os '
       + 'famosos canudinhos, recheados de doce de leite, trazem sabor ao paladar dos visitantes.',
-        { figura: 'A queca.',
-          arquivo: 'f-saberes-queca.jpg',
-          alt: 'Bolo escuro cortado em fatias, com frutas cristalizadas e castanhas na massa.',
-          credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
-        { figura: 'Rosquinhas e biscoitos.',
-          arquivo: 'f-saberes-rosquinhas.jpg',
-          alt: 'Mesa com biscoitos, rosquinhas e broas arrumados em pratos e sacos.',
+        { figura: 'Doce de leite.',
+          arquivo: 'f-saberes-doce-de-leite.jpg',
+          alt: 'Tigela de vidro com doce de leite e uma colher, ao lado de uma vasilha de doce de frutas escuras em calda.',
           credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
         { figura: 'Os canudinhos.',
           arquivo: 'f-saberes-canudos.jpg',
-          alt: 'Travessa cheia de canudinhos recheados de doce de leite, polvilhados de açúcar.',
-          credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
-        { figura: 'O tacho.',
-          arquivo: 'f-saberes-tacho.jpg',
-          alt: 'Tacho grande sobre o fogo, com a massa do doce sendo cozida.',
-          credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
-        { figura: 'O mel do distrito.',
-          arquivo: 'f-saberes-mel.jpg',
-          alt: 'Fileiras de potes e bisnagas de mel arrumados sobre uma bancada.',
+          alt: 'Travessa cheia de canudinhos recheados de doce de leite.',
           credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
       ],
     },

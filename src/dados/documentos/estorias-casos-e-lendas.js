@@ -54,6 +54,10 @@ export default {
       + 'que, nesta hora, devotos já viram um vulto descendo dos céus e se incorporando ao '
       + 'Estandarte para seguir até a Matriz. Só depois deste sinal, os embaixadores autorizam a '
       + 'explosão de um potente foguete, anunciando a saída da Bandeira.',
+        { figura: 'Cavaleiro diante do Estandarte.',
+          arquivo: 'f-lendas-cavaleiro.jpg',
+          alt: 'Cavaleiro de coroa, em cavalo branco enfeitado de azul e branco, diante do estandarte de Nossa Senhora de Nazareth, à noite, com outros cavaleiros atrás.',
+          credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
         'À meia-noite de 7 de setembro, uma comissão de cerca de 20 fiéis se tranca na matriz para '
       + 'enfeitar o andor para a procissão. Rezam o terço e um ofício divino, pedindo autorização '
       + 'à Nossa Senhora de Nazareth para enfeitá-la e conduzi-la às ruas no dia seguinte. É o '
@@ -68,6 +72,10 @@ export default {
       + 'Conta-se que, certa vez, um potente foguete não explodiu no ar e caiu numa das fogueiras '
       + 'que iluminavam a praça e serviam para aquecer os romeiros. O artefato só explodiu no fim '
       + 'da festa, já sem ninguém ao redor da fogueira.',
+        { figura: 'A fogueira na praça.',
+          arquivo: 'f-lendas-fogueira.jpg',
+          alt: 'Fotografia antiga, colorida, de uma pilha alta de lenha armada no largo de terra diante da Matriz, com carros estacionados em volta.',
+          credito: 'Reprodução da internet' },
         'Não se sabe ao certo a origem dos mascarados, que desfilam por quatro domingos antes da '
       + 'festa e em 7 de setembro. Segundo a crença, eles portam varinhas e entram nas casas e '
       + 'quintais para espantar demônios e males, espalhados pelos mouros durante a guerra contra '
@@ -91,6 +99,10 @@ export default {
       + 'mais de um metro de altura, no entanto objetos de Nossa Senhora de Nazareth ali guardados '
       + 'sobre uma cama, de apenas meio metro de altura, estavam intactos e secos, sem serem '
       + 'atingidos pelas águas barrentas.',
+        { figura: 'Objetos de Nossa Senhora de Nazareth.',
+          arquivo: 'f-lendas-vestidinhos.jpg',
+          alt: 'Estandarte bordado com a imagem de Nossa Senhora de Nazareth, panos, flores e outros objetos da festa arrumados sobre uma cama coberta de cetim laranja.',
+          credito: 'Fernando Eládio' },
         { sub: 'Lavagem do Cristo' },
         'Num ritual secreto, ao meio-dia da Quarta-Feira de Cinzas, em Morro Vermelho uma imagem '
       + 'do Senhor dos Passos, de dois metros de altura, é lavada com cachaça pelos seus devotos, '
@@ -103,6 +115,10 @@ export default {
       + 'muitas doenças durante o ano todo. A tradição já foi tema de documentário “Água Benta, Fé '
       + 'Ardente; Água Ardente, Fé Benta”, do diretor João Luiz Ornelas, premiado no Festival de '
       + 'Tiradentes em 2000 e no Festival do Rio em 1999.',
+        { figura: 'A cachaça recolhida.',
+          arquivo: 'f-lendas-cachaca.jpg',
+          alt: 'Mão da imagem do Senhor dos Passos, com a chaga pintada, sobre uma caneca de alumínio que recolhe a cachaça do banho.',
+          credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
         { sub: 'Romaria da chuva' },
         'Desde que uma alta cruz foi plantada por devotos no início do século 18 no monte que deu '
       + 'nome a Morro Vermelho, ali passaram a ser celebradas missas campais, depois de longas '
@@ -119,17 +135,9 @@ export default {
       + 'devotos, o agricultor Sudário Leal, certa vez levou pedras e água ao monte e de lá já '
       + 'retornou debaixo de pesado temporal. A tradição é mantida até hoje por fiéis no auge da '
       + 'estiagem.',
-        { figura: 'Os vestidinhos do Menino Jesus.',
-          arquivo: 'f-lendas-vestidinhos.jpg',
-          alt: 'Caixa com paramentos, vestidos bordados e a imagem do Menino Jesus guardados entre panos.',
-          credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
-        { figura: 'A cachaça recolhida.',
-          arquivo: 'f-lendas-cachaca.jpg',
-          alt: 'Mão de um devoto recolhendo em uma caneca a cachaça que escorreu da imagem, durante a lavagem.',
-          credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
-        { figura: 'A fogueira na praça.',
-          arquivo: 'f-lendas-fogueira.jpg',
-          alt: 'Pilha alta de lenha armada na praça diante da Matriz, pronta para ser acesa.',
+        { figura: 'A subida ao Morro da Santa Cruz.',
+          arquivo: 'f-lendas-morro-estrada.jpg',
+          alt: 'Trilha de terra subindo o morro, com um homem de cajado à esquerda e o cruzeiro no alto, ao fundo.',
           credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
       ],
     },
@@ -213,10 +221,6 @@ export default {
       + 'mais iluminou a caminhada noturna dos agora apenas dois irmãos. E ele acreditava piamente '
       + 'que a Luz Verde teria sido enviada por Nossa Senhora, sua santa de devoção, e como eles a '
       + 'luz se sentira agoniada com a perda do irmão e se apagado de vez.',
-        { figura: 'A estrada do morro.',
-          arquivo: 'f-lendas-morro-estrada.jpg',
-          alt: 'Estrada de terra subindo o morro ao amanhecer, com uma pessoa a pé na curva.',
-          credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
       ],
     },
     {
@@ -262,7 +266,7 @@ export default {
       + 'em geração em Morro Vermelho.',
         { figura: 'A encomendação das almas.',
           arquivo: 'f-lendas-encomendacao.jpg',
-          alt: 'Grupo de pessoas com tochas acesas, de costas, caminhando pela estrada na madrugada.',
+          alt: 'Grupo de pessoas reunidas em roda na madrugada, algumas com velas acesas nas mãos.',
           credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
       ],
     },

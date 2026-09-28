@@ -38,6 +38,11 @@ export default {
       + 'centenas de contaminados.',
         'Contavam os antigos que era difícil encontrar em 1895 gente para sepultar os mortos, pois '
       + 'os coveiros também fugiram, deixando mortos insepultos nas ruas e becos.',
+        { figura: 'O povoado em fotografia antiga.',
+          arquivo: 'f-bexiga-povoado-antigo.jpg',
+          alt: 'Fotografia antiga em preto e branco: a igreja de duas torres no alto do morro, casas baixas e uma rua de terra descendo a encosta.',
+          legenda: 'Até os coveiros fugiram do povoado com medo da terrível varíola.',
+          credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
         'As lembranças dos tempos de aflição e medo estão no alto de uma campina. O velho '
       + '“cemitério dos bexiguentos” são terras que até bem pouco tempo todo mundo fazia questão '
       + 'de contornar com todo o respeito e cuidado, não deixando sequer que animais se '
@@ -49,9 +54,10 @@ export default {
       + 'Diariamente, há gente alertando os novos habitantes sobre os riscos da bexiga, ainda '
       + 'encravada em ossos sepultados no local. Lenda ou realidade, não há hoje qualquer temor '
       + 'por parte de quem não teve um antepassado coberto por sete palmos de terra neste local.',
-        { figura: 'O povoado em fotografia antiga.',
-          arquivo: 'f-bexiga-povoado-antigo.jpg',
-          alt: 'Fotografia antiga em preto e branco: a igreja de duas torres no alto e o casario baixo descendo a encosta.',
+        { figura: 'O lugar do velho cemitério dos bexiguentos.',
+          arquivo: 'f-bexiga-caminho-cemiterio.jpg',
+          alt: 'Rua de terra batida subindo o morro, com três cães, um poste e casas simples ao fundo, entre eucaliptos.',
+          legenda: 'O velho “cemitério dos bexiguentos” hoje vai sendo invadido por novas construções.',
           credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
       ],
     },
@@ -83,11 +89,13 @@ export default {
       + 'vítimas em mais de cem cidades e povoados em 1873/1874.',
         { figura: 'Rua de calçamento em fotografia antiga.',
           arquivo: 'f-bexiga-rua-antiga.jpg',
-          alt: 'Fotografia antiga em preto e branco de uma ladeira de pedras, com casas de porta e janela dos dois lados.',
+          alt: 'Fotografia antiga em preto e branco de uma ladeira calçada de pedras, com um casarão de janelas altas à beira da rua e mata ao fundo.',
+          legenda: 'Em 1895, com medo da doença, as famílias fecharam suas casas e fugiram.',
           credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
-        { figura: 'Cruzeiro do cemitério.',
+        { figura: 'O cemitério novo.',
           arquivo: 'f-bexiga-cruzeiro-cemiterio.jpg',
-          alt: 'Cruzeiro alto de madeira escura fincado no gramado do cemitério, com o muro de pedra e as sepulturas ao fundo.',
+          alt: 'Cruzeiro alto de madeira fincado no gramado diante do cemitério, com o muro de pedra, o portão de ferro e as sepulturas ao fundo.',
+          legenda: 'O cemitério novo, inaugurado em 1896, perto do velho “cemitério dos bexiguentos”.',
           credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
       ],
     },
@@ -117,6 +125,10 @@ export default {
       + 'por ter enviado um médico aos variolosos no início da epidemia. E também às companhias '
       + 'inglesas de mineração de Raposos e Morro Velho os socorros enviados espontaneamente. '
       + '<em>(Minas Gerais, 20 de dezembro de 1895)</em>',
+        { figura: 'O agradecimento do povo publicado no jornal.',
+          arquivo: 'f-bexiga-jornal-1895.jpg',
+          alt: 'Recorte do jornal Minas Gerais, na Secção Alheia: sob o título “Morro Vermelho”, apontado por uma seta vermelha, o agradecimento assinado por Manoel Lopes de Magalhães Primo em dezembro de 1895.',
+          credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
       ],
     },
     {
@@ -137,10 +149,6 @@ export default {
       + 'princípio, são pequenas brotoejas, que evoluem depois para pústulas (bolhas purulentas). '
       + 'Nas formas mais graves, os pacientes apresentam hemorragias na pele e nas mucosas, '
       + 'falecendo entre o quinto e o sexto dia.',
-        { figura: 'O caminho do cemitério.',
-          arquivo: 'f-bexiga-caminho-cemiterio.jpg',
-          alt: 'Estrada de terra subindo entre casas e vegetação, com dois cães no meio do caminho.',
-          credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
       ],
     },
   ],

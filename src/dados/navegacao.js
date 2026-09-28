@@ -70,8 +70,6 @@ export const MENU = [
     ],
   },
 
-  { rotulo: 'Resistência', href: 'historia-de-resistencia.html' },
-
   {
     rotulo: 'Atrações',
     colunas: [

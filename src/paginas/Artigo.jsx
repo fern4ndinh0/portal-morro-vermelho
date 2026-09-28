@@ -21,6 +21,7 @@ import { tempoDeLeitura } from '../dados/documentos/index.js';
 import { useProgressoDeLeitura, useSecaoAtiva } from '../ganchos/rolagem.js';
 import { Chassi } from '../componentes/Chassi.jsx';
 import { Bloco } from '../componentes/artigo/Blocos.jsx';
+import { Ampliador } from '../componentes/Ampliador.jsx';
 
 export function metaArtigo(doc) {
   return {
@@ -207,6 +208,8 @@ export function Artigo({ doc, anterior, proximo }) {
         </section>
 
       </main>
+
+      <Ampliador />
     </Chassi>
   );
 }

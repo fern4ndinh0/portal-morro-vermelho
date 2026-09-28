@@ -36,8 +36,18 @@ export default {
         { figura: 'Quadro de 1749 sobre a Guerra dos Emboabas.',
           arquivo: 'f-emboabas-quadro-1749.jpg',
           alt: 'Quadro a óleo em moldura dourada: cenas da guerra pintadas em vários planos — casas, cavaleiros, soldados e figuras em combate — com uma cartela de texto ao pé.',
-          legenda: 'O primeiro e único registro iconográfico sobre a Guerra dos Emboabas é um quadro de 1749, pintado em Salvador (BA), a pedido de um guerrilheiro emboaba salvo da morte em batalha por intercessão a Nossa Senhora de Nazareth.',
+          legenda: 'O único registro iconográfico sobre a Guerra dos Emboabas é um quadro de 1749, pintado por um anônimo em Salvador (BA), a pedido de um guerrilheiro emboaba salvo da morte em batalha por intercessão a Nossa Senhora.',
           credito: 'Quadro do Museu do Mosteiro de São Bento, Salvador, Bahia' },
+        { figura: 'Detalhe do quadro de 1749: a igreja.',
+          arquivo: 'f-emboabas-quadro-igreja.jpg',
+          alt: 'Detalhe ampliado do quadro de 1749: a fachada de uma igreja de pedra com torre, à esquerda da cena, com figuras de religiosos e soldados à porta.',
+          legenda: 'A igreja à esquerda do quadro é bem semelhante às ruínas da ermida antiga de Morro Vermelho.',
+          credito: 'Quadro do Museu do Mosteiro de São Bento, Salvador, Bahia' },
+        { figura: 'A ermida antiga pintada no teto da Matriz.',
+          arquivo: 'f-emboabas-quadro-ermida.jpg',
+          alt: 'Pintura no forro de madeira da Matriz: Nossa Senhora de manto claro, com uma cruz ao peito, sobre a paisagem; à direita, apontadas por uma seta vermelha, as ruínas de uma pequena igreja no alto de um morro.',
+          legenda: 'As ruínas da ermida antiga de Morro Vermelho, pintadas no teto na entrada da Matriz atual.',
+          credito: 'Reprodução da internet' },
       ],
     },
     {
@@ -74,11 +84,6 @@ export default {
                  + 'comum e generalizado. Uma tão pesada contribuição era naturalmente muito mal '
                  + 'acolhida pelos mineiros e quem podia procurava subtrair-se.',
           autoria: 'H. Handelmann, <em>História do Brasil</em>, 1931' },
-        { figura: 'Detalhe do quadro de 1749.',
-          arquivo: 'f-emboabas-quadro-ermida.jpg',
-          alt: 'Detalhe do quadro: figura de Nossa Senhora sobre a paisagem e, apontada por uma seta vermelha, a pequena igreja de duas torres ao fundo.',
-          legenda: 'A igreja à esquerda do quadro é bem semelhante às ruínas da ermida antiga de Morro Vermelho, pintada no teto na entrada da Matriz atual.',
-          credito: 'Quadro do Museu do Mosteiro de São Bento, Salvador, Bahia' },
       ],
     },
     {
@@ -201,6 +206,10 @@ export default {
       + 'Borba Gato foi a imediata mobilização de todas as forças e, em pouco tempo, formou-se um '
       + 'exército com 2 mil homens. Sem grandes dificuldades, os emboabas dominaram a situação em '
       + 'Caeté. Alguns paulistas fugiram para Sabará, outros não foram molestados.',
+        { figura: 'Monumento com duas figuras de época.',
+          arquivo: 'f-emboabas-monumento.jpg',
+          alt: 'Estátuas de bronze escuro de dois homens de chapéu de aba larga, com armas à cintura, sobre um pedestal de pedra, vistas de baixo contra o céu azul.',
+          credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
       ],
     },
     {
@@ -230,6 +239,10 @@ export default {
       + 'autoridades metropolitanas, devido à base popular. A figura de Nunes projetou-se por '
       + 'dezenas de anos na vida colonial, como símbolo de resistência de um povo oprimido contra '
       + 'o poder tirânico de Portugal.',
+        { figura: 'Celebração da memória dos emboabas.',
+          arquivo: 'f-emboabas-celebracao.jpg',
+          alt: 'Cerimônia ao ar livre: jovens de farda com as bandeiras de Minas Gerais e do Brasil, um homem vestido de emboaba e uma imagem de Nossa Senhora entre flores e uma lamparina.',
+          credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
       ],
     },
     {
@@ -493,6 +506,10 @@ export default {
       + 'Acima, Cachoeira, Ouro Preto, Vila Rica, Ribeirão do Carmo, Congonhas de Ouro Preto, '
       + 'Antônio Dias, São Bartolomeu, Tijuco, Rio das Pedras, Bação, Rio das Mortes, Ponta do '
       + 'Morro, Guarapiranga, Miguel Garcia, Bacalhau e outros.',
+        { figura: 'Emboaba diante da capela.',
+          arquivo: 'f-emboabas-emboaba-capela.jpg',
+          alt: 'Homem vestido de emboaba, de chapéu com pluma e colete, caminha pelo gramado em direção a uma capela branca, onde o povo se reúne diante de um altar enfeitado de flores e bandeiras.',
+          credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
       ],
     },
     {
@@ -549,6 +566,10 @@ export default {
                  + 'de maior importância nas eclosões das lutas políticas em Minas Gerais, que '
                  + 'brilham como faróis, iluminando o passado e indicando o futuro às gerações, '
                  + 'pela luta ativa contra a tirania e pelo amor à liberdade.' },
+        { figura: 'Emboaba no campo.',
+          arquivo: 'f-emboabas-emboaba-campo.jpg',
+          alt: 'Rapaz vestido de emboaba, de chapéu de aba larga, colete e cabaça à cintura, segura uma espada na horizontal num campo gramado; ao fundo, palmeiras, mata e a serra.',
+          credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
       ],
     },
   ],

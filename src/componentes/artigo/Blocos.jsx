@@ -22,7 +22,7 @@
    ========================================================================== */
 
 import { Icone } from '../../dados/icones.jsx';
-import { CaixaDeMidia } from '../CaixaDeMidia.jsx';
+import { Midia, useMidia } from '../CaixaDeMidia.jsx';
 import { Html } from '../Texto.jsx';
 
 /* --------------------------------------------------------------------------
@@ -36,40 +36,55 @@ import { Html } from '../Texto.jsx';
    O 'alt' é OBRIGATÓRIO para a imagem aparecer, e isso é deliberado: num
    acervo, o alt é a peça para quem não enxerga. Uma figura sem descrição
    continua exibindo o espaço reservado em vez de publicar uma imagem muda.
+
+   QUADRO DE PROPORÇÃO FIXA
+   A foto não dita mais a altura da figura: toda figura tem o mesmo quadro,
+   e a foto se encaixa inteira dentro dele, centrada, sem corte. Uma foto em
+   pé e uma panorâmica ocupam o mesmo espaço na página. O quadro é um link
+   para o arquivo; com JavaScript, o clique abre o Ampliador (ver
+   componentes/Ampliador.jsx), e a foto aparece no tamanho da tela.
    -------------------------------------------------------------------------- */
 
 function Figura({ b }) {
-  const podeMostrar = Boolean(b.arquivo && b.alt);
+  const src = b.arquivo && b.alt ? `midia/${b.arquivo}` : undefined;
+  const midia = useMidia(src);
+  const mostra = src && !midia.ausente;
 
   return (
-    <CaixaDeMidia
-      as="figure"
-      className="figura"
-      src={podeMostrar ? `midia/${b.arquivo}` : undefined}
-      alt={b.alt || ''}
-      largura={b.largura}
-      altura={b.altura}
-    >
-      <div className="figura__ausente">
-        <Icone nome="camera" />
-        <p>{b.figura}</p>
-      </div>
+    <figure className="figura" {...midia.propsDaCaixa}>
+      {/* Um ou outro, nunca os dois: o servidor já sabe se o arquivo existe,
+          então a foto sai sem o espaço reservado por baixo, mesmo sem JS. */}
+      {mostra ? (
+        <a className="figura__quadro" href={src} data-ampliar="">
+          <Midia midia={midia} src={src} alt={b.alt} largura={b.largura} altura={b.altura} />
+          <span className="figura__ampliar" aria-hidden="true"><Icone nome="ampliar" /></span>
+          <span className="sr"> (ampliar foto)</span>
+        </a>
+      ) : (
+        <div className="figura__ausente">
+          <Icone nome="camera" />
+          <p>{b.figura}</p>
+        </div>
+      )}
       <figcaption>
         {b.legenda && <Html as="span" texto={b.legenda} />}
         {b.credito && <span className="figura__credito">{b.credito}</span>}
       </figcaption>
-    </CaixaDeMidia>
+    </figure>
   );
 }
 
 /* --------------------------------------------------------------------------
    GALERIA
 
-   Uma grade de fotografias, para a página 29. Não é carrossel e não é
-   lightbox de propósito: as duas coisas dependem de JavaScript para mostrar
-   a imagem, e aqui a regra é que a fotografia esteja visível sem script.
-   Cada peça é uma <figure> completa, com descrição e crédito — o que a
-   torna também a unidade certa para catalogação.
+   Uma grade de fotografias. Não é carrossel de propósito: carrossel depende
+   de JavaScript para mostrar a imagem, e aqui a regra é que a fotografia
+   esteja visível sem script. Cada peça é uma <figure> completa, com
+   descrição e crédito — o que a torna também a unidade certa para
+   catalogação.
+
+   Cada miniatura é um link para o arquivo, que o Ampliador intercepta: na
+   grade a foto aparece recortada no quadro 4/3, e o clique a mostra inteira.
 
    A primeira imagem recebe prioridade de carregamento; as outras são
    preguiçosas, que é o que faz uma página de dezesseis fotos abrir rápido.
@@ -82,12 +97,16 @@ function Galeria({ b }) {
     <div className="galeria" role="group" aria-label="Galeria de fotografias do acervo">
       {pecas.map((p, i) => (
         <figure className="galeria__peca" key={p.arquivo}>
-          <img
-            src={`midia/${p.arquivo}`}
-            alt={p.alt}
-            loading={i === 0 ? 'eager' : 'lazy'}
-            decoding="async"
-          />
+          <a className="galeria__quadro" href={`midia/${p.arquivo}`} data-ampliar="">
+            <img
+              src={`midia/${p.arquivo}`}
+              alt={p.alt}
+              loading={i === 0 ? 'eager' : 'lazy'}
+              decoding="async"
+            />
+            <span className="figura__ampliar" aria-hidden="true"><Icone nome="ampliar" /></span>
+            <span className="sr"> (ampliar foto)</span>
+          </a>
           <figcaption>
             {p.legenda && <Html as="span" texto={p.legenda} />}
             {p.credito && <span className="figura__credito">{p.credito}</span>}

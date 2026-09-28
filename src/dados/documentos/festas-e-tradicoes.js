@@ -28,6 +28,10 @@ export default {
           arquivo: 'f-festas-padroeira.jpg',
           alt: 'Imagem de Nossa Senhora de Nazareth com o Menino Jesus ao colo, coroada, sobre o andor enfeitado.',
           credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
+        { figura: 'Cortejo pela rua do povoado.',
+          arquivo: 'f-festas-cortejo-rua.jpg',
+          alt: 'Grupo de homens de camisa e calça azuis, com fitas coloridas e chapéus enfeitados, reunidos numa rua de pedra do povoado, ao lado de um mascarado de roupa colorida.',
+          credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
       ],
     },
     {
@@ -113,6 +117,28 @@ export default {
       + 'acompanhada de orquestra. Durante o ofertório, moradores e visitantes ofertam à '
       + 'aniversariante bolos, doces e guloseimas, distribuídos, ao final da celebração, a todos '
       + 'os fiéis. À noite, é realizada procissão luminosa com as ruas e praça enfeitadas.',
+        { figura: 'A caminhada de Caeté.',
+          arquivo: 'f-festas-caminhada.jpg',
+          alt: 'Fiéis reunidos ao ar livre em volta de um andor enfeitado de branco, com uma estrela no alto, tendo um morro de terra avermelhada ao fundo.',
+          legenda: 'No domingo antes da festa, fiéis participam de caminhada de Caeté a Morro Vermelho com uma imagem da padroeira.',
+          credito: 'Anselmo Magalhães' },
+        { figura: 'As ofertas à padroeira.',
+          arquivo: 'f-festas-velas.jpg',
+          alt: 'Duas meninas em meio à multidão segurando bandejas de doces e confeitos em copinhos.',
+          legenda: 'Durante a missa solene, moradores e romeiros ofertam bolos e confeitos à aniversariante, Nossa Senhora de Nazareth.',
+          credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
+        { figura: 'O andor enfeitado.',
+          arquivo: 'f-festas-andor.jpg',
+          alt: 'Andor da padroeira coberto de flores brancas e lanternas, à noite, diante de uma casa com pessoas na varanda.',
+          credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
+        { figura: 'A procissão luminosa.',
+          arquivo: 'f-festas-procissao-luminosa.jpg',
+          alt: 'Fiéis com velas acesas erguidas acompanhando o andor iluminado, à noite.',
+          credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
+        { figura: 'O tapete na rua.',
+          arquivo: 'f-festas-tapete.jpg',
+          alt: 'Tapete de serragem colorida estendido pela rua à noite, sob arcos de enfeites, com a igreja iluminada ao fundo.',
+          credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
         { sub: 'Ação de graças' },
         'A festa da Dona do Morro Vermelho é encerrada com Te Deum, o rei dos cultos cristãos, um '
       + 'ofício de ação de graças. O hino é atribuído a Santo Ambrósio e a Santo Agostinho, que '
@@ -155,6 +181,10 @@ export default {
       + 'sejam. E nestes afazeres os mordomos têm a certeza de que estão a serviço da Virgem '
       + 'Santíssima e da comunidade cristã em que vivem e que o retorno por este zelo e fidelidade '
       + 'será sempre compensador.',
+        { figura: 'Os mordomos no trabalho.',
+          arquivo: 'f-festas-mordomos.jpg',
+          alt: 'Um homem e uma mulher de camisa azul preparando enfeites de papel colorido num terreiro de chão batido.',
+          credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
         { sub: 'Indulgência Plenária' },
         'Em 1866, Morro Vermelho foi agraciado com um dos tesouros da fé católica: a Bula Papal de '
       + 'Indulgência Plenária, concedida pelo Papa Pio IX. A Bula concede privilégios especiais a '
@@ -165,26 +195,6 @@ export default {
       + 'agradecimento, a comunidade de Morro Vermelho mandou ornar o templo com um retrato '
       + 'pintado do Papa Pio IX, que fica sobre o arco do cruzeiro, local mais elevado da igreja. '
       + 'A atitude reafirma o compromisso dos fiéis com a fé católica.',
-        { figura: 'Meninas com as velas.',
-          arquivo: 'f-festas-velas.jpg',
-          alt: 'Duas meninas segurando bandejas com velas acesas, em meio à multidão da festa.',
-          credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
-        { figura: 'O ofertório.',
-          arquivo: 'f-festas-ofertorio.jpg',
-          alt: 'Fiéis reunidos dentro da igreja em volta de uma mesa coberta de bolos, doces e guloseimas trazidos de oferta.',
-          credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
-        { figura: 'O tapete na rua.',
-          arquivo: 'f-festas-tapete.jpg',
-          alt: 'Tapete de serragem colorida estendido pela rua à noite, sob arcos de enfeites, com a igreja iluminada ao fundo.',
-          credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
-        { figura: 'A procissão luminosa.',
-          arquivo: 'f-festas-procissao-velas.jpg',
-          alt: 'Multidão de fiéis com velas acesas dentro da igreja, durante a celebração noturna.',
-          credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
-        { figura: 'A romaria.',
-          arquivo: 'f-festas-romaria.jpg',
-          alt: 'Fila de romeiros subindo a pé uma estrada de terra na encosta, em direção ao alto do morro.',
-          credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
       ],
     },
     {
@@ -195,6 +205,40 @@ export default {
       + 'procissões de Ramos, do Depósito, do Encontro, do Enterro e do Triunfo, além do Lava-Pés, '
       + 'cânticos, motetos e vias-sacras. Uma das tradições é o acendimento do Círio Pascal com o '
       + 'fogo gerado na pedra sobre pedra, como no início da humanidade.',
+        { figura: 'Procissão do Depósito.',
+          arquivo: 'f-festas-quaresma.jpg',
+          alt: 'Fiéis em procissão por uma estrada de terra entre árvores, com homens de túnica roxa carregando um andor coberto de pano roxo e estandartes roxos.',
+          legenda: 'Procissão do Depósito do Senhor dos Passos.',
+          credito: 'Reprodução da internet' },
+        { figura: 'A Via Sacra.',
+          arquivo: 'f-festas-romaria.jpg',
+          alt: 'Fila de fiéis caminhando por uma estrada de terra na encosta, entre a mata, sob sol forte.',
+          legenda: 'Via Sacra pelas ruas, vilas e áreas rurais.',
+          credito: 'Anselmo Magalhães' },
+        { figura: 'O Descendimento.',
+          arquivo: 'f-festas-ofertorio.jpg',
+          alt: 'Fiéis dentro da igreja debruçados sobre a imagem do Cristo morto, deitada num esquife enfeitado de flores e luzes.',
+          legenda: 'Descendimento do Cristo da Santa Cruz.',
+          credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
+        { figura: 'A imagem do Cristo morto.',
+          arquivo: 'f-festas-cristo-morto.jpg',
+          alt: 'Um homem de túnica branca e manto vermelho e uma mulher de véu azul amparando a imagem do Cristo morto.',
+          credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
+        { figura: 'Procissão do Enterro.',
+          arquivo: 'f-festas-enterro.jpg',
+          alt: 'Vista do alto, à noite, da procissão iluminada subindo a rua do povoado em direção à igreja.',
+          legenda: 'Procissão do Enterro na Sexta-Feira da Paixão.',
+          credito: 'Raul Lopes' },
+        { figura: 'A Páscoa com o Círio.',
+          arquivo: 'f-festas-procissao-velas.jpg',
+          alt: 'Multidão de fiéis com velas acesas dentro da igreja, durante a celebração noturna.',
+          legenda: 'Celebração da Páscoa do Senhor com o Círio.',
+          credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
+        { figura: 'Procissão do Triunfo.',
+          arquivo: 'f-festas-triunfo.jpg',
+          alt: 'Procissão de dia pela rua do povoado, com mulheres vestidas de figuras bíblicas em túnicas coloridas e a igreja ao fundo.',
+          legenda: 'Procissão do Triunfo de Jesus Cristo no Domingo da Páscoa.',
+          credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
         { sub: 'Senhor dos Passos' },
         'Celebrações centenárias marcam algumas festividades em Morro Vermelho, como a peregrinação '
       + 'do Senhor dos Passos: durante os 40 dias da Quaresma, pequena imagem percorre, em charola '
@@ -202,6 +246,10 @@ export default {
       + 'não pode entrar em cidades e grandes concentrações urbanas e onde pernoita há rezas e '
       + 'cantorias. Hoje, devido à modernização, esta peregrinação está restrita às ruas do '
       + 'povoado.',
+        { figura: 'A charola do Senhor dos Passos.',
+          arquivo: 'f-festas-charola.jpg',
+          alt: 'Menino olhando a pequena imagem do Senhor dos Passos dentro de uma charola enfeitada de franjas de papel e flores.',
+          credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
         { sub: 'Encomendação das Almas' },
         'Outra tradição centenária em Morro Vermelho é a Encomendação das Almas. Em madrugadas da '
       + 'Quaresma, pessoas da comunidade saem às ruas, parando em encruzilhadas para rezar e '
@@ -212,6 +260,10 @@ export default {
       + 'almas que acompanham a cerimônia e sofrerem com isso. Durante o cortejo, os penitentes '
       + 'não devem olhar para trás. A cerimônia se encerra no cemitério, onde os participantes '
       + 'entregam as almas a Deus para que descansem em paz junto com os outros mortos.',
+        { figura: 'Velas ao pé do cruzeiro.',
+          arquivo: 'f-festas-cruzeiro-velas.jpg',
+          alt: 'Cruzeiro recortado contra a noite, com duas pessoas acendendo velas na base.',
+          credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
         { sub: 'Lavagem do Cristo' },
         'Num ritual secreto, típico da Quarta-Feira de Cinzas, em Morro Vermelho uma imagem de '
       + 'Jesus Cristo, em tamanho natural, é lavada com cachaça pelos seus devotos. Depois do '
@@ -219,21 +271,13 @@ export default {
       + 'milagrosos. A tradição já foi tema de documentário “Água Benta, Fé Ardente; Água Ardente, '
       + 'Fé Benta”, do diretor João Luiz Ornelas, premiado no Festival de Tiradentes em 2000 e no '
       + 'Festival do Rio em 1999.',
-        { figura: 'A imagem do Senhor dos Passos.',
+        { figura: 'A lavagem do Cristo.',
           arquivo: 'f-festas-senhor-dos-passos.jpg',
-          alt: 'Imagem do Senhor dos Passos em tamanho natural, com a coroa de espinhos, sendo molhada com cachaça por mãos que seguram um copo.',
+          alt: 'Imagem do Cristo em tamanho natural, com a coroa de espinhos, sendo banhada com cachaça derramada de garrafas pelos devotos.',
           credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
         { figura: 'A lavagem, em detalhe.',
           arquivo: 'f-festas-lavagem-pes.jpg',
-          alt: 'Detalhe dos pés da imagem dentro de uma bacia de cobre, com a cachaça sendo derramada de uma garrafa.',
-          credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
-        { figura: 'Procissão da Quaresma.',
-          arquivo: 'f-festas-quaresma.jpg',
-          alt: 'Fila de fiéis subindo uma estrada de terra em procissão, com estandartes roxos.',
-          credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
-        { figura: 'Velas ao pé do cruzeiro.',
-          arquivo: 'f-festas-cruzeiro-velas.jpg',
-          alt: 'Cruzeiro recortado contra a noite, com duas pessoas acendendo velas na base.',
+          alt: 'Detalhe dos pés da imagem dentro de uma gamela de madeira, com a cachaça sendo derramada de uma garrafa plástica.',
           credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
       ],
     },
@@ -250,9 +294,13 @@ export default {
       + 'Morro Vermelho, prossegue no domingo com missa solene na Matriz, seguida de procissão '
       + 'luminosa até o outeiro do Rosário, acompanhada por banda de música e cortejo de guardas '
       + 'de congado de cidades vizinhas.',
-        { figura: 'O estandarte na rua.',
-          arquivo: 'f-festas-estandarte.jpg',
-          alt: 'Estandarte bordado com a imagem da santa, conduzido em cortejo pela rua, acompanhado de tambores.',
+        { figura: 'O congado diante da santa.',
+          arquivo: 'f-festas-rosario.jpg',
+          alt: 'Congadeiros com chapéus de fitas coloridas dentro da capela, diante da imagem de Nossa Senhora do Rosário cercada de rosas.',
+          credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
+        { figura: 'O levantamento do mastro.',
+          arquivo: 'f-festas-rosario-mastro.jpg',
+          alt: 'Homens erguendo um mastro branco à noite, diante da Capela do Rosário, com o público em volta.',
           credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
       ],
     },
@@ -268,7 +316,7 @@ export default {
         { figura: 'A coroação.',
           arquivo: 'f-festas-coroacao.jpg',
           alt: 'Crianças vestidas de anjo, de branco e rosa, em volta do andor durante a coroação de Nossa Senhora.',
-          credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
+          credito: 'Reprodução da internet' },
       ],
     },
     {
@@ -313,9 +361,13 @@ export default {
       + 'culturais herdadas dos pais e avós, preservando a memória coletiva de um povo que sempre '
       + 'teve participação decisiva na história do País.',
         { figura: 'A Cavalhada Mirim.',
-          arquivo: 'f-cavalhada-mirim.jpg',
-          alt: 'Crianças em fila com cavalos de pau enfeitados de papel colorido, diante da capela iluminada.',
+          arquivo: 'f-festas-cavalhada-mirim.jpg',
+          alt: 'Meninos de capa azul e de capa branca, com cavalos de pau, fazendo evoluções num gramado à noite diante do público.',
           credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
+        { figura: 'Os pequenos cavaleiros.',
+          arquivo: 'f-festas-cavalhada-mirim-embaixadores.jpg',
+          alt: 'Meninos com coroas e capacetes azuis e brancos, capas e cavalos de pau enfeitados de fitas, posando à noite.',
+          credito: 'Luís Xavier' },
       ],
     },
     {
@@ -335,9 +387,13 @@ export default {
         'A festa começa com uma concentração na sede do povoado com batuques e cânticos, seguindo '
       + 'o cortejo, com os convidados em vestes especiais e sombrinhas coloridas, até a Capela do '
       + 'Rosário, onde é servida a bebida.',
+        { figura: 'O estandarte na rua.',
+          arquivo: 'f-festas-estandarte.jpg',
+          alt: 'Estandarte pintado com a imagem da santa e enfeitado de fitas, conduzido em cortejo pela rua ao som de tambor, com sombrinhas coloridas ao fundo.',
+          credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
         { figura: 'O cortejo do Aluá.',
           arquivo: 'f-festas-alua.jpg',
-          alt: 'Cortejo de pessoas com sombrinhas coloridas e roupas de festa, descendo a rua do povoado.',
+          alt: 'Cortejo de pessoas com sombrinhas coloridas e roupas de festa, reunido diante de um prédio de tijolos.',
           credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
       ],
     },

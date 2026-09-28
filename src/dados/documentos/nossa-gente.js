@@ -109,14 +109,16 @@ export default {
                  + 'Sagrado Coração de Jesus um templo naquele mistério geográfico. Fê-lo e fez-se '
                  + 'o arraial, a que o fundador chamou O Burgo do Coração.',
           autoria: 'João Guimarães Rosa, discurso de posse na Academia Brasileira de Letras, 1967' },
-        { figura: 'Retrato do padre João de Santo Antônio.',
-          arquivo: 'f-gente-padre-joao.jpg',
-          alt: 'Retrato antigo, em sépia, de sacerdote idoso de cabelos brancos e barba, em traje eclesiástico.',
-          credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
-        { figura: 'A matriz de Cordisburgo.',
+        { figura: 'A Capela de São José, em Cordisburgo.',
+          arquivo: 'f-gente-capela-sao-jose.jpg',
+          alt: 'Pequena capela branca de frontão triangular, com portas e janelas em arco ogival pintadas de azul, diante de uma árvore grande.',
+          legenda: 'A Capela de São José, construída em Cordisburgo pelo Padre João de Santo Antônio.',
+          credito: 'Reprodução da internet' },
+        { figura: 'A Matriz de Cordisburgo.',
           arquivo: 'f-gente-cordisburgo.jpg',
-          alt: 'Igreja matriz de duas torres, pintada de branco e rosa, com palmeiras altas à frente.',
-          credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
+          alt: 'Igreja matriz de duas torres pontiagudas, pintada de branco e vermelho, com palmeiras altas e uma praça à frente.',
+          legenda: 'A Matriz do Sagrado Coração de Jesus, construída em Cordisburgo pelo Padre João de Santo Antônio, já reformada.',
+          credito: 'Reprodução da internet' },
       ],
     },
     {
@@ -149,10 +151,6 @@ export default {
       + 'Guimarães (1863); Maria Rodrigues de Oliveira Sobrinho (1866); Henrique Evangelista '
       + 'Marques Guimarães (1868); Mariana Evangelista Marques Guimarães (1870); Clara Evangelista '
       + 'Marques Guimarães (1872); Pedro Evangelista Marques Guimarães (1874).',
-        { figura: 'Retrato do professor.',
-          arquivo: 'f-gente-professor.jpg',
-          alt: 'Retrato antigo em preto e branco de homem de bigode e terno escuro, sentado de mãos cruzadas.',
-          credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
       ],
     },
     {
@@ -211,6 +209,10 @@ export default {
       + '(1898); Padre Alberto Evangelista Marques Guimarães (1901); Padre Ephraim Evangelista '
       + 'Marques Guimarães (1903); Cecília Carolina Guimarães (1905); Aurora Maria Guimarães '
       + '(1909).',
+        { figura: 'Retrato do Mestre Totó.',
+          arquivo: 'f-gente-professor.jpg',
+          alt: 'Retrato antigo em preto e branco de homem de cabelos brancos e bigode, de terno escuro, sentado de mãos cruzadas.',
+          credito: 'Acervo familiar' },
       ],
     },
     {
@@ -223,6 +225,10 @@ export default {
       + 'de Pompeu, Minas Gerais, e assumiu em 1911 a Paróquia de Nossa Senhora de Nazareth de '
       + 'Morro Vermelho, onde ficou até falecer, em 1961. Hoje dá nome à Rua de Baixo de Morro '
       + 'Vermelho.',
+        { figura: 'Retrato do Padre Nico.',
+          arquivo: 'f-gente-padre-joao.jpg',
+          alt: 'Retrato antigo, em sépia, de sacerdote idoso de cabelos brancos e barba curta, de batina.',
+          credito: 'Acervo familiar' },
       ],
     },
     {
@@ -253,6 +259,11 @@ export default {
         { sub: 'Os quatro filhos' },
         'Antônio Lopes de Magalhães (1808); Manoel Lopes de Magalhães (1809); Tereza Lopes de '
       + 'Magalhães (1811); Prudenciana Lopes de Magalhães (1818).',
+        { figura: 'Terras da Fazenda do Geriza.',
+          arquivo: 'f-noticias-estrada.jpg',
+          alt: 'Estrada de terra vermelha entre o mato, com uma lagoa à esquerda e morros cobertos de mata ao fundo.',
+          legenda: 'O rico português Matheus Lopes de Magalhães criava gado de alta qualidade e tinha um famoso pomar de uvas e maçãs em área da hoje Fazenda do Geriza.',
+          credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
       ],
     },
     {
@@ -312,10 +323,6 @@ export default {
       + 'Alice Evangelista Marques (1897), Carlindo Evangelista Marques (1898), Agenor Evangelista '
       + 'Marques (1902), Ivone Evangelista Marques (1904), Olinto Evangelista Marques (1906), '
       + 'Adelina Rodrigues Guimarães (1907).',
-        { figura: 'Retrato de família.',
-          arquivo: 'f-gente-senhora.jpg',
-          alt: 'Senhora idosa de vestido xadrez, de pé no quintal, apoiada numa bengala.',
-          credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
       ],
     },
     {
@@ -328,6 +335,10 @@ export default {
       + 'legado de composições musicais, algumas incluídas na Cavalhada Nossa Senhora de Nazareth, '
       + 'repetida anualmente no povoado desde 1704. Também foi organizador e maestro da Coral '
       + 'Nossa Senhora de Nazareth, com presença marcante em todas as festas do lugarejo.',
+        { figura: 'Zé Pinheiro.',
+          arquivo: 'f-gente-ze-pinheiro.jpg',
+          alt: 'Senhor de pele morena, de gorro e roupa brancos, de perfil, ao lado de outra pessoa também de branco.',
+          credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
       ],
     },
     {
@@ -348,6 +359,10 @@ export default {
       + 'Evangelista Marques (1898), Jovelina Evangelista Marques (Dona Jove) (1899), Agenor '
       + 'Evangelista Marques (1902), Ivone Evangelista Marques (1904), Olinto Evangelista Marques '
       + '(1906) e Adelina Rodrigues Guimarães (1907).',
+        { figura: 'Dona Mica.',
+          arquivo: 'f-gente-dona-lica.jpg',
+          alt: 'Retrato antigo, em tom alaranjado, de senhora idosa de cabelos brancos e casaco, debruçada no batente de uma janela.',
+          credito: 'Acervo familiar' },
       ],
     },
     {
@@ -378,9 +393,9 @@ export default {
       + 'roupas de cama, toalhas e caminhos-de-mesa, além de peças para igrejas, como os '
       + 'sanguíneos, que forram altares.',
         { figura: 'Dona Lica.',
-          arquivo: 'f-gente-dona-lica.jpg',
-          alt: 'Retrato antigo, em tom alaranjado, de senhora idosa de cabelos brancos, sentada ao lado de uma parede clara.',
-          credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
+          arquivo: 'f-gente-senhora.jpg',
+          alt: 'Senhora idosa de cabelos brancos e vestido xadrez, caminhando por um quintal cheio de plantas.',
+          credito: 'Acervo familiar' },
       ],
     },
     {
@@ -407,9 +422,9 @@ export default {
       + 'insubstituível no povoado. Ensinou filhas e conterrâneas o segredo da cantoria religiosa, '
       + 'mas nenhuma delas será como a dona Clarinda da Conceição Pinheiro. Mas Clarinda '
       + 'certamente deixou um rastro de esperança nesta terra de tão poucos talentos.',
-        { figura: 'Nas festas do distrito.',
+        { figura: 'Clarinda regendo.',
           arquivo: 'f-gente-pintora.jpg',
-          alt: 'Senhora de blusa vermelha e óculos, de perfil, segurando um objeto erguido durante uma festa.',
+          alt: 'Senhora de óculos e blazer vermelho, com a batuta erguida, regendo.',
           credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
       ],
     },
@@ -445,6 +460,10 @@ export default {
         { figura: 'Geraldo Baixinho.',
           arquivo: 'f-gente-geraldo-baixinho.jpg',
           alt: 'Senhor idoso de camisa listrada, sentado num sofá, com as mãos no colo, olhando para a câmera.',
+          credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
+        { figura: 'Geraldo Baixinho conversando.',
+          arquivo: 'f-gente-geraldo-baixinho-2.jpg',
+          alt: 'Senhor idoso de bigode branco e roupa azul-clara, sentado numa poltrona, gesticulando com as duas mãos.',
           credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
       ],
     },

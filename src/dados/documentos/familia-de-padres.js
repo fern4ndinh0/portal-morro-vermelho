@@ -31,9 +31,9 @@ export default {
       + 'Evangelista Marques Guimarães e Ephraim Evangelista Marques Guimarães. O casal também '
       + 'teve três filhas: Maria, Cecília e Aurora.',
         { figura: 'A família de padres de Morro Vermelho.',
-          arquivo: 'figura-familia-de-padres.jpg',
-          alt: 'Retrato antigo da família Evangelista Marques Guimarães, com os filhos padres em '
-             + 'batina.' },
+          arquivo: 'f-padres-familia.jpg',
+          alt: 'Fotografia antiga em preto e branco da família reunida: o casal sentado ao centro, uma menina entre eles, filhos de batina e colarinho clerical sentados e de pé, e duas moças de vestido branco nas pontas.',
+          credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
       ],
     },
     {
@@ -70,6 +70,15 @@ export default {
           '1905 Cecília Carolina Guimarães',
           '1909 Aurora Maria Guimarães',
         ] },
+        { figura: 'O professor Antônio Evangelista Marques Guimarães.',
+          arquivo: 'f-padres-professor.jpg',
+          alt: 'Fotografia antiga em preto e branco de um senhor de barba branca, chapéu e óculos, sentado ao ar livre com uma bengala na mão.',
+          credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
+        { figura: 'O casarão do professor Antônio.',
+          arquivo: 'f-padres-casarao.jpg',
+          alt: 'Casarão térreo de paredes brancas, janelas e porta azuis e telhado de telha colonial, com uma mureta de balaústres à frente e o morro coberto de mata ao fundo.',
+          legenda: 'Casarão centenário do professor Antônio Guimarães em Morro Vermelho. Casa foi doada por um dos padres para a paróquia, que a destruiu parcialmente e loteou o seu quintal.',
+          credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
       ],
     },
     {
@@ -81,6 +90,10 @@ export default {
       + 'paróquia de Pompéu, Minas Gerais e assumiu em 1911 a Paróquia de Nossa Senhora de '
       + 'Nazareth de Morro Vermelho, onde ficou até falecer. Hoje dá nome à Rua de Baixo de Morro '
       + 'Vermelho.',
+        { figura: 'Padre Nico.',
+          arquivo: 'f-padres-nico.jpg',
+          alt: 'Retrato antigo de um padre idoso, de cabelos grisalhos, bigode e cavanhaque, de batina e colarinho branco.',
+          credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
       ],
     },
     {
@@ -92,6 +105,10 @@ export default {
       + 'ordenou-se padre em 1921, assumindo a Paróquia de São Gonçalo do Rio Abaixo em 1924, de '
       + 'onde se afastou só em 1974, falecendo dez anos depois, em 1984. Por sua dedicação à '
       + 'igreja, recebeu o título de Cônego.',
+        { figura: 'Padre João.',
+          arquivo: 'f-padres-joao-capela.jpg',
+          alt: 'Fotografia em preto e branco de um padre idoso de batina e bengala, ao lado de um rapaz, diante da escadaria e do portão de uma capela branca com torre sineira.',
+          credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
         { sub: 'Padre Santo' },
         'As comunidades de São Gonçalo do Rio Abaixo e de cidades vizinhas consideram o Padre João '
       + 'um milagroso. Homem austero, trabalhador rural e piedoso, chegou em 1968 a ganhar a '
@@ -107,6 +124,16 @@ export default {
       + 'aos 95 anos.',
         'A comunidade de São Gonçalo do Rio Abaixo homenageou sua memória com uma escultura '
       + 'gigante de 20 metros no bairro Patrimônio, onde o cônego passou os últimos dias de vida.',
+        { figura: 'Padre João na roça.',
+          arquivo: 'f-padres-joao-roca.jpg',
+          alt: 'Fotografia antiga em preto e branco: um padre de batina e chapéu de pé num terreno de roça, com algumas pessoas ao fundo.',
+          legenda: 'Padre João custeava seu sustento com o trabalho rural.',
+          credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
+        { figura: 'A estátua do Padre João.',
+          arquivo: 'f-padres-joao-estatua.jpg',
+          alt: 'Vista aérea de uma estátua branca gigante de um padre sobre um pedestal, à beira de uma rua, com o casario da cidade e os morros ao fundo.',
+          legenda: 'Padre João ganhou estátua em São Gonçalo do Rio Abaixo.',
+          credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
       ],
     },
     {
@@ -116,6 +143,10 @@ export default {
       + 'de João Evangelista Marques Guimarães e Maria Rodrigues de Oliveira Lima. Nasceu 1892, em '
       + 'Morro Vermelho. Estudou no Seminário Arquidiocesano de Mariana. Foi vigário da Paróquia '
       + 'de Abadia dos Dourados e depois de Taquaraçu de Minas, onde faleceu.',
+        { figura: 'Padre Pedro.',
+          arquivo: 'f-padres-pedro.jpg',
+          alt: 'Retrato antigo, em tom sépia, de um padre jovem de cabelos escuros, de batina e colarinho branco.',
+          credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
       ],
     },
     {
@@ -130,6 +161,10 @@ export default {
       + 'e Ephraim. Vigário da Paróquia de Roças Novas, distrito de Caeté. Antes, foi indicado por '
       + 'Dom Cabral para ser o primeiro vigário da Paróquia de São Sebastião do Oeste, no Oeste de '
       + 'Minas, criada em 1936. Faleceu em Roças Novas.',
+        { figura: 'Padre Benjamim.',
+          arquivo: 'f-padres-benjamim.jpg',
+          alt: 'Retrato antigo, em tom sépia, de um padre jovem de rosto fino e cabelos curtos, de batina.',
+          credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
       ],
     },
     {
@@ -149,6 +184,10 @@ export default {
       + 'de roupa curta nem de bailes nos fins de semana, mas é apontado como um dos pilares da '
       + 'religiosidade do município. Graças ao seu trabalho, hoje, segundo pesquisa, 97,3% da '
       + 'população se declara católica em Camacho.',
+        { figura: 'Padre Alberto.',
+          arquivo: 'f-padres-alberto.jpg',
+          alt: 'Retrato antigo de um padre idoso de óculos e cabelos brancos, de batina escura abotoada e colarinho clerical.',
+          credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
       ],
     },
     {
@@ -160,6 +199,10 @@ export default {
       + 'de Nazareth. Estudou no Seminário Arquidiocesano de Mariana.',
         'Dedicou 58 anos à vida sacerdotal, dos quais 56 como vigário da Paróquia do Santíssimo '
       + 'Sacramento de Taquaraçu de Minas. Faleceu em 22 abril de 1991, aos 87 anos.',
+        { figura: 'Padre Ephraim.',
+          arquivo: 'figura-familia-de-padres.jpg',
+          alt: 'Retrato em cores de um padre idoso de cabelos brancos, de batina preta e colarinho branco, sobre fundo escuro.',
+          credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
       ],
     },
   ],

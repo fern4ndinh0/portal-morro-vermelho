@@ -30,11 +30,10 @@ export default {
                   + 'pesquisadores de todo o país. Morro Vermelho já foi assunto para filme de '
                   + 'curta metragem e, de uns tempos para cá, se tornou centro de atenções das '
                   + 'reportagens de jornais e televisão.' },
-        { figura: 'O Compromisso da Irmandade do Rosário.',
-          arquivo: 'f-cultura-compromisso-capa.jpg',
-          alt: 'Frontispício do livro manuscrito: Compromisso da Irmandade da Virgem Senhora do Rozario dos Pretos do Arraval do Morro Vermelho, ano de 1790.',
-          legenda: 'O Compromisso da Irmandade da Virgem Senhora do Rozario dos Pretos do Arrayal do Morro Vermelho, de 1790.',
-          credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
+        { figura: 'Corrida de saco no largo.',
+          arquivo: 'f-cultura-corrida-saco.jpg',
+          alt: 'Crianças disputando uma corrida de saco no gramado do largo, observadas por outras crianças, com o casario e as montanhas ao fundo.',
+          credito: 'Anselmo Magalhães' },
       ],
     },
     {
@@ -46,6 +45,10 @@ export default {
       + 'de celebrações da sua santa de devoção. '
       + '<a href="https://digital.bbm.usp.br/bitstream/bbm/5389/1/024411_COMPLETO.pdf" '
       + 'target="_blank" rel="noopener">Leia mais</a>',
+        { figura: 'O Compromisso da Irmandade do Rosário.',
+          arquivo: 'f-cultura-compromisso-capa.jpg',
+          alt: 'Frontispício do Compromisso, em letras brancas sobre fundo preto: Irmandade da Virgem Senhora do Rosário dos Pretos do Arraial do Morro Vermelho, Freguesia da Senhora do Bom Sucesso do Caeté, Comarca do Sabará.',
+          credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
 
         { sub: '02. Água Benta, Fé Ardente; Água Ardente, Fé Benta' },
         'Documentário brasileiro de curta-metragem (9 minutos) de 1999, dirigido por João Dornelas '
@@ -55,6 +58,10 @@ export default {
       + 'Documentário na 3ª Mostra MIS de Vídeo (SP), 1999 e Melhor Vídeo do Júri Popular na 3ª '
       + 'Mostra de Tiradentes (MG), 2000. '
       + '<a href="https://vimeo.com/44002248" target="_blank" rel="noopener">Leia mais</a>',
+        { figura: 'A Lavagem do Cristo.',
+          arquivo: 'f-cultura-lavagem-cristo.jpg',
+          alt: 'Devotos em volta de uma imagem de Cristo dentro da igreja; um deles aproxima da imagem um copo com cachaça, durante o ritual da lavagem.',
+          credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
 
         { sub: '03. Música nos tempos coloniais: um olhar a partir da prática musical em Minas '
              + 'Gerais hoje' },
@@ -65,6 +72,10 @@ export default {
       + 'histórica da comunidade. '
       + '<a href="https://www.periodicos.unb.br/index.php/Musica/article/view/11132/9794" '
       + 'target="_blank" rel="noopener">Leia mais</a>',
+        { figura: 'A banda na igreja.',
+          arquivo: 'f-cultura-banda-igreja.jpg',
+          alt: 'Músicos da banda tocando tuba e trombones diante das estantes de partitura, dentro da igreja, ao lado do coro de mulheres com suas partituras.',
+          credito: 'Anselmo Magalhães' },
 
         { sub: '04. O caráter único de Morro Vermelho na Região Metropolitana de Belo Horizonte' },
         'De autoria das arquitetas Simone Marques de Sousa Safe, Luciane Raposo Faquineli e Staël '
@@ -82,6 +93,10 @@ export default {
       + 'trabalho revela formas com as quais o povoado vive no mundo de maneira criativa. '
       + '<a href="http://www.fafich.ufmg.br/~memorandum/artigos06/artigo02.pdf" target="_blank" '
       + 'rel="noopener">Leia mais</a>',
+        { figura: 'Procissão de Nossa Senhora de Nazareth.',
+          arquivo: 'f-cultura-procissao-nazareth.jpg',
+          alt: 'Devotos agitando lenços brancos em volta de um homem que carrega uma pequena imagem de Nossa Senhora, à porta da igreja, à noite.',
+          credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
 
         { sub: '06. Memória coletiva e imagem fotográfica: Elaboração da experiência em uma '
              + 'tradicional comunidade rural' },
@@ -98,6 +113,10 @@ export default {
       + 'comunitária é tecida com caráter profético universal. '
       + '<a href="http://www.fafich.ufmg.br/~memorandum/artigos01/mahfoud01.htm" target="_blank" '
       + 'rel="noopener">Leia mais</a>',
+        { figura: 'Um músico da banda.',
+          arquivo: 'f-cultura-musico.jpg',
+          alt: 'Músico de cabelos brancos e camisa listrada tocando um bombardino, visto de baixo contra o céu azul.',
+          credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
 
         { sub: '08. A luz verde do Morro Vermelho: a elaboração da experiência do sobrenatural em '
              + 'uma tradicional comunidade mineira' },
@@ -106,6 +125,10 @@ export default {
       + 'a geração, para compreender experiências de vida da comunidade. '
       + '<a href="http://periodicos.pucminas.br/index.php/psicologiaemrevista/article/view/151" '
       + 'target="_blank" rel="noopener">Leia mais</a>',
+        { figura: 'Entre gerações.',
+          arquivo: 'f-cultura-velho-criancas.jpg',
+          alt: 'Fotografia em preto e branco de um senhor idoso, inclinado sobre uma bacia, observado de perto por três meninos.',
+          credito: 'Anselmo Magalhães' },
 
         { sub: '09. Compor como se fosse observador: Hilética e Noética na produção de imagem numa '
              + 'comunidade tradicional de origem barroca' },
@@ -122,6 +145,10 @@ export default {
       + 'nativa e a ela mantêm-se vinculados e identificados, mesmo inseridos em outra cultura. '
       + '<a href="http://www.hottopos.com/videtur6/migsim.htm" target="_blank" rel="noopener">'
       + 'Leia mais</a>',
+        { figura: 'Os reis da festa.',
+          arquivo: 'f-cultura-reis.jpg',
+          alt: 'Dois homens de coroa e capa, um de capa branca com pintas e outro de capa azul-celeste, junto a um cavalo enfeitado, à noite, sob bandeirolas.',
+          credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
 
         { sub: '11. A articulação entre a cultura popular e a educação escolar na comunidade rural '
              + 'de Morro Vermelho' },
@@ -154,6 +181,10 @@ export default {
       + 'da escola no enraizamento de tradições e fortalecimento da cultura em Morro Vermelho. '
       + '<a href="http://pepsic.bvsalud.org/scielo.php?pid=S0104-12822007000200010&amp;script='
       + 'sci_arttext" target="_blank" rel="noopener">Leia mais</a>',
+        { figura: 'A escola e a Matriz.',
+          arquivo: 'f-cultura-escola.jpg',
+          alt: 'Turma de crianças sentada no gramado diante da Matriz, com a professora de pé ao lado.',
+          credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
 
         { sub: '15. Tradição e oralidade: contos, histórias e lendas na comunidade rural de Morro '
              + 'Vermelho' },
@@ -198,6 +229,10 @@ export default {
       + 'moradores sobre as posições de seus antepassados. '
       + '<a href="https://silo.tips/download/contribuioes-da-memoria-coletiva-e-da-historia-para-a-'
       + 'formaao-da-pessoa-e-a-emer" target="_blank" rel="noopener">Leia mais</a>',
+        { figura: 'Página do Compromisso.',
+          arquivo: 'f-cultura-compromisso-pagina.jpg',
+          alt: 'Página do Compromisso, com o título Capítulo 1 e o texto em letra manuscrita do século 18, emoldurado por ornatos.',
+          credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
 
         { sub: '20. Renovando a tradição: o caso da Cavalhada Mirim na Comunidade de Morro '
              + 'Vermelho' },
@@ -208,6 +243,10 @@ export default {
       + 'para as gerações seguintes. '
       + '<a href="https://repositorio.ufmg.br/bitstream/1843/BUOS-9PQGF2/1/dissertao_vers_o_final_'
       + 'camila_lisboa.pdf" target="_blank" rel="noopener">Leia mais</a>',
+        { figura: 'A Cavalhada Mirim.',
+          arquivo: 'f-cultura-cavalhada-mirim.jpg',
+          alt: 'Crianças de roupa branca e gorro azul, com cavalinhos de brinquedo enfeitados, correndo no gramado diante da capela iluminada, à noite, durante a Cavalhada Mirim.',
+          credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
 
         { sub: '21. A participação social no processo de desenvolvimento turístico local: o caso '
              + 'do distrito de Morro Vermelho-MG' },
@@ -218,21 +257,9 @@ export default {
       + 'para criação de mais emprego e renda nesta área para a população. '
       + '<a href="http://livros01.livrosgratis.com.br/cp156189.pdf" target="_blank" '
       + 'rel="noopener">Leia mais</a>',
-        { figura: 'Página do Compromisso.',
-          arquivo: 'f-cultura-compromisso-pagina.jpg',
-          alt: 'Página manuscrita do Compromisso, com capitular ornamentada e o texto em letra do século 18.',
-          credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
-        { figura: 'A Lavagem do Cristo.',
-          arquivo: 'f-cultura-lavagem-cristo.jpg',
-          alt: 'Devotos em volta da imagem do Senhor dos Passos dentro da igreja, durante o ritual da lavagem.',
-          credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
-        { figura: 'Um músico da banda.',
-          arquivo: 'f-cultura-musico.jpg',
-          alt: 'Músico de cabelos brancos tocando uma tuba, visto de baixo contra o céu azul.',
-          credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
-        { figura: 'O tapete de serragem.',
-          arquivo: 'f-cultura-tapete.jpg',
-          alt: 'Moradores montando à mão o tapete de serragem na rua de terra, diante da igreja.',
+        { figura: 'Cachoeira.',
+          arquivo: 'f-cultura-cachoeira.jpg',
+          alt: 'Cachoeira caindo entre paredões de pedra num poço de água verde, com uma moto de trilha estacionada na margem.',
           credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
       ],
     },
@@ -244,6 +271,10 @@ export default {
         'Dos professores Camila Freitas e Miguel Mahfoud, da UFMG, estudo mostra que a elaboração '
       + 'de tapetes para passagem de procissão no povoado contém importantes significados para a '
       + 'população.',
+        { figura: 'O tapete de serragem.',
+          arquivo: 'f-cultura-tapete.jpg',
+          alt: 'Moradores montando à mão o tapete de serragem na rua de terra, diante da igreja.',
+          credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
         { sub: 'História, tradição e memória: construção de conhecimento em Morro Vermelho' },
         'Realizada por Ana Flávia de Sales Costa e Miguel Mahfoud, do Departamento de Psicologia '
       + 'da UFMG, pesquisa revela que o Levante do Quinto do Ouro sobre as bateias é percebido '
@@ -257,13 +288,9 @@ export default {
         'Estudo psicológico do professor Miguel Mahfoud revela mistérios de tradição medieval '
       + 'repetida nas madrugadas da quaresma no povoado de Morro Vermelho. Fiéis se envolvem em '
       + 'ritual religioso e obrigados a ficar em silêncio e a nunca olhar para trás.',
-        { figura: 'A escola e a Matriz.',
-          arquivo: 'f-cultura-escola.jpg',
-          alt: 'Turma de crianças sentada no gramado diante da Matriz, com a professora de pé ao lado.',
-          credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
-        { figura: 'A Cavalhada Mirim.',
-          arquivo: 'f-cultura-cavalhada-mirim.jpg',
-          alt: 'Crianças com cavalos de pau enfeitados, em fila diante da capela iluminada, durante a Cavalhada Mirim.',
+        { figura: 'Encomendação das almas.',
+          arquivo: 'f-cultura-encomendacao.jpg',
+          alt: 'Fiéis reunidos à noite em volta de um grande cruzeiro de madeira, com velas acesas no chão ao pé da cruz.',
           credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
       ],
     },

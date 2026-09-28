@@ -415,6 +415,13 @@ MANIFESTO = [
     ('28MV06.jpg', 'f-outras-diario-de-minas.jpg'),
     ('28MV08.jpg', 'f-outras-carta-1715.jpg'),
 
+    # cap. 27: retratos da pasta 'Galeria de Fotos\Nossa história - Nossa Gente,
+    # Nossa História', um arquivo por pessoa, com o nome dela
+    (r'Galeria de Fotos\Nossa história - Nossa Gente, Nossa História\Anézia Maria Pinheiro.jpeg', 'f-gente-anezia.jpg'),
+    (r'Galeria de Fotos\Nossa história - Nossa Gente, Nossa História\Escola Municipal Anézia Maria Pinheiro.jpeg', 'f-gente-escola-anezia.jpg'),
+    (r'Galeria de Fotos\Nossa história - Nossa Gente, Nossa História\Professor João Evangelista Marques Guimarães.jpg', 'f-gente-professor-joao.jpg'),
+    (r'Galeria de Fotos\Nossa história - Nossa Gente, Nossa História\Professora Jovelina Evangelista (1).jpeg', 'f-gente-dona-jove.jpg'),
+
     # --- Avulsos ------------------------------------------------------------
     # Ficheiros sem o prefixo NNMV, que não estão nos .docx. São registro
     # recente do estado de conservação dos bens tombados — exatamente o que o

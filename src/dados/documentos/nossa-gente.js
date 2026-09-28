@@ -2,6 +2,8 @@
    27 · NOSSA GENTE, NOSSA HISTÓRIA
 
    FONTE: originais/word/27MV.docx — "Pesquisa, texto e fotos: Geraldo Lopes".
+   O verbete de Anézia Maria Pinheiro, que não está no 27MV.docx, vem de um
+   documento avulso: originais/word/Anézia Maria Pinheiro.docx.
    Texto do documento original, sem acréscimo.
 
    O documento termina o verbete de José Rodrigues Pinheiro com a frase
@@ -151,6 +153,10 @@ export default {
       + 'Guimarães (1863); Maria Rodrigues de Oliveira Sobrinho (1866); Henrique Evangelista '
       + 'Marques Guimarães (1868); Mariana Evangelista Marques Guimarães (1870); Clara Evangelista '
       + 'Marques Guimarães (1872); Pedro Evangelista Marques Guimarães (1874).',
+        { figura: 'O professor João Evangelista Marques Guimarães.',
+          arquivo: 'f-gente-professor-joao.jpg',
+          alt: 'Fotografia antiga em preto e branco: dois homens de pé diante da escadaria de uma capela branca de torre única, um de terno e outro de batina.',
+          credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
       ],
     },
     {
@@ -323,6 +329,10 @@ export default {
       + 'Alice Evangelista Marques (1897), Carlindo Evangelista Marques (1898), Agenor Evangelista '
       + 'Marques (1902), Ivone Evangelista Marques (1904), Olinto Evangelista Marques (1906), '
       + 'Adelina Rodrigues Guimarães (1907).',
+        { figura: 'Dona Jove.',
+          arquivo: 'f-gente-dona-jove.jpg',
+          alt: 'Senhora idosa de cabelos brancos e óculos, de casaco claro, sentada com as mãos juntas diante de um altar de talha dourada.',
+          credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
       ],
     },
     {
@@ -425,6 +435,29 @@ export default {
         { figura: 'Clarinda regendo.',
           arquivo: 'f-gente-pintora.jpg',
           alt: 'Senhora de óculos e blazer vermelho, com a batuta erguida, regendo.',
+          credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
+      ],
+    },
+    {
+      id: 'anezia', titulo: 'Anézia Maria Pinheiro',
+      blocos: [
+        'De família numerosa e simples, começou ainda criança a trabalhar na lavoura com os pais e '
+      + 'irmãos. De rara inteligência e dedicação, aprendeu também os ofícios de costura e bordado.',
+        { figura: 'Anézia Maria Pinheiro.',
+          arquivo: 'f-gente-anezia.jpg',
+          alt: 'Retrato de uma senhora sorridente, de cabelos escuros ondulados, brincos e colar de pérolas, blusa clara rendada.',
+          credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
+        'Anézia teve atuação destacada no aprendizado escolar do distrito. Mesmo sem formação '
+      + 'acadêmica, ela comandou as então Escolas Combinadas de Morro Vermelho e do Cutão. '
+      + 'Extremamente organizada e caprichosa, cuidava da escola como se fosse a própria casa, '
+      + 'dedicando carinho e atenção especial aos alunos e a toda a comunidade escolar. Também teve '
+      + 'participação ativa em entidades sociais e religiosas.',
+        'Pelos exemplos de dedicação à comunidade escolar, o povoado do distrito deu seu nome à '
+      + 'atual Escola Municipal.',
+        { figura: 'A Escola Municipal Anézia Maria Pinheiro.',
+          arquivo: 'f-gente-escola-anezia.jpg',
+          alt: 'Fachada da Escola Municipal Anézia Maria Pinheiro: portão azul, placa com o nome da escola e telhado de galpão em arco, sob céu azul.',
+          legenda: 'A Escola Municipal Anézia Maria Pinheiro, em Morro Vermelho.',
           credito: 'Acervo de pesquisa Geraldo Lopes e Viviane Pinheiro' },
       ],
     },
